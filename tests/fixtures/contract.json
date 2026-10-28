@@ -1,0 +1,775 @@
+{
+ "plugin": "Comfyui-Anima-Wardrobe-V4",
+ "levels": [
+  {
+   "num": 0,
+   "key": "sfw",
+   "label": "全年龄",
+   "desc": "无任何暴露向标签"
+  },
+  {
+   "num": 1,
+   "key": "suggestive",
+   "label": "擦边",
+   "desc": "轻度暗示：露肩 / 短裙 / 内衣轮廓 / 材质诱惑"
+  },
+  {
+   "num": 2,
+   "key": "explicit",
+   "label": "成人",
+   "desc": "明显裸露或透视：全裸 / 性器官 / 乳头 / 内衣外露 / 半脱"
+  },
+  {
+   "num": 3,
+   "key": "hardcore",
+   "label": "过激",
+   "desc": "性行为 / 性道具 / 体液 / 束缚调教"
+  },
+  {
+   "num": 4,
+   "key": "extreme",
+   "label": "极端",
+   "desc": "群体 → 极端插入扩张 / 拘束装置 / 极限体液 / 主奴标记"
+  },
+  {
+   "num": 99,
+   "key": "any",
+   "label": "不限",
+   "desc": "不设上限，全库开放"
+  }
+ ],
+ "sections": [
+  {
+   "id": "count",
+   "title": "① 数量与身份",
+   "cls": "",
+   "max_level": 4,
+   "fields": [
+    {
+     "key": "count",
+     "lab": "人数构成 *",
+     "req": true,
+     "type": "select",
+     "tail": false,
+     "slot": "count",
+     "option_count": 6
+    },
+    {
+     "key": "role",
+     "lab": "角色（可选）",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "character",
+     "option_count": 222
+    }
+   ]
+  },
+  {
+   "id": "hair",
+   "title": "② 头发",
+   "cls": "",
+   "max_level": 0,
+   "fields": [
+    {
+     "key": "hair_len",
+     "lab": "长度",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "appearance",
+     "option_count": 7
+    },
+    {
+     "key": "hair_color",
+     "lab": "颜色",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "appearance",
+     "option_count": 15
+    },
+    {
+     "key": "hair_curl",
+     "lab": "卷直",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "appearance",
+     "option_count": 5
+    },
+    {
+     "key": "hair_tie",
+     "lab": "扎法",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "appearance",
+     "option_count": 13
+    },
+    {
+     "key": "hair_bangs",
+     "lab": "刘海",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "appearance",
+     "option_count": 6
+    },
+    {
+     "key": "hair_fx",
+     "lab": "动态状态",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "appearance",
+     "option_count": 5
+    },
+    {
+     "key": "hair_acc",
+     "lab": "发饰",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "appearance",
+     "option_count": 11
+    }
+   ]
+  },
+  {
+   "id": "face",
+   "title": "③ 五官与表情",
+   "cls": "",
+   "max_level": 1,
+   "fields": [
+    {
+     "key": "eyes_color",
+     "lab": "眼色",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "appearance",
+     "option_count": 16
+    },
+    {
+     "key": "emotion",
+     "lab": "情绪",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "expression",
+     "option_count": 18
+    },
+    {
+     "key": "eye_gaze",
+     "lab": "眼神",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "expression",
+     "option_count": 14
+    },
+    {
+     "key": "mouth",
+     "lab": "嘴部",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "expression",
+     "option_count": 10
+    }
+   ]
+  },
+  {
+   "id": "body",
+   "title": "④ 身材与肤质",
+   "cls": "",
+   "max_level": 1,
+   "fields": [
+    {
+     "key": "figure",
+     "lab": "身材轮廓",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "appearance",
+     "option_count": 13
+    },
+    {
+     "key": "skin",
+     "lab": "肤色",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "appearance",
+     "option_count": 5
+    },
+    {
+     "key": "leg",
+     "lab": "腿部线条",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "appearance",
+     "option_count": 2
+    },
+    {
+     "key": "skin_detail",
+     "lab": "肌肤细节",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "detail",
+     "option_count": 4
+    }
+   ]
+  },
+  {
+   "id": "makeup",
+   "title": "⑤ 妆容与细节",
+   "cls": "",
+   "max_level": 0,
+   "fields": [
+    {
+     "key": "makeup",
+     "lab": "妆容风格",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "detail",
+     "option_count": 20
+    },
+    {
+     "key": "nails",
+     "lab": "指甲",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "detail",
+     "option_count": 3
+    }
+   ]
+  },
+  {
+   "id": "cloth_sfw",
+   "title": "⑥ 服装（SFW）",
+   "cls": "",
+   "max_level": 2,
+   "fields": [
+    {
+     "key": "outfit",
+     "lab": "整套服装",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "clothing",
+     "option_count": 70
+    },
+    {
+     "key": "cloth_color",
+     "lab": "服装颜色",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "clothing",
+     "option_count": 12
+    },
+    {
+     "key": "cloth_mat",
+     "lab": "材质",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "clothing",
+     "option_count": 10
+    },
+    {
+     "key": "cloth_state_sfw",
+     "lab": "穿着方式",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "clothing",
+     "option_count": 13
+    },
+    {
+     "key": "socks",
+     "lab": "腿上",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "clothing",
+     "option_count": 81
+    },
+    {
+     "key": "sock_color",
+     "lab": "袜子颜色",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "clothing",
+     "option_count": 12
+    },
+    {
+     "key": "shoes",
+     "lab": "鞋子",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "clothing",
+     "option_count": 14
+    },
+    {
+     "key": "accessory",
+     "lab": "配饰",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "clothing",
+     "option_count": 13
+    },
+    {
+     "key": "top",
+     "lab": "上装与外套",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "clothing",
+     "option_count": 40
+    },
+    {
+     "key": "bottom",
+     "lab": "下装",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "clothing",
+     "option_count": 39
+    }
+   ]
+  },
+  {
+   "id": "pose_sfw",
+   "title": "⑦ 姿势与动作（SFW）",
+   "cls": "",
+   "max_level": 2,
+   "fields": [
+    {
+     "key": "pose_base",
+     "lab": "基础姿势",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "pose",
+     "option_count": 28
+    },
+    {
+     "key": "arms_hands",
+     "lab": "手部动作",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "pose",
+     "option_count": 20
+    },
+    {
+     "key": "action",
+     "lab": "动态动作",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "pose",
+     "option_count": 15
+    },
+    {
+     "key": "pose_risque",
+     "lab": "暗示姿势",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "pose",
+     "option_count": 22
+    }
+   ]
+  },
+  {
+   "id": "camera",
+   "title": "⑧ 镜头",
+   "cls": "",
+   "max_level": 3,
+   "fields": [
+    {
+     "key": "shot_size",
+     "lab": "景别",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "camera",
+     "option_count": 6
+    },
+    {
+     "key": "viewpoint",
+     "lab": "视角",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "camera",
+     "option_count": 22
+    },
+    {
+     "key": "dof",
+     "lab": "景深",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "camera",
+     "option_count": 3
+    },
+    {
+     "key": "device",
+     "lab": "设备质感",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "camera",
+     "option_count": 5
+    }
+   ]
+  },
+  {
+   "id": "scene",
+   "title": "⑨ 场景与环境",
+   "cls": "",
+   "max_level": 0,
+   "fields": [
+    {
+     "key": "place",
+     "lab": "地点",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "scene",
+     "option_count": 61
+    },
+    {
+     "key": "prop",
+     "lab": "环境元素",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "scene",
+     "option_count": 41
+    },
+    {
+     "key": "weather",
+     "lab": "天气氛围",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "scene",
+     "option_count": 21
+    },
+    {
+     "key": "comp",
+     "lab": "构图",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "camera",
+     "option_count": 7
+    },
+    {
+     "key": "texture_fx",
+     "lab": "质感特效",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "detail",
+     "option_count": 11
+    }
+   ]
+  },
+  {
+   "id": "lighting",
+   "title": "⑩ 光影氛围",
+   "cls": "",
+   "max_level": 0,
+   "fields": [
+    {
+     "key": "light_fx",
+     "lab": "光效氛围",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "lighting",
+     "option_count": 12
+    }
+   ]
+  },
+  {
+   "id": "cloth_nsfw",
+   "title": "🔞 服装状态（NSFW）",
+   "cls": "nsfw-only",
+   "max_level": 3,
+   "fields": [
+    {
+     "key": "n_state",
+     "lab": "脱卸程度",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "clothing",
+     "option_count": 17
+    },
+    {
+     "key": "n_exposure",
+     "lab": "暴露重点",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "clothing",
+     "option_count": 10
+    },
+    {
+     "key": "n_body",
+     "lab": "私密细节",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "clothing",
+     "option_count": 6
+    },
+    {
+     "key": "n_fabric",
+     "lab": "NSFW材质",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "clothing",
+     "option_count": 9
+    },
+    {
+     "key": "n_shoes_keep",
+     "lab": "保留单品",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "clothing",
+     "option_count": 5
+    }
+   ]
+  },
+  {
+   "id": "pose_nsfw",
+   "title": "🔞 体位与性行为（NSFW）",
+   "cls": "nsfw-only",
+   "max_level": 4,
+   "fields": [
+    {
+     "key": "n_act",
+     "lab": "性行为",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "pose",
+     "option_count": 31
+    },
+    {
+     "key": "n_pos",
+     "lab": "体态细节",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "pose",
+     "option_count": 14
+    },
+    {
+     "key": "n_orgasm",
+     "lab": "高潮表现",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "pose",
+     "option_count": 12
+    },
+    {
+     "key": "n_cum",
+     "lab": "精液表现",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "pose",
+     "option_count": 12
+    },
+    {
+     "key": "n_fluid",
+     "lab": "其他体液",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "pose",
+     "option_count": 5
+    }
+   ]
+  },
+  {
+   "id": "special_nsfw",
+   "title": "🔞 特殊主题（NSFW）",
+   "cls": "nsfw-only",
+   "max_level": 4,
+   "fields": [
+    {
+     "key": "n_theme",
+     "lab": "主题元素",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "detail",
+     "option_count": 20
+    }
+   ]
+  },
+  {
+   "id": "canon",
+   "title": "🔞 法典验证场景（NSFW）",
+   "cls": "nsfw-only",
+   "max_level": 4,
+   "fields": [
+    {
+     "key": "n_canon",
+     "lab": "一键场景预设",
+     "req": false,
+     "type": "preset",
+     "tail": false,
+     "slot": "free",
+     "option_count": 14
+    },
+    {
+     "key": "n_extra",
+     "lab": "场景补充tag(自动填充,可改)",
+     "req": false,
+     "type": "text",
+     "tail": true,
+     "slot": "free",
+     "option_count": 0
+    }
+   ]
+  },
+  {
+   "id": "nl_block",
+   "title": "⑫ 自然语言补位",
+   "cls": "",
+   "max_level": 0,
+   "fields": [
+    {
+     "key": "nl",
+     "lab": "自然语言补充(英文短句,置于末尾)",
+     "req": false,
+     "type": "text",
+     "tail": true,
+     "slot": "free",
+     "option_count": 0
+    }
+   ]
+  }
+ ],
+ "field_slot": {
+  "count": "count",
+  "role": "character",
+  "hair_len": "appearance",
+  "hair_color": "appearance",
+  "hair_curl": "appearance",
+  "hair_tie": "appearance",
+  "hair_bangs": "appearance",
+  "hair_fx": "appearance",
+  "hair_acc": "appearance",
+  "face_shape": "appearance",
+  "eyes_color": "appearance",
+  "temperament": "appearance",
+  "emotion": "expression",
+  "eye_gaze": "expression",
+  "mouth": "expression",
+  "figure": "appearance",
+  "skin": "appearance",
+  "leg": "appearance",
+  "skin_detail": "detail",
+  "makeup": "detail",
+  "nails": "detail",
+  "outfit": "clothing",
+  "cloth_mat": "clothing",
+  "cloth_state_sfw": "clothing",
+  "socks": "clothing",
+  "shoes": "clothing",
+  "accessory": "clothing",
+  "cloth_color": "clothing",
+  "sock_color": "clothing",
+  "top": "clothing",
+  "bottom": "clothing",
+  "pose_base": "pose",
+  "arms_hands": "pose",
+  "action": "pose",
+  "pose_risque": "pose",
+  "shot_size": "camera",
+  "viewpoint": "camera",
+  "dof": "camera",
+  "device": "camera",
+  "place": "scene",
+  "prop": "scene",
+  "weather": "scene",
+  "comp": "camera",
+  "texture_fx": "detail",
+  "light_fx": "lighting",
+  "n_state": "clothing",
+  "n_exposure": "clothing",
+  "n_body": "clothing",
+  "n_fabric": "clothing",
+  "n_shoes_keep": "clothing",
+  "n_act": "pose",
+  "n_pos": "pose",
+  "n_orgasm": "pose",
+  "n_cum": "pose",
+  "n_fluid": "pose",
+  "n_theme": "detail",
+  "n_canon": "free",
+  "n_extra": "free",
+  "nl": "free"
+ },
+ "slots": [
+  "count",
+  "character",
+  "appearance",
+  "clothing",
+  "pose",
+  "expression",
+  "camera",
+  "scene",
+  "lighting",
+  "detail",
+  "free"
+ ],
+ "weights": {
+  "min": 0.0,
+  "max": 3.0,
+  "default": 1.0,
+  "base_prob_default": 0.65
+ },
+ "tag_cap_choices": [
+  "自动",
+  "16",
+  "20",
+  "24",
+  "28",
+  "32",
+  "36",
+  "40",
+  "48"
+ ],
+ "level_choices": [
+  "sfw",
+  "suggestive",
+  "explicit",
+  "hardcore",
+  "extreme",
+  "any"
+ ]
+}

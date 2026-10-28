@@ -1,0 +1,6230 @@
+{
+ "_meta": {
+  "source_file": "ANIMA提示词生成器.html",
+  "source_path": "S:/ComfyUI/提示词/ANIMA提示词生成器.html",
+  "source_sha256": "6818a2b8026ebaf7b62570afd521af2621d5dbf65ed82ae094ade33c28a06639",
+  "schema": "anima-wardrobe-v4/pools@1",
+  "generated_by": "tools/export_v3_pools.mjs",
+  "counters": {
+   "sections": 15,
+   "fields": 57,
+   "options": 1128,
+   "roles": 222,
+   "appear": 221,
+   "canon": 14,
+   "mutex": 6
+  }
+ },
+ "sections": [
+  {
+   "id": "count",
+   "title": "① 数量与身份",
+   "open": true,
+   "cls": "",
+   "fields": [
+    {
+     "key": "count",
+     "lab": "人数构成 *",
+     "req": true,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "单人少女",
+       "1girl, solo"
+      ],
+      [
+       "单人熟女",
+       "1girl, solo, mature female"
+      ],
+      [
+       "一男一女",
+       "1girl, 1boy, hetero"
+      ],
+      [
+       "双女",
+       "2girls, yuri"
+      ],
+      [
+       "一女多男",
+       "1girl, multiple boys, group sex"
+      ],
+      [
+       "多人群交",
+       "multiple girls, orgy"
+      ]
+     ]
+    },
+    {
+     "key": "role",
+     "lab": "角色（可选）",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "不指定",
+       ""
+      ],
+      [
+       "四宫辉夜",
+       "shinomiya kaguya, kaguya-sama: love is war"
+      ],
+      [
+       "藤原千花",
+       "fujiwara chika, kaguya-sama: love is war"
+      ],
+      [
+       "樱岛麻衣",
+       "sakurajima mai, seishun buta yarou wa bunny girl senpai no yume wo minai"
+      ],
+      [
+       "雪之下雪乃",
+       "yukinoshita yukino, yahari ore no seishun love come wa machigatteiru."
+      ],
+      [
+       "一色彩羽",
+       "isshiki iroha, yahari ore no seishun love come wa machigatteiru."
+      ],
+      [
+       "中野二乃",
+       "nakano nino, go-toubun no hanayome"
+      ],
+      [
+       "中野一花",
+       "nakano ichika, go-toubun no hanayome"
+      ],
+      [
+       "中野四叶",
+       "nakano yotsuba, go-toubun no hanayome"
+      ],
+      [
+       "古河渚",
+       "furukawa nagisa, clannad"
+      ],
+      [
+       "中野五月",
+       "nakano itsuki, go-toubun no hanayome"
+      ],
+      [
+       "双叶理央",
+       "futaba rio, seishun buta yarou wa bunny girl senpai no yume wo minai"
+      ],
+      [
+       "早坂爱",
+       "hayasaka ai, kaguya-sama: love is war"
+      ],
+      [
+       "羽川翼",
+       "hanekawa tsubasa, monogatari (series)"
+      ],
+      [
+       "神原骏河",
+       "kanbaru suruga, monogatari (series)"
+      ],
+      [
+       "三日月夜空",
+       "mikazuki yozora, boku wa tomodachi ga sukunai"
+      ],
+      [
+       "柏崎星奈",
+       "kashiwazaki sena, boku wa tomodachi ga sukunai"
+      ],
+      [
+       "和泉纱雾",
+       "izumi sagiri, eromanga sensei"
+      ],
+      [
+       "长瀞",
+       "nagatoro hayase, ijiranaide nagatoro-san"
+      ],
+      [
+       "宇崎花",
+       "uzaki hana, uzaki-chan wa asobitai!"
+      ],
+      [
+       "平泽律",
+       "tainaka ritsu, k-on!"
+      ],
+      [
+       "琴吹䌷",
+       "kotobuki tsumugi, k-on!"
+      ],
+      [
+       "柊镜",
+       "hiiragi kagami, lucky star"
+      ],
+      [
+       "泉此方",
+       "izumi konata, lucky star"
+      ],
+      [
+       "中野三玖",
+       "nakano miku, go-toubun no hanayome"
+      ],
+      [
+       "堀京子",
+       "hori kyouko, horimiya"
+      ],
+      [
+       "水原千鹤",
+       "mizuhara chizuru, kanokari"
+      ],
+      [
+       "小鸟游六花",
+       "takanashi rikka, chuunibyou demo koi ga shitai!"
+      ],
+      [
+       "逢坂大河",
+       "aisaka taiga, toradora!"
+      ],
+      [
+       "战场原黑仪",
+       "senjougahara hitagi, monogatari (series)"
+      ],
+      [
+       "古见硝子",
+       "komi shouko, komi-san wa komyushou desu."
+      ],
+      [
+       "平泽唯",
+       "hirasawa yui, k-on!"
+      ],
+      [
+       "秋山澪",
+       "akiyama mio, k-on!"
+      ],
+      [
+       "凉宫春日",
+       "suzumiya haruhi, suzumiya haruhi no yuuutsu"
+      ],
+      [
+       "由崎司",
+       "yuzaki tsukasa, tonikaku kawaii"
+      ],
+      [
+       "黑沼爽子",
+       "kuronuma sawako, kimi ni todoke"
+      ],
+      [
+       "早濑优香",
+       "hayase yuuka, blue archive"
+      ],
+      [
+       "砂狼白子",
+       "sunaookami shiroko, blue archive"
+      ],
+      [
+       "小鸟游星野",
+       "takanashi hoshino, blue archive"
+      ],
+      [
+       "一之濑明日奈",
+       "ichinose asuna, blue archive"
+      ],
+      [
+       "十六夜野宫",
+       "izayoi nonomi, blue archive"
+      ],
+      [
+       "圣园未花",
+       "misono mika, blue archive"
+      ],
+      [
+       "陆八魔阿尔",
+       "rikuhachima aru, blue archive"
+      ],
+      [
+       "角楫香凛",
+       "kakudate karin, blue archive"
+      ],
+      [
+       "狐坂若藻",
+       "kosaka wakamo, blue archive"
+      ],
+      [
+       "久田泉奈",
+       "kuda izuna, blue archive"
+      ],
+      [
+       "枣伊吕波",
+       "natsume iroha, blue archive"
+      ],
+      [
+       "下江小春",
+       "shimoe koharu, blue archive"
+      ],
+      [
+       "雷电将军",
+       "raiden shogun, genshin impact"
+      ],
+      [
+       "甘雨",
+       "ganyu, genshin impact"
+      ],
+      [
+       "胡桃",
+       "hu tao, genshin impact"
+      ],
+      [
+       "芙宁娜",
+       "furina, genshin impact"
+      ],
+      [
+       "八重神子",
+       "yae miko, genshin impact"
+      ],
+      [
+       "妮露",
+       "nilou, genshin impact"
+      ],
+      [
+       "优菈",
+       "eula, genshin impact"
+      ],
+      [
+       "申鹤",
+       "shenhe, genshin impact"
+      ],
+      [
+       "花火",
+       "sparkle, honkai: star rail"
+      ],
+      [
+       "黄泉",
+       "acheron, honkai: star rail"
+      ],
+      [
+       "流萤",
+       "firefly, honkai: star rail"
+      ],
+      [
+       "符玄",
+       "fu xuan, honkai: star rail"
+      ],
+      [
+       "知更鸟",
+       "robin, honkai: star rail"
+      ],
+      [
+       "遐蝶",
+       "castorice, honkai: star rail"
+      ],
+      [
+       "镜流",
+       "jingliu, honkai: star rail"
+      ],
+      [
+       "阮·梅",
+       "ruan mei, honkai: star rail"
+      ],
+      [
+       "黑天鹅",
+       "black swan, honkai: star rail"
+      ],
+      [
+       "今汐",
+       "jinhsi, wuthering waves"
+      ],
+      [
+       "长离",
+       "changli, wuthering waves"
+      ],
+      [
+       "椿",
+       "camellya, wuthering waves"
+      ],
+      [
+       "守岸人",
+       "shorekeeper, wuthering waves"
+      ],
+      [
+       "菲比",
+       "phoebe, wuthering waves"
+      ],
+      [
+       "吟霖",
+       "yinlin, wuthering waves"
+      ],
+      [
+       "折枝",
+       "zhezhi, wuthering waves"
+      ],
+      [
+       "艾莲",
+       "ellen joe, zenless zone zero"
+      ],
+      [
+       "朱鸢",
+       "zhu yuan, zenless zone zero"
+      ],
+      [
+       "简·杜",
+       "jane doe, zenless zone zero"
+      ],
+      [
+       "柏妮思",
+       "burnice white, zenless zone zero"
+      ],
+      [
+       "耀嘉音",
+       "astra yao, zenless zone zero"
+      ],
+      [
+       "拉毗",
+       "rapi, goddess of victory: nikke"
+      ],
+      [
+       "安妮斯",
+       "anis, goddess of victory: nikke"
+      ],
+      [
+       "小红帽",
+       "red hood, goddess of victory: nikke"
+      ],
+      [
+       "能天使",
+       "exusiai, arknights"
+      ],
+      [
+       "陈",
+       "ch'en, arknights"
+      ],
+      [
+       "史尔特尔",
+       "surtr, arknights"
+      ],
+      [
+       "凯尔希",
+       "kal'tsit, arknights"
+      ],
+      [
+       "W",
+       "w, arknights"
+      ],
+      [
+       "拉普兰德",
+       "lappland, arknights"
+      ],
+      [
+       "泥岩",
+       "mudrock, arknights"
+      ],
+      [
+       "德克萨斯",
+       "texas, arknights"
+      ],
+      [
+       "02",
+       "zero two, darling in the franxx"
+      ],
+      [
+       "绫波丽",
+       "rei ayanami, neon genesis evangelion"
+      ],
+      [
+       "明日香",
+       "asuka langley soryu, neon genesis evangelion"
+      ],
+      [
+       "Saber",
+       "artoria pendragon, fate (series)"
+      ],
+      [
+       "玛修",
+       "mash kyrielight, fate (series)"
+      ],
+      [
+       "贞德",
+       "jeanne d'arc, fate (series)"
+      ],
+      [
+       "尼禄",
+       "nero claudius, fate (series)"
+      ],
+      [
+       "玉藻前",
+       "tamamo no mae, fate (series)"
+      ],
+      [
+       "斯卡哈",
+       "scathach, fate (series)"
+      ],
+      [
+       "源赖光",
+       "minamoto no raikou, fate (series)"
+      ],
+      [
+       "远坂凛",
+       "tohsaka rin, fate (series)"
+      ],
+      [
+       "伊什塔尔",
+       "ishtar, fate (series)"
+      ],
+      [
+       "博丽灵梦",
+       "hakurei reimu, touhou"
+      ],
+      [
+       "雾雨魔理沙",
+       "kirisame marisa, touhou"
+      ],
+      [
+       "蕾米莉亚",
+       "remilia scarlet, touhou"
+      ],
+      [
+       "芙兰朵露",
+       "flandre scarlet, touhou"
+      ],
+      [
+       "十六夜咲夜",
+       "izayoi sakuya, touhou"
+      ],
+      [
+       "古明地恋",
+       "komeiji koishi, touhou"
+      ],
+      [
+       "帕秋莉",
+       "patchouli knowledge, touhou"
+      ],
+      [
+       "初音未来",
+       "hatsune miku, vocaloid"
+      ],
+      [
+       "巡音流歌",
+       "megurine luka, vocaloid"
+      ],
+      [
+       "镜音铃",
+       "kagamine rin, vocaloid"
+      ],
+      [
+       "娜美",
+       "nami, one piece"
+      ],
+      [
+       "女帝汉库克",
+       "boa hancock, one piece"
+      ],
+      [
+       "纲手",
+       "tsunade, naruto (series)"
+      ],
+      [
+       "弥海砂",
+       "amane misa, death note"
+      ],
+      [
+       "月咏",
+       "tsukuyo, gintama"
+      ],
+      [
+       "桔梗",
+       "kikyo, inuyasha"
+      ],
+      [
+       "神谷薰",
+       "kamiya kaoru, rurouni kenshin"
+      ],
+      [
+       "日向雏田",
+       "hyuuga hinata, naruto (series)"
+      ],
+      [
+       "朽木露琪亚",
+       "kuchiki rukia, bleach"
+      ],
+      [
+       "井上织姬",
+       "inoue orihime, bleach"
+      ],
+      [
+       "松本乱菊",
+       "matsumoto rangiku, bleach"
+      ],
+      [
+       "露西",
+       "lucy heartfilia, fairy tail"
+      ],
+      [
+       "艾尔莎",
+       "erza scarlet, fairy tail"
+      ],
+      [
+       "亚丝娜",
+       "asuna yuuki, sword art online"
+      ],
+      [
+       "三笠",
+       "mikasa ackerman, attack on titan"
+      ],
+      [
+       "吹雪",
+       "fubuki, one-punch man"
+      ],
+      [
+       "龙卷",
+       "tatsumaki, one-punch man"
+      ],
+      [
+       "玛奇玛",
+       "makima, chainsaw man"
+      ],
+      [
+       "帕瓦",
+       "power, chainsaw man"
+      ],
+      [
+       "牧濑红莉栖",
+       "makise kurisu, steins;gate"
+      ],
+      [
+       "雷电芽",
+       "raiden mei, honkai impact"
+      ],
+      [
+       "八重樱",
+       "yae sakura, honkai impact"
+      ],
+      [
+       "2B",
+       "yorha no. 2 type b, nier (series)"
+      ],
+      [
+       "蒂法",
+       "tifa lockhart, final fantasy"
+      ],
+      [
+       "尤娜",
+       "yuna, final fantasy x"
+      ],
+      [
+       "高卷杏",
+       "takamaki anne, persona 5"
+      ],
+      [
+       "新岛真",
+       "niijima makoto, persona 5"
+      ],
+      [
+       "圣路易斯",
+       "saint louis, azur lane"
+      ],
+      [
+       "光辉",
+       "illustrious, azur lane"
+      ],
+      [
+       "贝尔法斯特",
+       "belfast, azur lane"
+      ],
+      [
+       "企业",
+       "enterprise, azur lane"
+      ],
+      [
+       "大凤",
+       "taihou, azur lane"
+      ],
+      [
+       "阿库娅",
+       "aqua, kono subarashii sekai ni shukufuku wo!"
+      ],
+      [
+       "夏娜",
+       "shana, shakugan no shana"
+      ],
+      [
+       "露易丝",
+       "louise, zero no tsukaima"
+      ],
+      [
+       "赫斯缇雅",
+       "hestia, dungeon ni deai wo motomeru no wa machigatteiru darou ka"
+      ],
+      [
+       "雷姆",
+       "rem, re:zero"
+      ],
+      [
+       "拉姆",
+       "ram, re:zero"
+      ],
+      [
+       "艾米莉亚",
+       "emilia, re:zero"
+      ],
+      [
+       "喜多川海梦",
+       "kitagawa marin, my dress-up darling"
+      ],
+      [
+       "芙莉莲",
+       "frieren, sousou no frieren"
+      ],
+      [
+       "费伦",
+       "fern, sousou no frieren"
+      ],
+      [
+       "两仪式",
+       "ryougi shiki, kara no kyoukai"
+      ],
+      [
+       "鹿目圆",
+       "kaname madoka, mahou shoujo madoka magica"
+      ],
+      [
+       "晓美焰",
+       "akemi homura, mahou shoujo madoka magica"
+      ],
+      [
+       "美树沙耶香",
+       "miki sayaka, mahou shoujo madoka magica"
+      ],
+      [
+       "巴麻美",
+       "tomoe mami, mahou shoujo madoka magica"
+      ],
+      [
+       "佐仓杏子",
+       "sakura kyoko, mahou shoujo madoka magica"
+      ],
+      [
+       "高坂穗乃果",
+       "kousaka honoka, love live!"
+      ],
+      [
+       "绚濑绘里",
+       "ayase eli, love live!"
+      ],
+      [
+       "东条希",
+       "tojo nozomi, love live!"
+      ],
+      [
+       "南小鸟",
+       "minami kotori, love live!"
+      ],
+      [
+       "西木野真姬",
+       "nishikino maki, love live!"
+      ],
+      [
+       "矢泽妮可",
+       "yazawa nico, love live!"
+      ],
+      [
+       "户山香澄",
+       "toyama kasumi, bang dream!"
+      ],
+      [
+       "市谷有咲",
+       "ichigaya arisa, bang dream!"
+      ],
+      [
+       "山吹沙绫",
+       "yamabuki saaya, bang dream!"
+      ],
+      [
+       "涉谷凛",
+       "shibuya rin, idolmaster cinderella girls"
+      ],
+      [
+       "星野爱",
+       "hoshino ai, oshi no ko"
+      ],
+      [
+       "黑川茜",
+       "kurokawa akane, oshi no ko"
+      ],
+      [
+       "MEM-cho",
+       "mem-cho, oshi no ko"
+      ],
+      [
+       "伊地知虹夏",
+       "ijichi nijika, bocchi the rock!"
+      ],
+      [
+       "山田凉",
+       "yamada ryo, bocchi the rock!"
+      ],
+      [
+       "蛇喰梦子",
+       "jabami yumeko, kakegurui"
+      ],
+      [
+       "早乙女芽亚里",
+       "saotome mary, kakegurui"
+      ],
+      [
+       "时崎狂三",
+       "tokisaki kurumi, date a live"
+      ],
+      [
+       "夜刀神十香",
+       "tohka yatogami, date a live"
+      ],
+      [
+       "夜刀神琴里",
+       "itsuka kotori, date a live"
+      ],
+      [
+       "鸢一折纸",
+       "takamiya origami, date a live"
+      ],
+      [
+       "草薙素子",
+       "kusanagi motoko, ghost in the shell"
+      ],
+      [
+       "C.C.",
+       "c.c., code geass"
+      ],
+      [
+       "拉克丝",
+       "lacus clyne, gundam seed"
+      ],
+      [
+       "菲伊·瓦伦丁",
+       "faye valentine, cowboy bebop"
+      ],
+      [
+       "丽日御茶子",
+       "uraraka ochako, boku no hero academia"
+      ],
+      [
+       "八百万",
+       "yaoyorozu momo, boku no hero academia"
+      ],
+      [
+       "胡蝶忍",
+       "kocho shinobu, kimetsu no yaiba"
+      ],
+      [
+       "甘露寺蜜璃",
+       "kanroji mitsuri, kimetsu no yaiba"
+      ],
+      [
+       "钉崎野蔷薇",
+       "kugisaki nobara, jujutsu kaisen"
+      ],
+      [
+       "御坂美琴",
+       "misaka mikoto, toaru majutsu no index"
+      ],
+      [
+       "食蜂操祈",
+       "shokuhou misaki, toaru kagaku no railgun"
+      ],
+      [
+       "白井黑子",
+       "shirai kuroko, toaru kagaku no railgun"
+      ],
+      [
+       "三鹰朝",
+       "mitaka asa, chainsaw man"
+      ],
+      [
+       "蕾塞",
+       "reze, chainsaw man"
+      ],
+      [
+       "爱丽丝",
+       "alice zuberg, sword art online"
+      ],
+      [
+       "诗乃",
+       "sinon, sword art online"
+      ],
+      [
+       "尼科·罗宾",
+       "nico robin, one piece"
+      ],
+      [
+       "佩罗娜",
+       "perona, one piece"
+      ],
+      [
+       "照美冥",
+       "terumi mei, naruto (series)"
+      ],
+      [
+       "雅儿贝德",
+       "albedo, overlord"
+      ],
+      [
+       "朱菜",
+       "shuna, tensei shitara slime datta ken"
+      ],
+      [
+       "紫苑",
+       "shion, tensei shitara slime datta ken"
+      ],
+      [
+       "凯露",
+       "karyl, princess connect!"
+      ],
+      [
+       "佩可莉姆",
+       "pecorine, princess connect!"
+      ],
+      [
+       "藤原妹红",
+       "fujiwara no mokou, touhou"
+      ],
+      [
+       "八云紫",
+       "yakumo yukari, touhou"
+      ],
+      [
+       "于贝尔",
+       "ubel, sousou no frieren"
+      ],
+      [
+       "后藤一里",
+       "gotoh hitori, bocchi the rock!"
+      ],
+      [
+       "锦木千束",
+       "nishikigi chisato, lycoris recoil"
+      ],
+      [
+       "井之上泷奈",
+       "inoue takina, lycoris recoil"
+      ],
+      [
+       "木更",
+       "kisara, engage kiss"
+      ],
+      [
+       "夕桐绫乃",
+       "yugiri ayano, engage kiss"
+      ],
+      [
+       "莎朗·荷莉格蕾尔",
+       "sharon holygriel, engage kiss"
+      ],
+      [
+       "高松灯",
+       "takamatsu tomori, mygo!!!!!"
+      ],
+      [
+       "千早爱音",
+       "chika aine, mygo!!!!!"
+      ],
+      [
+       "要乐奈",
+       "kaname rana, mygo!!!!!"
+      ],
+      [
+       "长崎爽世",
+       "nagasaki sayo, mygo!!!!!"
+      ],
+      [
+       "椎名立希",
+       "shiina taki, mygo!!!!!"
+      ],
+      [
+       "三角初华",
+       "mitsumoto hatsuha, ave mujica"
+      ],
+      [
+       "若叶睦",
+       "wakaba mutsumi, ave mujica"
+      ],
+      [
+       "八幡海铃",
+       "yahata kairi, ave mujica"
+      ],
+      [
+       "祐天寺若麦",
+       "yutenji wakamugi, ave mujica"
+      ],
+      [
+       "丰川祥子",
+       "toyokawa shoko, ave mujica"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hair",
+   "title": "② 头发",
+   "open": true,
+   "cls": "",
+   "fields": [
+    {
+     "key": "hair_len",
+     "lab": "长度",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "及腰超长发",
+       "very long hair"
+      ],
+      [
+       "齐腰长发",
+       "long hair"
+      ],
+      [
+       "锁骨中长发",
+       "medium hair"
+      ],
+      [
+       "肩部长度",
+       "shoulder-length hair"
+      ],
+      [
+       "齐颈短发",
+       "short hair"
+      ],
+      [
+       "波波头",
+       "bob cut"
+      ],
+      [
+       "超短发",
+       "pixie cut"
+      ]
+     ]
+    },
+    {
+     "key": "hair_color",
+     "lab": "颜色",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "黑发",
+       "black hair"
+      ],
+      [
+       "白发",
+       "white hair"
+      ],
+      [
+       "银发",
+       "silver hair"
+      ],
+      [
+       "浅金发",
+       "blonde hair"
+      ],
+      [
+       "棕发",
+       "brown hair"
+      ],
+      [
+       "茶色发",
+       "light brown hair"
+      ],
+      [
+       "红发",
+       "red hair"
+      ],
+      [
+       "粉发",
+       "pink hair"
+      ],
+      [
+       "蓝发",
+       "blue hair"
+      ],
+      [
+       "紫发",
+       "purple hair"
+      ],
+      [
+       "渐变发色",
+       "gradient hair"
+      ],
+      [
+       "挑染",
+       "streaked hair"
+      ],
+      [
+       "水蓝色",
+       "aqua hair"
+      ],
+      [
+       "绿色",
+       "green hair"
+      ],
+      [
+       "橙色",
+       "orange hair"
+      ]
+     ]
+    },
+    {
+     "key": "hair_curl",
+     "lab": "卷直",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "直发顺滑",
+       "straight hair"
+      ],
+      [
+       "自然微卷",
+       "wavy hair"
+      ],
+      [
+       "大波浪",
+       "curly hair"
+      ],
+      [
+       "羊毛卷",
+       "drill hair"
+      ],
+      [
+       "蓬松凌乱",
+       "messy hair"
+      ]
+     ]
+    },
+    {
+     "key": "hair_tie",
+     "lab": "扎法",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "低马尾",
+       "low ponytail"
+      ],
+      [
+       "高马尾",
+       "high ponytail"
+      ],
+      [
+       "侧马尾",
+       "side ponytail"
+      ],
+      [
+       "双马尾",
+       "twintails"
+      ],
+      [
+       "丸子头",
+       "hair bun"
+      ],
+      [
+       "双丸子头",
+       "double bun"
+      ],
+      [
+       "单编发",
+       "braid"
+      ],
+      [
+       "麻花辫",
+       "twin braids"
+      ],
+      [
+       "公主编",
+       "french braid"
+      ],
+      [
+       "半扎发",
+       "half updo"
+      ],
+      [
+       "公主切",
+       "hime cut"
+      ],
+      [
+       "不对称剪裁",
+       "asymmetrical hair"
+      ],
+      [
+       "低双辫",
+       "low twin braids"
+      ]
+     ]
+    },
+    {
+     "key": "hair_bangs",
+     "lab": "刘海",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "齐刘海",
+       "blunt bangs"
+      ],
+      [
+       "空气刘海",
+       "parted bangs"
+      ],
+      [
+       "八字刘海",
+       "hair between eyes"
+      ],
+      [
+       "斜刘海",
+       "swept bangs"
+      ],
+      [
+       "中分对称",
+       "parted bangs, symmetrical hair"
+      ],
+      [
+       "梳起露额",
+       "pulled back hair"
+      ]
+     ]
+    },
+    {
+     "key": "hair_fx",
+     "lab": "动态状态",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "微乱",
+       "messy hair"
+      ],
+      [
+       "被风吹起",
+       "wind-blown hair"
+      ],
+      [
+       "湿发",
+       "wet hair"
+      ],
+      [
+       "湿发贴脸",
+       "wet hair, hair over eyes"
+      ],
+      [
+       "光泽柔亮",
+       "glossy hair"
+      ]
+     ]
+    },
+    {
+     "key": "hair_acc",
+     "lab": "发饰",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "发夹",
+       "hairclip"
+      ],
+      [
+       "发带",
+       "hairband"
+      ],
+      [
+       "蝴蝶结",
+       "hair bow"
+      ],
+      [
+       "花朵发饰",
+       "flower in hair"
+      ],
+      [
+       "珍珠发饰",
+       "pearl hair ornament"
+      ],
+      [
+       "兽耳",
+       "animal ears"
+      ],
+      [
+       "兔耳",
+       "rabbit ears"
+      ],
+      [
+       "缎带发饰",
+       "hair ribbon"
+      ],
+      [
+       "头花",
+       "hair flower"
+      ],
+      [
+       "头箍",
+       "headband"
+      ],
+      [
+       "女仆头饰",
+       "maid headdress"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "face",
+   "title": "③ 五官与表情",
+   "open": false,
+   "cls": "",
+   "fields": [
+    {
+     "key": "eyes_color",
+     "lab": "眼色",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "黑瞳",
+       "black eyes"
+      ],
+      [
+       "蓝瞳",
+       "blue eyes"
+      ],
+      [
+       "红瞳",
+       "red eyes"
+      ],
+      [
+       "金瞳",
+       "yellow eyes"
+      ],
+      [
+       "紫瞳",
+       "purple eyes"
+      ],
+      [
+       "绿瞳",
+       "green eyes"
+      ],
+      [
+       "异色瞳",
+       "heterochromia"
+      ],
+      [
+       "棕色瞳",
+       "brown eyes"
+      ],
+      [
+       "灰色瞳",
+       "grey eyes"
+      ],
+      [
+       "水蓝瞳",
+       "aqua eyes"
+      ],
+      [
+       "粉瞳",
+       "pink eyes"
+      ],
+      [
+       "橙瞳",
+       "orange eyes"
+      ],
+      [
+       "渐变瞳",
+       "gradient eyes"
+      ],
+      [
+       "下垂眼",
+       "tareme"
+      ],
+      [
+       "吊眼",
+       "tsurime"
+      ],
+      [
+       "水润大眼",
+       "sparkling eyes"
+      ]
+     ]
+    },
+    {
+     "key": "emotion",
+     "lab": "情绪",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "微笑",
+       "smile"
+      ],
+      [
+       "大笑",
+       "grin"
+      ],
+      [
+       "害羞脸红",
+       "embarrassed, blush"
+      ],
+      [
+       "傲娇嘟嘴",
+       "pout"
+      ],
+      [
+       "冷漠",
+       "expressionless"
+      ],
+      [
+       "难过",
+       "sad"
+      ],
+      [
+       "惊讶",
+       "surprised"
+      ],
+      [
+       "含泪",
+       "tears"
+      ],
+      [
+       "困倦",
+       "sleepy"
+      ],
+      [
+       "生气",
+       "angry"
+      ],
+      [
+       "得意",
+       "smug"
+      ],
+      [
+       "坏笑",
+       "evil smile"
+      ],
+      [
+       "惊恐",
+       "scared"
+      ],
+      [
+       "困惑",
+       "confused"
+      ],
+      [
+       "厌恶",
+       "disgust"
+      ],
+      [
+       "兴奋",
+       "excited"
+      ],
+      [
+       "认真",
+       "serious"
+      ],
+      [
+       "哭泣",
+       "crying"
+      ]
+     ]
+    },
+    {
+     "key": "eye_gaze",
+     "lab": "眼神",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "注视镜头",
+       "looking at viewer"
+      ],
+      [
+       "目光躲开",
+       "looking away"
+      ],
+      [
+       "回眸",
+       "looking back"
+      ],
+      [
+       "向下看",
+       "looking down"
+      ],
+      [
+       "抬眼",
+       "looking up"
+      ],
+      [
+       "闭眼",
+       "closed eyes"
+      ],
+      [
+       "半闭眼",
+       "half-closed eyes"
+      ],
+      [
+       "含情脉脉",
+       "affectionate"
+      ],
+      [
+       "侧目",
+       "looking to the side"
+      ],
+      [
+       "对视",
+       "eye contact"
+      ],
+      [
+       "凝视",
+       "staring"
+      ],
+      [
+       "望向他人",
+       "looking at another"
+      ],
+      [
+       "目视前方",
+       "looking ahead"
+      ],
+      [
+       "单眼闭",
+       "one eye closed"
+      ]
+     ]
+    },
+    {
+     "key": "mouth",
+     "lab": "嘴部",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "抿嘴",
+       "closed mouth"
+      ],
+      [
+       "微张",
+       "parted lips"
+      ],
+      [
+       "咬唇",
+       "biting own lip"
+      ],
+      [
+       "张口",
+       "open mouth"
+      ],
+      [
+       "伸舌",
+       "tongue out"
+      ],
+      [
+       "舔唇",
+       "licking lips"
+      ],
+      [
+       "露齿笑",
+       "grin, teeth"
+      ],
+      [
+       "小虎牙",
+       "fang"
+      ],
+      [
+       "咬牙",
+       "clenched teeth"
+      ],
+      [
+       "皱眉",
+       "frown"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "body",
+   "title": "④ 身材与肤质",
+   "open": false,
+   "cls": "",
+   "fields": [
+    {
+     "key": "figure",
+     "lab": "身材轮廓",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "纤细高挑",
+       "slim, tall"
+      ],
+      [
+       "沙漏曲线",
+       "hourglass figure"
+      ],
+      [
+       "丰腴",
+       "voluptuous"
+      ],
+      [
+       "巨乳",
+       "huge breasts"
+      ],
+      [
+       "大胸",
+       "large breasts"
+      ],
+      [
+       "小巧胸部",
+       "small breasts"
+      ],
+      [
+       "细腰",
+       "narrow waist"
+      ],
+      [
+       "宽胯",
+       "wide hips"
+      ],
+      [
+       "肉感大腿",
+       "thick thighs"
+      ],
+      [
+       "匀称肌肉",
+       "toned body"
+      ],
+      [
+       "平胸",
+       "flat chest"
+      ],
+      [
+       "中等胸部",
+       "medium breasts"
+      ],
+      [
+       "爆乳",
+       "gigantic breasts"
+      ]
+     ]
+    },
+    {
+     "key": "skin",
+     "lab": "肤色",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "白皙",
+       "pale skin"
+      ],
+      [
+       "自然白",
+       "fair skin"
+      ],
+      [
+       "小麦色",
+       "tanlines"
+      ],
+      [
+       "古铜色",
+       "dark skin"
+      ],
+      [
+       "冷白皮",
+       "porcelain skin"
+      ]
+     ]
+    },
+    {
+     "key": "leg",
+     "lab": "腿部线条",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "双腿修长笔直",
+       "long legs"
+      ],
+      [
+       "大腿缝隙",
+       "thigh gap"
+      ]
+     ]
+    },
+    {
+     "key": "skin_detail",
+     "lab": "肌肤细节",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "眼下泪痣",
+       "mole under eye"
+      ],
+      [
+       "锁骨明显",
+       "visible collarbone"
+      ],
+      [
+       "雀斑",
+       "freckles"
+      ],
+      [
+       "湿润光泽肌",
+       "glistening skin"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "makeup",
+   "title": "⑤ 妆容与细节",
+   "open": false,
+   "cls": "",
+   "fields": [
+    {
+     "key": "makeup",
+     "lab": "妆容风格",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "素颜",
+       "no makeup"
+      ],
+      [
+       "淡妆",
+       "light makeup"
+      ],
+      [
+       "红唇",
+       "red lipstick"
+      ],
+      [
+       "水光唇",
+       "glossy lips"
+      ],
+      [
+       "眼线",
+       "eyeliner"
+      ],
+      [
+       "浓密睫毛",
+       "thick eyelashes"
+      ],
+      [
+       "咬唇妆",
+       "bitten lip"
+      ],
+      [
+       "眼影",
+       "eyeshadow"
+      ],
+      [
+       "雀斑",
+       "freckles"
+      ],
+      [
+       "腮红",
+       "blush"
+      ],
+      [
+       "泪痣",
+       "mole under eye"
+      ],
+      [
+       "美人痣",
+       "mole under mouth"
+      ],
+      [
+       "黑唇",
+       "black lipstick"
+      ],
+      [
+       "彩色睫毛",
+       "colored eyelashes"
+      ],
+      [
+       "面部彩绘",
+       "facepaint"
+      ],
+      [
+       "亮片",
+       "glitter"
+      ],
+      [
+       "哥特妆",
+       "pale skin, black lipstick, eyeshadow"
+      ],
+      [
+       "地雷妆",
+       "eyebags, blush, eyeliner, glossy lips"
+      ],
+      [
+       "病娇妆",
+       "blush, half-closed eyes, eyeliner"
+      ],
+      [
+       "泪痣妆",
+       "mole under eye, blush, glossy lips"
+      ]
+     ]
+    },
+    {
+     "key": "nails",
+     "lab": "指甲",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "美甲",
+       "nail polish"
+      ],
+      [
+       "红色美甲",
+       "red nail polish"
+      ],
+      [
+       "法式美甲",
+       "french manicure"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cloth_sfw",
+   "title": "⑥ 服装（SFW）",
+   "open": true,
+   "cls": "",
+   "fields": [
+    {
+     "key": "outfit",
+     "lab": "整套服装",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "JK制服",
+       "school uniform"
+      ],
+      [
+       "水手服",
+       "serafuku"
+      ],
+      [
+       "OL套装",
+       "office lady"
+      ],
+      [
+       "女仆装",
+       "maid"
+      ],
+      [
+       "旗袍",
+       "china dress"
+      ],
+      [
+       "和服",
+       "kimono"
+      ],
+      [
+       "浴衣",
+       "yukata"
+      ],
+      [
+       "兔女郎",
+       "bunny girl"
+      ],
+      [
+       "连衣裙",
+       "dress"
+      ],
+      [
+       "吊带裙",
+       "camisole dress"
+      ],
+      [
+       "晚礼服",
+       "evening gown"
+      ],
+      [
+       "婚纱",
+       "wedding dress"
+      ],
+      [
+       "连体泳衣",
+       "one-piece swimsuit"
+      ],
+      [
+       "比基尼",
+       "bikini"
+      ],
+      [
+       "微距比基尼",
+       "micro bikini"
+      ],
+      [
+       "竞泳泳衣",
+       "competitive swimsuit"
+      ],
+      [
+       "体操服",
+       "gym uniform"
+      ],
+      [
+       "啦啦队服",
+       "cheerleader uniform"
+      ],
+      [
+       "护士服",
+       "nurse"
+      ],
+      [
+       "巫女装束",
+       "miko"
+      ],
+      [
+       "警服",
+       "police uniform"
+      ],
+      [
+       "空姐制服",
+       "flight attendant uniform"
+      ],
+      [
+       "哥特萝莉",
+       "gothic lolita"
+      ],
+      [
+       "地雷系",
+       "jirai kei"
+      ],
+      [
+       "量产型",
+       "ryousangata"
+      ],
+      [
+       "辣妹风",
+       "gyaru"
+      ],
+      [
+       "偶像演出服",
+       "idol costume"
+      ],
+      [
+       "毛衣配短裙",
+       "sweater and skirt"
+      ],
+      [
+       "卫衣短裤",
+       "hoodie and shorts"
+      ],
+      [
+       "仅围裙",
+       "apron only"
+      ],
+      [
+       "浴巾",
+       "bath towel"
+      ],
+      [
+       "寝间着",
+       "sleeping kimono"
+      ],
+      [
+       "缠胸布",
+       "sarashi"
+      ],
+      [
+       "死库水",
+       "school swimsuit"
+      ],
+      [
+       "竞泳校园泳衣",
+       "competition school swimsuit"
+      ],
+      [
+       "旧式死库水",
+       "old school swimsuit"
+      ],
+      [
+       "新式死库水",
+       "new school swimsuit"
+      ],
+      [
+       "白色比基尼",
+       "white bikini"
+      ],
+      [
+       "运动比基尼",
+       "sports bikini"
+      ],
+      [
+       "挂脖泳衣",
+       "halterneck"
+      ],
+      [
+       "仅比基尼上衣",
+       "bikini top only"
+      ],
+      [
+       "太阳裙",
+       "sundress"
+      ],
+      [
+       "针织连衣裙",
+       "sweater dress"
+      ],
+      [
+       "水手连衣裙",
+       "sailor dress"
+      ],
+      [
+       "无袖连衣裙",
+       "sleeveless dress"
+      ],
+      [
+       "背心裙",
+       "pinafore dress"
+      ],
+      [
+       "泡泡裙",
+       "bubble skirt"
+      ],
+      [
+       "汉服",
+       "hanfu"
+      ],
+      [
+       "袴",
+       "hakama"
+      ],
+      [
+       "西装套装",
+       "suit"
+      ],
+      [
+       "燕尾服",
+       "tuxedo"
+      ],
+      [
+       "连体裤",
+       "romper"
+      ],
+      [
+       "连体衣",
+       "jumpsuit"
+      ],
+      [
+       "背带裙",
+       "suspender skirt"
+      ],
+      [
+       "背带短裤",
+       "suspender shorts"
+      ],
+      [
+       "赛车女郎",
+       "race queen"
+      ],
+      [
+       "魔法少女",
+       "magical girl"
+      ],
+      [
+       "女教师",
+       "teacher"
+      ],
+      [
+       "军装",
+       "military uniform"
+      ],
+      [
+       "赛博朋克装",
+       "cyberpunk"
+      ],
+      [
+       "芭蕾舞裙",
+       "ballerina"
+      ],
+      [
+       "修女服",
+       "nun"
+      ],
+      [
+       "女骑士",
+       "knight"
+      ],
+      [
+       "运动服",
+       "track suit"
+      ],
+      [
+       "女忍者",
+       "ninja"
+      ],
+      [
+       "女巫装",
+       "witch"
+      ],
+      [
+       "吸血鬼装",
+       "vampire"
+      ],
+      [
+       "女服务员",
+       "waitress"
+      ],
+      [
+       "酒保装",
+       "bartender"
+      ],
+      [
+       "体操紧身衣",
+       "leotard"
+      ]
+     ]
+    },
+    {
+     "key": "cloth_color",
+     "lab": "服装颜色",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "黑色",
+       "black"
+      ],
+      [
+       "白色",
+       "white"
+      ],
+      [
+       "灰色",
+       "grey"
+      ],
+      [
+       "红色",
+       "red"
+      ],
+      [
+       "橙色",
+       "orange"
+      ],
+      [
+       "黄色",
+       "yellow"
+      ],
+      [
+       "绿色",
+       "green"
+      ],
+      [
+       "青色",
+       "aqua"
+      ],
+      [
+       "蓝色",
+       "blue"
+      ],
+      [
+       "紫色",
+       "purple"
+      ],
+      [
+       "粉色",
+       "pink"
+      ],
+      [
+       "棕色",
+       "brown"
+      ]
+     ]
+    },
+    {
+     "key": "cloth_mat",
+     "lab": "材质",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "蕾丝",
+       "lace"
+      ],
+      [
+       "雪纺",
+       "chiffon"
+      ],
+      [
+       "丝绸",
+       "silk"
+      ],
+      [
+       "天鹅绒",
+       "velvet"
+      ],
+      [
+       "皮革",
+       "leather"
+      ],
+      [
+       "牛仔布",
+       "denim"
+      ],
+      [
+       "针织",
+       "knitwear"
+      ],
+      [
+       "毛绒滚边",
+       "fur trim"
+      ],
+      [
+       "乳胶",
+       "latex"
+      ],
+      [
+       "荷叶边",
+       "frills"
+      ]
+     ]
+    },
+    {
+     "key": "cloth_state_sfw",
+     "lab": "穿着方式",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "外套披肩",
+       "coat on shoulders"
+      ],
+      [
+       "一字肩",
+       "off shoulder"
+      ],
+      [
+       "露背",
+       "backless"
+      ],
+      [
+       "领口解开",
+       "unbuttoned collar"
+      ],
+      [
+       "下摆塞入",
+       "tucked in"
+      ],
+      [
+       "宽松版型",
+       "oversized clothes"
+      ],
+      [
+       "高腰",
+       "high-waist skirt"
+      ],
+      [
+       "露腰",
+       "midriff peek"
+      ],
+      [
+       "挽起袖子",
+       "sleeves rolled up"
+      ],
+      [
+       "破洞衣物",
+       "torn clothes"
+      ],
+      [
+       "湿透衣物",
+       "wet clothes"
+      ],
+      [
+       "外套敞开",
+       "open jacket"
+      ],
+      [
+       "腰间系衣",
+       "jacket around waist"
+      ]
+     ]
+    },
+    {
+     "key": "socks",
+     "lab": "腿上",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "黑色过膝袜",
+       "black thighhighs"
+      ],
+      [
+       "白色过膝袜",
+       "white thighhighs"
+      ],
+      [
+       "连裤袜",
+       "pantyhose"
+      ],
+      [
+       "短袜",
+       "ankle socks"
+      ],
+      [
+       "赤足",
+       "barefoot"
+      ],
+      [
+       "吊袜带",
+       "garter straps"
+      ],
+      [
+       "渔网袜",
+       "fishnet thighhighs"
+      ],
+      [
+       "黑色连裤袜",
+       "black pantyhose"
+      ],
+      [
+       "白色连裤袜",
+       "white pantyhose"
+      ],
+      [
+       "渔网连裤袜",
+       "fishnet pantyhose"
+      ],
+      [
+       "菱格纹连裤袜",
+       "argyle pantyhose"
+      ],
+      [
+       "抽丝连裤袜",
+       "laddered pantyhose"
+      ],
+      [
+       "条纹过膝袜",
+       "striped thighhighs"
+      ],
+      [
+       "及膝袜",
+       "kneehighs"
+      ],
+      [
+       "单腿过膝袜",
+       "single thighhigh"
+      ],
+      [
+       "堆堆袜",
+       "loose socks"
+      ],
+      [
+       "过膝袜",
+       "thighhighs"
+      ],
+      [
+       "吊带袜",
+       "thighhighs, garter straps"
+      ],
+      [
+       "蕾丝吊带袜",
+       "lace-trimmed thighhighs, garter straps"
+      ],
+      [
+       "网眼吊带袜",
+       "fishnet thighhighs, garter straps"
+      ],
+      [
+       "紫色吊带袜",
+       "purple thighhighs, garter straps"
+      ],
+      [
+       "红色吊带袜",
+       "red thighhighs, garter straps"
+      ],
+      [
+       "黑色吊带袜",
+       "black thighhighs, garter straps"
+      ],
+      [
+       "白色吊带袜",
+       "white thighhighs, garter straps"
+      ],
+      [
+       "蕾丝过膝袜",
+       "lace-trimmed thighhighs"
+      ],
+      [
+       "袜套",
+       "leg warmers"
+      ],
+      [
+       "足袋",
+       "tabi"
+      ],
+      [
+       "花边短袜",
+       "frilled socks"
+      ],
+      [
+       "白色短袜",
+       "white socks"
+      ],
+      [
+       "条纹及膝袜",
+       "striped socks"
+      ],
+      [
+       "露趾袜",
+       "toeless legwear"
+      ],
+      [
+       "蕾丝连裤袜",
+       "lace pantyhose"
+      ],
+      [
+       "开裆连裤袜",
+       "crotchless pantyhose"
+      ],
+      [
+       "破洞连裤袜",
+       "torn pantyhose"
+      ],
+      [
+       "破洞过膝袜",
+       "torn thighhighs"
+      ],
+      [
+       "连身网衣",
+       "bodystocking"
+      ],
+      [
+       "渔网连身衣",
+       "fishnet bodystocking"
+      ],
+      [
+       "黑色连身网衣",
+       "black bodystocking"
+      ],
+      [
+       "吊带连裤袜",
+       "pantyhose, garter belt"
+      ],
+      [
+       "吊袜带连裤袜",
+       "pantyhose, garter straps"
+      ],
+      [
+       "乳胶过膝袜",
+       "latex thighhighs"
+      ],
+      [
+       "渐变过膝袜",
+       "gradient thighhighs"
+      ],
+      [
+       "珠光连裤袜",
+       "shiny pantyhose"
+      ],
+      [
+       "罗纹袜",
+       "ribbed socks"
+      ],
+      [
+       "渔网短袜",
+       "fishnet socks"
+      ],
+      [
+       "不对称腿装",
+       "asymmetrical legwear"
+      ],
+      [
+       "不配对腿装",
+       "mismatched legwear"
+      ],
+      [
+       "蝴蝶结腿饰",
+       "bow legwear"
+      ],
+      [
+       "缎带腿饰",
+       "ribbon legwear"
+      ],
+      [
+       "袜上穿袜",
+       "socks over pantyhose"
+      ],
+      [
+       "船袜",
+       "no-show socks"
+      ],
+      [
+       "蕾丝短袜",
+       "lace-trimmed socks"
+      ],
+      [
+       "过膝袜外穿连裤袜",
+       "thighhighs over pantyhose"
+      ],
+      [
+       "多层腿装",
+       "layered legwear"
+      ],
+      [
+       "紫色过膝袜",
+       "purple thighhighs"
+      ],
+      [
+       "红色过膝袜",
+       "red thighhighs"
+      ],
+      [
+       "蓝色过膝袜",
+       "blue thighhighs"
+      ],
+      [
+       "粉色过膝袜",
+       "pink thighhighs"
+      ],
+      [
+       "紫色连裤袜",
+       "purple pantyhose"
+      ],
+      [
+       "红色连裤袜",
+       "red pantyhose"
+      ],
+      [
+       "蓝色连裤袜",
+       "blue pantyhose"
+      ],
+      [
+       "粉色连裤袜",
+       "pink pantyhose"
+      ],
+      [
+       "紫色短袜",
+       "purple socks"
+      ],
+      [
+       "红色短袜",
+       "red socks"
+      ],
+      [
+       "蓝色短袜",
+       "blue socks"
+      ],
+      [
+       "粉色短袜",
+       "pink socks"
+      ],
+      [
+       "黑色亮丝星点袜",
+       "black glittery pantyhose"
+      ],
+      [
+       "白色亮丝星点袜",
+       "white glittery pantyhose"
+      ],
+      [
+       "淡粉亮丝星点袜",
+       "pale pink glittery pantyhose"
+      ],
+      [
+       "淡紫亮丝星点袜",
+       "lavender glittery pantyhose"
+      ],
+      [
+       "淡酒红亮丝星点袜",
+       "pale burgundy glittery pantyhose"
+      ],
+      [
+       "黑色亮丝星点过膝袜",
+       "black glittery thighhighs"
+      ],
+      [
+       "白色亮丝星点过膝袜",
+       "white glittery thighhighs"
+      ],
+      [
+       "淡粉亮丝星点过膝袜",
+       "pale pink glittery thighhighs"
+      ],
+      [
+       "淡紫亮丝星点过膝袜",
+       "lavender glittery thighhighs"
+      ],
+      [
+       "淡酒红亮丝星点过膝袜",
+       "pale burgundy glittery thighhighs"
+      ],
+      [
+       "黑色亮丝星点吊带袜",
+       "black glittery thighhighs, garter straps"
+      ],
+      [
+       "白色亮丝星点吊带袜",
+       "white glittery thighhighs, garter straps"
+      ],
+      [
+       "淡粉亮丝星点吊带袜",
+       "pale pink glittery thighhighs, garter straps"
+      ],
+      [
+       "淡紫亮丝星点吊带袜",
+       "lavender glittery thighhighs, garter straps"
+      ],
+      [
+       "淡酒红亮丝星点吊带袜",
+       "pale burgundy glittery thighhighs, garter straps"
+      ]
+     ]
+    },
+    {
+     "key": "sock_color",
+     "lab": "袜子颜色",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "黑色",
+       "black"
+      ],
+      [
+       "白色",
+       "white"
+      ],
+      [
+       "灰色",
+       "grey"
+      ],
+      [
+       "红色",
+       "red"
+      ],
+      [
+       "橙色",
+       "orange"
+      ],
+      [
+       "黄色",
+       "yellow"
+      ],
+      [
+       "绿色",
+       "green"
+      ],
+      [
+       "青色",
+       "aqua"
+      ],
+      [
+       "蓝色",
+       "blue"
+      ],
+      [
+       "紫色",
+       "purple"
+      ],
+      [
+       "粉色",
+       "pink"
+      ],
+      [
+       "棕色",
+       "brown"
+      ]
+     ]
+    },
+    {
+     "key": "shoes",
+     "lab": "鞋子",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "高跟鞋",
+       "high heels"
+      ],
+      [
+       "玛丽珍鞋",
+       "mary janes"
+      ],
+      [
+       "运动鞋",
+       "sneakers"
+      ],
+      [
+       "靴子",
+       "boots"
+      ],
+      [
+       "过膝长靴",
+       "thigh boots"
+      ],
+      [
+       "赤足",
+       "bare feet"
+      ],
+      [
+       "乐福鞋",
+       "loafers"
+      ],
+      [
+       "凉鞋",
+       "sandals"
+      ],
+      [
+       "短靴",
+       "ankle boots"
+      ],
+      [
+       "及膝长靴",
+       "knee boots"
+      ],
+      [
+       "高跟长靴",
+       "high heel boots"
+      ],
+      [
+       "木屐",
+       "geta"
+      ],
+      [
+       "室内鞋",
+       "uwabaki"
+      ],
+      [
+       "拖鞋",
+       "slippers"
+      ]
+     ]
+    },
+    {
+     "key": "accessory",
+     "lab": "配饰",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "项链",
+       "necklace"
+      ],
+      [
+       "颈圈",
+       "choker"
+      ],
+      [
+       "耳环",
+       "earrings"
+      ],
+      [
+       "手镯",
+       "bracelet"
+      ],
+      [
+       "戒指",
+       "ring"
+      ],
+      [
+       "手表",
+       "wristwatch"
+      ],
+      [
+       "眼镜",
+       "glasses"
+      ],
+      [
+       "墨镜",
+       "sunglasses"
+      ],
+      [
+       "贝雷帽",
+       "beret"
+      ],
+      [
+       "草帽",
+       "straw hat"
+      ],
+      [
+       "丝巾",
+       "scarf"
+      ],
+      [
+       "手提包",
+       "handbag"
+      ],
+      [
+       "腿环",
+       "thigh strap"
+      ]
+     ]
+    },
+    {
+     "key": "top",
+     "lab": "上装与外套",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "T恤",
+       "t-shirt"
+      ],
+      [
+       "衬衫",
+       "shirt"
+      ],
+      [
+       "女式衬衫",
+       "blouse"
+      ],
+      [
+       "水手领衬衫",
+       "sailor shirt"
+      ],
+      [
+       "Polo衫",
+       "polo shirt"
+      ],
+      [
+       "毛衣",
+       "sweater"
+      ],
+      [
+       "高领毛衣",
+       "turtleneck"
+      ],
+      [
+       "露肩毛衣",
+       "off-shoulder sweater"
+      ],
+      [
+       "开衫",
+       "cardigan"
+      ],
+      [
+       "针织马甲",
+       "sweater vest"
+      ],
+      [
+       "马甲背心",
+       "vest"
+      ],
+      [
+       "连帽卫衣",
+       "hoodie"
+      ],
+      [
+       "露脐上衣",
+       "crop top"
+      ],
+      [
+       "背心",
+       "tank top"
+      ],
+      [
+       "细肩带背心",
+       "camisole"
+      ],
+      [
+       "抹胸",
+       "tube top"
+      ],
+      [
+       "无袖上衣",
+       "sleeveless shirt"
+      ],
+      [
+       "运动内衣",
+       "sports bra"
+      ],
+      [
+       "泡泡袖上衣",
+       "puffy sleeves"
+      ],
+      [
+       "皮夹克",
+       "leather jacket"
+      ],
+      [
+       "牛仔外套",
+       "denim jacket"
+      ],
+      [
+       "飞行员夹克",
+       "bomber jacket"
+      ],
+      [
+       "短夹克",
+       "jacket"
+      ],
+      [
+       "风衣",
+       "trench coat"
+      ],
+      [
+       "大衣",
+       "coat"
+      ],
+      [
+       "西装外套",
+       "blazer"
+      ],
+      [
+       "皮草大衣",
+       "fur coat"
+      ],
+      [
+       "皮草滚边大衣",
+       "fur-trimmed coat"
+      ],
+      [
+       "披风",
+       "cape"
+      ],
+      [
+       "斗篷",
+       "poncho"
+      ],
+      [
+       "荷叶边衬衫",
+       "frilled shirt"
+      ],
+      [
+       "露肩衬衫",
+       "off-shoulder shirt"
+      ],
+      [
+       "短款卫衣",
+       "cropped hoodie"
+      ],
+      [
+       "羽绒服",
+       "down jacket"
+      ],
+      [
+       "军装外套",
+       "military jacket"
+      ],
+      [
+       "挂脖上衣",
+       "halterneck"
+      ],
+      [
+       "浴袍",
+       "bathrobe"
+      ],
+      [
+       "机能风外套",
+       "techwear"
+      ],
+      [
+       "毛领外套",
+       "fur collar"
+      ],
+      [
+       "披肩",
+       "capelet"
+      ]
+     ]
+    },
+    {
+     "key": "bottom",
+     "lab": "下装",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "牛仔裤",
+       "jeans"
+      ],
+      [
+       "短裤",
+       "shorts"
+      ],
+      [
+       "热裤",
+       "short shorts"
+      ],
+      [
+       "牛仔短裤",
+       "denim shorts"
+      ],
+      [
+       "运动短裤",
+       "gym shorts"
+      ],
+      [
+       "高腰短裤",
+       "high-waist shorts"
+      ],
+      [
+       "骑行短裤",
+       "bike shorts"
+      ],
+      [
+       "百褶裙",
+       "pleated skirt"
+      ],
+      [
+       "迷你裙",
+       "miniskirt"
+      ],
+      [
+       "半身裙",
+       "skirt"
+      ],
+      [
+       "铅笔裙",
+       "pencil skirt"
+      ],
+      [
+       "长裙",
+       "long skirt"
+      ],
+      [
+       "牛仔裙",
+       "denim skirt"
+      ],
+      [
+       "工装裤",
+       "cargo pants"
+      ],
+      [
+       "运动长裤",
+       "track pants"
+      ],
+      [
+       "高腰长裤",
+       "high-waist pants"
+      ],
+      [
+       "瑜伽裤",
+       "yoga pants"
+      ],
+      [
+       "紧身打底裤",
+       "leggings"
+      ],
+      [
+       "背带裤",
+       "overalls"
+      ],
+      [
+       "灯笼裤",
+       "bloomers"
+      ],
+      [
+       "哈伦裤",
+       "harem pants"
+      ],
+      [
+       "七分裤",
+       "capri pants"
+      ],
+      [
+       "纱笼",
+       "sarong"
+      ],
+      [
+       "束腰",
+       "corset"
+      ],
+      [
+       "紧身胸衣",
+       "bustier"
+      ],
+      [
+       "丁字裤",
+       "thong"
+      ],
+      [
+       "细带内裤",
+       "g-string"
+      ],
+      [
+       "泳裤",
+       "swim briefs"
+      ],
+      [
+       "腰间系衣",
+       "sweater around waist"
+      ],
+      [
+       "A字裙",
+       "a-line skirt"
+      ],
+      [
+       "网球裙",
+       "tennis skirt"
+      ],
+      [
+       "工装裙",
+       "cargo skirt"
+      ],
+      [
+       "蛋糕裙",
+       "frilled skirt"
+      ],
+      [
+       "阔腿裤",
+       "wide-leg pants"
+      ],
+      [
+       "骑马裤",
+       "jodhpurs"
+      ],
+      [
+       "短裙裤",
+       "skort"
+      ],
+      [
+       "皮裤",
+       "leather pants"
+      ],
+      [
+       "西装裤",
+       "suit pants"
+      ],
+      [
+       "高腰裙",
+       "high-waist skirt"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pose_sfw",
+   "title": "⑦ 姿势与动作（SFW）",
+   "open": false,
+   "cls": "",
+   "fields": [
+    {
+     "key": "pose_base",
+     "lab": "基础姿势",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "站立",
+       "standing"
+      ],
+      [
+       "端坐",
+       "sitting"
+      ],
+      [
+       "正座",
+       "seiza"
+      ],
+      [
+       "跪姿",
+       "kneeling"
+      ],
+      [
+       "趴卧",
+       "lying"
+      ],
+      [
+       "侧躺",
+       "on side"
+      ],
+      [
+       "仰躺",
+       "on back"
+      ],
+      [
+       "俯卧",
+       "on stomach"
+      ],
+      [
+       "四肢着地",
+       "all fours"
+      ],
+      [
+       "蹲姿",
+       "squatting"
+      ],
+      [
+       "双腿交叠",
+       "crossed legs"
+      ],
+      [
+       "盘腿坐",
+       "indian style"
+      ],
+      [
+       "W坐",
+       "wariza"
+      ],
+      [
+       "单膝跪地",
+       "on one knee"
+      ],
+      [
+       "屈膝",
+       "knees up"
+      ],
+      [
+       "蜷缩",
+       "fetal position"
+      ],
+      [
+       "靠墙而立",
+       "against wall"
+      ],
+      [
+       "对立式站姿",
+       "contrapposto"
+      ],
+      [
+       "双腿分开",
+       "legs apart"
+      ],
+      [
+       "双腿并拢",
+       "legs together"
+      ],
+      [
+       "脚踝交叉",
+       "crossed ankles"
+      ],
+      [
+       "单腿站立",
+       "standing on one leg"
+      ],
+      [
+       "双手扶膝",
+       "hands on own knees"
+      ],
+      [
+       "垂手而立",
+       "arms at sides"
+      ],
+      [
+       "托腮",
+       "head rest"
+      ],
+      [
+       "卧于床上",
+       "on bed"
+      ],
+      [
+       "席地而坐",
+       "on floor"
+      ],
+      [
+       "站立一字马",
+       "standing split"
+      ]
+     ]
+    },
+    {
+     "key": "arms_hands",
+     "lab": "手部动作",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "叉腰",
+       "hand on own hip"
+      ],
+      [
+       "双臂交叉",
+       "crossed arms"
+      ],
+      [
+       "双手背后",
+       "arms behind back"
+      ],
+      [
+       "双手举高",
+       "arms up"
+      ],
+      [
+       "举手",
+       "hand up"
+      ],
+      [
+       "双手举起",
+       "hands up"
+      ],
+      [
+       "比耶",
+       "v"
+      ],
+      [
+       "摸脸颊",
+       "hand on own cheek"
+      ],
+      [
+       "捂嘴",
+       "covering own mouth"
+      ],
+      [
+       "十指相扣",
+       "own hands clasped"
+      ],
+      [
+       "指尖触唇",
+       "finger to mouth"
+      ],
+      [
+       "拨弄头发",
+       "hand in own hair"
+      ],
+      [
+       "撩发",
+       "holding own hair"
+      ],
+      [
+       "抓住裙摆",
+       "holding own skirt"
+      ],
+      [
+       "握拳",
+       "clenched hands"
+      ],
+      [
+       "挥手",
+       "waving"
+      ],
+      [
+       "手插口袋",
+       "hands in pockets"
+      ],
+      [
+       "敬礼",
+       "salute"
+      ],
+      [
+       "指",
+       "pointing"
+      ],
+      [
+       "十指交叉托腮",
+       "steepled fingers"
+      ]
+     ]
+    },
+    {
+     "key": "action",
+     "lab": "动态动作",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "行走",
+       "walking"
+      ],
+      [
+       "奔跑",
+       "running"
+      ],
+      [
+       "跳跃",
+       "jumping"
+      ],
+      [
+       "转身回眸",
+       "looking back"
+      ],
+      [
+       "打哈欠",
+       "yawning"
+      ],
+      [
+       "旋转",
+       "spinning"
+      ],
+      [
+       "起舞",
+       "dancing"
+      ],
+      [
+       "进食",
+       "eating"
+      ],
+      [
+       "睡眠",
+       "sleeping"
+      ],
+      [
+       "飘浮",
+       "floating"
+      ],
+      [
+       "坠落",
+       "falling"
+      ],
+      [
+       "饮水",
+       "drinking"
+      ],
+      [
+       "阅读",
+       "reading"
+      ],
+      [
+       "游泳",
+       "swimming"
+      ],
+      [
+       "鞠躬",
+       "bowing"
+      ]
+     ]
+    },
+    {
+     "key": "pose_risque",
+     "lab": "暗示姿势",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "弯腰撅臀",
+       "bent over"
+      ],
+      [
+       "前倾",
+       "leaning forward"
+      ],
+      [
+       "弓背",
+       "arched back"
+      ],
+      [
+       "后仰",
+       "leaning back"
+      ],
+      [
+       "抬腿",
+       "leg up"
+      ],
+      [
+       "手抚胸前",
+       "hand on own chest"
+      ],
+      [
+       "手臂夹胸",
+       "arm between breasts"
+      ],
+      [
+       "双手抚腿",
+       "hands on own thighs"
+      ],
+      [
+       "伸展",
+       "stretching"
+      ],
+      [
+       "踮脚",
+       "tiptoes"
+      ],
+      [
+       "上下同框",
+       "top-down bottom-up"
+      ],
+      [
+       "抱膝蜷坐",
+       "hugging own legs"
+      ],
+      [
+       "甩发",
+       "hair flip"
+      ],
+      [
+       "拉扯衣物",
+       "clothes pull"
+      ],
+      [
+       "撩起裙摆",
+       "skirt lift"
+      ],
+      [
+       "撩起上衣",
+       "shirt lift"
+      ],
+      [
+       "撩起连衣裙",
+       "dress lift"
+      ],
+      [
+       "拉拽裙摆",
+       "skirt pull"
+      ],
+      [
+       "拉扯内裤",
+       "panty pull"
+      ],
+      [
+       "拉扯比基尼",
+       "bikini pull"
+      ],
+      [
+       "宽衣",
+       "undressing"
+      ],
+      [
+       "事后余韵",
+       "after sex"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "camera",
+   "title": "⑧ 镜头",
+   "open": false,
+   "cls": "",
+   "fields": [
+    {
+     "key": "shot_size",
+     "lab": "景别",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "大特写",
+       "extreme close-up"
+      ],
+      [
+       "面部特写",
+       "close-up"
+      ],
+      [
+       "上半身",
+       "upper body"
+      ],
+      [
+       "七分身",
+       "cowboy shot"
+      ],
+      [
+       "全身",
+       "full body"
+      ],
+      [
+       "远景",
+       "wide shot"
+      ]
+     ]
+    },
+    {
+     "key": "viewpoint",
+     "lab": "视角",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "低角度仰拍",
+       "from below"
+      ],
+      [
+       "高角度俯拍",
+       "from above"
+      ],
+      [
+       "正侧面",
+       "from side"
+      ],
+      [
+       "背后",
+       "from behind"
+      ],
+      [
+       "斜侧45度",
+       "from side, from behind"
+      ],
+      [
+       "倾斜构图",
+       "dutch angle"
+      ],
+      [
+       "鸟瞰",
+       "bird's eye view"
+      ],
+      [
+       "虫视仰角",
+       "worm's eye view"
+      ],
+      [
+       "过肩窥视",
+       "over-the-shoulder shot"
+      ],
+      [
+       "主观视角",
+       "first-person view, pov"
+      ],
+      [
+       "镜面反射",
+       "mirror, reflection"
+      ],
+      [
+       "框中构图",
+       "framed by foreground"
+      ],
+      [
+       "鱼眼镜头",
+       "fisheye"
+      ],
+      [
+       "透视纵深",
+       "perspective"
+      ],
+      [
+       "全景广角",
+       "panorama"
+      ],
+      [
+       "第一人称手部",
+       "pov hands"
+      ],
+      [
+       "第一人称胸视角",
+       "pov breasts"
+      ],
+      [
+       "第一人称腿视角",
+       "pov legs"
+      ],
+      [
+       "第一人称下体视角",
+       "pov crotch"
+      ],
+      [
+       "第一人称口交",
+       "pov, fellatio"
+      ],
+      [
+       "第一人称性交",
+       "pov, sexual intercourse"
+      ],
+      [
+       "第一人称骑乘",
+       "pov, cowgirl position"
+      ]
+     ]
+    },
+    {
+     "key": "dof",
+     "lab": "景深",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "浅景深虚化",
+       "depth of field, blurry background"
+      ],
+      [
+       "全清晰",
+       "deep focus"
+      ],
+      [
+       "焦点在脸",
+       "focus on face"
+      ]
+     ]
+    },
+    {
+     "key": "device",
+     "lab": "设备质感",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "手机自拍",
+       "selfie"
+      ],
+      [
+       "胶片感",
+       "film grain"
+      ],
+      [
+       "拍立得",
+       "polaroid frame"
+      ],
+      [
+       "监控画面",
+       "security camera footage"
+      ],
+      [
+       "网络摄像头",
+       "webcam footage"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "scene",
+   "title": "⑨ 场景与环境",
+   "open": false,
+   "cls": "",
+   "fields": [
+    {
+     "key": "place",
+     "lab": "地点",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "卧室",
+       "bedroom"
+      ],
+      [
+       "床上",
+       "on bed"
+      ],
+      [
+       "酒店房间",
+       "hotel room"
+      ],
+      [
+       "浴室",
+       "bathroom"
+      ],
+      [
+       "浴缸里",
+       "in bathtub"
+      ],
+      [
+       "淋浴下",
+       "showering"
+      ],
+      [
+       "教室",
+       "classroom"
+      ],
+      [
+       "图书馆",
+       "library"
+      ],
+      [
+       "学校走廊",
+       "hallway"
+      ],
+      [
+       "天台",
+       "rooftop"
+      ],
+      [
+       "办公室",
+       "office"
+      ],
+      [
+       "咖啡厅",
+       "cafe"
+      ],
+      [
+       "小巷",
+       "alley"
+      ],
+      [
+       "街头",
+       "street"
+      ],
+      [
+       "海滩",
+       "beach"
+      ],
+      [
+       "温泉",
+       "onsen"
+      ],
+      [
+       "泳池边",
+       "poolside"
+      ],
+      [
+       "神社",
+       "shrine"
+      ],
+      [
+       "电梯里",
+       "elevator"
+      ],
+      [
+       "电车内",
+       "train interior"
+      ],
+      [
+       "车后座",
+       "car interior"
+      ],
+      [
+       "森林",
+       "forest"
+      ],
+      [
+       "花田",
+       "flower field"
+      ],
+      [
+       "更衣室",
+       "changing room"
+      ],
+      [
+       "试衣间",
+       "fitting room"
+      ],
+      [
+       "便利店",
+       "convenience store"
+      ],
+      [
+       "公园",
+       "park"
+      ],
+      [
+       "游乐园",
+       "amusement park"
+      ],
+      [
+       "电影院",
+       "movie theater"
+      ],
+      [
+       "楼梯间",
+       "stairwell"
+      ],
+      [
+       "阳台",
+       "balcony"
+      ],
+      [
+       "厨房",
+       "kitchen"
+      ],
+      [
+       "酒吧",
+       "bar (place)"
+      ],
+      [
+       "废墟",
+       "ruins"
+      ],
+      [
+       "桥",
+       "bridge"
+      ],
+      [
+       "瀑布",
+       "waterfall"
+      ],
+      [
+       "沙漠",
+       "desert"
+      ],
+      [
+       "教堂",
+       "church"
+      ],
+      [
+       "洞穴",
+       "cave"
+      ],
+      [
+       "车站",
+       "train station"
+      ],
+      [
+       "花园",
+       "garden"
+      ],
+      [
+       "山间",
+       "mountain"
+      ],
+      [
+       "水下",
+       "underwater"
+      ],
+      [
+       "公路",
+       "road"
+      ],
+      [
+       "原野",
+       "field"
+      ],
+      [
+       "河边",
+       "river"
+      ],
+      [
+       "城堡",
+       "castle"
+      ],
+      [
+       "舞台",
+       "stage"
+      ],
+      [
+       "骑自行车",
+       "bicycle"
+      ],
+      [
+       "湖畔",
+       "lake"
+      ],
+      [
+       "山丘",
+       "hill"
+      ],
+      [
+       "斑马线",
+       "crosswalk"
+      ],
+      [
+       "演唱会",
+       "concert"
+      ],
+      [
+       "摩托车",
+       "on motorcycle"
+      ],
+      [
+       "摩天轮",
+       "ferris wheel"
+      ],
+      [
+       "体育馆",
+       "stadium"
+      ],
+      [
+       "墓地",
+       "graveyard"
+      ],
+      [
+       "水族馆",
+       "aquarium"
+      ],
+      [
+       "公寓",
+       "apartment"
+      ],
+      [
+       "灯塔",
+       "lighthouse"
+      ],
+      [
+       "公交车站",
+       "bus stop"
+      ]
+     ]
+    },
+    {
+     "key": "prop",
+     "lab": "环境元素",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "床单",
+       "bed sheet"
+      ],
+      [
+       "枕头",
+       "pillow"
+      ],
+      [
+       "窗帘",
+       "curtains"
+      ],
+      [
+       "窗户",
+       "window"
+      ],
+      [
+       "落地窗",
+       "large window"
+      ],
+      [
+       "镜子",
+       "mirror"
+      ],
+      [
+       "书桌",
+       "desk"
+      ],
+      [
+       "沙发",
+       "couch"
+      ],
+      [
+       "书架",
+       "bookshelf"
+      ],
+      [
+       "台灯",
+       "desk lamp"
+      ],
+      [
+       "雨伞",
+       "umbrella"
+      ],
+      [
+       "椅子",
+       "chair"
+      ],
+      [
+       "秋千",
+       "swing"
+      ],
+      [
+       "自动贩卖机",
+       "vending machine"
+      ],
+      [
+       "栏杆",
+       "railing"
+      ],
+      [
+       "桌子",
+       "table"
+      ],
+      [
+       "书本",
+       "book"
+      ],
+      [
+       "手机",
+       "phone"
+      ],
+      [
+       "毛巾",
+       "towel"
+      ],
+      [
+       "蛋糕",
+       "cake"
+      ],
+      [
+       "相机",
+       "camera"
+      ],
+      [
+       "折扇",
+       "folding fan"
+      ],
+      [
+       "蜡烛",
+       "candle"
+      ],
+      [
+       "酒杯",
+       "wine glass"
+      ],
+      [
+       "遮阳伞",
+       "parasol"
+      ],
+      [
+       "柱子",
+       "pillar"
+      ],
+      [
+       "花瓶",
+       "vase"
+      ],
+      [
+       "甜品",
+       "dessert"
+      ],
+      [
+       "吧台",
+       "counter"
+      ],
+      [
+       "吊灯",
+       "chandelier"
+      ],
+      [
+       "杯子",
+       "cup"
+      ],
+      [
+       "树木",
+       "tree"
+      ],
+      [
+       "盆栽",
+       "potted plant"
+      ],
+      [
+       "楼梯",
+       "stairs"
+      ],
+      [
+       "门",
+       "door"
+      ],
+      [
+       "气球",
+       "balloon"
+      ],
+      [
+       "毛毯",
+       "blanket"
+      ],
+      [
+       "雕像",
+       "statue"
+      ],
+      [
+       "灯笼",
+       "lantern"
+      ],
+      [
+       "冰淇淋",
+       "ice cream"
+      ],
+      [
+       "靠垫",
+       "cushion"
+      ]
+     ]
+    },
+    {
+     "key": "weather",
+     "lab": "天气氛围",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "晴空",
+       "clear sky"
+      ],
+      [
+       "雨天",
+       "rain"
+      ],
+      [
+       "雷雨",
+       "thunderstorm"
+      ],
+      [
+       "雪景",
+       "snow"
+      ],
+      [
+       "夜晚",
+       "night"
+      ],
+      [
+       "黄昏",
+       "sunset"
+      ],
+      [
+       "樱花飘落",
+       "cherry blossoms"
+      ],
+      [
+       "落叶",
+       "falling leaves"
+      ],
+      [
+       "蒸汽氤氲",
+       "steam"
+      ],
+      [
+       "水珠",
+       "water drop"
+      ],
+      [
+       "浓雾",
+       "fog"
+      ],
+      [
+       "星空",
+       "starry sky"
+      ],
+      [
+       "大风",
+       "wind"
+      ],
+      [
+       "烟雾",
+       "smoke"
+      ],
+      [
+       "日光",
+       "sunbeam"
+      ],
+      [
+       "彩虹",
+       "rainbow"
+      ],
+      [
+       "闪电",
+       "lightning"
+      ],
+      [
+       "暮色",
+       "twilight"
+      ],
+      [
+       "水洼",
+       "puddle"
+      ],
+      [
+       "阴天",
+       "overcast"
+      ],
+      [
+       "火星飞溅",
+       "sparks"
+      ]
+     ]
+    },
+    {
+     "key": "comp",
+     "lab": "构图",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "居中对称",
+       "symmetry"
+      ],
+      [
+       "大面积留白",
+       "negative space"
+      ],
+      [
+       "竖构图",
+       "portrait"
+      ],
+      [
+       "横构图",
+       "landscape"
+      ],
+      [
+       "散景",
+       "bokeh"
+      ],
+      [
+       "暗角",
+       "vignetting"
+      ],
+      [
+       "侧脸轮廓",
+       "profile"
+      ]
+     ]
+    },
+    {
+     "key": "texture_fx",
+     "lab": "质感特效",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "柔焦",
+       "soft focus"
+      ],
+      [
+       "动态模糊",
+       "motion blur"
+      ],
+      [
+       "单色",
+       "monochrome"
+      ],
+      [
+       "灰阶",
+       "greyscale"
+      ],
+      [
+       "模糊",
+       "blurry"
+      ],
+      [
+       "素描",
+       "sketch"
+      ],
+      [
+       "线稿",
+       "lineart"
+      ],
+      [
+       "像素风",
+       "pixel art"
+      ],
+      [
+       "复古棕褐",
+       "sepia"
+      ],
+      [
+       "色差",
+       "chromatic aberration"
+      ],
+      [
+       "剪影",
+       "silhouette"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lighting",
+   "title": "⑩ 光影氛围",
+   "open": false,
+   "cls": "",
+   "fields": [
+    {
+     "key": "light_fx",
+     "lab": "光效氛围",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "轮廓光",
+       "rim lighting"
+      ],
+      [
+       "逆光",
+       "backlighting"
+      ],
+      [
+       "柔光漫射",
+       "soft lighting"
+      ],
+      [
+       "影棚布光",
+       "studio lighting"
+      ],
+      [
+       "暖黄灯光",
+       "warm lighting"
+      ],
+      [
+       "冷色月光",
+       "moonlight"
+      ],
+      [
+       "清晨光",
+       "morning light"
+      ],
+      [
+       "烛光摇曳",
+       "candlelight"
+      ],
+      [
+       "霓虹夜色",
+       "neon lights"
+      ],
+      [
+       "体积光",
+       "god rays"
+      ],
+      [
+       "水面焦散",
+       "caustics"
+      ],
+      [
+       "昏暗背景",
+       "dark background"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cloth_nsfw",
+   "title": "🔞 服装状态（NSFW）",
+   "open": false,
+   "cls": "nsfw-only",
+   "fields": [
+    {
+     "key": "n_state",
+     "lab": "脱卸程度",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "全裸",
+       "completely nude"
+      ],
+      [
+       "仅上裸",
+       "topless"
+      ],
+      [
+       "仅下裸",
+       "bottomless"
+      ],
+      [
+       "透视装",
+       "see-through"
+      ],
+      [
+       "掀起上衣",
+       "shirt lift"
+      ],
+      [
+       "掀起裙子",
+       "dress lift"
+      ],
+      [
+       "拉开衣服",
+       "clothes pull"
+      ],
+      [
+       "衬衫全开",
+       "open shirt"
+      ],
+      [
+       "解扣敞开",
+       "unbuttoned shirt"
+      ],
+      [
+       "拉开胸罩",
+       "bra pull"
+      ],
+      [
+       "自行拉拽",
+       "pulled by self"
+      ],
+      [
+       "半褪衣物",
+       "partially undressed"
+      ],
+      [
+       "正在脱衣",
+       "undressing"
+      ],
+      [
+       "衣物破损",
+       "torn clothes"
+      ],
+      [
+       "湿透贴身",
+       "wet clothes"
+      ],
+      [
+       "仅剩配饰",
+       "nude with accessories only"
+      ],
+      [
+       "裙下真空",
+       "no panties under skirt"
+      ]
+     ]
+    },
+    {
+     "key": "n_exposure",
+     "lab": "暴露重点",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "露胸",
+       "exposed breasts"
+      ],
+      [
+       "乳头",
+       "nipples"
+      ],
+      [
+       "立乳",
+       "erect nipples"
+      ],
+      [
+       "乳晕",
+       "areolae"
+      ],
+      [
+       "私处",
+       "pussy"
+      ],
+      [
+       "内裤拨开",
+       "panties aside"
+      ],
+      [
+       "内裤下拉",
+       "panties pulled down"
+      ],
+      [
+       "肩带滑落",
+       "bra strap slip"
+      ],
+      [
+       "胸前微露",
+       "nipple slip"
+      ],
+      [
+       "翘臀展示",
+       "presenting"
+      ]
+     ]
+    },
+    {
+     "key": "n_body",
+     "lab": "私密细节",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "阴毛",
+       "pubic hair"
+      ],
+      [
+       "无阴毛",
+       "hairless pussy"
+      ],
+      [
+       "阴蒂",
+       "clitoris"
+      ],
+      [
+       "后穴",
+       "anus"
+      ],
+      [
+       "乳尖凹陷",
+       "inverted nipples"
+      ],
+      [
+       "湿润反光",
+       "glistening skin"
+      ]
+     ]
+    },
+    {
+     "key": "n_fabric",
+     "lab": "NSFW材质",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "漆皮乳胶",
+       "latex"
+      ],
+      [
+       "透明薄纱",
+       "sheer fabric"
+      ],
+      [
+       "红丝绒",
+       "red velvet"
+      ],
+      [
+       "黑丝绸",
+       "black silk"
+      ],
+      [
+       "湿棉布",
+       "wet cotton"
+      ],
+      [
+       "情趣内衣",
+       "lingerie"
+      ],
+      [
+       "吊袜腰带",
+       "garter belt"
+      ],
+      [
+       "婴儿睡裙",
+       "babydoll"
+      ],
+      [
+       "束腰",
+       "corset"
+      ]
+     ]
+    },
+    {
+     "key": "n_shoes_keep",
+     "lab": "保留单品",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "细高跟",
+       "stiletto heels"
+      ],
+      [
+       "过膝靴",
+       "thigh boots"
+      ],
+      [
+       "蕾丝吊带袜",
+       "lace-top thighhighs"
+      ],
+      [
+       "渔网袜",
+       "fishnet stockings"
+      ],
+      [
+       "只穿鞋袜",
+       "otherwise nude"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pose_nsfw",
+   "title": "🔞 体位与性行为（NSFW）",
+   "open": false,
+   "cls": "nsfw-only",
+   "fields": [
+    {
+     "key": "n_act",
+     "lab": "性行为",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "正常位",
+       "missionary"
+      ],
+      [
+       "后入位",
+       "sex from behind"
+      ],
+      [
+       "后入跪位",
+       "doggystyle"
+      ],
+      [
+       "骑乘位",
+       "cowgirl position"
+      ],
+      [
+       "反向骑乘",
+       "reverse cowgirl position"
+      ],
+      [
+       "交尾压制",
+       "mating press"
+      ],
+      [
+       "全背位",
+       "full nelson"
+      ],
+      [
+       "俯卧位",
+       "prone bone"
+      ],
+      [
+       "站立抱起",
+       "stand and carry"
+      ],
+      [
+       "站立后入",
+       "standing sex"
+      ],
+      [
+       "锁腿",
+       "leg lock"
+      ],
+      [
+       "衣着性交",
+       "clothed sex"
+      ],
+      [
+       "阴道性交",
+       "vaginal"
+      ],
+      [
+       "手交",
+       "handjob"
+      ],
+      [
+       "口交",
+       "blowjob"
+      ],
+      [
+       "深喉",
+       "deepthroat"
+      ],
+      [
+       "深喉抽插",
+       "irrumatio"
+      ],
+      [
+       "舔肛",
+       "anilingus"
+      ],
+      [
+       "足交",
+       "footjob"
+      ],
+      [
+       "臀交",
+       "ass job"
+      ],
+      [
+       "素股",
+       "sumata"
+      ],
+      [
+       "乳交",
+       "paizuri"
+      ],
+      [
+       "指交",
+       "fingering"
+      ],
+      [
+       "自慰",
+       "masturbation"
+      ],
+      [
+       "相互自慰",
+       "mutual masturbation"
+      ],
+      [
+       "骑假阳具",
+       "dildo riding"
+      ],
+      [
+       "颜骑",
+       "facesitting"
+      ],
+      [
+       "腿交",
+       "intercrural"
+      ],
+      [
+       "肛交",
+       "anal"
+      ],
+      [
+       "双管齐下",
+       "double penetration"
+      ],
+      [
+       "进入瞬间",
+       "penetration"
+      ]
+     ]
+    },
+    {
+     "key": "n_pos",
+     "lab": "体态细节",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "女方在上",
+       "girl on top"
+      ],
+      [
+       "男上位",
+       "boy on top"
+      ],
+      [
+       "弯腰撅臀",
+       "bent over"
+      ],
+      [
+       "四肢着地被进入",
+       "all fours, sex"
+      ],
+      [
+       "双腿高举",
+       "legs up"
+      ],
+      [
+       "双腿绕颈",
+       "legs behind head"
+      ],
+      [
+       "张开双腿",
+       "spread legs"
+      ],
+      [
+       "跨坐",
+       "straddling"
+      ],
+      [
+       "蹲踞骑乘",
+       "squatting cowgirl position"
+      ],
+      [
+       "直立跨坐",
+       "upright straddle"
+      ],
+      [
+       "背贴墙壁",
+       "against wall, sex"
+      ],
+      [
+       "手腕束缚",
+       "bound wrists"
+      ],
+      [
+       "手臂束缚",
+       "bound arms"
+      ],
+      [
+       "低头",
+       "head down"
+      ]
+     ]
+    },
+    {
+     "key": "n_orgasm",
+     "lab": "高潮表现",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "高潮颤抖",
+       "orgasm, trembling"
+      ],
+      [
+       "身体抽搐",
+       "body writhe"
+      ],
+      [
+       "呻吟",
+       "moaning"
+      ],
+      [
+       "喘息",
+       "panting"
+      ],
+      [
+       "情动",
+       "aroused"
+      ],
+      [
+       "魅惑眼神",
+       "bedroom eyes"
+      ],
+      [
+       "心形瞳孔",
+       "heart-shaped pupils"
+      ],
+      [
+       "被操到失神",
+       "fucked silly"
+      ],
+      [
+       "心智崩溃",
+       "mind break"
+      ],
+      [
+       "翻白眼吐舌",
+       "ahegao, rolled back eyes"
+      ],
+      [
+       "潮吹",
+       "squirting"
+      ],
+      [
+       "事后余韵",
+       "after sex"
+      ]
+     ]
+    },
+    {
+     "key": "n_cum",
+     "lab": "精液表现",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "内射",
+       "creampie"
+      ],
+      [
+       "射入体内",
+       "cum in pussy"
+      ],
+      [
+       "内射溢出",
+       "cum overflow"
+      ],
+      [
+       "颜面大量",
+       "bukkake"
+      ],
+      [
+       "过量精液",
+       "excessive cum"
+      ],
+      [
+       "颜射",
+       "facial"
+      ],
+      [
+       "射在胸口",
+       "cum on breasts"
+      ],
+      [
+       "射满全身",
+       "cum on body"
+      ],
+      [
+       "口中含精",
+       "cum in mouth"
+      ],
+      [
+       "精液拉丝",
+       "cum string"
+      ],
+      [
+       "多重内射",
+       "multiple creampie"
+      ],
+      [
+       "透视断面",
+       "x-ray"
+      ]
+     ]
+    },
+    {
+     "key": "n_fluid",
+     "lab": "其他体液",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "爱液",
+       "pussy juice"
+      ],
+      [
+       "爱液滴落",
+       "love juice trail"
+      ],
+      [
+       "唾液拉丝",
+       "saliva string"
+      ],
+      [
+       "香汗淋漓",
+       "sweat"
+      ],
+      [
+       "泪痕",
+       "tears"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "special_nsfw",
+   "title": "🔞 特殊主题（NSFW）",
+   "open": false,
+   "cls": "nsfw-only",
+   "fields": [
+    {
+     "key": "n_theme",
+     "lab": "主题元素",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "opts": [
+      [
+       "NTR寝取られ",
+       "netorare"
+      ],
+      [
+       "寝取らせ",
+       "netorase"
+      ],
+      [
+       "绳缚",
+       "shibari"
+      ],
+      [
+       "手腕被缚",
+       "bound wrists"
+      ],
+      [
+       "蒙眼",
+       "blindfold"
+      ],
+      [
+       "口塞",
+       "gag ball"
+      ],
+      [
+       "项圈牵绳",
+       "collar and leash"
+      ],
+      [
+       "3P",
+       "threesome"
+      ],
+      [
+       "4P",
+       "foursome"
+      ],
+      [
+       "群交",
+       "gangbang"
+      ],
+      [
+       "情趣玩具",
+       "sex toys"
+      ],
+      [
+       "跳蛋",
+       "vibrator"
+      ],
+      [
+       "假阳具",
+       "dildo"
+      ],
+      [
+       "穿戴式",
+       "strap-on"
+      ],
+      [
+       "催眠调教",
+       "hypnosis"
+      ],
+      [
+       "时间停止",
+       "time stop"
+      ],
+      [
+       "触手",
+       "tentacles"
+      ],
+      [
+       "扶她",
+       "futanari"
+      ],
+      [
+       "乳夹",
+       "nipple clamps"
+      ],
+      [
+       "肛塞",
+       "butt plug"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "canon",
+   "title": "🔞 法典验证场景（NSFW）",
+   "open": false,
+   "cls": "nsfw-only",
+   "fields": [
+    {
+     "key": "n_canon",
+     "lab": "一键场景预设",
+     "req": false,
+     "type": "preset",
+     "tail": false,
+     "opts": [
+      [
+       "口交邀请·二指开嘴",
+       "c1"
+      ],
+      [
+       "电车领口无意识露出",
+       "c2"
+      ],
+      [
+       "出浴薄纱透视",
+       "c3"
+      ],
+      [
+       "浴室裸体贴玻璃",
+       "c4"
+      ],
+      [
+       "接电话时自慰",
+       "c5"
+      ],
+      [
+       "桌角摩擦自慰",
+       "c6"
+      ],
+      [
+       "裸体围裙做饭",
+       "c7"
+      ],
+      [
+       "深喉侧视透视",
+       "c8"
+      ],
+      [
+       "压墙站立后入",
+       "c9"
+      ],
+      [
+       "全身压住侵犯",
+       "c10"
+      ],
+      [
+       "标准种付",
+       "c11"
+      ],
+      [
+       "被子下骑乘",
+       "c12"
+      ],
+      [
+       "前后夹击3P",
+       "c13"
+      ],
+      [
+       "百合骑乘摩擦",
+       "c14"
+      ]
+     ]
+    },
+    {
+     "key": "n_extra",
+     "lab": "场景补充tag(自动填充,可改)",
+     "req": false,
+     "type": "text",
+     "tail": true,
+     "opts": []
+    }
+   ]
+  },
+  {
+   "id": "nl_block",
+   "title": "⑫ 自然语言补位",
+   "open": false,
+   "cls": "",
+   "fields": [
+    {
+     "key": "nl",
+     "lab": "自然语言补充(英文短句,置于末尾)",
+     "req": false,
+     "type": "text",
+     "tail": true,
+     "opts": []
+    }
+   ]
+  }
+ ],
+ "canon": {
+  "c1": {
+   "n_state": "see-through",
+   "n_exposure": "exposed breasts",
+   "n_orgasm": "bedroom eyes",
+   "shot_size": "close-up",
+   "n_extra": "virgin killer sweater, bare shoulders, sideboobs, hand:2 fingers on mouth, tongue out, half-closed eyes, expressionless"
+  },
+  "c2": {
+   "shot_size": "close-up",
+   "viewpoint": "from side",
+   "place": "train interior",
+   "n_exposure": "nipple slip",
+   "n_extra": "accidental exposure, downblouse, areolae slip, loose clothes, dress shirt, holding phone"
+  },
+  "c3": {
+   "n_state": "see-through",
+   "weather": "steam",
+   "n_body": "glistening skin",
+   "shot_size": "close-up",
+   "n_extra": "see-through silhouette, shawl, nude, wet hair, standing, groin, wet skin, light leaks, lens flare"
+  },
+  "c4": {
+   "place": "bathroom",
+   "weather": "steam",
+   "n_state": "completely nude",
+   "n_extra": "against glass, breasts on glass, frosted glass, wet hair, condensation, tiled wall"
+  },
+  "c5": {
+   "n_act": "fingering",
+   "n_state": "open shirt",
+   "n_exposure": "panties aside",
+   "place": "on bed",
+   "n_fluid": "pussy juice",
+   "n_extra": "areola slip, talking on phone, pussy juice trail, heart"
+  },
+  "c6": {
+   "n_act": "masturbation",
+   "place": "office",
+   "n_orgasm": "trembling",
+   "n_extra": "table humping, naughty face, pencil skirt, black pantyhose, crotch rub, arched back"
+  },
+  "c7": {
+   "n_state": "topless",
+   "viewpoint": "from behind",
+   "n_exposure": "sideboob",
+   "n_extra": "naked apron, no bra, black panties, looking back, holding cooking pot, kitchen, morning"
+  },
+  "c8": {
+   "n_act": "deepthroat",
+   "n_cum": "x-ray",
+   "viewpoint": "from side",
+   "n_extra": "kneeling, throat bulge, hands on chest, pussy juice, boy standing, large penis"
+  },
+  "c9": {
+   "n_act": "standing sex",
+   "n_pos": "against wall, sex",
+   "n_theme": "rape",
+   "n_extra": "sex from behind, choking, bent over, hand on wall"
+  },
+  "c10": {
+   "n_act": "missionary",
+   "n_pos": "spread legs",
+   "viewpoint": "from above",
+   "place": "on bed",
+   "n_extra": "man covered the girl, full body, greasy skin, lying, sheet grab, motion lines"
+  },
+  "c11": {
+   "n_act": "mating press",
+   "n_pos": "legs up",
+   "viewpoint": "from above",
+   "shot_size": "close-up",
+   "place": "on bed",
+   "n_cum": "creampie",
+   "n_extra": "boy on top, deep penetration, male fully covers female, folded, on back"
+  },
+  "c12": {
+   "n_act": "cowgirl position",
+   "n_pos": "girl on top",
+   "place": "bedroom",
+   "weather": "night",
+   "n_extra": "under covers, dark, at night, stealth sex, implied sex, from above"
+  },
+  "c13": {
+   "n_theme": "threesome",
+   "n_act": "spitroast",
+   "n_pos": "on all fours, sex",
+   "viewpoint": "from side",
+   "n_extra": "blowjob, sex from behind, lying on back, group sex"
+  },
+  "c14": {
+   "n_act": "tribadism",
+   "place": "bedroom",
+   "n_extra": "scissoring, grinding, pussy to pussy, girl on top, from above, sweat, blush"
+  }
+ },
+ "appear": {
+  "raiden shogun, genshin impact": {
+   "hair": "purple hair",
+   "eyes": "purple eyes",
+   "skin": "porcelain skin",
+   "figure": "slim, tall"
+  },
+  "ganyu, genshin impact": {
+   "hair": "blue hair",
+   "eyes": "purple eyes"
+  },
+  "hu tao, genshin impact": {
+   "hair": "brown hair",
+   "eyes": "red eyes"
+  },
+  "furina, genshin impact": {
+   "hair": "blue hair",
+   "eyes": "blue eyes"
+  },
+  "yae miko, genshin impact": {
+   "hair": "pink hair",
+   "eyes": "purple eyes"
+  },
+  "nilou, genshin impact": {
+   "hair": "red hair",
+   "eyes": "blue eyes"
+  },
+  "eula, genshin impact": {
+   "hair": "silver hair",
+   "eyes": "purple eyes"
+  },
+  "shenhe, genshin impact": {
+   "hair": "white hair",
+   "eyes": "green eyes"
+  },
+  "sparkle, honkai: star rail": {
+   "hair": "red hair",
+   "eyes": "golden eyes"
+  },
+  "acheron, honkai: star rail": {
+   "hair": "black hair",
+   "eyes": "purple eyes"
+  },
+  "firefly, honkai: star rail": {
+   "hair": "silver hair",
+   "eyes": "green eyes"
+  },
+  "fu xuan, honkai: star rail": {
+   "hair": "pink hair",
+   "eyes": "golden eyes"
+  },
+  "robin, honkai: star rail": {
+   "hair": "green hair",
+   "eyes": "green eyes"
+  },
+  "castorice, honkai: star rail": {
+   "hair": "purple hair",
+   "eyes": "purple eyes"
+  },
+  "jingliu, honkai: star rail": {
+   "hair": "silver hair",
+   "eyes": "blue eyes"
+  },
+  "ruan mei, honkai: star rail": {
+   "hair": "black hair",
+   "eyes": "green eyes"
+  },
+  "jinhsi, wuthering waves": {
+   "hair": "white hair",
+   "eyes": "blue eyes"
+  },
+  "changli, wuthering waves": {
+   "hair": "red hair",
+   "eyes": "golden eyes"
+  },
+  "camellya, wuthering waves": {
+   "hair": "red hair",
+   "eyes": "red eyes"
+  },
+  "phoebe, wuthering waves": {
+   "hair": "blonde hair",
+   "eyes": "blue eyes"
+  },
+  "yinlin, wuthering waves": {
+   "hair": "purple hair",
+   "eyes": "purple eyes"
+  },
+  "ellen joe, zenless zone zero": {
+   "hair": "black hair",
+   "eyes": "red eyes"
+  },
+  "zhu yuan, zenless zone zero": {
+   "hair": "black hair",
+   "eyes": "blue eyes"
+  },
+  "rapi, goddess of victory: nikke": {
+   "hair": "silver hair",
+   "eyes": "blue eyes"
+  },
+  "red hood, goddess of victory: nikke": {
+   "hair": "pink hair",
+   "eyes": "blue eyes"
+  },
+  "exusiai, arknights": {
+   "hair": "red hair",
+   "eyes": "golden eyes"
+  },
+  "ch'en, arknights": {
+   "hair": "purple hair",
+   "eyes": "blue eyes"
+  },
+  "surtr, arknights": {
+   "hair": "black hair",
+   "eyes": "red eyes"
+  },
+  "kal'tsit, arknights": {
+   "hair": "silver hair",
+   "eyes": "green eyes"
+  },
+  "lappland, arknights": {
+   "hair": "silver hair",
+   "eyes": "golden eyes"
+  },
+  "texas, arknights": {
+   "hair": "black hair",
+   "eyes": "red eyes"
+  },
+  "enterprise, azur lane": {
+   "hair": "white hair",
+   "eyes": "blue eyes"
+  },
+  "illustrious, azur lane": {
+   "hair": "silver hair",
+   "eyes": "blue eyes",
+   "figure": "huge breasts"
+  },
+  "taihou, azur lane": {
+   "hair": "brown hair",
+   "eyes": "golden eyes",
+   "figure": "large breasts"
+  },
+  "artoria pendragon, fate (series)": {
+   "hair": "blonde hair",
+   "eyes": "green eyes"
+  },
+  "mash kyrielight, fate (series)": {
+   "hair": "purple hair",
+   "eyes": "purple eyes"
+  },
+  "tohsaka rin, fate (series)": {
+   "hair": "black hair",
+   "eyes": "blue eyes"
+  },
+  "nero claudius, fate (series)": {
+   "hair": "blonde hair",
+   "eyes": "green eyes"
+  },
+  "tamamo no mae, fate (series)": {
+   "hair": "pink hair",
+   "eyes": "golden eyes"
+  },
+  "scathach, fate (series)": {
+   "hair": "purple hair",
+   "eyes": "red eyes",
+   "figure": "slim, tall"
+  },
+  "minamoto no raikou, fate (series)": {
+   "hair": "purple hair",
+   "eyes": "golden eyes",
+   "figure": "huge breasts"
+  },
+  "hatsune miku, vocaloid": {
+   "hair": "aqua hair",
+   "eyes": "aqua eyes"
+  },
+  "megurine luka, vocaloid": {
+   "hair": "pink hair",
+   "eyes": "blue eyes"
+  },
+  "hakurei reimu, touhou": {
+   "hair": "black hair",
+   "eyes": "brown eyes"
+  },
+  "kirisame marisa, touhou": {
+   "hair": "blonde hair",
+   "eyes": "golden eyes"
+  },
+  "remilia scarlet, touhou": {
+   "hair": "blue hair",
+   "eyes": "red eyes",
+   "face": "round face"
+  },
+  "flandre scarlet, touhou": {
+   "hair": "blonde hair",
+   "eyes": "red eyes"
+  },
+  "izayoi sakuya, touhou": {
+   "hair": "silver hair",
+   "eyes": "blue eyes"
+  },
+  "patchouli knowledge, touhou": {
+   "hair": "purple hair",
+   "eyes": "purple eyes"
+  },
+  "fujiwara no mokou, touhou": {
+   "hair": "white hair",
+   "eyes": "red eyes"
+  },
+  "yakumo yukari, touhou": {
+   "hair": "purple hair",
+   "eyes": "golden eyes"
+  },
+  "nami, one piece": {
+   "hair": "orange hair",
+   "eyes": "brown eyes"
+  },
+  "boa hancock, one piece": {
+   "hair": "black hair",
+   "eyes": "brown eyes",
+   "figure": "hourglass figure",
+   "face": "heart-shaped face",
+   "skin": "fair skin"
+  },
+  "nico robin, one piece": {
+   "hair": "black hair",
+   "eyes": "blue eyes",
+   "figure": "slim, tall"
+  },
+  "hyuuga hinata, naruto (series)": {
+   "hair": "black hair",
+   "eyes": "purple eyes"
+  },
+  "terumi mei, naruto (series)": {
+   "hair": "red hair",
+   "eyes": "green eyes"
+  },
+  "amane misa, death note": {
+   "hair": "blonde hair",
+   "eyes": "blue eyes"
+  },
+  "tsukuyo, gintama": {
+   "hair": "blonde hair",
+   "eyes": "purple eyes"
+  },
+  "kamiya kaoru, rurouni kenshin": {
+   "hair": "brown hair",
+   "eyes": "blue eyes"
+  },
+  "lucy heartfilia, fairy tail": {
+   "hair": "blonde hair",
+   "eyes": "brown eyes"
+  },
+  "erza scarlet, fairy tail": {
+   "hair": "red hair",
+   "eyes": "brown eyes",
+   "figure": "large breasts"
+  },
+  "asuna yuuki, sword art online": {
+   "hair": "light brown hair",
+   "eyes": "brown eyes"
+  },
+  "mikasa ackerman, attack on titan": {
+   "hair": "black hair",
+   "eyes": "grey eyes"
+  },
+  "rei ayanami, neon genesis evangelion": {
+   "hair": "blue hair",
+   "eyes": "red eyes"
+  },
+  "asuka langley soryu, neon genesis evangelion": {
+   "hair": "brown hair",
+   "eyes": "blue eyes"
+  },
+  "zero two, darling in the franxx": {
+   "hair": "pink hair",
+   "eyes": "blue eyes"
+  },
+  "makise kurisu, steins;gate": {
+   "hair": "red hair",
+   "eyes": "blue eyes"
+  },
+  "tifa lockhart, final fantasy": {
+   "hair": "black hair",
+   "eyes": "red eyes",
+   "figure": "voluptuous"
+  },
+  "takamaki anne, persona 5": {
+   "hair": "blonde hair",
+   "eyes": "blue eyes"
+  },
+  "niijima makoto, persona 5": {
+   "hair": "brown hair",
+   "eyes": "red eyes"
+  },
+  "raiden mei, honkai impact": {
+   "hair": "purple hair",
+   "eyes": "golden eyes"
+  },
+  "aqua, kono subarashii sekai ni shukufuku wo!": {
+   "hair": "blue hair",
+   "eyes": "blue eyes"
+  },
+  "rem, re:zero": {
+   "hair": "blue hair",
+   "eyes": "blue eyes"
+  },
+  "ram, re:zero": {
+   "hair": "pink hair",
+   "eyes": "blue eyes"
+  },
+  "emilia, re:zero": {
+   "hair": "silver hair",
+   "eyes": "purple eyes"
+  },
+  "albedo, overlord": {
+   "hair": "black hair",
+   "eyes": "golden eyes"
+  },
+  "shion, tensei shitara slime datta ken": {
+   "hair": "purple hair",
+   "eyes": "blue eyes"
+  },
+  "nakano nino, go-toubun no hanayome": {
+   "hair": "red hair",
+   "eyes": "blue eyes"
+  },
+  "nakano ichika, go-toubun no hanayome": {
+   "hair": "brown hair",
+   "eyes": "blue eyes"
+  },
+  "nakano miku, go-toubun no hanayome": {
+   "hair": "light brown hair",
+   "eyes": "blue eyes"
+  },
+  "furukawa nagisa, clannad": {
+   "hair": "light brown hair",
+   "eyes": "brown eyes"
+  },
+  "kitagawa marin, my dress-up darling": {
+   "hair": "blonde hair",
+   "eyes": "red eyes"
+  },
+  "frieren, sousou no frieren": {
+   "hair": "silver hair",
+   "eyes": "green eyes"
+  },
+  "fern, sousou no frieren": {
+   "hair": "purple hair",
+   "eyes": "purple eyes"
+  },
+  "ubel, sousou no frieren": {
+   "hair": "green hair",
+   "eyes": "green eyes"
+  },
+  "hoshino ai, oshi no ko": {
+   "hair": "purple hair",
+   "eyes": "purple eyes"
+  },
+  "gotoh hitori, bocchi the rock!": {
+   "hair": "pink hair",
+   "eyes": "blue eyes"
+  },
+  "makima, chainsaw man": {
+   "hair": "red hair",
+   "eyes": "golden eyes",
+   "face": "delicate face",
+   "skin": "fair skin"
+  },
+  "power, chainsaw man": {
+   "hair": "blonde hair",
+   "eyes": "red eyes"
+  },
+  "mitaka asa, chainsaw man": {
+   "hair": "brown hair",
+   "eyes": "brown eyes"
+  },
+  "kocho shinobu, kimetsu no yaiba": {
+   "hair": "black hair",
+   "eyes": "purple eyes"
+  },
+  "kanroji mitsuri, kimetsu no yaiba": {
+   "hair": "pink hair",
+   "eyes": "green eyes"
+  },
+  "kugisaki nobara, jujutsu kaisen": {
+   "hair": "brown hair",
+   "eyes": "brown eyes"
+  },
+  "uraraka ochako, boku no hero academia": {
+   "hair": "brown hair",
+   "eyes": "brown eyes"
+  },
+  "hayase yuuka, blue archive": {
+   "hair": "blue hair",
+   "eyes": "blue eyes",
+   "figure": "slim, tall"
+  },
+  "sunaookami shiroko, blue archive": {
+   "hair": "silver hair",
+   "eyes": "blue eyes"
+  },
+  "takanashi hoshino, blue archive": {
+   "hair": "pink hair",
+   "eyes": "golden eyes",
+   "face": "round face"
+  },
+  "ichinose asuna, blue archive": {
+   "hair": "blonde hair",
+   "eyes": "blue eyes"
+  },
+  "izayoi nonomi, blue archive": {
+   "hair": "light brown hair",
+   "eyes": "green eyes"
+  },
+  "misono mika, blue archive": {
+   "hair": "white hair",
+   "eyes": "blue eyes"
+  },
+  "rikuhachima aru, blue archive": {
+   "hair": "red hair",
+   "eyes": "red eyes"
+  },
+  "kakudate karin, blue archive": {
+   "hair": "black hair",
+   "eyes": "golden eyes"
+  },
+  "kosaka wakamo, blue archive": {
+   "hair": "black hair",
+   "eyes": "red eyes"
+  },
+  "natsume iroha, blue archive": {
+   "hair": "purple hair",
+   "eyes": "blue eyes"
+  },
+  "shimoe koharu, blue archive": {
+   "hair": "pink hair",
+   "eyes": "red eyes"
+  },
+  "tohka yatogami, date a live": {
+   "hair": "purple hair",
+   "eyes": "golden eyes"
+  },
+  "itsuka kotori, date a live": {
+   "hair": "red hair",
+   "eyes": "red eyes"
+  },
+  "takamiya origami, date a live": {
+   "hair": "white hair",
+   "eyes": "blue eyes"
+  },
+  "misaka mikoto, toaru majutsu no index": {
+   "hair": "brown hair",
+   "eyes": "brown eyes"
+  },
+  "shokuhou misaki, toaru kagaku no railgun": {
+   "hair": "blonde hair",
+   "eyes": "blue eyes"
+  },
+  "shirai kuroko, toaru kagaku no railgun": {
+   "hair": "black hair",
+   "eyes": "brown eyes"
+  },
+  "nakano itsuki, go-toubun no hanayome": {
+   "hair": "red hair",
+   "eyes": "blue eyes"
+  },
+  "hayasaka ai, kaguya-sama: love is war": {
+   "hair": "blonde hair",
+   "eyes": "blue eyes"
+  },
+  "hanekawa tsubasa, monogatari (series)": {
+   "hair": "black hair",
+   "eyes": "brown eyes"
+  },
+  "mikazuki yozora, boku wa tomodachi ga sukunai": {
+   "hair": "black hair",
+   "eyes": "blue eyes"
+  },
+  "kashiwazaki sena, boku wa tomodachi ga sukunai": {
+   "hair": "blonde hair",
+   "eyes": "blue eyes"
+  },
+  "izumi sagiri, eromanga sensei": {
+   "hair": "white hair",
+   "eyes": "blue eyes"
+  },
+  "nagatoro hayase, ijiranaide nagatoro-san": {
+   "hair": "black hair",
+   "eyes": "golden eyes"
+  },
+  "uzaki hana, uzaki-chan wa asobitai!": {
+   "hair": "black hair",
+   "eyes": "blue eyes"
+  },
+  "tainaka ritsu, k-on!": {
+   "hair": "brown hair",
+   "eyes": "golden eyes"
+  },
+  "kotobuki tsumugi, k-on!": {
+   "hair": "blonde hair",
+   "eyes": "blue eyes"
+  },
+  "hiiragi kagami, lucky star": {
+   "hair": "purple hair",
+   "eyes": "blue eyes"
+  },
+  "izumi konata, lucky star": {
+   "hair": "aqua hair",
+   "eyes": "green eyes"
+  },
+  "shana, shakugan no shana": {
+   "hair": "black hair",
+   "eyes": "red eyes"
+  },
+  "louise, zero no tsukaima": {
+   "hair": "pink hair",
+   "eyes": "red eyes"
+  },
+  "futaba rio, seishun buta yarou wa bunny girl senpai no yume wo minai": {
+   "hair": "black hair",
+   "eyes": "brown eyes"
+  },
+  "kaname madoka, mahou shoujo madoka magica": {
+   "hair": "pink hair",
+   "eyes": "red eyes"
+  },
+  "akemi homura, mahou shoujo madoka magica": {
+   "hair": "black hair",
+   "eyes": "purple eyes"
+  },
+  "miki sayaka, mahou shoujo madoka magica": {
+   "hair": "blue hair",
+   "eyes": "blue eyes"
+  },
+  "tomoe mami, mahou shoujo madoka magica": {
+   "hair": "blonde hair",
+   "eyes": "golden eyes"
+  },
+  "sakura kyoko, mahou shoujo madoka magica": {
+   "hair": "red hair",
+   "eyes": "blue eyes"
+  },
+  "kousaka honoka, love live!": {
+   "hair": "brown hair",
+   "eyes": "blue eyes"
+  },
+  "ayase eli, love live!": {
+   "hair": "purple hair",
+   "eyes": "blue eyes"
+  },
+  "tojo nozomi, love live!": {
+   "hair": "purple hair",
+   "eyes": "golden eyes"
+  },
+  "nishikino maki, love live!": {
+   "hair": "red hair",
+   "eyes": "red eyes"
+  },
+  "yazawa nico, love live!": {
+   "hair": "black hair",
+   "eyes": "red eyes"
+  },
+  "toyama kasumi, bang dream!": {
+   "hair": "black hair",
+   "eyes": "red eyes"
+  },
+  "ichigaya arisa, bang dream!": {
+   "hair": "brown hair",
+   "eyes": "green eyes"
+  },
+  "shibuya rin, idolmaster cinderella girls": {
+   "hair": "black hair",
+   "eyes": "blue eyes"
+  },
+  "shinomiya kaguya, kaguya-sama: love is war": {
+   "hair": "black hair",
+   "eyes": "red eyes"
+  },
+  "fujiwara chika, kaguya-sama: love is war": {
+   "hair": "pink hair",
+   "eyes": "blue eyes"
+  },
+  "sakurajima mai, seishun buta yarou wa bunny girl senpai no yume wo minai": {
+   "hair": "black hair",
+   "eyes": "brown eyes"
+  },
+  "yukinoshita yukino, yahari ore no seishun love come wa machigatteiru.": {
+   "hair": "black hair",
+   "eyes": "blue eyes"
+  },
+  "isshiki iroha, yahari ore no seishun love come wa machigatteiru.": {
+   "hair": "orange hair",
+   "eyes": "blue eyes"
+  },
+  "nakano yotsuba, go-toubun no hanayome": {
+   "hair": "orange hair",
+   "eyes": "blue eyes"
+  },
+  "kanbaru suruga, monogatari (series)": {
+   "hair": "blue hair",
+   "eyes": "brown eyes"
+  },
+  "hori kyouko, horimiya": {
+   "hair": "brown hair",
+   "eyes": "brown eyes"
+  },
+  "mizuhara chizuru, kanokari": {
+   "hair": "brown hair",
+   "eyes": "brown eyes"
+  },
+  "takanashi rikka, chuunibyou demo koi ga shitai!": {
+   "hair": "black hair",
+   "eyes": "heterochromia"
+  },
+  "aisaka taiga, toradora!": {
+   "hair": "light brown hair",
+   "eyes": "brown eyes"
+  },
+  "senjougahara hitagi, monogatari (series)": {
+   "hair": "purple hair",
+   "eyes": "brown eyes"
+  },
+  "komi shouko, komi-san wa komyushou desu.": {
+   "hair": "black hair",
+   "eyes": "purple eyes"
+  },
+  "hirasawa yui, k-on!": {
+   "hair": "light brown hair",
+   "eyes": "brown eyes"
+  },
+  "akiyama mio, k-on!": {
+   "hair": "black hair",
+   "eyes": "grey eyes"
+  },
+  "suzumiya haruhi, suzumiya haruhi no yuuutsu": {
+   "hair": "brown hair",
+   "eyes": "brown eyes"
+  },
+  "yuzaki tsukasa, tonikaku kawaii": {
+   "hair": "silver hair",
+   "eyes": "blue eyes"
+  },
+  "kuronuma sawako, kimi ni todoke": {
+   "hair": "black hair",
+   "eyes": "brown eyes"
+  },
+  "kuda izuna, blue archive": {
+   "hair": "brown hair",
+   "eyes": "golden eyes"
+  },
+  "black swan, honkai: star rail": {
+   "hair": "purple hair",
+   "eyes": "purple eyes"
+  },
+  "shorekeeper, wuthering waves": {
+   "hair": "white hair",
+   "eyes": "blue eyes"
+  },
+  "zhezhi, wuthering waves": {
+   "hair": "green hair",
+   "eyes": "golden eyes"
+  },
+  "jane doe, zenless zone zero": {
+   "hair": "brown hair",
+   "eyes": "green eyes"
+  },
+  "burnice white, zenless zone zero": {
+   "hair": "orange hair",
+   "eyes": "golden eyes"
+  },
+  "astra yao, zenless zone zero": {
+   "hair": "black hair",
+   "eyes": "golden eyes"
+  },
+  "anis, goddess of victory: nikke": {
+   "hair": "blonde hair",
+   "eyes": "blue eyes"
+  },
+  "w, arknights": {
+   "hair": "silver hair",
+   "eyes": "golden eyes"
+  },
+  "mudrock, arknights": {
+   "hair": "blonde hair",
+   "eyes": "green eyes"
+  },
+  "jeanne d'arc, fate (series)": {
+   "hair": "blonde hair",
+   "eyes": "purple eyes"
+  },
+  "ishtar, fate (series)": {
+   "hair": "black hair",
+   "eyes": "red eyes"
+  },
+  "komeiji koishi, touhou": {
+   "hair": "green hair",
+   "eyes": "black eyes"
+  },
+  "kagamine rin, vocaloid": {
+   "hair": "blonde hair",
+   "eyes": "blue eyes"
+  },
+  "tsunade, naruto (series)": {
+   "hair": "blonde hair",
+   "eyes": "brown eyes"
+  },
+  "kikyo, inuyasha": {
+   "hair": "black hair",
+   "eyes": "brown eyes"
+  },
+  "kuchiki rukia, bleach": {
+   "hair": "black hair",
+   "eyes": "purple eyes"
+  },
+  "inoue orihime, bleach": {
+   "hair": "orange hair",
+   "eyes": "grey eyes"
+  },
+  "matsumoto rangiku, bleach": {
+   "hair": "blonde hair",
+   "eyes": "blue eyes"
+  },
+  "fubuki, one-punch man": {
+   "hair": "green hair",
+   "eyes": "green eyes"
+  },
+  "tatsumaki, one-punch man": {
+   "hair": "green hair",
+   "eyes": "green eyes"
+  },
+  "yae sakura, honkai impact": {
+   "hair": "pink hair",
+   "eyes": "blue eyes"
+  },
+  "yorha no. 2 type b, nier (series)": {
+   "hair": "white hair",
+   "eyes": "grey eyes"
+  },
+  "yuna, final fantasy x": {
+   "hair": "brown hair",
+   "eyes": "heterochromia"
+  },
+  "saint louis, azur lane": {
+   "hair": "blonde hair",
+   "eyes": "blue eyes"
+  },
+  "belfast, azur lane": {
+   "hair": "silver hair",
+   "eyes": "green eyes"
+  },
+  "hestia, dungeon ni deai wo motomeru no wa machigatteiru darou ka": {
+   "hair": "black hair",
+   "eyes": "blue eyes"
+  },
+  "ryougi shiki, kara no kyoukai": {
+   "hair": "black hair",
+   "eyes": "green eyes"
+  },
+  "minami kotori, love live!": {
+   "hair": "light brown hair",
+   "eyes": "golden eyes"
+  },
+  "yamabuki saaya, bang dream!": {
+   "hair": "light brown hair",
+   "eyes": "blue eyes"
+  },
+  "kurokawa akane, oshi no ko": {
+   "hair": "red hair",
+   "eyes": "brown eyes"
+  },
+  "mem-cho, oshi no ko": {
+   "hair": "blue hair",
+   "eyes": "brown eyes"
+  },
+  "ijichi nijika, bocchi the rock!": {
+   "hair": "blonde hair",
+   "eyes": "blue eyes"
+  },
+  "yamada ryo, bocchi the rock!": {
+   "hair": "blue hair",
+   "eyes": "golden eyes"
+  },
+  "jabami yumeko, kakegurui": {
+   "hair": "black hair",
+   "eyes": "red eyes"
+  },
+  "saotome mary, kakegurui": {
+   "hair": "pink hair",
+   "eyes": "blue eyes"
+  },
+  "tokisaki kurumi, date a live": {
+   "hair": "black hair",
+   "eyes": "golden eyes"
+  },
+  "kusanagi motoko, ghost in the shell": {
+   "hair": "blue hair",
+   "eyes": "brown eyes"
+  },
+  "c.c., code geass": {
+   "hair": "green hair",
+   "eyes": "golden eyes"
+  },
+  "lacus clyne, gundam seed": {
+   "hair": "pink hair",
+   "eyes": "blue eyes"
+  },
+  "faye valentine, cowboy bebop": {
+   "hair": "purple hair",
+   "eyes": "green eyes"
+  },
+  "yaoyorozu momo, boku no hero academia": {
+   "hair": "black hair",
+   "eyes": "red eyes"
+  },
+  "reze, chainsaw man": {
+   "hair": "purple hair",
+   "eyes": "green eyes"
+  },
+  "alice zuberg, sword art online": {
+   "hair": "blonde hair",
+   "eyes": "blue eyes"
+  },
+  "sinon, sword art online": {
+   "hair": "blue hair",
+   "eyes": "grey eyes"
+  },
+  "perona, one piece": {
+   "hair": "pink hair",
+   "eyes": "black eyes"
+  },
+  "shuna, tensei shitara slime datta ken": {
+   "hair": "pink hair",
+   "eyes": "blue eyes"
+  },
+  "karyl, princess connect!": {
+   "hair": "black hair",
+   "eyes": "golden eyes"
+  },
+  "pecorine, princess connect!": {
+   "hair": "blonde hair",
+   "eyes": "blue eyes"
+  },
+  "nishikigi chisato, lycoris recoil": {
+   "hair": "blonde hair",
+   "eyes": "red eyes"
+  },
+  "inoue takina, lycoris recoil": {
+   "hair": "black hair",
+   "eyes": "purple eyes"
+  },
+  "kisara, engage kiss": {
+   "hair": "blue hair",
+   "eyes": "blue eyes"
+  },
+  "yugiri ayano, engage kiss": {
+   "hair": "blue hair",
+   "eyes": "blue eyes"
+  },
+  "sharon holygriel, engage kiss": {
+   "hair": "blonde hair",
+   "eyes": "green eyes"
+  },
+  "takamatsu tomori, mygo!!!!!": {
+   "hair": "blue hair",
+   "eyes": "blue eyes"
+  },
+  "chika aine, mygo!!!!!": {
+   "hair": "blonde hair",
+   "eyes": "blue eyes"
+  },
+  "kaname rana, mygo!!!!!": {
+   "hair": "silver hair",
+   "eyes": "green eyes"
+  },
+  "nagasaki sayo, mygo!!!!!": {
+   "hair": "light blue hair",
+   "eyes": "blue eyes"
+  },
+  "shiina taki, mygo!!!!!": {
+   "hair": "purple hair",
+   "eyes": "purple eyes"
+  },
+  "mitsumoto hatsuha, ave mujica": {
+   "hair": "pink hair",
+   "eyes": "blue eyes"
+  },
+  "wakaba mutsumi, ave mujica": {
+   "hair": "black hair",
+   "eyes": "green eyes"
+  },
+  "yahata kairi, ave mujica": {
+   "hair": "blue hair",
+   "eyes": "blue eyes"
+  },
+  "yutenji wakamugi, ave mujica": {
+   "hair": "brown hair",
+   "eyes": "brown eyes"
+  },
+  "toyokawa shoko, ave mujica": {
+   "hair": "white hair",
+   "eyes": "blue eyes"
+  }
+ },
+ "mutex_groups": [
+  {
+   "id": "G1",
+   "a": {
+    "source": "^completely nude$",
+    "flags": ""
+   },
+   "b": {
+    "source": "school uniform|serafuku|maid|china dress|kimono|yukata|bunny|dress|swimsuit|bikini|gym uniform|cheerleader|nurse|white shirt|jacket|pleated skirt|miniskirt|shorts|jeans|thighhighs|pantyhose|stockings",
+    "flags": ""
+   }
+  },
+  {
+   "id": "G2",
+   "a": {
+    "source": "short hair",
+    "flags": ""
+   },
+   "b": {
+    "source": "twintails|long hair|very long hair",
+    "flags": ""
+   }
+  },
+  {
+   "id": "G3",
+   "a": {
+    "source": "missionary|mating press|prone bone",
+    "flags": ""
+   },
+   "b": {
+    "source": "standing sex|stand and carry|against wall",
+    "flags": ""
+   }
+  },
+  {
+   "id": "G4",
+   "a": {
+    "source": "from behind",
+    "flags": ""
+   },
+   "b": {
+    "source": "looking at viewer|facing viewer",
+    "flags": ""
+   }
+  },
+  {
+   "id": "G5",
+   "a": {
+    "source": "extreme close-up|close-up",
+    "flags": ""
+   },
+   "b": {
+    "source": "full body|wide shot",
+    "flags": ""
+   }
+  },
+  {
+   "id": "G6",
+   "a": {
+    "source": "night|rain|thunderstorm|snow|fog",
+    "flags": ""
+   },
+   "b": {
+    "source": "clear sky|morning light|sunset",
+    "flags": ""
+   }
+  }
+ ]
+}

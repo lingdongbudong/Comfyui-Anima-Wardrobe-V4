@@ -1,0 +1,2496 @@
+{
+ "_meta": {
+  "schema": "anima-wardrobe-v4/color-matrix@1",
+  "generated_by": "S:/技能/_tmp_v3color/build_color_matrix.py",
+  "source": "safebooru.donmai.us tags.json (post_count)",
+  "min_post": 30,
+  "note": "ok=true 表示 {color} {garment} 是真实组合 tag，可紧绑定；false 时引擎退化为 `color, garment` 双 tag。",
+  "colors": [
+   "black",
+   "white",
+   "grey",
+   "red",
+   "orange",
+   "yellow",
+   "green",
+   "aqua",
+   "blue",
+   "purple",
+   "pink",
+   "brown",
+   "silver"
+  ],
+  "garments": [
+   "thighhighs",
+   "pantyhose",
+   "kneehighs",
+   "socks",
+   "dress",
+   "skirt",
+   "shirt",
+   "blouse",
+   "sweater",
+   "hoodie",
+   "jacket",
+   "coat",
+   "bikini",
+   "bra",
+   "panties",
+   "corset",
+   "leotard",
+   "boots",
+   "heels",
+   "ribbon",
+   "gloves",
+   "swimsuit",
+   "camisole",
+   "tank top",
+   "shorts",
+   "jeans",
+   "pants",
+   "scarf",
+   "garter belt",
+   "leg warmers",
+   "stockings",
+   "pleated skirt",
+   "china dress",
+   "maid",
+   "apron",
+   "hat",
+   "choker"
+  ]
+ },
+ "matrix": {
+  "black": {
+   "thighhighs": {
+    "tag": "black thighhighs",
+    "n": 516245,
+    "ok": true
+   },
+   "pantyhose": {
+    "tag": "black pantyhose",
+    "n": 304724,
+    "ok": true
+   },
+   "kneehighs": {
+    "tag": "black kneehighs",
+    "n": 0,
+    "ok": false
+   },
+   "socks": {
+    "tag": "black socks",
+    "n": 151531,
+    "ok": true
+   },
+   "dress": {
+    "tag": "black dress",
+    "n": 388047,
+    "ok": true
+   },
+   "skirt": {
+    "tag": "black skirt",
+    "n": 480366,
+    "ok": true
+   },
+   "shirt": {
+    "tag": "black shirt",
+    "n": 383522,
+    "ok": true
+   },
+   "blouse": {
+    "tag": "black blouse",
+    "n": 0,
+    "ok": false
+   },
+   "sweater": {
+    "tag": "black sweater",
+    "n": 37404,
+    "ok": true
+   },
+   "hoodie": {
+    "tag": "black hoodie",
+    "n": 30102,
+    "ok": true
+   },
+   "jacket": {
+    "tag": "black jacket",
+    "n": 401053,
+    "ok": true
+   },
+   "coat": {
+    "tag": "black coat",
+    "n": 103211,
+    "ok": true
+   },
+   "bikini": {
+    "tag": "black bikini",
+    "n": 168721,
+    "ok": true
+   },
+   "bra": {
+    "tag": "black bra",
+    "n": 89470,
+    "ok": true
+   },
+   "panties": {
+    "tag": "black panties",
+    "n": 185425,
+    "ok": true
+   },
+   "corset": {
+    "tag": "black corset",
+    "n": 13431,
+    "ok": true
+   },
+   "leotard": {
+    "tag": "black leotard",
+    "n": 115168,
+    "ok": true
+   },
+   "boots": {
+    "tag": "black boots",
+    "n": 189747,
+    "ok": true
+   },
+   "heels": {
+    "tag": "black heels",
+    "n": 0,
+    "ok": false
+   },
+   "ribbon": {
+    "tag": "black ribbon",
+    "n": 197523,
+    "ok": true
+   },
+   "gloves": {
+    "tag": "black gloves",
+    "n": 692153,
+    "ok": true
+   },
+   "swimsuit": {
+    "tag": "black swimsuit",
+    "n": 0,
+    "ok": false
+   },
+   "camisole": {
+    "tag": "black camisole",
+    "n": 10594,
+    "ok": true
+   },
+   "tank top": {
+    "tag": "black tank top",
+    "n": 29028,
+    "ok": true
+   },
+   "shorts": {
+    "tag": "black shorts",
+    "n": 201191,
+    "ok": true
+   },
+   "jeans": {
+    "tag": "black jeans",
+    "n": 0,
+    "ok": false
+   },
+   "pants": {
+    "tag": "black pants",
+    "n": 262230,
+    "ok": true
+   },
+   "scarf": {
+    "tag": "black scarf",
+    "n": 17978,
+    "ok": true
+   },
+   "garter belt": {
+    "tag": "black garter belt",
+    "n": 4795,
+    "ok": true
+   },
+   "leg warmers": {
+    "tag": "black leg warmers",
+    "n": 2592,
+    "ok": true
+   },
+   "stockings": {
+    "tag": "black stockings",
+    "n": 0,
+    "ok": false
+   },
+   "pleated skirt": {
+    "tag": "black pleated skirt",
+    "n": 0,
+    "ok": false
+   },
+   "china dress": {
+    "tag": "black china dress",
+    "n": 0,
+    "ok": false
+   },
+   "maid": {
+    "tag": "black maid",
+    "n": 0,
+    "ok": false
+   },
+   "apron": {
+    "tag": "black apron",
+    "n": 7308,
+    "ok": true
+   },
+   "hat": {
+    "tag": "black hat",
+    "n": 259251,
+    "ok": true
+   },
+   "choker": {
+    "tag": "black choker",
+    "n": 280611,
+    "ok": true
+   }
+  },
+  "white": {
+   "thighhighs": {
+    "tag": "white thighhighs",
+    "n": 357427,
+    "ok": true
+   },
+   "pantyhose": {
+    "tag": "white pantyhose",
+    "n": 92937,
+    "ok": true
+   },
+   "kneehighs": {
+    "tag": "white kneehighs",
+    "n": 0,
+    "ok": false
+   },
+   "socks": {
+    "tag": "white socks",
+    "n": 230278,
+    "ok": true
+   },
+   "dress": {
+    "tag": "white dress",
+    "n": 465441,
+    "ok": true
+   },
+   "skirt": {
+    "tag": "white skirt",
+    "n": 147759,
+    "ok": true
+   },
+   "shirt": {
+    "tag": "white shirt",
+    "n": 1454107,
+    "ok": true
+   },
+   "blouse": {
+    "tag": "white blouse",
+    "n": 0,
+    "ok": false
+   },
+   "sweater": {
+    "tag": "white sweater",
+    "n": 41944,
+    "ok": true
+   },
+   "hoodie": {
+    "tag": "white hoodie",
+    "n": 26048,
+    "ok": true
+   },
+   "jacket": {
+    "tag": "white jacket",
+    "n": 202162,
+    "ok": true
+   },
+   "coat": {
+    "tag": "white coat",
+    "n": 74405,
+    "ok": true
+   },
+   "bikini": {
+    "tag": "white bikini",
+    "n": 140535,
+    "ok": true
+   },
+   "bra": {
+    "tag": "white bra",
+    "n": 46927,
+    "ok": true
+   },
+   "panties": {
+    "tag": "white panties",
+    "n": 248116,
+    "ok": true
+   },
+   "corset": {
+    "tag": "white corset",
+    "n": 4275,
+    "ok": true
+   },
+   "leotard": {
+    "tag": "white leotard",
+    "n": 48207,
+    "ok": true
+   },
+   "boots": {
+    "tag": "white boots",
+    "n": 64452,
+    "ok": true
+   },
+   "heels": {
+    "tag": "white heels",
+    "n": 0,
+    "ok": false
+   },
+   "ribbon": {
+    "tag": "white ribbon",
+    "n": 91617,
+    "ok": true
+   },
+   "gloves": {
+    "tag": "white gloves",
+    "n": 452013,
+    "ok": true
+   },
+   "swimsuit": {
+    "tag": "white swimsuit",
+    "n": 0,
+    "ok": false
+   },
+   "camisole": {
+    "tag": "white camisole",
+    "n": 19143,
+    "ok": true
+   },
+   "tank top": {
+    "tag": "white tank top",
+    "n": 27576,
+    "ok": true
+   },
+   "shorts": {
+    "tag": "white shorts",
+    "n": 57040,
+    "ok": true
+   },
+   "jeans": {
+    "tag": "white jeans",
+    "n": 0,
+    "ok": false
+   },
+   "pants": {
+    "tag": "white pants",
+    "n": 74561,
+    "ok": true
+   },
+   "scarf": {
+    "tag": "white scarf",
+    "n": 33963,
+    "ok": true
+   },
+   "garter belt": {
+    "tag": "white garter belt",
+    "n": 2660,
+    "ok": true
+   },
+   "leg warmers": {
+    "tag": "white leg warmers",
+    "n": 7472,
+    "ok": true
+   },
+   "stockings": {
+    "tag": "white stockings",
+    "n": 0,
+    "ok": false
+   },
+   "pleated skirt": {
+    "tag": "white pleated skirt",
+    "n": 0,
+    "ok": false
+   },
+   "china dress": {
+    "tag": "white china dress",
+    "n": 0,
+    "ok": false
+   },
+   "maid": {
+    "tag": "white maid",
+    "n": 0,
+    "ok": false
+   },
+   "apron": {
+    "tag": "white apron",
+    "n": 127471,
+    "ok": true
+   },
+   "hat": {
+    "tag": "white hat",
+    "n": 178742,
+    "ok": true
+   },
+   "choker": {
+    "tag": "white choker",
+    "n": 29826,
+    "ok": true
+   }
+  },
+  "grey": {
+   "thighhighs": {
+    "tag": "grey thighhighs",
+    "n": 16949,
+    "ok": true
+   },
+   "pantyhose": {
+    "tag": "grey pantyhose",
+    "n": 14791,
+    "ok": true
+   },
+   "kneehighs": {
+    "tag": "grey kneehighs",
+    "n": 0,
+    "ok": false
+   },
+   "socks": {
+    "tag": "grey socks",
+    "n": 11092,
+    "ok": true
+   },
+   "dress": {
+    "tag": "grey dress",
+    "n": 33349,
+    "ok": true
+   },
+   "skirt": {
+    "tag": "grey skirt",
+    "n": 84296,
+    "ok": true
+   },
+   "shirt": {
+    "tag": "grey shirt",
+    "n": 110149,
+    "ok": true
+   },
+   "blouse": {
+    "tag": "grey blouse",
+    "n": 0,
+    "ok": false
+   },
+   "sweater": {
+    "tag": "grey sweater",
+    "n": 21680,
+    "ok": true
+   },
+   "hoodie": {
+    "tag": "grey hoodie",
+    "n": 13244,
+    "ok": true
+   },
+   "jacket": {
+    "tag": "grey jacket",
+    "n": 67383,
+    "ok": true
+   },
+   "coat": {
+    "tag": "grey coat",
+    "n": 13990,
+    "ok": true
+   },
+   "bikini": {
+    "tag": "grey bikini",
+    "n": 3267,
+    "ok": true
+   },
+   "bra": {
+    "tag": "grey bra",
+    "n": 3784,
+    "ok": true
+   },
+   "panties": {
+    "tag": "grey panties",
+    "n": 8190,
+    "ok": true
+   },
+   "corset": {
+    "tag": "grey corset",
+    "n": 458,
+    "ok": true
+   },
+   "leotard": {
+    "tag": "grey leotard",
+    "n": 2653,
+    "ok": true
+   },
+   "boots": {
+    "tag": "grey boots",
+    "n": 9957,
+    "ok": true
+   },
+   "heels": {
+    "tag": "grey heels",
+    "n": 0,
+    "ok": false
+   },
+   "ribbon": {
+    "tag": "grey ribbon",
+    "n": 3635,
+    "ok": true
+   },
+   "gloves": {
+    "tag": "grey gloves",
+    "n": 17819,
+    "ok": true
+   },
+   "swimsuit": {
+    "tag": "grey swimsuit",
+    "n": 0,
+    "ok": false
+   },
+   "camisole": {
+    "tag": "grey camisole",
+    "n": 1724,
+    "ok": true
+   },
+   "tank top": {
+    "tag": "grey tank top",
+    "n": 3337,
+    "ok": true
+   },
+   "shorts": {
+    "tag": "grey shorts",
+    "n": 22122,
+    "ok": true
+   },
+   "jeans": {
+    "tag": "grey jeans",
+    "n": 0,
+    "ok": false
+   },
+   "pants": {
+    "tag": "grey pants",
+    "n": -1,
+    "ok": false
+   },
+   "scarf": {
+    "tag": "grey scarf",
+    "n": 5024,
+    "ok": true
+   },
+   "garter belt": {
+    "tag": "grey garter belt",
+    "n": 58,
+    "ok": true
+   },
+   "leg warmers": {
+    "tag": "grey leg warmers",
+    "n": 605,
+    "ok": true
+   },
+   "stockings": {
+    "tag": "grey stockings",
+    "n": 0,
+    "ok": false
+   },
+   "pleated skirt": {
+    "tag": "grey pleated skirt",
+    "n": -1,
+    "ok": false
+   },
+   "china dress": {
+    "tag": "grey china dress",
+    "n": 0,
+    "ok": false
+   },
+   "maid": {
+    "tag": "grey maid",
+    "n": 0,
+    "ok": false
+   },
+   "apron": {
+    "tag": "grey apron",
+    "n": 1715,
+    "ok": true
+   },
+   "hat": {
+    "tag": "grey hat",
+    "n": 17411,
+    "ok": true
+   },
+   "choker": {
+    "tag": "grey choker",
+    "n": 2077,
+    "ok": true
+   }
+  },
+  "red": {
+   "thighhighs": {
+    "tag": "red thighhighs",
+    "n": 28704,
+    "ok": true
+   },
+   "pantyhose": {
+    "tag": "red pantyhose",
+    "n": 8735,
+    "ok": true
+   },
+   "kneehighs": {
+    "tag": "red kneehighs",
+    "n": 0,
+    "ok": false
+   },
+   "socks": {
+    "tag": "red socks",
+    "n": 9637,
+    "ok": true
+   },
+   "dress": {
+    "tag": "red dress",
+    "n": 148726,
+    "ok": true
+   },
+   "skirt": {
+    "tag": "red skirt",
+    "n": 169825,
+    "ok": true
+   },
+   "shirt": {
+    "tag": "red shirt",
+    "n": 113084,
+    "ok": true
+   },
+   "blouse": {
+    "tag": "red blouse",
+    "n": 0,
+    "ok": false
+   },
+   "sweater": {
+    "tag": "red sweater",
+    "n": 16592,
+    "ok": true
+   },
+   "hoodie": {
+    "tag": "red hoodie",
+    "n": 7171,
+    "ok": true
+   },
+   "jacket": {
+    "tag": "red jacket",
+    "n": 97305,
+    "ok": true
+   },
+   "coat": {
+    "tag": "red coat",
+    "n": 26386,
+    "ok": true
+   },
+   "bikini": {
+    "tag": "red bikini",
+    "n": 48124,
+    "ok": true
+   },
+   "bra": {
+    "tag": "red bra",
+    "n": 11461,
+    "ok": true
+   },
+   "panties": {
+    "tag": "red panties",
+    "n": 19956,
+    "ok": true
+   },
+   "corset": {
+    "tag": "red corset",
+    "n": 2475,
+    "ok": true
+   },
+   "leotard": {
+    "tag": "red leotard",
+    "n": 22885,
+    "ok": true
+   },
+   "boots": {
+    "tag": "red boots",
+    "n": 27371,
+    "ok": true
+   },
+   "heels": {
+    "tag": "red heels",
+    "n": 0,
+    "ok": false
+   },
+   "ribbon": {
+    "tag": "red ribbon",
+    "n": 272595,
+    "ok": true
+   },
+   "gloves": {
+    "tag": "red gloves",
+    "n": 69773,
+    "ok": true
+   },
+   "swimsuit": {
+    "tag": "red swimsuit",
+    "n": 0,
+    "ok": false
+   },
+   "camisole": {
+    "tag": "red camisole",
+    "n": 1382,
+    "ok": true
+   },
+   "tank top": {
+    "tag": "red tank top",
+    "n": 3944,
+    "ok": true
+   },
+   "shorts": {
+    "tag": "red shorts",
+    "n": 23300,
+    "ok": true
+   },
+   "jeans": {
+    "tag": "red jeans",
+    "n": 0,
+    "ok": false
+   },
+   "pants": {
+    "tag": "red pants",
+    "n": 24666,
+    "ok": true
+   },
+   "scarf": {
+    "tag": "red scarf",
+    "n": 49794,
+    "ok": true
+   },
+   "garter belt": {
+    "tag": "red garter belt",
+    "n": 398,
+    "ok": true
+   },
+   "leg warmers": {
+    "tag": "red leg warmers",
+    "n": 476,
+    "ok": true
+   },
+   "stockings": {
+    "tag": "red stockings",
+    "n": 0,
+    "ok": false
+   },
+   "pleated skirt": {
+    "tag": "red pleated skirt",
+    "n": 0,
+    "ok": false
+   },
+   "china dress": {
+    "tag": "red china dress",
+    "n": 0,
+    "ok": false
+   },
+   "maid": {
+    "tag": "red maid",
+    "n": 0,
+    "ok": false
+   },
+   "apron": {
+    "tag": "red apron",
+    "n": 3820,
+    "ok": true
+   },
+   "hat": {
+    "tag": "red hat",
+    "n": 90475,
+    "ok": true
+   },
+   "choker": {
+    "tag": "red choker",
+    "n": 25866,
+    "ok": true
+   }
+  },
+  "orange": {
+   "thighhighs": {
+    "tag": "orange thighhighs",
+    "n": 4302,
+    "ok": true
+   },
+   "pantyhose": {
+    "tag": "orange pantyhose",
+    "n": 3070,
+    "ok": true
+   },
+   "kneehighs": {
+    "tag": "orange kneehighs",
+    "n": 0,
+    "ok": false
+   },
+   "socks": {
+    "tag": "orange socks",
+    "n": 2501,
+    "ok": true
+   },
+   "dress": {
+    "tag": "orange dress",
+    "n": 12636,
+    "ok": true
+   },
+   "skirt": {
+    "tag": "orange skirt",
+    "n": 15436,
+    "ok": true
+   },
+   "shirt": {
+    "tag": "orange shirt",
+    "n": 21187,
+    "ok": true
+   },
+   "blouse": {
+    "tag": "orange blouse",
+    "n": 0,
+    "ok": false
+   },
+   "sweater": {
+    "tag": "orange sweater",
+    "n": 3068,
+    "ok": true
+   },
+   "hoodie": {
+    "tag": "orange hoodie",
+    "n": 3925,
+    "ok": true
+   },
+   "jacket": {
+    "tag": "orange jacket",
+    "n": 14201,
+    "ok": true
+   },
+   "coat": {
+    "tag": "orange coat",
+    "n": 1523,
+    "ok": true
+   },
+   "bikini": {
+    "tag": "orange bikini",
+    "n": 10148,
+    "ok": true
+   },
+   "bra": {
+    "tag": "orange bra",
+    "n": 1167,
+    "ok": true
+   },
+   "panties": {
+    "tag": "orange panties",
+    "n": 2206,
+    "ok": true
+   },
+   "corset": {
+    "tag": "orange corset",
+    "n": 72,
+    "ok": true
+   },
+   "leotard": {
+    "tag": "orange leotard",
+    "n": 1538,
+    "ok": true
+   },
+   "boots": {
+    "tag": "orange boots",
+    "n": 2932,
+    "ok": true
+   },
+   "heels": {
+    "tag": "orange heels",
+    "n": 0,
+    "ok": false
+   },
+   "ribbon": {
+    "tag": "orange ribbon",
+    "n": 8592,
+    "ok": true
+   },
+   "gloves": {
+    "tag": "orange gloves",
+    "n": 8154,
+    "ok": true
+   },
+   "swimsuit": {
+    "tag": "orange swimsuit",
+    "n": 0,
+    "ok": false
+   },
+   "camisole": {
+    "tag": "orange camisole",
+    "n": 357,
+    "ok": true
+   },
+   "tank top": {
+    "tag": "orange tank top",
+    "n": 2063,
+    "ok": true
+   },
+   "shorts": {
+    "tag": "orange shorts",
+    "n": 7215,
+    "ok": true
+   },
+   "jeans": {
+    "tag": "orange jeans",
+    "n": 0,
+    "ok": false
+   },
+   "pants": {
+    "tag": "orange pants",
+    "n": 5410,
+    "ok": true
+   },
+   "scarf": {
+    "tag": "orange scarf",
+    "n": 4878,
+    "ok": true
+   },
+   "garter belt": {
+    "tag": "orange garter belt",
+    "n": 12,
+    "ok": false
+   },
+   "leg warmers": {
+    "tag": "orange leg warmers",
+    "n": 141,
+    "ok": true
+   },
+   "stockings": {
+    "tag": "orange stockings",
+    "n": 0,
+    "ok": false
+   },
+   "pleated skirt": {
+    "tag": "orange pleated skirt",
+    "n": 0,
+    "ok": false
+   },
+   "china dress": {
+    "tag": "orange china dress",
+    "n": 0,
+    "ok": false
+   },
+   "maid": {
+    "tag": "orange maid",
+    "n": 0,
+    "ok": false
+   },
+   "apron": {
+    "tag": "orange apron",
+    "n": 1486,
+    "ok": true
+   },
+   "hat": {
+    "tag": "orange hat",
+    "n": 8273,
+    "ok": true
+   },
+   "choker": {
+    "tag": "orange choker",
+    "n": 3523,
+    "ok": true
+   }
+  },
+  "yellow": {
+   "thighhighs": {
+    "tag": "yellow thighhighs",
+    "n": 5322,
+    "ok": true
+   },
+   "pantyhose": {
+    "tag": "yellow pantyhose",
+    "n": 2095,
+    "ok": true
+   },
+   "kneehighs": {
+    "tag": "yellow kneehighs",
+    "n": 0,
+    "ok": false
+   },
+   "socks": {
+    "tag": "yellow socks",
+    "n": 4117,
+    "ok": true
+   },
+   "dress": {
+    "tag": "yellow dress",
+    "n": 27433,
+    "ok": true
+   },
+   "skirt": {
+    "tag": "yellow skirt",
+    "n": 20531,
+    "ok": true
+   },
+   "shirt": {
+    "tag": "yellow shirt",
+    "n": 67484,
+    "ok": true
+   },
+   "blouse": {
+    "tag": "yellow blouse",
+    "n": 0,
+    "ok": false
+   },
+   "sweater": {
+    "tag": "yellow sweater",
+    "n": 15449,
+    "ok": true
+   },
+   "hoodie": {
+    "tag": "yellow hoodie",
+    "n": 5897,
+    "ok": true
+   },
+   "jacket": {
+    "tag": "yellow jacket",
+    "n": 41524,
+    "ok": true
+   },
+   "coat": {
+    "tag": "yellow coat",
+    "n": 6042,
+    "ok": true
+   },
+   "bikini": {
+    "tag": "yellow bikini",
+    "n": 22393,
+    "ok": true
+   },
+   "bra": {
+    "tag": "yellow bra",
+    "n": 3606,
+    "ok": true
+   },
+   "panties": {
+    "tag": "yellow panties",
+    "n": 7703,
+    "ok": true
+   },
+   "corset": {
+    "tag": "yellow corset",
+    "n": 194,
+    "ok": true
+   },
+   "leotard": {
+    "tag": "yellow leotard",
+    "n": 2917,
+    "ok": true
+   },
+   "boots": {
+    "tag": "yellow boots",
+    "n": 7257,
+    "ok": true
+   },
+   "heels": {
+    "tag": "yellow heels",
+    "n": 0,
+    "ok": false
+   },
+   "ribbon": {
+    "tag": "yellow ribbon",
+    "n": 50388,
+    "ok": true
+   },
+   "gloves": {
+    "tag": "yellow gloves",
+    "n": 16357,
+    "ok": true
+   },
+   "swimsuit": {
+    "tag": "yellow swimsuit",
+    "n": 0,
+    "ok": false
+   },
+   "camisole": {
+    "tag": "yellow camisole",
+    "n": 1689,
+    "ok": true
+   },
+   "tank top": {
+    "tag": "yellow tank top",
+    "n": 2535,
+    "ok": true
+   },
+   "shorts": {
+    "tag": "yellow shorts",
+    "n": 10461,
+    "ok": true
+   },
+   "jeans": {
+    "tag": "yellow jeans",
+    "n": 0,
+    "ok": false
+   },
+   "pants": {
+    "tag": "yellow pants",
+    "n": 4841,
+    "ok": true
+   },
+   "scarf": {
+    "tag": "yellow scarf",
+    "n": 9892,
+    "ok": true
+   },
+   "garter belt": {
+    "tag": "yellow garter belt",
+    "n": 34,
+    "ok": true
+   },
+   "leg warmers": {
+    "tag": "yellow leg warmers",
+    "n": 295,
+    "ok": true
+   },
+   "stockings": {
+    "tag": "yellow stockings",
+    "n": 0,
+    "ok": false
+   },
+   "pleated skirt": {
+    "tag": "yellow pleated skirt",
+    "n": 0,
+    "ok": false
+   },
+   "china dress": {
+    "tag": "yellow china dress",
+    "n": 0,
+    "ok": false
+   },
+   "maid": {
+    "tag": "yellow maid",
+    "n": 0,
+    "ok": false
+   },
+   "apron": {
+    "tag": "yellow apron",
+    "n": 3651,
+    "ok": true
+   },
+   "hat": {
+    "tag": "yellow hat",
+    "n": 13003,
+    "ok": true
+   },
+   "choker": {
+    "tag": "yellow choker",
+    "n": 4355,
+    "ok": true
+   }
+  },
+  "green": {
+   "thighhighs": {
+    "tag": "green thighhighs",
+    "n": 8320,
+    "ok": true
+   },
+   "pantyhose": {
+    "tag": "green pantyhose",
+    "n": 2865,
+    "ok": true
+   },
+   "kneehighs": {
+    "tag": "green kneehighs",
+    "n": 0,
+    "ok": false
+   },
+   "socks": {
+    "tag": "green socks",
+    "n": 5202,
+    "ok": true
+   },
+   "dress": {
+    "tag": "green dress",
+    "n": 61013,
+    "ok": true
+   },
+   "skirt": {
+    "tag": "green skirt",
+    "n": 89307,
+    "ok": true
+   },
+   "shirt": {
+    "tag": "green shirt",
+    "n": 59214,
+    "ok": true
+   },
+   "blouse": {
+    "tag": "green blouse",
+    "n": 0,
+    "ok": false
+   },
+   "sweater": {
+    "tag": "green sweater",
+    "n": 11677,
+    "ok": true
+   },
+   "hoodie": {
+    "tag": "green hoodie",
+    "n": 7191,
+    "ok": true
+   },
+   "jacket": {
+    "tag": "green jacket",
+    "n": 66175,
+    "ok": true
+   },
+   "coat": {
+    "tag": "green coat",
+    "n": 9511,
+    "ok": true
+   },
+   "bikini": {
+    "tag": "green bikini",
+    "n": 20590,
+    "ok": true
+   },
+   "bra": {
+    "tag": "green bra",
+    "n": 5904,
+    "ok": true
+   },
+   "panties": {
+    "tag": "green panties",
+    "n": 11800,
+    "ok": true
+   },
+   "corset": {
+    "tag": "green corset",
+    "n": 648,
+    "ok": true
+   },
+   "leotard": {
+    "tag": "green leotard",
+    "n": 6697,
+    "ok": true
+   },
+   "boots": {
+    "tag": "green boots",
+    "n": 7126,
+    "ok": true
+   },
+   "heels": {
+    "tag": "green heels",
+    "n": 0,
+    "ok": false
+   },
+   "ribbon": {
+    "tag": "green ribbon",
+    "n": 37610,
+    "ok": true
+   },
+   "gloves": {
+    "tag": "green gloves",
+    "n": 15141,
+    "ok": true
+   },
+   "swimsuit": {
+    "tag": "green swimsuit",
+    "n": 0,
+    "ok": false
+   },
+   "camisole": {
+    "tag": "green camisole",
+    "n": 1109,
+    "ok": true
+   },
+   "tank top": {
+    "tag": "green tank top",
+    "n": 2594,
+    "ok": true
+   },
+   "shorts": {
+    "tag": "green shorts",
+    "n": 18477,
+    "ok": true
+   },
+   "jeans": {
+    "tag": "green jeans",
+    "n": 0,
+    "ok": false
+   },
+   "pants": {
+    "tag": "green pants",
+    "n": 19895,
+    "ok": true
+   },
+   "scarf": {
+    "tag": "green scarf",
+    "n": 8717,
+    "ok": true
+   },
+   "garter belt": {
+    "tag": "green garter belt",
+    "n": 96,
+    "ok": true
+   },
+   "leg warmers": {
+    "tag": "green leg warmers",
+    "n": 222,
+    "ok": true
+   },
+   "stockings": {
+    "tag": "green stockings",
+    "n": 0,
+    "ok": false
+   },
+   "pleated skirt": {
+    "tag": "green pleated skirt",
+    "n": 0,
+    "ok": false
+   },
+   "china dress": {
+    "tag": "green china dress",
+    "n": 0,
+    "ok": false
+   },
+   "maid": {
+    "tag": "green maid",
+    "n": 0,
+    "ok": false
+   },
+   "apron": {
+    "tag": "green apron",
+    "n": 4812,
+    "ok": true
+   },
+   "hat": {
+    "tag": "green hat",
+    "n": 42857,
+    "ok": true
+   },
+   "choker": {
+    "tag": "green choker",
+    "n": 5338,
+    "ok": true
+   }
+  },
+  "aqua": {
+   "thighhighs": {
+    "tag": "aqua thighhighs",
+    "n": 1548,
+    "ok": true
+   },
+   "pantyhose": {
+    "tag": "aqua pantyhose",
+    "n": 712,
+    "ok": true
+   },
+   "kneehighs": {
+    "tag": "aqua kneehighs",
+    "n": 0,
+    "ok": false
+   },
+   "socks": {
+    "tag": "aqua socks",
+    "n": 767,
+    "ok": true
+   },
+   "dress": {
+    "tag": "aqua dress",
+    "n": 9229,
+    "ok": true
+   },
+   "skirt": {
+    "tag": "aqua skirt",
+    "n": 8188,
+    "ok": true
+   },
+   "shirt": {
+    "tag": "aqua shirt",
+    "n": 10273,
+    "ok": true
+   },
+   "blouse": {
+    "tag": "aqua blouse",
+    "n": 0,
+    "ok": false
+   },
+   "sweater": {
+    "tag": "aqua sweater",
+    "n": 915,
+    "ok": true
+   },
+   "hoodie": {
+    "tag": "aqua hoodie",
+    "n": 723,
+    "ok": true
+   },
+   "jacket": {
+    "tag": "aqua jacket",
+    "n": 6118,
+    "ok": true
+   },
+   "coat": {
+    "tag": "aqua coat",
+    "n": 1015,
+    "ok": true
+   },
+   "bikini": {
+    "tag": "aqua bikini",
+    "n": 5835,
+    "ok": true
+   },
+   "bra": {
+    "tag": "aqua bra",
+    "n": 1715,
+    "ok": true
+   },
+   "panties": {
+    "tag": "aqua panties",
+    "n": 3040,
+    "ok": true
+   },
+   "corset": {
+    "tag": "aqua corset",
+    "n": 43,
+    "ok": true
+   },
+   "leotard": {
+    "tag": "aqua leotard",
+    "n": 1574,
+    "ok": true
+   },
+   "boots": {
+    "tag": "aqua boots",
+    "n": 848,
+    "ok": true
+   },
+   "heels": {
+    "tag": "aqua heels",
+    "n": 0,
+    "ok": false
+   },
+   "ribbon": {
+    "tag": "aqua ribbon",
+    "n": 6552,
+    "ok": true
+   },
+   "gloves": {
+    "tag": "aqua gloves",
+    "n": 2603,
+    "ok": true
+   },
+   "swimsuit": {
+    "tag": "aqua swimsuit",
+    "n": 0,
+    "ok": false
+   },
+   "camisole": {
+    "tag": "aqua camisole",
+    "n": 199,
+    "ok": true
+   },
+   "tank top": {
+    "tag": "aqua tank top",
+    "n": 276,
+    "ok": true
+   },
+   "shorts": {
+    "tag": "aqua shorts",
+    "n": 1627,
+    "ok": true
+   },
+   "jeans": {
+    "tag": "aqua jeans",
+    "n": 0,
+    "ok": false
+   },
+   "pants": {
+    "tag": "aqua pants",
+    "n": 1434,
+    "ok": true
+   },
+   "scarf": {
+    "tag": "aqua scarf",
+    "n": 1163,
+    "ok": true
+   },
+   "garter belt": {
+    "tag": "aqua garter belt",
+    "n": 25,
+    "ok": false
+   },
+   "leg warmers": {
+    "tag": "aqua leg warmers",
+    "n": 69,
+    "ok": true
+   },
+   "stockings": {
+    "tag": "aqua stockings",
+    "n": 0,
+    "ok": false
+   },
+   "pleated skirt": {
+    "tag": "aqua pleated skirt",
+    "n": 0,
+    "ok": false
+   },
+   "china dress": {
+    "tag": "aqua china dress",
+    "n": 0,
+    "ok": false
+   },
+   "maid": {
+    "tag": "aqua maid",
+    "n": 0,
+    "ok": false
+   },
+   "apron": {
+    "tag": "aqua apron",
+    "n": 307,
+    "ok": true
+   },
+   "hat": {
+    "tag": "aqua hat",
+    "n": 3235,
+    "ok": true
+   },
+   "choker": {
+    "tag": "aqua choker",
+    "n": 861,
+    "ok": true
+   }
+  },
+  "blue": {
+   "thighhighs": {
+    "tag": "blue thighhighs",
+    "n": 25995,
+    "ok": true
+   },
+   "pantyhose": {
+    "tag": "blue pantyhose",
+    "n": 8583,
+    "ok": true
+   },
+   "kneehighs": {
+    "tag": "blue kneehighs",
+    "n": 0,
+    "ok": false
+   },
+   "socks": {
+    "tag": "blue socks",
+    "n": 14759,
+    "ok": true
+   },
+   "dress": {
+    "tag": "blue dress",
+    "n": 192800,
+    "ok": true
+   },
+   "skirt": {
+    "tag": "blue skirt",
+    "n": 269797,
+    "ok": true
+   },
+   "shirt": {
+    "tag": "blue shirt",
+    "n": 169863,
+    "ok": true
+   },
+   "blouse": {
+    "tag": "blue blouse",
+    "n": 0,
+    "ok": false
+   },
+   "sweater": {
+    "tag": "blue sweater",
+    "n": 19080,
+    "ok": true
+   },
+   "hoodie": {
+    "tag": "blue hoodie",
+    "n": 18739,
+    "ok": true
+   },
+   "jacket": {
+    "tag": "blue jacket",
+    "n": 162519,
+    "ok": true
+   },
+   "coat": {
+    "tag": "blue coat",
+    "n": 23605,
+    "ok": true
+   },
+   "bikini": {
+    "tag": "blue bikini",
+    "n": 62866,
+    "ok": true
+   },
+   "bra": {
+    "tag": "blue bra",
+    "n": 17568,
+    "ok": true
+   },
+   "panties": {
+    "tag": "blue panties",
+    "n": 33475,
+    "ok": true
+   },
+   "corset": {
+    "tag": "blue corset",
+    "n": 1588,
+    "ok": true
+   },
+   "leotard": {
+    "tag": "blue leotard",
+    "n": 32267,
+    "ok": true
+   },
+   "boots": {
+    "tag": "blue boots",
+    "n": 23308,
+    "ok": true
+   },
+   "heels": {
+    "tag": "blue heels",
+    "n": 0,
+    "ok": false
+   },
+   "ribbon": {
+    "tag": "blue ribbon",
+    "n": 113298,
+    "ok": true
+   },
+   "gloves": {
+    "tag": "blue gloves",
+    "n": 42625,
+    "ok": true
+   },
+   "swimsuit": {
+    "tag": "blue swimsuit",
+    "n": 0,
+    "ok": false
+   },
+   "camisole": {
+    "tag": "blue camisole",
+    "n": 2754,
+    "ok": true
+   },
+   "tank top": {
+    "tag": "blue tank top",
+    "n": 3425,
+    "ok": true
+   },
+   "shorts": {
+    "tag": "blue shorts",
+    "n": 71301,
+    "ok": true
+   },
+   "jeans": {
+    "tag": "blue jeans",
+    "n": 0,
+    "ok": false
+   },
+   "pants": {
+    "tag": "blue pants",
+    "n": 62599,
+    "ok": true
+   },
+   "scarf": {
+    "tag": "blue scarf",
+    "n": 22811,
+    "ok": true
+   },
+   "garter belt": {
+    "tag": "blue garter belt",
+    "n": 220,
+    "ok": true
+   },
+   "leg warmers": {
+    "tag": "blue leg warmers",
+    "n": 668,
+    "ok": true
+   },
+   "stockings": {
+    "tag": "blue stockings",
+    "n": 0,
+    "ok": false
+   },
+   "pleated skirt": {
+    "tag": "blue pleated skirt",
+    "n": 0,
+    "ok": false
+   },
+   "china dress": {
+    "tag": "blue china dress",
+    "n": 0,
+    "ok": false
+   },
+   "maid": {
+    "tag": "blue maid",
+    "n": 0,
+    "ok": false
+   },
+   "apron": {
+    "tag": "blue apron",
+    "n": 6460,
+    "ok": true
+   },
+   "hat": {
+    "tag": "blue hat",
+    "n": 83544,
+    "ok": true
+   },
+   "choker": {
+    "tag": "blue choker",
+    "n": 18035,
+    "ok": true
+   }
+  },
+  "purple": {
+   "thighhighs": {
+    "tag": "purple thighhighs",
+    "n": 30332,
+    "ok": true
+   },
+   "pantyhose": {
+    "tag": "purple pantyhose",
+    "n": 12533,
+    "ok": true
+   },
+   "kneehighs": {
+    "tag": "purple kneehighs",
+    "n": 0,
+    "ok": false
+   },
+   "socks": {
+    "tag": "purple socks",
+    "n": 4024,
+    "ok": true
+   },
+   "dress": {
+    "tag": "purple dress",
+    "n": 81194,
+    "ok": true
+   },
+   "skirt": {
+    "tag": "purple skirt",
+    "n": 59792,
+    "ok": true
+   },
+   "shirt": {
+    "tag": "purple shirt",
+    "n": 64510,
+    "ok": true
+   },
+   "blouse": {
+    "tag": "purple blouse",
+    "n": 0,
+    "ok": false
+   },
+   "sweater": {
+    "tag": "purple sweater",
+    "n": 6448,
+    "ok": true
+   },
+   "hoodie": {
+    "tag": "purple hoodie",
+    "n": 4598,
+    "ok": true
+   },
+   "jacket": {
+    "tag": "purple jacket",
+    "n": 32910,
+    "ok": true
+   },
+   "coat": {
+    "tag": "purple coat",
+    "n": 10076,
+    "ok": true
+   },
+   "bikini": {
+    "tag": "purple bikini",
+    "n": 23756,
+    "ok": true
+   },
+   "bra": {
+    "tag": "purple bra",
+    "n": 10561,
+    "ok": true
+   },
+   "panties": {
+    "tag": "purple panties",
+    "n": 18858,
+    "ok": true
+   },
+   "corset": {
+    "tag": "purple corset",
+    "n": 1061,
+    "ok": true
+   },
+   "leotard": {
+    "tag": "purple leotard",
+    "n": 11048,
+    "ok": true
+   },
+   "boots": {
+    "tag": "purple boots",
+    "n": 8327,
+    "ok": true
+   },
+   "heels": {
+    "tag": "purple heels",
+    "n": 0,
+    "ok": false
+   },
+   "ribbon": {
+    "tag": "purple ribbon",
+    "n": 37612,
+    "ok": true
+   },
+   "gloves": {
+    "tag": "purple gloves",
+    "n": 29006,
+    "ok": true
+   },
+   "swimsuit": {
+    "tag": "purple swimsuit",
+    "n": 0,
+    "ok": false
+   },
+   "camisole": {
+    "tag": "purple camisole",
+    "n": 1092,
+    "ok": true
+   },
+   "tank top": {
+    "tag": "purple tank top",
+    "n": 1301,
+    "ok": true
+   },
+   "shorts": {
+    "tag": "purple shorts",
+    "n": 8293,
+    "ok": true
+   },
+   "jeans": {
+    "tag": "purple jeans",
+    "n": 0,
+    "ok": false
+   },
+   "pants": {
+    "tag": "purple pants",
+    "n": 10103,
+    "ok": true
+   },
+   "scarf": {
+    "tag": "purple scarf",
+    "n": 6783,
+    "ok": true
+   },
+   "garter belt": {
+    "tag": "purple garter belt",
+    "n": 435,
+    "ok": true
+   },
+   "leg warmers": {
+    "tag": "purple leg warmers",
+    "n": 347,
+    "ok": true
+   },
+   "stockings": {
+    "tag": "purple stockings",
+    "n": 0,
+    "ok": false
+   },
+   "pleated skirt": {
+    "tag": "purple pleated skirt",
+    "n": 0,
+    "ok": false
+   },
+   "china dress": {
+    "tag": "purple china dress",
+    "n": 0,
+    "ok": false
+   },
+   "maid": {
+    "tag": "purple maid",
+    "n": 0,
+    "ok": false
+   },
+   "apron": {
+    "tag": "purple apron",
+    "n": 1224,
+    "ok": true
+   },
+   "hat": {
+    "tag": "purple hat",
+    "n": 25969,
+    "ok": true
+   },
+   "choker": {
+    "tag": "purple choker",
+    "n": 8748,
+    "ok": true
+   }
+  },
+  "pink": {
+   "thighhighs": {
+    "tag": "pink thighhighs",
+    "n": 19807,
+    "ok": true
+   },
+   "pantyhose": {
+    "tag": "pink pantyhose",
+    "n": 4807,
+    "ok": true
+   },
+   "kneehighs": {
+    "tag": "pink kneehighs",
+    "n": 0,
+    "ok": false
+   },
+   "socks": {
+    "tag": "pink socks",
+    "n": 7269,
+    "ok": true
+   },
+   "dress": {
+    "tag": "pink dress",
+    "n": 100052,
+    "ok": true
+   },
+   "skirt": {
+    "tag": "pink skirt",
+    "n": 69369,
+    "ok": true
+   },
+   "shirt": {
+    "tag": "pink shirt",
+    "n": 75741,
+    "ok": true
+   },
+   "blouse": {
+    "tag": "pink blouse",
+    "n": 0,
+    "ok": false
+   },
+   "sweater": {
+    "tag": "pink sweater",
+    "n": 17587,
+    "ok": true
+   },
+   "hoodie": {
+    "tag": "pink hoodie",
+    "n": 7328,
+    "ok": true
+   },
+   "jacket": {
+    "tag": "pink jacket",
+    "n": 47390,
+    "ok": true
+   },
+   "coat": {
+    "tag": "pink coat",
+    "n": 5671,
+    "ok": true
+   },
+   "bikini": {
+    "tag": "pink bikini",
+    "n": 31183,
+    "ok": true
+   },
+   "bra": {
+    "tag": "pink bra",
+    "n": 27286,
+    "ok": true
+   },
+   "panties": {
+    "tag": "pink panties",
+    "n": 63132,
+    "ok": true
+   },
+   "corset": {
+    "tag": "pink corset",
+    "n": 737,
+    "ok": true
+   },
+   "leotard": {
+    "tag": "pink leotard",
+    "n": 8801,
+    "ok": true
+   },
+   "boots": {
+    "tag": "pink boots",
+    "n": 13865,
+    "ok": true
+   },
+   "heels": {
+    "tag": "pink heels",
+    "n": 0,
+    "ok": false
+   },
+   "ribbon": {
+    "tag": "pink ribbon",
+    "n": 67192,
+    "ok": true
+   },
+   "gloves": {
+    "tag": "pink gloves",
+    "n": 19007,
+    "ok": true
+   },
+   "swimsuit": {
+    "tag": "pink swimsuit",
+    "n": 0,
+    "ok": false
+   },
+   "camisole": {
+    "tag": "pink camisole",
+    "n": 3966,
+    "ok": true
+   },
+   "tank top": {
+    "tag": "pink tank top",
+    "n": 2096,
+    "ok": true
+   },
+   "shorts": {
+    "tag": "pink shorts",
+    "n": 11260,
+    "ok": true
+   },
+   "jeans": {
+    "tag": "pink jeans",
+    "n": 0,
+    "ok": false
+   },
+   "pants": {
+    "tag": "pink pants",
+    "n": 7024,
+    "ok": true
+   },
+   "scarf": {
+    "tag": "pink scarf",
+    "n": 10175,
+    "ok": true
+   },
+   "garter belt": {
+    "tag": "pink garter belt",
+    "n": 223,
+    "ok": true
+   },
+   "leg warmers": {
+    "tag": "pink leg warmers",
+    "n": 1559,
+    "ok": true
+   },
+   "stockings": {
+    "tag": "pink stockings",
+    "n": 0,
+    "ok": false
+   },
+   "pleated skirt": {
+    "tag": "pink pleated skirt",
+    "n": 0,
+    "ok": false
+   },
+   "china dress": {
+    "tag": "pink china dress",
+    "n": 0,
+    "ok": false
+   },
+   "maid": {
+    "tag": "pink maid",
+    "n": 0,
+    "ok": false
+   },
+   "apron": {
+    "tag": "pink apron",
+    "n": 7259,
+    "ok": true
+   },
+   "hat": {
+    "tag": "pink hat",
+    "n": 30956,
+    "ok": true
+   },
+   "choker": {
+    "tag": "pink choker",
+    "n": 14220,
+    "ok": true
+   }
+  },
+  "brown": {
+   "thighhighs": {
+    "tag": "brown thighhighs",
+    "n": 35002,
+    "ok": true
+   },
+   "pantyhose": {
+    "tag": "brown pantyhose",
+    "n": 61365,
+    "ok": true
+   },
+   "kneehighs": {
+    "tag": "brown kneehighs",
+    "n": 0,
+    "ok": false
+   },
+   "socks": {
+    "tag": "brown socks",
+    "n": 5764,
+    "ok": true
+   },
+   "dress": {
+    "tag": "brown dress",
+    "n": 41532,
+    "ok": true
+   },
+   "skirt": {
+    "tag": "brown skirt",
+    "n": 52478,
+    "ok": true
+   },
+   "shirt": {
+    "tag": "brown shirt",
+    "n": 38902,
+    "ok": true
+   },
+   "blouse": {
+    "tag": "brown blouse",
+    "n": 0,
+    "ok": false
+   },
+   "sweater": {
+    "tag": "brown sweater",
+    "n": 21581,
+    "ok": true
+   },
+   "hoodie": {
+    "tag": "brown hoodie",
+    "n": -1,
+    "ok": false
+   },
+   "jacket": {
+    "tag": "brown jacket",
+    "n": 65379,
+    "ok": true
+   },
+   "coat": {
+    "tag": "brown coat",
+    "n": 26939,
+    "ok": true
+   },
+   "bikini": {
+    "tag": "brown bikini",
+    "n": 2964,
+    "ok": true
+   },
+   "bra": {
+    "tag": "brown bra",
+    "n": 1648,
+    "ok": true
+   },
+   "panties": {
+    "tag": "brown panties",
+    "n": 2186,
+    "ok": true
+   },
+   "corset": {
+    "tag": "brown corset",
+    "n": 5019,
+    "ok": true
+   },
+   "leotard": {
+    "tag": "brown leotard",
+    "n": 2352,
+    "ok": true
+   },
+   "boots": {
+    "tag": "brown boots",
+    "n": 78693,
+    "ok": true
+   },
+   "heels": {
+    "tag": "brown heels",
+    "n": 0,
+    "ok": false
+   },
+   "ribbon": {
+    "tag": "brown ribbon",
+    "n": 7088,
+    "ok": true
+   },
+   "gloves": {
+    "tag": "brown gloves",
+    "n": -1,
+    "ok": false
+   },
+   "swimsuit": {
+    "tag": "brown swimsuit",
+    "n": 0,
+    "ok": false
+   },
+   "camisole": {
+    "tag": "brown camisole",
+    "n": 515,
+    "ok": true
+   },
+   "tank top": {
+    "tag": "brown tank top",
+    "n": 837,
+    "ok": true
+   },
+   "shorts": {
+    "tag": "brown shorts",
+    "n": 22112,
+    "ok": true
+   },
+   "jeans": {
+    "tag": "brown jeans",
+    "n": 0,
+    "ok": false
+   },
+   "pants": {
+    "tag": "brown pants",
+    "n": 36269,
+    "ok": true
+   },
+   "scarf": {
+    "tag": "brown scarf",
+    "n": -1,
+    "ok": false
+   },
+   "garter belt": {
+    "tag": "brown garter belt",
+    "n": 84,
+    "ok": true
+   },
+   "leg warmers": {
+    "tag": "brown leg warmers",
+    "n": 228,
+    "ok": true
+   },
+   "stockings": {
+    "tag": "brown stockings",
+    "n": 0,
+    "ok": false
+   },
+   "pleated skirt": {
+    "tag": "brown pleated skirt",
+    "n": 0,
+    "ok": false
+   },
+   "china dress": {
+    "tag": "brown china dress",
+    "n": 0,
+    "ok": false
+   },
+   "maid": {
+    "tag": "brown maid",
+    "n": 0,
+    "ok": false
+   },
+   "apron": {
+    "tag": "brown apron",
+    "n": -1,
+    "ok": false
+   },
+   "hat": {
+    "tag": "brown hat",
+    "n": 47931,
+    "ok": true
+   },
+   "choker": {
+    "tag": "brown choker",
+    "n": 2841,
+    "ok": true
+   }
+  },
+  "silver": {
+   "thighhighs": {
+    "tag": "silver thighhighs",
+    "n": 0,
+    "ok": false
+   },
+   "pantyhose": {
+    "tag": "silver pantyhose",
+    "n": 0,
+    "ok": false
+   },
+   "kneehighs": {
+    "tag": "silver kneehighs",
+    "n": 0,
+    "ok": false
+   },
+   "socks": {
+    "tag": "silver socks",
+    "n": 0,
+    "ok": false
+   },
+   "dress": {
+    "tag": "silver dress",
+    "n": 1307,
+    "ok": true
+   },
+   "skirt": {
+    "tag": "silver skirt",
+    "n": 54,
+    "ok": true
+   },
+   "shirt": {
+    "tag": "silver shirt",
+    "n": 7,
+    "ok": false
+   },
+   "blouse": {
+    "tag": "silver blouse",
+    "n": 0,
+    "ok": false
+   },
+   "sweater": {
+    "tag": "silver sweater",
+    "n": 0,
+    "ok": false
+   },
+   "hoodie": {
+    "tag": "silver hoodie",
+    "n": 0,
+    "ok": false
+   },
+   "jacket": {
+    "tag": "silver jacket",
+    "n": 0,
+    "ok": false
+   },
+   "coat": {
+    "tag": "silver coat",
+    "n": 8,
+    "ok": false
+   },
+   "bikini": {
+    "tag": "silver bikini",
+    "n": 751,
+    "ok": true
+   },
+   "bra": {
+    "tag": "silver bra",
+    "n": 0,
+    "ok": false
+   },
+   "panties": {
+    "tag": "silver panties",
+    "n": 0,
+    "ok": false
+   },
+   "corset": {
+    "tag": "silver corset",
+    "n": 6,
+    "ok": false
+   },
+   "leotard": {
+    "tag": "silver leotard",
+    "n": 102,
+    "ok": true
+   },
+   "boots": {
+    "tag": "silver boots",
+    "n": 112,
+    "ok": true
+   },
+   "heels": {
+    "tag": "silver heels",
+    "n": 0,
+    "ok": false
+   },
+   "ribbon": {
+    "tag": "silver ribbon",
+    "n": 24,
+    "ok": false
+   },
+   "gloves": {
+    "tag": "silver gloves",
+    "n": 216,
+    "ok": true
+   },
+   "swimsuit": {
+    "tag": "silver swimsuit",
+    "n": 0,
+    "ok": false
+   },
+   "camisole": {
+    "tag": "silver camisole",
+    "n": -1,
+    "ok": false
+   },
+   "tank top": {
+    "tag": "silver tank top",
+    "n": 0,
+    "ok": false
+   },
+   "shorts": {
+    "tag": "silver shorts",
+    "n": 13,
+    "ok": false
+   },
+   "jeans": {
+    "tag": "silver jeans",
+    "n": 0,
+    "ok": false
+   },
+   "pants": {
+    "tag": "silver pants",
+    "n": 0,
+    "ok": false
+   },
+   "scarf": {
+    "tag": "silver scarf",
+    "n": -1,
+    "ok": false
+   },
+   "garter belt": {
+    "tag": "silver garter belt",
+    "n": 0,
+    "ok": false
+   },
+   "leg warmers": {
+    "tag": "silver leg warmers",
+    "n": 0,
+    "ok": false
+   },
+   "stockings": {
+    "tag": "silver stockings",
+    "n": 0,
+    "ok": false
+   },
+   "pleated skirt": {
+    "tag": "silver pleated skirt",
+    "n": 0,
+    "ok": false
+   },
+   "china dress": {
+    "tag": "silver china dress",
+    "n": 0,
+    "ok": false
+   },
+   "maid": {
+    "tag": "silver maid",
+    "n": 0,
+    "ok": false
+   },
+   "apron": {
+    "tag": "silver apron",
+    "n": 1,
+    "ok": false
+   },
+   "hat": {
+    "tag": "silver hat",
+    "n": 0,
+    "ok": false
+   },
+   "choker": {
+    "tag": "silver choker",
+    "n": 403,
+    "ok": true
+   }
+  }
+ }
+}

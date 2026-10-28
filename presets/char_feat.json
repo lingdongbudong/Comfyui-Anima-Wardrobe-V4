@@ -1,0 +1,637 @@
+{
+  "_meta": {
+    "purpose": "角色固定特征表（v3.46.0）—— 词库外标签的唯一合规入口",
+    "how": "extras 拼进 collect(tail_extra=)，不过 cap、不过互斥、不进任何随机池",
+    "rules": [
+      "extras 里必须是真实 danbooru 标签且 tag_level=0；写 L1+ 的词会抬档或越档",
+      "pick 池用 derive_seed(seed,'charfeat:池名',0) 派生，不消耗 pass_rng",
+      "drop 里的字段在本角色上强制清空：用于压制看不见的眼睛、以及与固定配件打架的随机发饰",
+      "set 里的字段被强制写成给定值（只认词库里真实存在的字段与选项）：用于纠正 APPEAR 表写错的瞳色 —— 那张表优先级最高，覆盖层改不动",
+      "set 排在 drop 之后：同一字段同时出现时以 set 为准",
+      "表里没有的角色不加标签、不抽随机 → 固定 seed 的既有基线逐字节不变",
+      "别把这些词塞进 hair_acc 之类的随机字段词库：那会让 2000+ 角色随机长出精灵耳/戴眼罩"
+    ],
+    "key": "角色 tag；同一角色的 trigger 会自动映射过来",
+    "version": "1"
+  },
+  "feats": {
+    "emilia_(re:zero)": {
+      "note": "爱蜜莉雅：半精灵，尖耳是本体特征。角色库 tags 里本来就有 pointy ears，但 appearance_for() 只取 5 个槽位，被丢掉了。",
+      "extras": [
+        "pointy ears"
+      ],
+      "drop": [
+        "hair_acc"
+      ],
+      "drop_reason": "hair_acc 会随机抽出 animal ears / rabbit ears，与 pointy ears 同时出现就是四只耳朵"
+    },
+    "trigger_(zenless_zone_zero)": {
+      "note": "扳机（绝区零）：黑色**金属面甲**盖住上半张脸（不是风镜、不挂脖子）、下缘两条灯随情绪变色、金色长发单马尾、红色三角发饰、**双手叉腰不拿枪**。⚠️ 四个踩过的坑：① `black goggles` 会被画成挂在脖子上的透明风镜 → 改 `black visor` + `black metal`；② `glowing` 会让整块面罩发光（出成绿罩）→ 改 neon lights + 颜色 light；③ `empty hands` 压不住枪（狙击手身份自带）→ `hands on own hips` 把两只手占住；④ 场景抽到泳装/草帽时服装会压过角色设定，要更稳需锁 outfit。",
+      "extras": [
+        "black visor",
+        "black metal",
+        "neon lights",
+        "hands on own hips"
+      ],
+      "pick": {
+        "glow": [
+          "yellow light",
+          "light blue light",
+          "blue purple light",
+          "green light",
+          "red light",
+          "orange light",
+          "pink light"
+        ]
+      },
+      "drop": [
+        "eye_gaze",
+        "eyes_color",
+        "hair_acc"
+      ],
+      "drop_reason": "eye_gaze 写 looking at viewer 会画出「看不见的眼睛在看镜头」；eyes_color 同理（官方模型解包无眼睛）；hair_acc 会塞兔耳/女仆头饰，与红三角发饰打架"
+    },
+    "the_herta_(honkai:_star_rail)": {
+      "note": "大黑塔：黑色大巫师帽（帽上有紫色花与白色纹样）、黑色颈环带金色蝴蝶、白色衬衫、棕发紫瞳。角色库 tags 为空，只剩一个发色。",
+      "extras": [
+        "witch hat",
+        "black choker",
+        "purple hair ribbon"
+      ],
+      "drop": [
+        "hair_acc"
+      ],
+      "drop_reason": "巫师帽已占头部，随机 hair_acc 再抽女仆头饰/兔耳会叠成一团"
+    },
+    "phoebe_(wuthering_waves)": {
+      "note": "菲比：金发紫瞳、头顶黑色蝴蝶结、右侧蓝色十字发夹、黑色 choker 带金属坠。⚠️ APPEAR 表把她写成 blue eyes（错的），覆盖层改不动，只能在这里用 set 强盖。",
+      "extras": [
+        "black hair bow",
+        "blue hair ornament",
+        "black choker"
+      ],
+      "set": {
+        "eyes_color": "purple eyes"
+      },
+      "drop": [
+        "hair_acc"
+      ],
+      "drop_reason": "发饰已由 extras 明确指定，再随机抽会叠出第二组头饰"
+    },
+    "phoenix_reffaella": {
+      "note": "菲欧妮（绝区零 Phoenix）：浅金发双麻花辫、琥珀黄瞳、头两侧浅金圆形机械耳饰（带心形纹）。发色瞳色在库里本来就是对的，缺的是双辫 heads 与耳饰。",
+      "extras": [
+        "twin braids",
+        "hair ornament"
+      ],
+      "drop": [
+        "hair_tie",
+        "hair_acc"
+      ],
+      "drop_reason": "hair_tie 会随机抽成马尾/丸子头，与固定的双辫打架；hair_acc 会再叠一组头饰"
+    },
+    "evanescia_(honkai:_star_rail)": {
+      "note": "绯英（崩坏：星穹铁道）：粉色头发、紫色眼睛、头顶一对**粉色**兔耳（带红色尖端与小红花）、白色衬衫 + 领口大红蝴蝶结 + 黑色十字 choker。⚠️ 兔耳必须写 `pink rabbit ears`：只写 `rabbit ears` 会跟着其它元素跑色。",
+      "extras": [
+        "pink rabbit ears",
+        "red bow",
+        "black choker"
+      ],
+      "drop": [
+        "hair_acc"
+      ],
+      "drop_reason": "兔耳已由 extras 固定；hair_acc 再随机会抽出第二组耳朵或女仆头饰"
+    },
+    "jade_(honkai:_star_rail)": {
+      "note": "翡翠（崩坏：星穹铁道）：淡紫长发、蓝眼、黑色大巫师帽（蓝缎带 + 蓝蝴蝶结 + 星空纹）、多层项链配绿松石吊坠，熟女御姐气质。",
+      "extras": [
+        "witch hat",
+        "blue bow",
+        "necklace",
+        "mature female"
+      ],
+      "drop": [
+        "hair_acc"
+      ],
+      "drop_reason": "帽子与蝴蝶结已固定，hair_acc 再随机会叠出第二组头饰；mature female 是本角色要的年龄气质，不退让"
+    },
+    "hu_tao_(genshin_impact)": {
+      "note": "胡桃（原神）：棕色双马尾、红色梅花瞳、黑色 top hat（帽檐红花 + 金纹）、深色长外套。 ⚠️ 发长/束法**不写进 extras** —— 官方发型表里已有（`hair_len`/`hair_tie`），写在 extras 会变成固定标签，与发型选择器选的款式互斥（`apply_mutex` 会把用户选的剔掉）。",
+      "extras": [
+        "top hat",
+        "flower-shaped pupils",
+        "twintails",
+        "red hair flower"
+      ],
+      "drop": [
+        "hair_acc",
+        "hair_tie"
+      ],
+      "drop_reason": "双马尾与帽上红花已固定，hair_acc/hair_tie 再随机会叠出第二组头饰或换成别的束法"
+    },
+    "scarlet_(nikke)": {
+      "note": "红莲（胜利女神：妮姬）：银白长发、红瞳、红色山茶/玫瑰发饰、白色和服配红腰带、手持太刀。⚠️ 该角色 hair 字段为空，且 tags 里 `hair between eyes` 排在 `grey hair` 前面，`appearance_for()` 会把「眼间发丝」误当发色返回 —— 靠 user_characters 的 edits 把 hair/eyes 写死来盖住。",
+      "extras": [
+        "red hair flower"
+      ],
+      "drop": [
+        "hair_acc"
+      ],
+      "drop_reason": "红花发饰已固定；hair_acc 会再叠女仆头饰或兽耳"
+    },
+    "huohuo_(honkai:_star_rail)": {
+      "note": "藿藿（崩坏：星穹铁道）：绿色长发、绿瞳、狐狸耳与青色发光狐尾、肉球状瞳孔、阴阳发饰、小帽。角色库 tags 里 fox ears / fox tail / paw-shaped pupils 全都有，但一个都进不了正文。",
+      "extras": [
+        "fox ears",
+        "fox tail",
+        "paw-shaped pupils",
+        "glowing"
+      ],
+      "drop": [
+        "hair_acc"
+      ],
+      "drop_reason": "狐耳已由 extras 固定；hair_acc 会叠兔耳/女仆头饰，与狐耳打架"
+    },
+    "ram_(re:zero)": {
+      "note": "拉姆（Re:Zero）：粉色短发、红瞳、左侧刘海遮住一只眼、白色花环 + 紫色蝴蝶结发带。⚠️ tags 里 `hair over one eye` / `short hair` 本来就有，但都不进正文。 ⚠️ 发长/束法**不写进 extras** —— 官方发型表里已有（`hair_len`/`hair_tie`），写在 extras 会变成固定标签，与发型选择器选的款式互斥（`apply_mutex` 会把用户选的剔掉）。",
+      "extras": [
+        "hair over one eye",
+        "short hair",
+        "hair flower",
+        "purple hair bow"
+      ],
+      "drop": [
+        "hair_acc",
+        "hair_tie",
+        "hair_len"
+      ],
+      "drop_reason": "短发与固定发饰已由 extras 给出；hair_tie 会抽成马尾、hair_len 会抽成长发，两者都会破坏短发轮廓"
+    },
+    "rem_(re:zero)": {
+      "note": "雷姆（Re:Zero）：蓝色短发、蓝瞳、右侧刘海遮住一只眼、白色花环 + 紫色蝴蝶结发带。 ⚠️ 发长/束法**不写进 extras** —— 官方发型表里已有（`hair_len`/`hair_tie`），写在 extras 会变成固定标签，与发型选择器选的款式互斥（`apply_mutex` 会把用户选的剔掉）。",
+      "extras": [
+        "hair over one eye",
+        "short hair",
+        "hair flower",
+        "purple hair bow"
+      ],
+      "drop": [
+        "hair_acc",
+        "hair_tie",
+        "hair_len"
+      ],
+      "drop_reason": "短发与固定发饰已由 extras 给出；hair_tie 会抽成马尾、hair_len 会抽成长发，两者都会破坏短发轮廓"
+    },
+    "lynae_(wuthering_waves)": {
+      "note": "琳奈（鸣潮）：黑金渐变长发、紫瞳、右侧高马尾、脖子挂彩色耳机、骷髅发饰、白衬衫配蓝色领带。",
+      "extras": [
+        "high ponytail",
+        "headphones around neck",
+        "skull hair ornament"
+      ],
+      "drop": [
+        "hair_acc",
+        "hair_tie"
+      ],
+      "drop_reason": "高马尾与固定发饰已由 extras 给出；hair_tie 会换掉束法、hair_acc 会叠第二组头饰"
+    },
+    "lingsha_(honkai:_star_rail)": {
+      "note": "灵砂（崩坏：星穹铁道）：深褐近黑的长直发、红瞳、右侧金色香炉发饰配红花、白黑中式旗袍、红色手套与红靴。",
+      "extras": [
+        "gold hair ornament",
+        "red hair flower"
+      ],
+      "drop": [
+        "hair_acc"
+      ],
+      "drop_reason": "香炉发饰与红花已由 extras 给出；hair_acc 会叠出兽耳/女仆头饰，与中式发饰打架"
+    },
+    "power_(chainsaw_man)": {
+      "note": "帕瓦（电锯人）：浅金长发、红瞳、一对红色鬼角、鲨鱼牙、十字瞳孔、白衬衫配黑领带。⚠️ tags 里 demon horns / red horns / sharp teeth / cross-shaped pupils 全有，一个都进不了正文。",
+      "extras": [
+        "red horns",
+        "cross-shaped pupils",
+        "sharp teeth"
+      ],
+      "drop": [
+        "hair_acc"
+      ],
+      "drop_reason": "鬼角已由 extras 给出；hair_acc 会叠兔耳/兽耳，与鬼角同时出现就是四只角"
+    },
+    "yao_guang_(honkai:_star_rail)": {
+      "note": "戎韬将军（爻光，崩坏：星穹铁道）：银白长发、青蓝瞳、一对白色大狐耳（耳根有金环）、额头金色菱形印记、深青中式旗袍配白色外套。tags 为空，发色瞳色靠 edits。",
+      "extras": [
+        "fox ears",
+        "forehead mark"
+      ],
+      "drop": [
+        "hair_acc"
+      ],
+      "drop_reason": "白狐耳已由 extras 固定；hair_acc 会再叠兔耳/兽耳，与狐耳同时出现就是四只耳朵"
+    },
+    "cyrene_(honkai:_star_rail)": {
+      "note": "昔涟（崩坏：星穹铁道）：粉色长发发尾渐变蓝、紫瞳、尖精灵耳、白色橄榄枝光环、蓝玫瑰发饰、白色礼服配紫内衬。⚠️ 库里瞳色写的是 blue eyes，图上是紫瞳。 ⚠️ 用户明确要求**不要头上的角**，extras 里已剔除 horns。",
+      "extras": [
+        "pointy ears",
+        "hair rose"
+      ],
+      "set": {
+        "eyes_color": "purple eyes"
+      },
+      "drop": [
+        "hair_acc"
+      ],
+      "drop_reason": "玫瑰发饰已由 extras 给出；hair_acc 会叠兽耳/女仆头饰，与精灵耳和角同时出现会乱"
+    },
+    "robin_(honkai:_star_rail)": {
+      "note": "知更鸟（崩坏：星穹铁道）：浅蓝发、绿瞳、头两侧一对白色羽翼、金色光环、紫白礼服。⚠️ APPEAR 表把她写成 green hair（错的），覆盖层改不动，用 set 强盖。",
+      "extras": [
+        "halo",
+        "head wings"
+      ],
+      "set": {
+        "hair_color": "aqua hair"
+      },
+      "drop": [
+        "hair_acc"
+      ],
+      "drop_reason": "头翼與光环已由 extras 给出；hair_acc 再抽会叠出第二组头饰"
+    },
+    "robin_(summeretto)_(honkai:_star_rail)": {
+      "note": "知更鸟·晴歌（泳装形态）：浅蓝发、绿瞳、头两侧白羽翼、金色光圈、白色星星泳装。",
+      "extras": [
+        "halo",
+        "head wings"
+      ],
+      "set": {
+        "hair_color": "aqua hair"
+      },
+      "drop": [
+        "hair_acc"
+      ],
+      "drop_reason": "同上：头翼与光环已固定"
+    },
+    "lucia_elowen": {
+      "note": "卢西娅·艾洛温（绝区零）：浅蓝紫短发、黄绿异色瞳、一对黑色羊角、长方形瞳孔、尖耳、黑色颈环配金钥匙坠。",
+      "extras": [
+        "curved horns",
+        "square pupils",
+        "pointy ears"
+      ],
+      "drop": [
+        "hair_acc"
+      ],
+      "drop_reason": "羊角已由 extras 给出；hair_acc 会叠兽耳，与羊角同时出现就是四只角"
+    },
+    "roxy_ifrita_pryce": {
+      "note": "洛克茜（绝区零）：薄荷绿短发、红瞳、黑框眼镜、尖耳、黑色发带、十字发夹、白色露肩装。",
+      "extras": [
+        "glasses",
+        "pointy ears",
+        "cross hair ornament",
+        "hairband"
+      ],
+      "drop": [
+        "hair_acc"
+      ],
+      "drop_reason": "眼镜与发带已由 extras 给出；hair_acc 再抽会叠出兽耳/女仆头饰"
+    },
+    "sunna_(zenless_zone_zero)": {
+      "note": "千夏（绝区零，旧名「千夏蕾米尔」）：浅薄荷绿长发、彩虹渐变瞳、尖耳、单侧高马尾、青色三角发饰与十字/手柄发夹。中文名以覆盖层 zh 为准。 ⚠️ APPEAR 表无条目、库 hair/eyes 为空 → 发色瞳色原本随机；set 锁薄荷绿发+渐变瞳（2026-10-28）。",
+      "extras": [
+        "side ponytail",
+        "gradient eyes",
+        "pointy ears",
+        "hair ornament"
+      ],
+      "drop": [
+        "hair_acc",
+        "hair_tie"
+      ],
+      "drop_reason": "侧马尾与固定发饰已由 extras 给出；hair_tie 会换掉束法",
+      "set": {
+        "hair_color": "green hair",
+        "eyes_color": "gradient eyes"
+      }
+    },
+    "sigrid_de_l'azur": {
+      "note": "希格莉德（绝区零，马希人）：米金色长发高马尾、青瞳、一对马耳、额前护目镜、蓝色发带、白蓝运动装。 ⚠️ 发长/束法**不写进 extras** —— 官方发型表里已有（`hair_len`/`hair_tie`），写在 extras 会变成固定标签，与发型选择器选的款式互斥（`apply_mutex` 会把用户选的剔掉）。",
+      "extras": [
+        "horse ears",
+        "ponytail",
+        "goggles"
+      ],
+      "drop": [
+        "hair_acc",
+        "hair_tie"
+      ],
+      "drop_reason": "马耳与高马尾已固定；hair_tie 会换掉束法、hair_acc 会叠兽耳"
+    },
+    "cissia_(zenless_zone_zero)": {
+      "note": "希希芙（绝区零，蛇希人）：金发侧马尾配白色毛球、红瞳、一条粗长蛇尾、红黑露肩装。",
+      "extras": [
+        "snake tail",
+        "side ponytail"
+      ],
+      "drop": [
+        "hair_acc",
+        "hair_tie"
+      ],
+      "drop_reason": "侧马尾已固定；hair_tie 会换掉束法"
+    },
+    "seed_(zenless_zone_zero)": {
+      "note": "席德（绝区零）：冰蓝短发编成一条后侧麻花辫、绿瞳、**白色手套**（不是机械手）、白/灰紧身衣。⚠️ 库里瞳色写的是 blue eyes，图上是绿瞳。",
+      "extras": [
+        "braid",
+        "white gloves"
+      ],
+      "set": {
+        "eyes_color": "green eyes"
+      },
+      "drop": [
+        "hair_acc",
+        "hair_tie"
+      ],
+      "drop_reason": "编发已固定；hair_tie 会换成马尾/双马尾，破坏辫子轮廓"
+    },
+    "ye_shunguang": {
+      "note": "叶瞬光（绝区零，昵称小光）：棕色蓬松大卷长发、红瞳、**红色发带 + 头顶白色角状发饰**（是发饰不是角）、白色露肩上衣配红色百褶裙、红色 choker、红色细丝带。⚠️ 官方立绘上**看不到狐耳和尾巴**（wiki 萌点写的「兽耳、尾巴」在战斗形态才明显）—— 之前照着 wiki 加了 fox ears/tail 是错的，已撤掉。",
+      "extras": [
+        "hair ribbon",
+        "choker",
+        "white off-shoulder top",
+        "red pleated skirt",
+        "long wavy hair"
+      ],
+      "drop": [
+        "hair_acc",
+        "outfit",
+        "accessory",
+        "prop",
+        "hair_tie"
+      ],
+      "drop_reason": "红发带已固定；**accessory 会抽到草帽**（本体上一版就戴了草帽）、**prop 会抽到吹风机/冰淇淋**（手持物）、hair_tie 会把披散大卷编成麻花辫、outfit 会盖掉白露肩装配红百褶裙。四个全闭麦才和官方立绘一致。",
+      "set": {
+        "hair_len": "very long hair"
+      }
+    },
+    "yixuan_(zenless_zone_zero)": {
+      "note": "仪玄（绝区零）：银白长发带呆毛、金橙渐变瞳、黑色波浪发饰与蓝玫瑰、黑白中式立领装。",
+      "extras": [
+        "hair ornament",
+        "chinese clothes",
+        "blue rose"
+      ],
+      "drop": [
+        "hair_acc"
+      ],
+      "drop_reason": "固定发饰已由 extras 给出；hair_acc 会叠兽耳/女仆头饰"
+    },
+    "hsin_(wuthering_waves)": {
+      "note": "心（鸣潮）：银白偏浅蓝长发、橙红瞳、一对白底黑尖狐耳、巨大蓬松白黑渐变狐尾（带金色星饰）、黑红露肩礼服。",
+      "extras": [
+        "fox ears",
+        "fox tail",
+        "huge tail"
+      ],
+      "set": {
+        "eyes_color": "orange eyes"
+      },
+      "drop": [
+        "hair_acc"
+      ],
+      "drop_reason": "狐耳已由 extras 固定；hair_acc 会叠兔耳/女仆头饰，与狐耳同时出现就是四只耳朵"
+    },
+    "hsin_(illumining_form)_(wuthering_waves)": {
+      "note": "心·明照形态（鸣潮）：银白长发、黄绿瞳、白底黑尖狐耳、发光金色狐尾、白金长裙配金色纹样。与「心」的区别是整体配色（瞳色橙红 → 黄绿、尾从白黑变金）。",
+      "extras": [
+        "fox ears",
+        "fox tail",
+        "huge tail"
+      ],
+      "set": {
+        "eyes_color": "yellow eyes"
+      },
+      "drop": [
+        "hair_acc"
+      ],
+      "drop_reason": "狐耳已固定；hair_acc 会叠第二组耳朵/头饰"
+    },
+    "hsin_(moon_fox)_(wuthering_waves)": {
+      "note": "心·月狐形态（鸣潮）：银白长发、蓝瞳、白底蓝尖狐耳（带金色花饰）、巨大狐尾、绿宝石装饰配红黑礼服、金色长耳环。与「心」（橙瞳）和「明照」（黄瞳）的差别是蓝瞳 + 红黑配色。",
+      "extras": [
+        "fox ears",
+        "fox tail",
+        "huge tail"
+      ],
+      "set": {
+        "eyes_color": "blue eyes"
+      },
+      "drop": [
+        "hair_acc"
+      ],
+      "drop_reason": "狐耳已由 extras 固定；hair_acc 会叠兔耳/女仆头饰"
+    },
+    "mornye_(wuthering_waves)": {
+      "note": "莫宁（鸣潮）：银蓝短发接渐紫长发、红瞳、银色三角发夹、白色长风衣敞开 + 短裤、双腿是**水晶玻璃质感的半透明腿**（内部有青绿紫发光纹路，脚也透明）。腿必须露 → set bottom=shorts + 闭麦 outfit；材质用 crystal legs + glass legs + glowing（全 L0，transparent/translucent 是 L2 会抬档）。",
+      "extras": [
+        "triangle hair ornament",
+        "white coat",
+        "shorts",
+        "crystal legs",
+        "glass legs",
+        "glowing"
+      ],
+      "drop": [
+        "hair_acc",
+        "outfit"
+      ],
+      "drop_reason": "长发饰品已固定；outfit 会抽到长和服/长裙把水晶腿盖住 —— 下装用 set 锁 shorts，腿才露得出来",
+      "set": {
+        "bottom": "shorts"
+      }
+    },
+    "shorekeeper_(wuthering_waves)": {
+      "note": "守岸人（鸣潮）：蓝色短发带长鬓、紫瞳、白色兜帽、尖耳、白色半透明羽毛状礼服。⚠️ 库里 hair/eyes 字段为空，APPEAR 返回 white hair + blue eyes，与图上蓝发紫瞳不符，用 set 强盖。",
+      "extras": [
+        "hood",
+        "pointy ears"
+      ],
+      "set": {
+        "hair_color": "blue hair",
+        "eyes_color": "purple eyes"
+      },
+      "drop": [
+        "hair_acc"
+      ],
+      "drop_reason": "兜帽已占头部；hair_acc 会叠兔耳/女仆头饰，与兜帽打架"
+    },
+    "qingxiao_(wuthering_waves)": {
+      "note": "清宵（鸣潮）：蓝色长发、蓝瞳、头侧青绿角状发饰与青玉流苏、白蓝中式立领礼服配透明长摆。",
+      "extras": [
+        "hair ornament",
+        "chinese clothes"
+      ],
+      "drop": [
+        "hair_acc"
+      ],
+      "drop_reason": "固定发饰已由 extras 给出；hair_acc 会叠兽耳/女仆头饰"
+    },
+    "yangyang_(xuanling)_(wuthering_waves)": {
+      "note": "秧秧·玄翎（鸣潮）：黑发接亮蓝渐变长发（发梢成羽状）、蓝瞳、红色流苏发饰、蓝黑羽翼状披风。库里的 eyes 写成 black eyes，图上是蓝瞳。",
+      "extras": [
+        "feathers",
+        "hair ornament"
+      ],
+      "set": {
+        "eyes_color": "blue eyes"
+      },
+      "drop": [
+        "hair_acc"
+      ],
+      "drop_reason": "羽状发梢与流苏已固定；hair_acc 会叠出兽耳/头饰破坏轮廓"
+    },
+    "suisui_(wuthering_waves)": {
+      "note": "穗穗（鸣潮）：白金长发高马尾、黄瞳、蝴蝶发簪与蓝绿流苏、黑色长手套、白色中式长裙配金纹。",
+      "extras": [
+        "hair stick",
+        "hair ornament"
+      ],
+      "drop": [
+        "hair_acc",
+        "hair_tie"
+      ],
+      "drop_reason": "高马尾与发簪已固定；hair_tie 会换掉束法、hair_acc 会叠第二组头饰"
+    },
+    "zhezhi_(wuthering_waves)": {
+      "note": "折枝（鸣潮）：黑色长发带粉色挑染发尾、蓝紫瞳、圆框眼镜、白色双马尾丝带、蓝绿中式短衫配红腰带。⚠️ APPEAR 表把她写成 green hair + golden eyes（完全不符），set 强盖。",
+      "extras": [
+        "glasses",
+        "hair ribbon",
+        "streaked hair",
+        "chinese clothes"
+      ],
+      "set": {
+        "hair_color": "black hair",
+        "eyes_color": "purple eyes"
+      },
+      "drop": [
+        "hair_acc"
+      ],
+      "drop_reason": "眼镜与丝带已由 extras 给出；hair_acc 会叠第二组头饰，与眼镜打架"
+    },
+    "reze_(chainsaw_man)": {
+      "note": "炸弹人 / 蕾赛（电锯人）：黑色短发（及肩 bob）、绿瞳、颈间一颗炸弹拉环、气质安静带点野。⚠️ APPEAR 表把她写成 `purple hair`（错的），覆盖层改不动，用 set 强盖。",
+      "extras": [
+        "choker"
+      ],
+      "set": {
+        "hair_color": "black hair",
+        "eyes_color": "green eyes"
+      },
+      "drop": [
+        "hair_acc"
+      ],
+      "drop_reason": "颈环已由 extras 给出；hair_acc 会叠出兽耳/女仆头饰，破坏短发轮廓"
+    },
+    "cartethyia_(wuthering_waves)": {
+      "note": "卡提希娅（鸣潮）：金色长卷发、蓝瞳、尖精灵耳、**头顶悬浮一圈蓝色树枝状头环**（不是角冠）、**额头正中一只金角**、粉蓝和服配樱花纹。⚠️ 头环写 `blue laurel wreath`（laurel wreath 带环状语义，别用 horns 会画成一对角）；额角写 `forehead horn` + `gold horn` 两个词一起压颜色。",
+      "extras": [
+        "pointy ears",
+        "blue laurel wreath",
+        "forehead horn",
+        "gold horn"
+      ],
+      "drop": [
+        "hair_acc"
+      ],
+      "drop_reason": "固定发饰已由 extras 给出；hair_acc 会叠兽耳/女仆头饰"
+    },
+    "ju_fufu": {
+      "note": "橘福福（绝区零，虎希人）：金发（白色内层挑染 + 黑色虎纹挑染）、绿瞳、一对虎耳、虎尾、齐刘海、贫乳、短裤。",
+      "extras": [
+        "tiger ears",
+        "tiger tail"
+      ],
+      "drop": [
+        "hair_acc"
+      ],
+      "drop_reason": "固定发饰已由 extras 给出；hair_acc 会叠兽耳/女仆头饰"
+    },
+    "orphie_magnusson": {
+      "note": "奥菲斯（绝区零）：橙发、绿瞳（橙瞳仁）、头顶双角、尖耳、尾巴（尾端龙头机械部分寄宿队长「鬼火」）、贝雷帽。",
+      "extras": [
+        "horns",
+        "tail",
+        "pointy ears",
+        "beret"
+      ],
+      "drop": [
+        "hair_acc"
+      ],
+      "drop_reason": "固定发饰已由 extras 给出；hair_acc 会叠兽耳/女仆头饰"
+    },
+    "velina_airgid": {
+      "note": "维琳娜·艾嘉德（绝区零）：白发、紫瞳、尖耳朵、遮眼发、两根呆毛、大蝴蝶结、御姐。",
+      "extras": [
+        "pointy ears",
+        "hair bow"
+      ],
+      "drop": [
+        "hair_acc"
+      ],
+      "drop_reason": "固定发饰已由 extras 给出；hair_acc 会叠兽耳/女仆头饰"
+    },
+    "yidhari_murphy": {
+      "note": "伊德海莉·墨菲（绝区零，章鱼希人）：黄发、紫瞳、章鱼触手、圈圈眼、短发妹妹头、贝雷帽、御姐。",
+      "extras": [
+        "tentacles",
+        "beret"
+      ],
+      "drop": [
+        "hair_acc"
+      ],
+      "drop_reason": "固定发饰已由 extras 给出；hair_acc 会叠兽耳/女仆头饰"
+    },
+    "aglaea_(honkai:_star_rail)": {
+      "note": "阿格莱雅（崩坏：星穹铁道）：金发（内层挑染）、青渐变绿瞳、短发、月桂冠、头花、露肩连衣裙、御姐巨乳。",
+      "extras": [
+        "laurel wreath"
+      ],
+      "drop": [
+        "hair_acc"
+      ],
+      "drop_reason": "固定发饰已由 extras 给出；hair_acc 会叠兽耳/女仆头饰"
+    },
+    "ye_shunguang_(enlightened_state)": {
+      "note": "叶瞬光·白色形态（绝区零「明心境」）：**银白长卷发**、红瞳、**白色狐耳 + 巨大白色狐尾**、红色发带（额头红纹 + 红色长丝带）、红 choker、白色露肩装配红短裙、**御姐身材**、大腿红色火焰纹。⚠️ 官方立绘**没有独角** —— 之前按 wiki 的「若隐若现的独角」加了 single horn，与立绘不符，已撤掉。⚠️ 发色只写 `white hair, gradient hair`，加 `black hair` 会让黑压过白。",
+      "extras": [
+        "white fox ears",
+        "fox tail",
+        "hair ribbon",
+        "choker",
+        "white off-shoulder top",
+        "red skirt",
+        "mature female",
+        "long wavy hair"
+      ],
+      "drop": [
+        "hair_acc",
+        "outfit",
+        "accessory",
+        "prop",
+        "hair_tie"
+      ],
+      "drop_reason": "狐耳狐尾已固定；同本体的四个字段闭麦；发长必须 set 成 very long hair（随机抽到 short hair 就出成短发，与官方银白长卷发不符）",
+      "set": {
+        "hair_len": "very long hair"
+      }
+    },
+    "firefly_(honkai:_star_rail)": {
+      "note": "流萤（崩坏：星穹铁道）：银白长发、紫瞳。⚠️ APPEAR 表把她写成 green eyes（知更鸟的特征，串行）；silver hair 本来就对，只修 eyes。",
+      "set": {
+        "eyes_color": "purple eyes"
+      }
+    }
+  }
+}

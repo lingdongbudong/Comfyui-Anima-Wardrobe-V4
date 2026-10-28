@@ -1,0 +1,804 @@
+{
+  "_meta": {
+    "schema": "anima-wardrobe-v4/user-characters@1",
+    "updated_at": "2026-10-27 18:30:13",
+    "edits": 122,
+    "custom": 12
+  },
+  "edits": {
+    "souryuu_asuka_langley": {
+      "trigger": "souryuu asuka langley, neon genesis evangelion",
+      "work": "neon genesis evangelion",
+      "zh": "惣流·明日香·兰格雷",
+      "tags": [
+        "1girl",
+        "blue eyes",
+        "hair between eyes",
+        "long hair",
+        "orange hair",
+        "two side up",
+        "medium breasts"
+      ],
+      "thumb": "user_souryuu_asuka_langley"
+    },
+    "2b_(nier:automata)": {
+      "trigger": "2b, nier:automata",
+      "work": "nier:automata",
+      "hair": "white"
+    },
+    "rem_(re:zero)": {
+      "trigger": "rem, re:zero kara hajimeru isekai seikatsu",
+      "work": "re:zero kara hajimeru isekai seikatsu"
+    },
+    "ayanami_rei": {
+      "trigger": "ayanami rei, neon genesis evangelion",
+      "work": "neon genesis evangelion",
+      "zh": "绫波丽",
+      "tags": [
+        "1girl",
+        "red eyes",
+        "hair between eyes",
+        "blue hair",
+        "short hair",
+        "medium breasts",
+        "plugsuit"
+      ]
+    },
+    "makima_(chainsaw_man)": {
+      "trigger": "makima, chainsaw man",
+      "work": "chainsaw man"
+    },
+    "nishikigi_chisato": {
+      "trigger": "nishikigi chisato, lycoris recoil",
+      "work": "lycoris recoil"
+    },
+    "inoue_takina": {
+      "trigger": "inoue takina, lycoris recoil",
+      "work": "lycoris recoil"
+    },
+    "power_(chainsaw_man)": {
+      "trigger": "power, chainsaw man",
+      "work": "chainsaw man"
+    },
+    "emilia_(re:zero)": {
+      "trigger": "emilia, re:zero kara hajimeru isekai seikatsu",
+      "work": "re:zero kara hajimeru isekai seikatsu",
+      "hair": "silver hair",
+      "eyes": "purple eyes"
+    },
+    "ram_(re:zero)": {
+      "trigger": "ram, re:zero kara hajimeru isekai seikatsu",
+      "work": "re:zero kara hajimeru isekai seikatsu"
+    },
+    "makinami_mari_illustrious": {
+      "trigger": "makinami mari illustrious, neon genesis evangelion",
+      "work": "neon genesis evangelion"
+    },
+    "amagi_yukiko": {
+      "trigger": "amagi yukiko, persona 4",
+      "work": "persona 4"
+    },
+    "katsuragi_misato": {
+      "trigger": "katsuragi misato, neon genesis evangelion",
+      "work": "neon genesis evangelion"
+    },
+    "aigis_(persona)": {
+      "trigger": "aigis, persona 3",
+      "work": "persona 3"
+    },
+    "niijima_makoto": {
+      "trigger": "niijima makoto, persona 5",
+      "work": "persona 5"
+    },
+    "himeno_(chainsaw_man)": {
+      "trigger": "himeno, chainsaw man",
+      "work": "chainsaw man"
+    },
+    "jill_valentine": {
+      "trigger": "jill valentine, resident evil",
+      "work": "resident evil"
+    },
+    "ada_wong": {
+      "trigger": "ada wong, resident evil",
+      "work": "resident evil"
+    },
+    "a2_(nier:automata)": {
+      "trigger": "a2, nier:automata",
+      "work": "nier:automata"
+    },
+    "eve_(stellar_blade)": {
+      "trigger": "eve, stellar blade",
+      "work": "stellar blade"
+    },
+    "claire_redfield": {
+      "trigger": "claire redfield, resident evil",
+      "work": "resident evil"
+    },
+    "kurumi_(lycoris_recoil)": {
+      "trigger": "kurumi, lycoris recoil",
+      "work": "lycoris recoil",
+      "hair": "blonde"
+    },
+    "raven_(stellar_blade)": {
+      "trigger": "raven, stellar blade",
+      "work": "stellar blade"
+    },
+    "suzuhara_sakura": {
+      "trigger": "suzuhara sakura, neon genesis evangelion",
+      "work": "neon genesis evangelion"
+    },
+    "lily_artemis_ii_(stellar_blade)": {
+      "trigger": "lily artemis ii, stellar blade",
+      "work": "stellar blade"
+    },
+    "kamisato_ayaka": {
+      "trigger": "kamisato ayaka, genshin impact",
+      "zh": "神里绫华",
+      "work": "genshin impact",
+      "tags": [
+        "1girl",
+        "blue eyes",
+        "mole under eye",
+        "long hair",
+        "light blue hair",
+        "blunt bangs",
+        "ponytail"
+      ],
+      "hair": "light blue",
+      "eyes": "blue"
+    },
+    "eris_greyrat": {
+      "hair": "red"
+    },
+    "vivian_banshee": {
+      "hair": "purple hair, streaked hair",
+      "eyes": "red"
+    },
+    "cyrene_(demiurge)_(honkai:_star_rail)": {
+      "hair": "pink hair, blue hair, gradient hair",
+      "eyes": "blue eyes"
+    },
+    "cyrene_(honkai:_star_rail)": {
+      "hair": "pink hair, blue hair, gradient hair",
+      "eyes": "blue eyes"
+    },
+    "evanescia_(honkai:_star_rail)": {
+      "hair": "pink hair, gradient hair",
+      "eyes": "purple eyes"
+    },
+    "evernight_(honkai:_star_rail)": {
+      "hair": "pink hair",
+      "eyes": "red eyes"
+    },
+    "hanya_(honkai:_star_rail)": {
+      "hair": "white hair",
+      "eyes": "grey eyes"
+    },
+    "himeko_(nova)_(honkai:_star_rail)": {
+      "hair": "red hair",
+      "eyes": "yellow eyes"
+    },
+    "pearl_(honkai:_star_rail)": {
+      "hair": "blonde hair, blue hair, gradient hair",
+      "eyes": "purple eyes"
+    },
+    "pela_(honkai:_star_rail)": {
+      "hair": "blue hair",
+      "eyes": "blue eyes"
+    },
+    "silver_wolf_(lv.999)_(honkai:_star_rail)": {
+      "hair": "silver hair, streaked hair",
+      "eyes": "grey eyes"
+    },
+    "the_herta_(honkai:_star_rail)": {
+      "hair": "brown hair",
+      "eyes": "purple eyes"
+    },
+    "tohsaka_rin_(honkai:_star_rail)": {
+      "hair": "black hair",
+      "eyes": "blue eyes"
+    },
+    "tribbie_(honkai:_star_rail)": {
+      "hair": "red hair",
+      "eyes": "purple eyes"
+    },
+    "tribios_(honkai:_star_rail)": {
+      "hair": "red hair",
+      "eyes": "purple eyes"
+    },
+    "trianne_(honkai:_star_rail)": {
+      "hair": "red hair",
+      "eyes": "purple eyes"
+    },
+    "trinnon_(honkai:_star_rail)": {
+      "hair": "red hair",
+      "eyes": "purple eyes"
+    },
+    "yao_guang_(honkai:_star_rail)": {
+      "hair": "white hair",
+      "eyes": "blue eyes"
+    },
+    "aemeath_(wuthering_waves)": {
+      "hair": "pink hair",
+      "eyes": "yellow eyes"
+    },
+    "carlotta_(splashing_summer)_(wuthering_waves)": {
+      "hair": "white hair",
+      "eyes": "blue eyes"
+    },
+    "changli_(laurel_nymph)_(wuthering_waves)": {
+      "hair": "pink hair",
+      "eyes": "yellow eyes"
+    },
+    "chisa_(peach_parfait)_(wuthering_waves)": {
+      "hair": "black hair",
+      "eyes": "red eyes"
+    },
+    "chisa_(wuthering_waves)": {
+      "hair": "black hair",
+      "eyes": "red eyes"
+    },
+    "ciaccona_(wuthering_waves)": {
+      "hair": "red hair",
+      "eyes": "green eyes"
+    },
+    "galbrena_(wuthering_waves)": {
+      "hair": "silver hair, streaked hair",
+      "eyes": "pink eyes"
+    },
+    "hiyuki_(wuthering_waves)": {
+      "hair": "white hair",
+      "eyes": "red eyes"
+    },
+    "iuno_(wuthering_waves)": {
+      "hair": "blue hair",
+      "eyes": "blue eyes"
+    },
+    "lucilla_(wuthering_waves)": {
+      "hair": "purple hair",
+      "eyes": "purple eyes"
+    },
+    "lumi_(wuthering_waves)": {
+      "hair": "brown hair",
+      "eyes": "pink eyes"
+    },
+    "lynae_(mercenary)_(wuthering_waves)": {
+      "hair": "black hair",
+      "eyes": "purple eyes"
+    },
+    "lynae_(peppermint)_(wuthering_waves)": {
+      "hair": "black hair, blonde hair, gradient hair",
+      "eyes": "purple eyes"
+    },
+    "lynae_(wuthering_waves)": {
+      "hair": "black hair, blonde hair, gradient hair",
+      "eyes": "purple eyes"
+    },
+    "mornye_(wuthering_waves)": {
+      "hair": "white hair",
+      "eyes": "red eyes"
+    },
+    "phrolova_(ostina)_(wuthering_waves)": {
+      "hair": "green hair",
+      "eyes": "heterochromia"
+    },
+    "phrolova_(wuthering_waves)": {
+      "hair": "green hair",
+      "eyes": "heterochromia"
+    },
+    "sanhua_(wuthering_waves)": {
+      "hair": "silver hair",
+      "eyes": "red eyes"
+    },
+    "scarlet_(nikke)": {
+      "hair": "white hair",
+      "eyes": "red eyes"
+    },
+    "sigrika_(wuthering_waves)": {
+      "hair": "orange hair"
+    },
+    "suisui_(wuthering_waves)": {
+      "hair": "blonde hair",
+      "eyes": "yellow eyes"
+    },
+    "yangyang_(xuanling)_(wuthering_waves)": {
+      "hair": "black hair, streaked hair",
+      "eyes": "black eyes"
+    },
+    "zani_(wuthering_waves)": {
+      "hair": "white hair",
+      "eyes": "red eyes"
+    },
+    "alice_thymefield": {
+      "hair": "blonde hair",
+      "eyes": "heterochromia"
+    },
+    "cissia_(zenless_zone_zero)": {
+      "hair": "blonde hair",
+      "eyes": "red eyes"
+    },
+    "claret_flint": {
+      "hair": "blonde hair, red hair, streaked hair",
+      "eyes": "red eyes"
+    },
+    "lucia_elowen": {
+      "hair": "blue hair",
+      "eyes": "green eyes"
+    },
+    "phoenix_reffaella": {
+      "hair": "blonde hair",
+      "eyes": "yellow eyes"
+    },
+    "promeia_(zenless_zone_zero)": {
+      "hair": "purple hair",
+      "eyes": "purple eyes"
+    },
+    "remielle_dan": {
+      "hair": "pink hair",
+      "eyes": "pink eyes"
+    },
+    "roxy_ifrita_pryce": {
+      "hair": "green hair",
+      "eyes": "red eyes"
+    },
+    "seed_(zenless_zone_zero)": {
+      "hair": "blue hair",
+      "eyes": "blue eyes"
+    },
+    "sigrid_de_l'azur": {
+      "hair": "blonde hair",
+      "eyes": "blue eyes"
+    },
+    "trigger_(zenless_zone_zero)": {
+      "hair": "blonde hair"
+    },
+    "ye_shunguang": {
+      "hair": "brown hair",
+      "eyes": "red eyes",
+      "zh": "叶瞬光"
+    },
+    "yixuan_(zenless_zone_zero)": {
+      "hair": "white hair",
+      "eyes": "orange eyes, gradient eyes"
+    },
+    "robin_(summeretto)_(honkai:_star_rail)": {
+      "hair": "silver hair",
+      "eyes": "green eyes"
+    },
+    "denia_(breakdown)_(wuthering_waves)": {
+      "hair": "gradient hair",
+      "eyes": "blue eyes"
+    },
+    "hsin_(wuthering_waves)": {
+      "hair": "white hair",
+      "eyes": "red eyes"
+    },
+    "hsin_(illumining_form)_(wuthering_waves)": {
+      "hair": "white hair",
+      "eyes": "red eyes"
+    },
+    "hsin_(moon_fox)_(wuthering_waves)": {
+      "hair": "white hair",
+      "eyes": "red eyes"
+    },
+    "qingxiao_(wuthering_waves)": {
+      "hair": "blue hair",
+      "eyes": "blue eyes"
+    },
+    "aria_(robot)_(zenless_zone_zero)": {
+      "hair": "pink",
+      "eyes": "blue",
+      "tags": [
+        "1girl",
+        "pink hair",
+        "blue eyes",
+        "star-shaped pupils",
+        "twintails",
+        "ahoge",
+        "robot"
+      ]
+    },
+    "sunna_(zenless_zone_zero)": {
+      "zh": "千夏"
+    },
+    "robin_(honkai:_star_rail)": {
+      "hair": "silver hair",
+      "eyes": "green eyes"
+    },
+    "sylphiette_(mushoku_tensei)": {
+      "hair": "white hair",
+      "eyes": "red eyes"
+    },
+    "tohsaka_rin": {
+      "trigger": "tohsaka rin, fate (series)",
+      "zh": "远坂凛",
+      "work": "fate (series)",
+      "thumb": "user_tohsaka_rin"
+    },
+    "frieren": {
+      "hair": "silver hair",
+      "eyes": "green eyes"
+    },
+    "souryuu_(kancolle)": {
+      "hair": "blue hair",
+      "eyes": "blue eyes"
+    },
+    "rover_(wuthering_waves)": {
+      "hair": "black hair",
+      "eyes": "yellow eyes"
+    },
+    "ellen_joe": {
+      "hair": "black hair, red hair, streaked hair",
+      "eyes": "red eyes"
+    },
+    "wo-class_aircraft_carrier": {
+      "hair": "white hair"
+    },
+    "prinz_eugen_(azur_lane)": {
+      "hair": "silver hair, red hair, streaked hair",
+      "eyes": "orange eyes"
+    },
+    "kochou_shinobu": {
+      "hair": "black hair, purple hair, gradient hair",
+      "eyes": "purple eyes"
+    },
+    "takanashi_rikka": {
+      "hair": "blue hair",
+      "eyes": "heterochromia"
+    },
+    "kanroji_mitsuri": {
+      "hair": "pink hair, green hair, gradient hair",
+      "eyes": "green eyes"
+    },
+    "clorinde_(genshin_impact)": {
+      "hair": "blue hair",
+      "eyes": "purple eyes"
+    },
+    "osaki_amana": {
+      "hair": "brown hair",
+      "eyes": "brown eyes"
+    },
+    "ruan_mei_(honkai:_star_rail)": {
+      "hair": "black hair",
+      "eyes": "green eyes"
+    },
+    "cheshire_(azur_lane)": {
+      "hair": "black hair, blue hair, streaked hair",
+      "eyes": "blue eyes"
+    },
+    "alice_(nikke)": {
+      "hair": "pink hair",
+      "eyes": "blue eyes"
+    },
+    "jade_(honkai:_star_rail)": {
+      "hair": "purple hair",
+      "eyes": "blue eyes"
+    },
+    "lingsha_(honkai:_star_rail)": {
+      "hair": "brown hair",
+      "eyes": "red eyes"
+    },
+    "anby_demara_(silver_soldier)": {
+      "hair": "white hair",
+      "eyes": "gradient eyes"
+    },
+    "amiya_(arknights)": {
+      "hair": "brown",
+      "eyes": "blue",
+      "tags": [
+        "1girl",
+        "rabbit ears",
+        "brown hair",
+        "blue eyes",
+        "medium hair",
+        "long sidelocks",
+        "hair between eyes",
+        "sidelocks",
+        "black jacket",
+        "open jacket",
+        "white shirt",
+        "long sleeves"
+      ]
+    },
+    "ye_shunguang_(enlightened_state)": {
+      "zh": "叶瞬光·白色形态",
+      "trigger": "ye shunguang (enlightened state), zenless zone zero",
+      "hair": "white hair, gradient hair",
+      "eyes": "red eyes"
+    },
+    "artoria_pendragon_(fate)": {
+      "zh": "阿尔托莉雅·潘德拉贡"
+    },
+    "saber_(fate)": {
+      "zh": "阿尔托莉雅·潘德拉贡〔Saber〕"
+    },
+    "saber_lily": {
+      "zh": "阿尔托莉雅·潘德拉贡〔Lily〕"
+    },
+    "saber_(honkai:_star_rail)_(fate)": {
+      "zh": "阿尔托莉雅·潘德拉贡〔星铁联动〕",
+      "hair": "blonde hair",
+      "eyes": "green eyes"
+    },
+    "aglaea_(honkai:_star_rail)": {
+      "hair": "blonde hair",
+      "eyes": "aqua eyes, gradient eyes"
+    },
+    "ukinami_yuzuha": {
+      "hair": "red hair",
+      "eyes": "aqua eyes, gradient eyes"
+    },
+    "ju_fufu": {
+      "hair": "blonde hair, streaked hair",
+      "eyes": "green eyes"
+    },
+    "velina_airgid": {
+      "hair": "white hair",
+      "eyes": "purple eyes"
+    },
+    "caesar_king_(zenless_zone_zero)": {
+      "hair": "green hair",
+      "eyes": "yellow eyes"
+    },
+    "yidhari_murphy": {
+      "hair": "blonde hair",
+      "eyes": "purple eyes"
+    },
+    "orphie_magnusson": {
+      "hair": "orange hair",
+      "eyes": "green eyes"
+    },
+    "cartethyia_(wuthering_waves)": {
+      "hair": "blonde hair",
+      "eyes": "blue eyes"
+    }
+  },
+  "custom": [
+    {
+      "tag": "lillia_greyrat",
+      "name": "lillia greyrat",
+      "zh": "莉莉娅·格雷拉特",
+      "work": "mushoku tensei",
+      "trigger": "lillia greyrat, mushoku tensei",
+      "pop": 109,
+      "hair": "",
+      "eyes": "",
+      "tags": [
+        "1girl",
+        "maid",
+        "long hair",
+        "braid",
+        "hair between eyes"
+      ],
+      "src": "user",
+      "thumb": "lillia_greyrat"
+    },
+    {
+      "tag": "ghislaine_dedoldia",
+      "name": "ghislaine dedoldia",
+      "zh": "基列奴·德多路迪亚",
+      "work": "mushoku tensei",
+      "trigger": "ghislaine dedoldia, mushoku tensei",
+      "pop": 1108,
+      "hair": "grey",
+      "eyes": "red",
+      "tags": [
+        "1girl",
+        "dark-skinned female",
+        "cat girl",
+        "cat ears",
+        "animal ear fluff",
+        "cat tail",
+        "red eyes",
+        "hair between eyes",
+        "eyepatch",
+        "long hair",
+        "grey hair",
+        "sidelocks",
+        "large breasts"
+      ],
+      "src": "user",
+      "thumb": "ghislaine_dedoldia"
+    },
+    {
+      "tag": "elinalise_dragonroad",
+      "name": "elinalise dragonroad",
+      "zh": "艾莉娜丽洁·多拉贡罗德",
+      "work": "mushoku tensei",
+      "trigger": "elinalise dragonroad, mushoku tensei",
+      "pop": 168,
+      "hair": "blonde",
+      "eyes": "",
+      "tags": [
+        "1girl",
+        "blonde hair",
+        "very long hair",
+        "drill hair",
+        "pointy ears",
+        "elf",
+        "ahoge",
+        "hair between eyes",
+        "large breasts"
+      ],
+      "src": "user",
+      "thumb": "elinalise_dragonroad"
+    },
+    {
+      "tag": "zenith_greyrat",
+      "name": "zenith greyrat",
+      "zh": "塞妮丝·格雷拉特",
+      "work": "mushoku tensei",
+      "trigger": "zenith greyrat, mushoku tensei",
+      "pop": 120,
+      "hair": "blonde",
+      "eyes": "blue",
+      "tags": [
+        "1girl",
+        "blonde hair",
+        "blue eyes",
+        "ponytail",
+        "braid",
+        "ahoge",
+        "elf",
+        "pointy ears"
+      ],
+      "src": "user",
+      "thumb": "zenith_greyrat"
+    },
+    {
+      "tag": "norn_greyrat",
+      "name": "norn greyrat",
+      "zh": "诺伦·格雷拉特",
+      "work": "mushoku tensei",
+      "trigger": "norn greyrat, mushoku tensei",
+      "pop": 241,
+      "hair": "blonde",
+      "eyes": "green",
+      "tags": [
+        "1girl",
+        "blonde hair",
+        "green eyes",
+        "ponytail",
+        "hair flaps",
+        "long hair",
+        "blunt bangs"
+      ],
+      "src": "user",
+      "thumb": "norn_greyrat"
+    },
+    {
+      "tag": "aisha_greyrat",
+      "name": "aisha greyrat",
+      "zh": "爱夏·格雷拉特",
+      "work": "mushoku tensei",
+      "trigger": "aisha greyrat, mushoku tensei",
+      "pop": 339,
+      "hair": "red",
+      "eyes": "green",
+      "tags": [
+        "1girl",
+        "red hair",
+        "green eyes",
+        "long hair",
+        "ponytail",
+        "medium hair",
+        "ahoge",
+        "hairband"
+      ],
+      "src": "user",
+      "thumb": "aisha_greyrat"
+    },
+    {
+      "tag": "ariel_anemoi_asura",
+      "name": "ariel anemoi asura",
+      "zh": "爱丽儿·阿涅摩伊·阿斯拉",
+      "work": "mushoku tensei",
+      "trigger": "ariel anemoi asura, mushoku tensei",
+      "pop": 29,
+      "hair": "blonde",
+      "eyes": "blue",
+      "tags": [
+        "1girl",
+        "blonde hair",
+        "blue eyes",
+        "long hair",
+        "pointy ears",
+        "long pointy ears",
+        "elf",
+        "braid",
+        "ahoge"
+      ],
+      "src": "user",
+      "thumb": "ariel_anemoi_asura"
+    },
+    {
+      "tag": "nanahoshi_shizuka",
+      "name": "nanahoshi shizuka",
+      "zh": "七星静香",
+      "work": "mushoku tensei",
+      "trigger": "nanahoshi shizuka, mushoku tensei",
+      "pop": 141,
+      "hair": "black",
+      "eyes": "black",
+      "tags": [
+        "1girl",
+        "black hair",
+        "black eyes",
+        "long hair",
+        "very long hair"
+      ],
+      "src": "user",
+      "thumb": "nanahoshi_shizuka"
+    },
+    {
+      "tag": "fukuga_kurumi",
+      "name": "fukuga kurumi",
+      "zh": "福贺久留美",
+      "work": "fx senshi kurumi-chan",
+      "trigger": "fukuga kurumi, fx senshi kurumi-chan",
+      "pop": 23,
+      "hair": "pink",
+      "eyes": "",
+      "tags": [
+        "1girl",
+        "pink hair",
+        "short hair",
+        "hair ribbon",
+        "hair ornament",
+        "hairclip",
+        "white dress",
+        "medium breasts"
+      ],
+      "src": "user",
+      "thumb": "fukuga_kurumi"
+    },
+    {
+      "tag": "kogane_mochiko",
+      "name": "kogane mochiko",
+      "zh": "小金萌智子",
+      "work": "fx senshi kurumi-chan",
+      "trigger": "kogane mochiko, fx senshi kurumi-chan",
+      "pop": 0,
+      "hair": "",
+      "eyes": "",
+      "tags": [
+        "1girl"
+      ],
+      "src": "user",
+      "thumb": "kogane_mochiko",
+      "note": "未校验：safebooru 无角色标签（2026-10 新番），手写条目"
+    },
+    {
+      "tag": "yamashi_mebuki",
+      "name": "yamashi mebuki",
+      "zh": "山师芽吹",
+      "work": "fx senshi kurumi-chan",
+      "trigger": "yamashi mebuki, fx senshi kurumi-chan",
+      "pop": 0,
+      "hair": "",
+      "eyes": "",
+      "tags": [
+        "1girl"
+      ],
+      "src": "user",
+      "thumb": "yamashi_mebuki",
+      "note": "未校验：safebooru 无角色标签（2026-10 新番），手写条目"
+    },
+    {
+      "tag": "takane_yasuko",
+      "name": "takane yasuko",
+      "zh": "高根安子",
+      "work": "fx senshi kurumi-chan",
+      "trigger": "takane yasuko, fx senshi kurumi-chan",
+      "pop": 0,
+      "hair": "",
+      "eyes": "",
+      "tags": [
+        "1girl"
+      ],
+      "src": "user",
+      "thumb": "takane_yasuko",
+      "note": "未校验：safebooru 无角色标签（2026-10 新番），手写条目"
+    }
+  ]
+}

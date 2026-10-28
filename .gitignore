@@ -1,0 +1,33 @@
+# ── Python 运行产物 ─────────────────────────────────────────────
+# 字节码缓存，每次导入自动再生，无仓库价值
+__pycache__/
+*.pyc
+
+# ── 本机个人数据（运行时自动生成，属隐私）──────────────────────
+# 角色收藏 / 场景收藏 / 命名预设：是「这个安装者」的使用痕迹，不是插件功能的一部分
+presets/user_favorites.json
+presets/user_scene_favorites.json
+presets/user_presets.json
+# 注：presets/user_characters.json 角色资料修正覆盖层**随仓库发布**——
+# 里面是上游 wiki 脏数据的修正（如 emilia 的 trigger）与补充角色，属数据资产不算隐私
+
+# 删除角色时的 tombstone（运行时自动生成）
+presets/_retired/
+
+# ── 开发期备份（脚本改盘前的毫秒级快照）────────────────────────
+# 正式内容已进 git 历史，快照只是本机应急回滚用
+*.bak
+*.bak-*
+*.bak.*
+
+# ── 构建工具的网络缓存（可由脚本重新抓取）──────────────────────
+# fetch_character_thumbs / build_characters 抓 wiki 后落的原始页面缓存
+tools/.cache_chars/
+tools/.cache_roles/
+
+# ── 源脚本备份（飞蓬 HTML 生成器的开发期副本）──────────────────
+_tmp_*/
+
+# ── 临时 / 系统文件 ────────────────────────────────────────────
+Thumbs.db
+desktop.ini

@@ -1,0 +1,11346 @@
+{
+ "_meta": {
+  "source_file": "ANIMA提示词生成器.html",
+  "source_path": "S:/ComfyUI/提示词/ANIMA提示词生成器.html",
+  "source_sha256": "6818a2b8026ebaf7b62570afd521af2621d5dbf65ed82ae094ade33c28a06639",
+  "schema": "anima-wardrobe-v4/pools@1",
+  "generated_by": "tools/export_v3_pools.mjs",
+  "counters": {
+   "sections": 15,
+   "fields": 57,
+   "options": 1128,
+   "roles": 222,
+   "appear": 221,
+   "canon": 14,
+   "mutex": 6
+  }
+ },
+ "sections": [
+  {
+   "id": "count",
+   "title": "① 数量与身份",
+   "cls": "",
+   "max_level": 4,
+   "fields": [
+    {
+     "key": "count",
+     "lab": "人数构成 *",
+     "req": true,
+     "type": "select",
+     "tail": false,
+     "slot": "count",
+     "opts": [
+      {
+       "zh": "单人少女",
+       "en": "1girl, solo",
+       "level": 0
+      },
+      {
+       "zh": "单人熟女",
+       "en": "1girl, solo, mature female",
+       "level": 0
+      },
+      {
+       "zh": "一男一女",
+       "en": "1girl, 1boy, hetero",
+       "level": 0
+      },
+      {
+       "zh": "双女",
+       "en": "2girls, yuri",
+       "level": 2
+      },
+      {
+       "zh": "一女多男",
+       "en": "1girl, multiple boys, group sex",
+       "level": 4
+      },
+      {
+       "zh": "多人群交",
+       "en": "multiple girls, orgy",
+       "level": 4
+      }
+     ]
+    },
+    {
+     "key": "role",
+     "lab": "角色（可选）",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "character",
+     "opts": [
+      {
+       "zh": "不指定",
+       "en": "",
+       "level": 0
+      },
+      {
+       "zh": "四宫辉夜",
+       "en": "shinomiya kaguya, kaguya-sama: love is war",
+       "level": 0
+      },
+      {
+       "zh": "藤原千花",
+       "en": "fujiwara chika, kaguya-sama: love is war",
+       "level": 0
+      },
+      {
+       "zh": "樱岛麻衣",
+       "en": "sakurajima mai, seishun buta yarou wa bunny girl senpai no yume wo minai",
+       "level": 0
+      },
+      {
+       "zh": "雪之下雪乃",
+       "en": "yukinoshita yukino, yahari ore no seishun love come wa machigatteiru.",
+       "level": 0
+      },
+      {
+       "zh": "一色彩羽",
+       "en": "isshiki iroha, yahari ore no seishun love come wa machigatteiru.",
+       "level": 0
+      },
+      {
+       "zh": "中野二乃",
+       "en": "nakano nino, go-toubun no hanayome",
+       "level": 0
+      },
+      {
+       "zh": "中野一花",
+       "en": "nakano ichika, go-toubun no hanayome",
+       "level": 0
+      },
+      {
+       "zh": "中野四叶",
+       "en": "nakano yotsuba, go-toubun no hanayome",
+       "level": 0
+      },
+      {
+       "zh": "古河渚",
+       "en": "furukawa nagisa, clannad",
+       "level": 0
+      },
+      {
+       "zh": "中野五月",
+       "en": "nakano itsuki, go-toubun no hanayome",
+       "level": 0
+      },
+      {
+       "zh": "双叶理央",
+       "en": "futaba rio, seishun buta yarou wa bunny girl senpai no yume wo minai",
+       "level": 0
+      },
+      {
+       "zh": "早坂爱",
+       "en": "hayasaka ai, kaguya-sama: love is war",
+       "level": 0
+      },
+      {
+       "zh": "羽川翼",
+       "en": "hanekawa tsubasa, monogatari (series)",
+       "level": 0
+      },
+      {
+       "zh": "神原骏河",
+       "en": "kanbaru suruga, monogatari (series)",
+       "level": 0
+      },
+      {
+       "zh": "三日月夜空",
+       "en": "mikazuki yozora, boku wa tomodachi ga sukunai",
+       "level": 0
+      },
+      {
+       "zh": "柏崎星奈",
+       "en": "kashiwazaki sena, boku wa tomodachi ga sukunai",
+       "level": 0
+      },
+      {
+       "zh": "和泉纱雾",
+       "en": "izumi sagiri, eromanga sensei",
+       "level": 0
+      },
+      {
+       "zh": "长瀞",
+       "en": "nagatoro hayase, ijiranaide nagatoro-san",
+       "level": 0
+      },
+      {
+       "zh": "宇崎花",
+       "en": "uzaki hana, uzaki-chan wa asobitai!",
+       "level": 0
+      },
+      {
+       "zh": "平泽律",
+       "en": "tainaka ritsu, k-on!",
+       "level": 0
+      },
+      {
+       "zh": "琴吹䌷",
+       "en": "kotobuki tsumugi, k-on!",
+       "level": 0
+      },
+      {
+       "zh": "柊镜",
+       "en": "hiiragi kagami, lucky star",
+       "level": 0
+      },
+      {
+       "zh": "泉此方",
+       "en": "izumi konata, lucky star",
+       "level": 0
+      },
+      {
+       "zh": "中野三玖",
+       "en": "nakano miku, go-toubun no hanayome",
+       "level": 0
+      },
+      {
+       "zh": "堀京子",
+       "en": "hori kyouko, horimiya",
+       "level": 0
+      },
+      {
+       "zh": "水原千鹤",
+       "en": "mizuhara chizuru, kanokari",
+       "level": 0
+      },
+      {
+       "zh": "小鸟游六花",
+       "en": "takanashi rikka, chuunibyou demo koi ga shitai!",
+       "level": 0
+      },
+      {
+       "zh": "逢坂大河",
+       "en": "aisaka taiga, toradora!",
+       "level": 0
+      },
+      {
+       "zh": "战场原黑仪",
+       "en": "senjougahara hitagi, monogatari (series)",
+       "level": 0
+      },
+      {
+       "zh": "古见硝子",
+       "en": "komi shouko, komi-san wa komyushou desu.",
+       "level": 0
+      },
+      {
+       "zh": "平泽唯",
+       "en": "hirasawa yui, k-on!",
+       "level": 0
+      },
+      {
+       "zh": "秋山澪",
+       "en": "akiyama mio, k-on!",
+       "level": 0
+      },
+      {
+       "zh": "凉宫春日",
+       "en": "suzumiya haruhi, suzumiya haruhi no yuuutsu",
+       "level": 0
+      },
+      {
+       "zh": "由崎司",
+       "en": "yuzaki tsukasa, tonikaku kawaii",
+       "level": 0
+      },
+      {
+       "zh": "黑沼爽子",
+       "en": "kuronuma sawako, kimi ni todoke",
+       "level": 0
+      },
+      {
+       "zh": "早濑优香",
+       "en": "hayase yuuka, blue archive",
+       "level": 0
+      },
+      {
+       "zh": "砂狼白子",
+       "en": "sunaookami shiroko, blue archive",
+       "level": 0
+      },
+      {
+       "zh": "小鸟游星野",
+       "en": "takanashi hoshino, blue archive",
+       "level": 0
+      },
+      {
+       "zh": "一之濑明日奈",
+       "en": "ichinose asuna, blue archive",
+       "level": 0
+      },
+      {
+       "zh": "十六夜野宫",
+       "en": "izayoi nonomi, blue archive",
+       "level": 0
+      },
+      {
+       "zh": "圣园未花",
+       "en": "misono mika, blue archive",
+       "level": 0
+      },
+      {
+       "zh": "陆八魔阿尔",
+       "en": "rikuhachima aru, blue archive",
+       "level": 0
+      },
+      {
+       "zh": "角楫香凛",
+       "en": "kakudate karin, blue archive",
+       "level": 0
+      },
+      {
+       "zh": "狐坂若藻",
+       "en": "kosaka wakamo, blue archive",
+       "level": 0
+      },
+      {
+       "zh": "久田泉奈",
+       "en": "kuda izuna, blue archive",
+       "level": 0
+      },
+      {
+       "zh": "枣伊吕波",
+       "en": "natsume iroha, blue archive",
+       "level": 0
+      },
+      {
+       "zh": "下江小春",
+       "en": "shimoe koharu, blue archive",
+       "level": 0
+      },
+      {
+       "zh": "雷电将军",
+       "en": "raiden shogun, genshin impact",
+       "level": 0
+      },
+      {
+       "zh": "甘雨",
+       "en": "ganyu, genshin impact",
+       "level": 0
+      },
+      {
+       "zh": "胡桃",
+       "en": "hu tao, genshin impact",
+       "level": 0
+      },
+      {
+       "zh": "芙宁娜",
+       "en": "furina, genshin impact",
+       "level": 0
+      },
+      {
+       "zh": "八重神子",
+       "en": "yae miko, genshin impact",
+       "level": 0
+      },
+      {
+       "zh": "妮露",
+       "en": "nilou, genshin impact",
+       "level": 0
+      },
+      {
+       "zh": "优菈",
+       "en": "eula, genshin impact",
+       "level": 0
+      },
+      {
+       "zh": "申鹤",
+       "en": "shenhe, genshin impact",
+       "level": 0
+      },
+      {
+       "zh": "花火",
+       "en": "sparkle, honkai: star rail",
+       "level": 0
+      },
+      {
+       "zh": "黄泉",
+       "en": "acheron, honkai: star rail",
+       "level": 0
+      },
+      {
+       "zh": "流萤",
+       "en": "firefly, honkai: star rail",
+       "level": 0
+      },
+      {
+       "zh": "符玄",
+       "en": "fu xuan, honkai: star rail",
+       "level": 0
+      },
+      {
+       "zh": "知更鸟",
+       "en": "robin, honkai: star rail",
+       "level": 0
+      },
+      {
+       "zh": "遐蝶",
+       "en": "castorice, honkai: star rail",
+       "level": 0
+      },
+      {
+       "zh": "镜流",
+       "en": "jingliu, honkai: star rail",
+       "level": 0
+      },
+      {
+       "zh": "阮·梅",
+       "en": "ruan mei, honkai: star rail",
+       "level": 0
+      },
+      {
+       "zh": "黑天鹅",
+       "en": "black swan, honkai: star rail",
+       "level": 0
+      },
+      {
+       "zh": "今汐",
+       "en": "jinhsi, wuthering waves",
+       "level": 0
+      },
+      {
+       "zh": "长离",
+       "en": "changli, wuthering waves",
+       "level": 0
+      },
+      {
+       "zh": "椿",
+       "en": "camellya, wuthering waves",
+       "level": 0
+      },
+      {
+       "zh": "守岸人",
+       "en": "shorekeeper, wuthering waves",
+       "level": 0
+      },
+      {
+       "zh": "菲比",
+       "en": "phoebe, wuthering waves",
+       "level": 0
+      },
+      {
+       "zh": "吟霖",
+       "en": "yinlin, wuthering waves",
+       "level": 0
+      },
+      {
+       "zh": "折枝",
+       "en": "zhezhi, wuthering waves",
+       "level": 0
+      },
+      {
+       "zh": "艾莲",
+       "en": "ellen joe, zenless zone zero",
+       "level": 0
+      },
+      {
+       "zh": "朱鸢",
+       "en": "zhu yuan, zenless zone zero",
+       "level": 0
+      },
+      {
+       "zh": "简·杜",
+       "en": "jane doe, zenless zone zero",
+       "level": 0
+      },
+      {
+       "zh": "柏妮思",
+       "en": "burnice white, zenless zone zero",
+       "level": 0
+      },
+      {
+       "zh": "耀嘉音",
+       "en": "astra yao, zenless zone zero",
+       "level": 0
+      },
+      {
+       "zh": "拉毗",
+       "en": "rapi, goddess of victory: nikke",
+       "level": 0
+      },
+      {
+       "zh": "安妮斯",
+       "en": "anis, goddess of victory: nikke",
+       "level": 0
+      },
+      {
+       "zh": "小红帽",
+       "en": "red hood, goddess of victory: nikke",
+       "level": 0
+      },
+      {
+       "zh": "能天使",
+       "en": "exusiai, arknights",
+       "level": 0
+      },
+      {
+       "zh": "陈",
+       "en": "ch'en, arknights",
+       "level": 0
+      },
+      {
+       "zh": "史尔特尔",
+       "en": "surtr, arknights",
+       "level": 0
+      },
+      {
+       "zh": "凯尔希",
+       "en": "kal'tsit, arknights",
+       "level": 0
+      },
+      {
+       "zh": "W",
+       "en": "w, arknights",
+       "level": 0
+      },
+      {
+       "zh": "拉普兰德",
+       "en": "lappland, arknights",
+       "level": 0
+      },
+      {
+       "zh": "泥岩",
+       "en": "mudrock, arknights",
+       "level": 0
+      },
+      {
+       "zh": "德克萨斯",
+       "en": "texas, arknights",
+       "level": 0
+      },
+      {
+       "zh": "02",
+       "en": "zero two, darling in the franxx",
+       "level": 0
+      },
+      {
+       "zh": "绫波丽",
+       "en": "rei ayanami, neon genesis evangelion",
+       "level": 0
+      },
+      {
+       "zh": "明日香",
+       "en": "asuka langley soryu, neon genesis evangelion",
+       "level": 0
+      },
+      {
+       "zh": "Saber",
+       "en": "artoria pendragon, fate (series)",
+       "level": 0
+      },
+      {
+       "zh": "玛修",
+       "en": "mash kyrielight, fate (series)",
+       "level": 0
+      },
+      {
+       "zh": "贞德",
+       "en": "jeanne d'arc, fate (series)",
+       "level": 0
+      },
+      {
+       "zh": "尼禄",
+       "en": "nero claudius, fate (series)",
+       "level": 0
+      },
+      {
+       "zh": "玉藻前",
+       "en": "tamamo no mae, fate (series)",
+       "level": 0
+      },
+      {
+       "zh": "斯卡哈",
+       "en": "scathach, fate (series)",
+       "level": 0
+      },
+      {
+       "zh": "源赖光",
+       "en": "minamoto no raikou, fate (series)",
+       "level": 0
+      },
+      {
+       "zh": "远坂凛",
+       "en": "tohsaka rin, fate (series)",
+       "level": 0
+      },
+      {
+       "zh": "伊什塔尔",
+       "en": "ishtar, fate (series)",
+       "level": 0
+      },
+      {
+       "zh": "博丽灵梦",
+       "en": "hakurei reimu, touhou",
+       "level": 0
+      },
+      {
+       "zh": "雾雨魔理沙",
+       "en": "kirisame marisa, touhou",
+       "level": 0
+      },
+      {
+       "zh": "蕾米莉亚",
+       "en": "remilia scarlet, touhou",
+       "level": 0
+      },
+      {
+       "zh": "芙兰朵露",
+       "en": "flandre scarlet, touhou",
+       "level": 0
+      },
+      {
+       "zh": "十六夜咲夜",
+       "en": "izayoi sakuya, touhou",
+       "level": 0
+      },
+      {
+       "zh": "古明地恋",
+       "en": "komeiji koishi, touhou",
+       "level": 0
+      },
+      {
+       "zh": "帕秋莉",
+       "en": "patchouli knowledge, touhou",
+       "level": 0
+      },
+      {
+       "zh": "初音未来",
+       "en": "hatsune miku, vocaloid",
+       "level": 0
+      },
+      {
+       "zh": "巡音流歌",
+       "en": "megurine luka, vocaloid",
+       "level": 0
+      },
+      {
+       "zh": "镜音铃",
+       "en": "kagamine rin, vocaloid",
+       "level": 0
+      },
+      {
+       "zh": "娜美",
+       "en": "nami, one piece",
+       "level": 0
+      },
+      {
+       "zh": "女帝汉库克",
+       "en": "boa hancock, one piece",
+       "level": 0
+      },
+      {
+       "zh": "纲手",
+       "en": "tsunade, naruto (series)",
+       "level": 0
+      },
+      {
+       "zh": "弥海砂",
+       "en": "amane misa, death note",
+       "level": 0
+      },
+      {
+       "zh": "月咏",
+       "en": "tsukuyo, gintama",
+       "level": 0
+      },
+      {
+       "zh": "桔梗",
+       "en": "kikyo, inuyasha",
+       "level": 0
+      },
+      {
+       "zh": "神谷薰",
+       "en": "kamiya kaoru, rurouni kenshin",
+       "level": 0
+      },
+      {
+       "zh": "日向雏田",
+       "en": "hyuuga hinata, naruto (series)",
+       "level": 0
+      },
+      {
+       "zh": "朽木露琪亚",
+       "en": "kuchiki rukia, bleach",
+       "level": 0
+      },
+      {
+       "zh": "井上织姬",
+       "en": "inoue orihime, bleach",
+       "level": 0
+      },
+      {
+       "zh": "松本乱菊",
+       "en": "matsumoto rangiku, bleach",
+       "level": 0
+      },
+      {
+       "zh": "露西",
+       "en": "lucy heartfilia, fairy tail",
+       "level": 0
+      },
+      {
+       "zh": "艾尔莎",
+       "en": "erza scarlet, fairy tail",
+       "level": 0
+      },
+      {
+       "zh": "亚丝娜",
+       "en": "asuna yuuki, sword art online",
+       "level": 0
+      },
+      {
+       "zh": "三笠",
+       "en": "mikasa ackerman, attack on titan",
+       "level": 0
+      },
+      {
+       "zh": "吹雪",
+       "en": "fubuki, one-punch man",
+       "level": 0
+      },
+      {
+       "zh": "龙卷",
+       "en": "tatsumaki, one-punch man",
+       "level": 0
+      },
+      {
+       "zh": "玛奇玛",
+       "en": "makima, chainsaw man",
+       "level": 0
+      },
+      {
+       "zh": "帕瓦",
+       "en": "power, chainsaw man",
+       "level": 0
+      },
+      {
+       "zh": "牧濑红莉栖",
+       "en": "makise kurisu, steins;gate",
+       "level": 0
+      },
+      {
+       "zh": "雷电芽",
+       "en": "raiden mei, honkai impact",
+       "level": 0
+      },
+      {
+       "zh": "八重樱",
+       "en": "yae sakura, honkai impact",
+       "level": 0
+      },
+      {
+       "zh": "2B",
+       "en": "yorha no. 2 type b, nier (series)",
+       "level": 0
+      },
+      {
+       "zh": "蒂法",
+       "en": "tifa lockhart, final fantasy",
+       "level": 0
+      },
+      {
+       "zh": "尤娜",
+       "en": "yuna, final fantasy x",
+       "level": 0
+      },
+      {
+       "zh": "高卷杏",
+       "en": "takamaki anne, persona 5",
+       "level": 0
+      },
+      {
+       "zh": "新岛真",
+       "en": "niijima makoto, persona 5",
+       "level": 0
+      },
+      {
+       "zh": "圣路易斯",
+       "en": "saint louis, azur lane",
+       "level": 0
+      },
+      {
+       "zh": "光辉",
+       "en": "illustrious, azur lane",
+       "level": 0
+      },
+      {
+       "zh": "贝尔法斯特",
+       "en": "belfast, azur lane",
+       "level": 0
+      },
+      {
+       "zh": "企业",
+       "en": "enterprise, azur lane",
+       "level": 0
+      },
+      {
+       "zh": "大凤",
+       "en": "taihou, azur lane",
+       "level": 0
+      },
+      {
+       "zh": "阿库娅",
+       "en": "aqua, kono subarashii sekai ni shukufuku wo!",
+       "level": 0
+      },
+      {
+       "zh": "夏娜",
+       "en": "shana, shakugan no shana",
+       "level": 0
+      },
+      {
+       "zh": "露易丝",
+       "en": "louise, zero no tsukaima",
+       "level": 0
+      },
+      {
+       "zh": "赫斯缇雅",
+       "en": "hestia, dungeon ni deai wo motomeru no wa machigatteiru darou ka",
+       "level": 0
+      },
+      {
+       "zh": "雷姆",
+       "en": "rem, re:zero",
+       "level": 0
+      },
+      {
+       "zh": "拉姆",
+       "en": "ram, re:zero",
+       "level": 0
+      },
+      {
+       "zh": "艾米莉亚",
+       "en": "emilia, re:zero",
+       "level": 0
+      },
+      {
+       "zh": "喜多川海梦",
+       "en": "kitagawa marin, my dress-up darling",
+       "level": 0
+      },
+      {
+       "zh": "芙莉莲",
+       "en": "frieren, sousou no frieren",
+       "level": 0
+      },
+      {
+       "zh": "费伦",
+       "en": "fern, sousou no frieren",
+       "level": 0
+      },
+      {
+       "zh": "两仪式",
+       "en": "ryougi shiki, kara no kyoukai",
+       "level": 0
+      },
+      {
+       "zh": "鹿目圆",
+       "en": "kaname madoka, mahou shoujo madoka magica",
+       "level": 0
+      },
+      {
+       "zh": "晓美焰",
+       "en": "akemi homura, mahou shoujo madoka magica",
+       "level": 0
+      },
+      {
+       "zh": "美树沙耶香",
+       "en": "miki sayaka, mahou shoujo madoka magica",
+       "level": 0
+      },
+      {
+       "zh": "巴麻美",
+       "en": "tomoe mami, mahou shoujo madoka magica",
+       "level": 0
+      },
+      {
+       "zh": "佐仓杏子",
+       "en": "sakura kyoko, mahou shoujo madoka magica",
+       "level": 0
+      },
+      {
+       "zh": "高坂穗乃果",
+       "en": "kousaka honoka, love live!",
+       "level": 0
+      },
+      {
+       "zh": "绚濑绘里",
+       "en": "ayase eli, love live!",
+       "level": 0
+      },
+      {
+       "zh": "东条希",
+       "en": "tojo nozomi, love live!",
+       "level": 0
+      },
+      {
+       "zh": "南小鸟",
+       "en": "minami kotori, love live!",
+       "level": 0
+      },
+      {
+       "zh": "西木野真姬",
+       "en": "nishikino maki, love live!",
+       "level": 0
+      },
+      {
+       "zh": "矢泽妮可",
+       "en": "yazawa nico, love live!",
+       "level": 0
+      },
+      {
+       "zh": "户山香澄",
+       "en": "toyama kasumi, bang dream!",
+       "level": 0
+      },
+      {
+       "zh": "市谷有咲",
+       "en": "ichigaya arisa, bang dream!",
+       "level": 0
+      },
+      {
+       "zh": "山吹沙绫",
+       "en": "yamabuki saaya, bang dream!",
+       "level": 0
+      },
+      {
+       "zh": "涉谷凛",
+       "en": "shibuya rin, idolmaster cinderella girls",
+       "level": 0
+      },
+      {
+       "zh": "星野爱",
+       "en": "hoshino ai, oshi no ko",
+       "level": 0
+      },
+      {
+       "zh": "黑川茜",
+       "en": "kurokawa akane, oshi no ko",
+       "level": 0
+      },
+      {
+       "zh": "MEM-cho",
+       "en": "mem-cho, oshi no ko",
+       "level": 0
+      },
+      {
+       "zh": "伊地知虹夏",
+       "en": "ijichi nijika, bocchi the rock!",
+       "level": 0
+      },
+      {
+       "zh": "山田凉",
+       "en": "yamada ryo, bocchi the rock!",
+       "level": 0
+      },
+      {
+       "zh": "蛇喰梦子",
+       "en": "jabami yumeko, kakegurui",
+       "level": 0
+      },
+      {
+       "zh": "早乙女芽亚里",
+       "en": "saotome mary, kakegurui",
+       "level": 0
+      },
+      {
+       "zh": "时崎狂三",
+       "en": "tokisaki kurumi, date a live",
+       "level": 0
+      },
+      {
+       "zh": "夜刀神十香",
+       "en": "tohka yatogami, date a live",
+       "level": 0
+      },
+      {
+       "zh": "夜刀神琴里",
+       "en": "itsuka kotori, date a live",
+       "level": 0
+      },
+      {
+       "zh": "鸢一折纸",
+       "en": "takamiya origami, date a live",
+       "level": 0
+      },
+      {
+       "zh": "草薙素子",
+       "en": "kusanagi motoko, ghost in the shell",
+       "level": 0
+      },
+      {
+       "zh": "C.C.",
+       "en": "c.c., code geass",
+       "level": 0
+      },
+      {
+       "zh": "拉克丝",
+       "en": "lacus clyne, gundam seed",
+       "level": 0
+      },
+      {
+       "zh": "菲伊·瓦伦丁",
+       "en": "faye valentine, cowboy bebop",
+       "level": 0
+      },
+      {
+       "zh": "丽日御茶子",
+       "en": "uraraka ochako, boku no hero academia",
+       "level": 0
+      },
+      {
+       "zh": "八百万",
+       "en": "yaoyorozu momo, boku no hero academia",
+       "level": 0
+      },
+      {
+       "zh": "胡蝶忍",
+       "en": "kocho shinobu, kimetsu no yaiba",
+       "level": 0
+      },
+      {
+       "zh": "甘露寺蜜璃",
+       "en": "kanroji mitsuri, kimetsu no yaiba",
+       "level": 0
+      },
+      {
+       "zh": "钉崎野蔷薇",
+       "en": "kugisaki nobara, jujutsu kaisen",
+       "level": 0
+      },
+      {
+       "zh": "御坂美琴",
+       "en": "misaka mikoto, toaru majutsu no index",
+       "level": 0
+      },
+      {
+       "zh": "食蜂操祈",
+       "en": "shokuhou misaki, toaru kagaku no railgun",
+       "level": 0
+      },
+      {
+       "zh": "白井黑子",
+       "en": "shirai kuroko, toaru kagaku no railgun",
+       "level": 0
+      },
+      {
+       "zh": "三鹰朝",
+       "en": "mitaka asa, chainsaw man",
+       "level": 0
+      },
+      {
+       "zh": "蕾塞",
+       "en": "reze, chainsaw man",
+       "level": 0
+      },
+      {
+       "zh": "爱丽丝",
+       "en": "alice zuberg, sword art online",
+       "level": 0
+      },
+      {
+       "zh": "诗乃",
+       "en": "sinon, sword art online",
+       "level": 0
+      },
+      {
+       "zh": "尼科·罗宾",
+       "en": "nico robin, one piece",
+       "level": 0
+      },
+      {
+       "zh": "佩罗娜",
+       "en": "perona, one piece",
+       "level": 0
+      },
+      {
+       "zh": "照美冥",
+       "en": "terumi mei, naruto (series)",
+       "level": 0
+      },
+      {
+       "zh": "雅儿贝德",
+       "en": "albedo, overlord",
+       "level": 0
+      },
+      {
+       "zh": "朱菜",
+       "en": "shuna, tensei shitara slime datta ken",
+       "level": 0
+      },
+      {
+       "zh": "紫苑",
+       "en": "shion, tensei shitara slime datta ken",
+       "level": 0
+      },
+      {
+       "zh": "凯露",
+       "en": "karyl, princess connect!",
+       "level": 0
+      },
+      {
+       "zh": "佩可莉姆",
+       "en": "pecorine, princess connect!",
+       "level": 0
+      },
+      {
+       "zh": "藤原妹红",
+       "en": "fujiwara no mokou, touhou",
+       "level": 0
+      },
+      {
+       "zh": "八云紫",
+       "en": "yakumo yukari, touhou",
+       "level": 0
+      },
+      {
+       "zh": "于贝尔",
+       "en": "ubel, sousou no frieren",
+       "level": 0
+      },
+      {
+       "zh": "后藤一里",
+       "en": "gotoh hitori, bocchi the rock!",
+       "level": 0
+      },
+      {
+       "zh": "锦木千束",
+       "en": "nishikigi chisato, lycoris recoil",
+       "level": 0
+      },
+      {
+       "zh": "井之上泷奈",
+       "en": "inoue takina, lycoris recoil",
+       "level": 0
+      },
+      {
+       "zh": "木更",
+       "en": "kisara, engage kiss",
+       "level": 0
+      },
+      {
+       "zh": "夕桐绫乃",
+       "en": "yugiri ayano, engage kiss",
+       "level": 0
+      },
+      {
+       "zh": "莎朗·荷莉格蕾尔",
+       "en": "sharon holygriel, engage kiss",
+       "level": 0
+      },
+      {
+       "zh": "高松灯",
+       "en": "takamatsu tomori, mygo!!!!!",
+       "level": 0
+      },
+      {
+       "zh": "千早爱音",
+       "en": "chika aine, mygo!!!!!",
+       "level": 0
+      },
+      {
+       "zh": "要乐奈",
+       "en": "kaname rana, mygo!!!!!",
+       "level": 0
+      },
+      {
+       "zh": "长崎爽世",
+       "en": "nagasaki sayo, mygo!!!!!",
+       "level": 0
+      },
+      {
+       "zh": "椎名立希",
+       "en": "shiina taki, mygo!!!!!",
+       "level": 0
+      },
+      {
+       "zh": "三角初华",
+       "en": "mitsumoto hatsuha, ave mujica",
+       "level": 0
+      },
+      {
+       "zh": "若叶睦",
+       "en": "wakaba mutsumi, ave mujica",
+       "level": 0
+      },
+      {
+       "zh": "八幡海铃",
+       "en": "yahata kairi, ave mujica",
+       "level": 0
+      },
+      {
+       "zh": "祐天寺若麦",
+       "en": "yutenji wakamugi, ave mujica",
+       "level": 0
+      },
+      {
+       "zh": "丰川祥子",
+       "en": "toyokawa shoko, ave mujica",
+       "level": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hair",
+   "title": "② 头发",
+   "cls": "",
+   "max_level": 0,
+   "fields": [
+    {
+     "key": "hair_len",
+     "lab": "长度",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "appearance",
+     "opts": [
+      {
+       "zh": "及腰超长发",
+       "en": "very long hair",
+       "level": 0
+      },
+      {
+       "zh": "齐腰长发",
+       "en": "long hair",
+       "level": 0
+      },
+      {
+       "zh": "锁骨中长发",
+       "en": "medium hair",
+       "level": 0
+      },
+      {
+       "zh": "肩部长度",
+       "en": "shoulder-length hair",
+       "level": 0
+      },
+      {
+       "zh": "齐颈短发",
+       "en": "short hair",
+       "level": 0
+      },
+      {
+       "zh": "波波头",
+       "en": "bob cut",
+       "level": 0
+      },
+      {
+       "zh": "超短发",
+       "en": "pixie cut",
+       "level": 0
+      }
+     ]
+    },
+    {
+     "key": "hair_color",
+     "lab": "颜色",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "appearance",
+     "opts": [
+      {
+       "zh": "黑发",
+       "en": "black hair",
+       "level": 0
+      },
+      {
+       "zh": "白发",
+       "en": "white hair",
+       "level": 0
+      },
+      {
+       "zh": "银发",
+       "en": "silver hair",
+       "level": 0
+      },
+      {
+       "zh": "浅金发",
+       "en": "blonde hair",
+       "level": 0
+      },
+      {
+       "zh": "棕发",
+       "en": "brown hair",
+       "level": 0
+      },
+      {
+       "zh": "茶色发",
+       "en": "light brown hair",
+       "level": 0
+      },
+      {
+       "zh": "红发",
+       "en": "red hair",
+       "level": 0
+      },
+      {
+       "zh": "粉发",
+       "en": "pink hair",
+       "level": 0
+      },
+      {
+       "zh": "蓝发",
+       "en": "blue hair",
+       "level": 0
+      },
+      {
+       "zh": "紫发",
+       "en": "purple hair",
+       "level": 0
+      },
+      {
+       "zh": "渐变发色",
+       "en": "gradient hair",
+       "level": 0
+      },
+      {
+       "zh": "挑染",
+       "en": "streaked hair",
+       "level": 0
+      },
+      {
+       "zh": "水蓝色",
+       "en": "aqua hair",
+       "level": 0
+      },
+      {
+       "zh": "绿色",
+       "en": "green hair",
+       "level": 0
+      },
+      {
+       "zh": "橙色",
+       "en": "orange hair",
+       "level": 0
+      }
+     ]
+    },
+    {
+     "key": "hair_curl",
+     "lab": "卷直",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "appearance",
+     "opts": [
+      {
+       "zh": "直发顺滑",
+       "en": "straight hair",
+       "level": 0
+      },
+      {
+       "zh": "自然微卷",
+       "en": "wavy hair",
+       "level": 0
+      },
+      {
+       "zh": "大波浪",
+       "en": "curly hair",
+       "level": 0
+      },
+      {
+       "zh": "羊毛卷",
+       "en": "drill hair",
+       "level": 0
+      },
+      {
+       "zh": "蓬松凌乱",
+       "en": "messy hair",
+       "level": 0
+      }
+     ]
+    },
+    {
+     "key": "hair_tie",
+     "lab": "扎法",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "appearance",
+     "opts": [
+      {
+       "zh": "低马尾",
+       "en": "low ponytail",
+       "level": 0
+      },
+      {
+       "zh": "高马尾",
+       "en": "high ponytail",
+       "level": 0
+      },
+      {
+       "zh": "侧马尾",
+       "en": "side ponytail",
+       "level": 0
+      },
+      {
+       "zh": "双马尾",
+       "en": "twintails",
+       "level": 0
+      },
+      {
+       "zh": "丸子头",
+       "en": "hair bun",
+       "level": 0
+      },
+      {
+       "zh": "双丸子头",
+       "en": "double bun",
+       "level": 0
+      },
+      {
+       "zh": "单编发",
+       "en": "braid",
+       "level": 0
+      },
+      {
+       "zh": "麻花辫",
+       "en": "twin braids",
+       "level": 0
+      },
+      {
+       "zh": "公主编",
+       "en": "french braid",
+       "level": 0
+      },
+      {
+       "zh": "半扎发",
+       "en": "half updo",
+       "level": 0
+      },
+      {
+       "zh": "公主切",
+       "en": "hime cut",
+       "level": 0
+      },
+      {
+       "zh": "不对称剪裁",
+       "en": "asymmetrical hair",
+       "level": 0
+      },
+      {
+       "zh": "低双辫",
+       "en": "low twin braids",
+       "level": 0
+      }
+     ]
+    },
+    {
+     "key": "hair_bangs",
+     "lab": "刘海",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "appearance",
+     "opts": [
+      {
+       "zh": "齐刘海",
+       "en": "blunt bangs",
+       "level": 0
+      },
+      {
+       "zh": "空气刘海",
+       "en": "parted bangs",
+       "level": 0
+      },
+      {
+       "zh": "八字刘海",
+       "en": "hair between eyes",
+       "level": 0
+      },
+      {
+       "zh": "斜刘海",
+       "en": "swept bangs",
+       "level": 0
+      },
+      {
+       "zh": "中分对称",
+       "en": "parted bangs, symmetrical hair",
+       "level": 0
+      },
+      {
+       "zh": "梳起露额",
+       "en": "pulled back hair",
+       "level": 0
+      }
+     ]
+    },
+    {
+     "key": "hair_fx",
+     "lab": "动态状态",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "appearance",
+     "opts": [
+      {
+       "zh": "微乱",
+       "en": "messy hair",
+       "level": 0
+      },
+      {
+       "zh": "被风吹起",
+       "en": "wind-blown hair",
+       "level": 0
+      },
+      {
+       "zh": "湿发",
+       "en": "wet hair",
+       "level": 0
+      },
+      {
+       "zh": "湿发贴脸",
+       "en": "wet hair, hair over eyes",
+       "level": 0
+      },
+      {
+       "zh": "光泽柔亮",
+       "en": "glossy hair",
+       "level": 0
+      }
+     ]
+    },
+    {
+     "key": "hair_acc",
+     "lab": "发饰",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "appearance",
+     "opts": [
+      {
+       "zh": "发夹",
+       "en": "hairclip",
+       "level": 0
+      },
+      {
+       "zh": "发带",
+       "en": "hairband",
+       "level": 0
+      },
+      {
+       "zh": "蝴蝶结",
+       "en": "hair bow",
+       "level": 0
+      },
+      {
+       "zh": "花朵发饰",
+       "en": "flower in hair",
+       "level": 0
+      },
+      {
+       "zh": "珍珠发饰",
+       "en": "pearl hair ornament",
+       "level": 0
+      },
+      {
+       "zh": "兽耳",
+       "en": "animal ears",
+       "level": 0
+      },
+      {
+       "zh": "兔耳",
+       "en": "rabbit ears",
+       "level": 0
+      },
+      {
+       "zh": "缎带发饰",
+       "en": "hair ribbon",
+       "level": 0
+      },
+      {
+       "zh": "头花",
+       "en": "hair flower",
+       "level": 0
+      },
+      {
+       "zh": "头箍",
+       "en": "headband",
+       "level": 0
+      },
+      {
+       "zh": "女仆头饰",
+       "en": "maid headdress",
+       "level": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "face",
+   "title": "③ 五官与表情",
+   "cls": "",
+   "max_level": 1,
+   "fields": [
+    {
+     "key": "eyes_color",
+     "lab": "眼色",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "appearance",
+     "opts": [
+      {
+       "zh": "黑瞳",
+       "en": "black eyes",
+       "level": 0
+      },
+      {
+       "zh": "蓝瞳",
+       "en": "blue eyes",
+       "level": 0
+      },
+      {
+       "zh": "红瞳",
+       "en": "red eyes",
+       "level": 0
+      },
+      {
+       "zh": "金瞳",
+       "en": "yellow eyes",
+       "level": 0
+      },
+      {
+       "zh": "紫瞳",
+       "en": "purple eyes",
+       "level": 0
+      },
+      {
+       "zh": "绿瞳",
+       "en": "green eyes",
+       "level": 0
+      },
+      {
+       "zh": "异色瞳",
+       "en": "heterochromia",
+       "level": 0
+      },
+      {
+       "zh": "棕色瞳",
+       "en": "brown eyes",
+       "level": 0
+      },
+      {
+       "zh": "灰色瞳",
+       "en": "grey eyes",
+       "level": 0
+      },
+      {
+       "zh": "水蓝瞳",
+       "en": "aqua eyes",
+       "level": 0
+      },
+      {
+       "zh": "粉瞳",
+       "en": "pink eyes",
+       "level": 0
+      },
+      {
+       "zh": "橙瞳",
+       "en": "orange eyes",
+       "level": 0
+      },
+      {
+       "zh": "渐变瞳",
+       "en": "gradient eyes",
+       "level": 0
+      },
+      {
+       "zh": "下垂眼",
+       "en": "tareme",
+       "level": 0
+      },
+      {
+       "zh": "吊眼",
+       "en": "tsurime",
+       "level": 0
+      },
+      {
+       "zh": "水润大眼",
+       "en": "sparkling eyes",
+       "level": 0
+      }
+     ]
+    },
+    {
+     "key": "emotion",
+     "lab": "情绪",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "expression",
+     "opts": [
+      {
+       "zh": "微笑",
+       "en": "smile",
+       "level": 0
+      },
+      {
+       "zh": "大笑",
+       "en": "grin",
+       "level": 0
+      },
+      {
+       "zh": "害羞脸红",
+       "en": "embarrassed, blush",
+       "level": 0
+      },
+      {
+       "zh": "傲娇嘟嘴",
+       "en": "pout",
+       "level": 0
+      },
+      {
+       "zh": "冷漠",
+       "en": "expressionless",
+       "level": 0
+      },
+      {
+       "zh": "难过",
+       "en": "sad",
+       "level": 0
+      },
+      {
+       "zh": "惊讶",
+       "en": "surprised",
+       "level": 0
+      },
+      {
+       "zh": "含泪",
+       "en": "tears",
+       "level": 1
+      },
+      {
+       "zh": "困倦",
+       "en": "sleepy",
+       "level": 0
+      },
+      {
+       "zh": "生气",
+       "en": "angry",
+       "level": 0
+      },
+      {
+       "zh": "得意",
+       "en": "smug",
+       "level": 0
+      },
+      {
+       "zh": "坏笑",
+       "en": "evil smile",
+       "level": 0
+      },
+      {
+       "zh": "惊恐",
+       "en": "scared",
+       "level": 0
+      },
+      {
+       "zh": "困惑",
+       "en": "confused",
+       "level": 0
+      },
+      {
+       "zh": "厌恶",
+       "en": "disgust",
+       "level": 0
+      },
+      {
+       "zh": "兴奋",
+       "en": "excited",
+       "level": 0
+      },
+      {
+       "zh": "认真",
+       "en": "serious",
+       "level": 0
+      },
+      {
+       "zh": "哭泣",
+       "en": "crying",
+       "level": 0
+      }
+     ]
+    },
+    {
+     "key": "eye_gaze",
+     "lab": "眼神",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "expression",
+     "opts": [
+      {
+       "zh": "注视镜头",
+       "en": "looking at viewer",
+       "level": 0
+      },
+      {
+       "zh": "目光躲开",
+       "en": "looking away",
+       "level": 0
+      },
+      {
+       "zh": "回眸",
+       "en": "looking back",
+       "level": 0
+      },
+      {
+       "zh": "向下看",
+       "en": "looking down",
+       "level": 0
+      },
+      {
+       "zh": "抬眼",
+       "en": "looking up",
+       "level": 0
+      },
+      {
+       "zh": "闭眼",
+       "en": "closed eyes",
+       "level": 0
+      },
+      {
+       "zh": "半闭眼",
+       "en": "half-closed eyes",
+       "level": 0
+      },
+      {
+       "zh": "含情脉脉",
+       "en": "affectionate",
+       "level": 0
+      },
+      {
+       "zh": "侧目",
+       "en": "looking to the side",
+       "level": 0
+      },
+      {
+       "zh": "对视",
+       "en": "eye contact",
+       "level": 0
+      },
+      {
+       "zh": "凝视",
+       "en": "staring",
+       "level": 0
+      },
+      {
+       "zh": "望向他人",
+       "en": "looking at another",
+       "level": 0
+      },
+      {
+       "zh": "目视前方",
+       "en": "looking ahead",
+       "level": 0
+      },
+      {
+       "zh": "单眼闭",
+       "en": "one eye closed",
+       "level": 0
+      }
+     ]
+    },
+    {
+     "key": "mouth",
+     "lab": "嘴部",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "expression",
+     "opts": [
+      {
+       "zh": "抿嘴",
+       "en": "closed mouth",
+       "level": 0
+      },
+      {
+       "zh": "微张",
+       "en": "parted lips",
+       "level": 0
+      },
+      {
+       "zh": "咬唇",
+       "en": "biting own lip",
+       "level": 0
+      },
+      {
+       "zh": "张口",
+       "en": "open mouth",
+       "level": 0
+      },
+      {
+       "zh": "伸舌",
+       "en": "tongue out",
+       "level": 0
+      },
+      {
+       "zh": "舔唇",
+       "en": "licking lips",
+       "level": 0
+      },
+      {
+       "zh": "露齿笑",
+       "en": "grin, teeth",
+       "level": 0
+      },
+      {
+       "zh": "小虎牙",
+       "en": "fang",
+       "level": 0
+      },
+      {
+       "zh": "咬牙",
+       "en": "clenched teeth",
+       "level": 0
+      },
+      {
+       "zh": "皱眉",
+       "en": "frown",
+       "level": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "body",
+   "title": "④ 身材与肤质",
+   "cls": "",
+   "max_level": 1,
+   "fields": [
+    {
+     "key": "figure",
+     "lab": "身材轮廓",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "appearance",
+     "opts": [
+      {
+       "zh": "纤细高挑",
+       "en": "slim, tall",
+       "level": 0
+      },
+      {
+       "zh": "沙漏曲线",
+       "en": "hourglass figure",
+       "level": 0
+      },
+      {
+       "zh": "丰腴",
+       "en": "voluptuous",
+       "level": 0
+      },
+      {
+       "zh": "巨乳",
+       "en": "huge breasts",
+       "level": 0
+      },
+      {
+       "zh": "大胸",
+       "en": "large breasts",
+       "level": 0
+      },
+      {
+       "zh": "小巧胸部",
+       "en": "small breasts",
+       "level": 0
+      },
+      {
+       "zh": "细腰",
+       "en": "narrow waist",
+       "level": 0
+      },
+      {
+       "zh": "宽胯",
+       "en": "wide hips",
+       "level": 0
+      },
+      {
+       "zh": "肉感大腿",
+       "en": "thick thighs",
+       "level": 0
+      },
+      {
+       "zh": "匀称肌肉",
+       "en": "toned body",
+       "level": 0
+      },
+      {
+       "zh": "平胸",
+       "en": "flat chest",
+       "level": 0
+      },
+      {
+       "zh": "中等胸部",
+       "en": "medium breasts",
+       "level": 0
+      },
+      {
+       "zh": "爆乳",
+       "en": "gigantic breasts",
+       "level": 0
+      }
+     ]
+    },
+    {
+     "key": "skin",
+     "lab": "肤色",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "appearance",
+     "opts": [
+      {
+       "zh": "白皙",
+       "en": "pale skin",
+       "level": 0
+      },
+      {
+       "zh": "自然白",
+       "en": "fair skin",
+       "level": 0
+      },
+      {
+       "zh": "小麦色",
+       "en": "tanlines",
+       "level": 0
+      },
+      {
+       "zh": "古铜色",
+       "en": "dark skin",
+       "level": 0
+      },
+      {
+       "zh": "冷白皮",
+       "en": "porcelain skin",
+       "level": 0
+      }
+     ]
+    },
+    {
+     "key": "leg",
+     "lab": "腿部线条",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "appearance",
+     "opts": [
+      {
+       "zh": "双腿修长笔直",
+       "en": "long legs",
+       "level": 0
+      },
+      {
+       "zh": "大腿缝隙",
+       "en": "thigh gap",
+       "level": 1
+      }
+     ]
+    },
+    {
+     "key": "skin_detail",
+     "lab": "肌肤细节",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "detail",
+     "opts": [
+      {
+       "zh": "眼下泪痣",
+       "en": "mole under eye",
+       "level": 0
+      },
+      {
+       "zh": "锁骨明显",
+       "en": "visible collarbone",
+       "level": 0
+      },
+      {
+       "zh": "雀斑",
+       "en": "freckles",
+       "level": 0
+      },
+      {
+       "zh": "湿润光泽肌",
+       "en": "glistening skin",
+       "level": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "makeup",
+   "title": "⑤ 妆容与细节",
+   "cls": "",
+   "max_level": 0,
+   "fields": [
+    {
+     "key": "makeup",
+     "lab": "妆容风格",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "detail",
+     "opts": [
+      {
+       "zh": "素颜",
+       "en": "no makeup",
+       "level": 0
+      },
+      {
+       "zh": "淡妆",
+       "en": "light makeup",
+       "level": 0
+      },
+      {
+       "zh": "红唇",
+       "en": "red lipstick",
+       "level": 0
+      },
+      {
+       "zh": "水光唇",
+       "en": "glossy lips",
+       "level": 0
+      },
+      {
+       "zh": "眼线",
+       "en": "eyeliner",
+       "level": 0
+      },
+      {
+       "zh": "浓密睫毛",
+       "en": "thick eyelashes",
+       "level": 0
+      },
+      {
+       "zh": "咬唇妆",
+       "en": "bitten lip",
+       "level": 0
+      },
+      {
+       "zh": "眼影",
+       "en": "eyeshadow",
+       "level": 0
+      },
+      {
+       "zh": "雀斑",
+       "en": "freckles",
+       "level": 0
+      },
+      {
+       "zh": "腮红",
+       "en": "blush",
+       "level": 0
+      },
+      {
+       "zh": "泪痣",
+       "en": "mole under eye",
+       "level": 0
+      },
+      {
+       "zh": "美人痣",
+       "en": "mole under mouth",
+       "level": 0
+      },
+      {
+       "zh": "黑唇",
+       "en": "black lipstick",
+       "level": 0
+      },
+      {
+       "zh": "彩色睫毛",
+       "en": "colored eyelashes",
+       "level": 0
+      },
+      {
+       "zh": "面部彩绘",
+       "en": "facepaint",
+       "level": 0
+      },
+      {
+       "zh": "亮片",
+       "en": "glitter",
+       "level": 0
+      },
+      {
+       "zh": "哥特妆",
+       "en": "pale skin, black lipstick, eyeshadow",
+       "level": 0
+      },
+      {
+       "zh": "地雷妆",
+       "en": "eyebags, blush, eyeliner, glossy lips",
+       "level": 0
+      },
+      {
+       "zh": "病娇妆",
+       "en": "blush, half-closed eyes, eyeliner",
+       "level": 0
+      },
+      {
+       "zh": "泪痣妆",
+       "en": "mole under eye, blush, glossy lips",
+       "level": 0
+      }
+     ]
+    },
+    {
+     "key": "nails",
+     "lab": "指甲",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "detail",
+     "opts": [
+      {
+       "zh": "美甲",
+       "en": "nail polish",
+       "level": 0
+      },
+      {
+       "zh": "红色美甲",
+       "en": "red nail polish",
+       "level": 0
+      },
+      {
+       "zh": "法式美甲",
+       "en": "french manicure",
+       "level": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cloth_sfw",
+   "title": "⑥ 服装（SFW）",
+   "cls": "",
+   "max_level": 2,
+   "fields": [
+    {
+     "key": "outfit",
+     "lab": "整套服装",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "clothing",
+     "opts": [
+      {
+       "zh": "JK制服",
+       "en": "school uniform",
+       "level": 0
+      },
+      {
+       "zh": "水手服",
+       "en": "serafuku",
+       "level": 0
+      },
+      {
+       "zh": "OL套装",
+       "en": "office lady",
+       "level": 0
+      },
+      {
+       "zh": "女仆装",
+       "en": "maid",
+       "level": 0
+      },
+      {
+       "zh": "旗袍",
+       "en": "china dress",
+       "level": 0
+      },
+      {
+       "zh": "和服",
+       "en": "kimono",
+       "level": 0
+      },
+      {
+       "zh": "浴衣",
+       "en": "yukata",
+       "level": 0
+      },
+      {
+       "zh": "兔女郎",
+       "en": "bunny girl",
+       "level": 0
+      },
+      {
+       "zh": "连衣裙",
+       "en": "dress",
+       "level": 0
+      },
+      {
+       "zh": "吊带裙",
+       "en": "camisole dress",
+       "level": 0
+      },
+      {
+       "zh": "晚礼服",
+       "en": "evening gown",
+       "level": 0
+      },
+      {
+       "zh": "婚纱",
+       "en": "wedding dress",
+       "level": 0
+      },
+      {
+       "zh": "连体泳衣",
+       "en": "one-piece swimsuit",
+       "level": 0
+      },
+      {
+       "zh": "比基尼",
+       "en": "bikini",
+       "level": 0
+      },
+      {
+       "zh": "微距比基尼",
+       "en": "micro bikini",
+       "level": 1
+      },
+      {
+       "zh": "竞泳泳衣",
+       "en": "competitive swimsuit",
+       "level": 0
+      },
+      {
+       "zh": "体操服",
+       "en": "gym uniform",
+       "level": 0
+      },
+      {
+       "zh": "啦啦队服",
+       "en": "cheerleader uniform",
+       "level": 0
+      },
+      {
+       "zh": "护士服",
+       "en": "nurse",
+       "level": 0
+      },
+      {
+       "zh": "巫女装束",
+       "en": "miko",
+       "level": 0
+      },
+      {
+       "zh": "警服",
+       "en": "police uniform",
+       "level": 0
+      },
+      {
+       "zh": "空姐制服",
+       "en": "flight attendant uniform",
+       "level": 0
+      },
+      {
+       "zh": "哥特萝莉",
+       "en": "gothic lolita",
+       "level": 0
+      },
+      {
+       "zh": "地雷系",
+       "en": "jirai kei",
+       "level": 0
+      },
+      {
+       "zh": "量产型",
+       "en": "ryousangata",
+       "level": 0
+      },
+      {
+       "zh": "辣妹风",
+       "en": "gyaru",
+       "level": 0
+      },
+      {
+       "zh": "偶像演出服",
+       "en": "idol costume",
+       "level": 0
+      },
+      {
+       "zh": "毛衣配短裙",
+       "en": "sweater and skirt",
+       "level": 0
+      },
+      {
+       "zh": "卫衣短裤",
+       "en": "hoodie and shorts",
+       "level": 0
+      },
+      {
+       "zh": "仅围裙",
+       "en": "apron only",
+       "level": 0
+      },
+      {
+       "zh": "浴巾",
+       "en": "bath towel",
+       "level": 0
+      },
+      {
+       "zh": "寝间着",
+       "en": "sleeping kimono",
+       "level": 0
+      },
+      {
+       "zh": "缠胸布",
+       "en": "sarashi",
+       "level": 0
+      },
+      {
+       "zh": "死库水",
+       "en": "school swimsuit",
+       "level": 0
+      },
+      {
+       "zh": "竞泳校园泳衣",
+       "en": "competition school swimsuit",
+       "level": 0
+      },
+      {
+       "zh": "旧式死库水",
+       "en": "old school swimsuit",
+       "level": 0
+      },
+      {
+       "zh": "新式死库水",
+       "en": "new school swimsuit",
+       "level": 0
+      },
+      {
+       "zh": "白色比基尼",
+       "en": "white bikini",
+       "level": 0
+      },
+      {
+       "zh": "运动比基尼",
+       "en": "sports bikini",
+       "level": 0
+      },
+      {
+       "zh": "挂脖泳衣",
+       "en": "halterneck",
+       "level": 0
+      },
+      {
+       "zh": "仅比基尼上衣",
+       "en": "bikini top only",
+       "level": 0
+      },
+      {
+       "zh": "太阳裙",
+       "en": "sundress",
+       "level": 1
+      },
+      {
+       "zh": "针织连衣裙",
+       "en": "sweater dress",
+       "level": 0
+      },
+      {
+       "zh": "水手连衣裙",
+       "en": "sailor dress",
+       "level": 0
+      },
+      {
+       "zh": "无袖连衣裙",
+       "en": "sleeveless dress",
+       "level": 1
+      },
+      {
+       "zh": "背心裙",
+       "en": "pinafore dress",
+       "level": 0
+      },
+      {
+       "zh": "泡泡裙",
+       "en": "bubble skirt",
+       "level": 0
+      },
+      {
+       "zh": "汉服",
+       "en": "hanfu",
+       "level": 0
+      },
+      {
+       "zh": "袴",
+       "en": "hakama",
+       "level": 0
+      },
+      {
+       "zh": "西装套装",
+       "en": "suit",
+       "level": 0
+      },
+      {
+       "zh": "燕尾服",
+       "en": "tuxedo",
+       "level": 0
+      },
+      {
+       "zh": "连体裤",
+       "en": "romper",
+       "level": 0
+      },
+      {
+       "zh": "连体衣",
+       "en": "jumpsuit",
+       "level": 0
+      },
+      {
+       "zh": "背带裙",
+       "en": "suspender skirt",
+       "level": 0
+      },
+      {
+       "zh": "背带短裤",
+       "en": "suspender shorts",
+       "level": 0
+      },
+      {
+       "zh": "赛车女郎",
+       "en": "race queen",
+       "level": 0
+      },
+      {
+       "zh": "魔法少女",
+       "en": "magical girl",
+       "level": 0
+      },
+      {
+       "zh": "女教师",
+       "en": "teacher",
+       "level": 0
+      },
+      {
+       "zh": "军装",
+       "en": "military uniform",
+       "level": 0
+      },
+      {
+       "zh": "赛博朋克装",
+       "en": "cyberpunk",
+       "level": 0
+      },
+      {
+       "zh": "芭蕾舞裙",
+       "en": "ballerina",
+       "level": 0
+      },
+      {
+       "zh": "修女服",
+       "en": "nun",
+       "level": 0
+      },
+      {
+       "zh": "女骑士",
+       "en": "knight",
+       "level": 0
+      },
+      {
+       "zh": "运动服",
+       "en": "track suit",
+       "level": 0
+      },
+      {
+       "zh": "女忍者",
+       "en": "ninja",
+       "level": 0
+      },
+      {
+       "zh": "女巫装",
+       "en": "witch",
+       "level": 0
+      },
+      {
+       "zh": "吸血鬼装",
+       "en": "vampire",
+       "level": 0
+      },
+      {
+       "zh": "女服务员",
+       "en": "waitress",
+       "level": 0
+      },
+      {
+       "zh": "酒保装",
+       "en": "bartender",
+       "level": 0
+      },
+      {
+       "zh": "体操紧身衣",
+       "en": "leotard",
+       "level": 0
+      }
+     ]
+    },
+    {
+     "key": "cloth_color",
+     "lab": "服装颜色",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "clothing",
+     "opts": [
+      {
+       "zh": "黑色",
+       "en": "black",
+       "level": 0
+      },
+      {
+       "zh": "白色",
+       "en": "white",
+       "level": 0
+      },
+      {
+       "zh": "灰色",
+       "en": "grey",
+       "level": 0
+      },
+      {
+       "zh": "红色",
+       "en": "red",
+       "level": 0
+      },
+      {
+       "zh": "橙色",
+       "en": "orange",
+       "level": 0
+      },
+      {
+       "zh": "黄色",
+       "en": "yellow",
+       "level": 0
+      },
+      {
+       "zh": "绿色",
+       "en": "green",
+       "level": 0
+      },
+      {
+       "zh": "青色",
+       "en": "aqua",
+       "level": 0
+      },
+      {
+       "zh": "蓝色",
+       "en": "blue",
+       "level": 0
+      },
+      {
+       "zh": "紫色",
+       "en": "purple",
+       "level": 0
+      },
+      {
+       "zh": "粉色",
+       "en": "pink",
+       "level": 0
+      },
+      {
+       "zh": "棕色",
+       "en": "brown",
+       "level": 0
+      }
+     ]
+    },
+    {
+     "key": "cloth_mat",
+     "lab": "材质",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "clothing",
+     "opts": [
+      {
+       "zh": "蕾丝",
+       "en": "lace",
+       "level": 0
+      },
+      {
+       "zh": "雪纺",
+       "en": "chiffon",
+       "level": 0
+      },
+      {
+       "zh": "丝绸",
+       "en": "silk",
+       "level": 0
+      },
+      {
+       "zh": "天鹅绒",
+       "en": "velvet",
+       "level": 0
+      },
+      {
+       "zh": "皮革",
+       "en": "leather",
+       "level": 0
+      },
+      {
+       "zh": "牛仔布",
+       "en": "denim",
+       "level": 0
+      },
+      {
+       "zh": "针织",
+       "en": "knitwear",
+       "level": 0
+      },
+      {
+       "zh": "毛绒滚边",
+       "en": "fur trim",
+       "level": 0
+      },
+      {
+       "zh": "乳胶",
+       "en": "latex",
+       "level": 1
+      },
+      {
+       "zh": "荷叶边",
+       "en": "frills",
+       "level": 0
+      }
+     ]
+    },
+    {
+     "key": "cloth_state_sfw",
+     "lab": "穿着方式",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "clothing",
+     "opts": [
+      {
+       "zh": "外套披肩",
+       "en": "coat on shoulders",
+       "level": 0
+      },
+      {
+       "zh": "一字肩",
+       "en": "off shoulder",
+       "level": 1
+      },
+      {
+       "zh": "露背",
+       "en": "backless",
+       "level": 1
+      },
+      {
+       "zh": "领口解开",
+       "en": "unbuttoned collar",
+       "level": 1
+      },
+      {
+       "zh": "下摆塞入",
+       "en": "tucked in",
+       "level": 0
+      },
+      {
+       "zh": "宽松版型",
+       "en": "oversized clothes",
+       "level": 0
+      },
+      {
+       "zh": "高腰",
+       "en": "high-waist skirt",
+       "level": 0
+      },
+      {
+       "zh": "露腰",
+       "en": "midriff peek",
+       "level": 0
+      },
+      {
+       "zh": "挽起袖子",
+       "en": "sleeves rolled up",
+       "level": 0
+      },
+      {
+       "zh": "破洞衣物",
+       "en": "torn clothes",
+       "level": 1
+      },
+      {
+       "zh": "湿透衣物",
+       "en": "wet clothes",
+       "level": 2
+      },
+      {
+       "zh": "外套敞开",
+       "en": "open jacket",
+       "level": 2
+      },
+      {
+       "zh": "腰间系衣",
+       "en": "jacket around waist",
+       "level": 0
+      }
+     ]
+    },
+    {
+     "key": "socks",
+     "lab": "腿上",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "clothing",
+     "opts": [
+      {
+       "zh": "黑色过膝袜",
+       "en": "black thighhighs",
+       "level": 0
+      },
+      {
+       "zh": "白色过膝袜",
+       "en": "white thighhighs",
+       "level": 0
+      },
+      {
+       "zh": "连裤袜",
+       "en": "pantyhose",
+       "level": 0
+      },
+      {
+       "zh": "短袜",
+       "en": "ankle socks",
+       "level": 0
+      },
+      {
+       "zh": "赤足",
+       "en": "barefoot",
+       "level": 0
+      },
+      {
+       "zh": "吊袜带",
+       "en": "garter straps",
+       "level": 0
+      },
+      {
+       "zh": "渔网袜",
+       "en": "fishnet thighhighs",
+       "level": 0
+      },
+      {
+       "zh": "黑色连裤袜",
+       "en": "black pantyhose",
+       "level": 0
+      },
+      {
+       "zh": "白色连裤袜",
+       "en": "white pantyhose",
+       "level": 0
+      },
+      {
+       "zh": "渔网连裤袜",
+       "en": "fishnet pantyhose",
+       "level": 0
+      },
+      {
+       "zh": "菱格纹连裤袜",
+       "en": "argyle pantyhose",
+       "level": 0
+      },
+      {
+       "zh": "抽丝连裤袜",
+       "en": "laddered pantyhose",
+       "level": 0
+      },
+      {
+       "zh": "条纹过膝袜",
+       "en": "striped thighhighs",
+       "level": 0
+      },
+      {
+       "zh": "及膝袜",
+       "en": "kneehighs",
+       "level": 0
+      },
+      {
+       "zh": "单腿过膝袜",
+       "en": "single thighhigh",
+       "level": 1
+      },
+      {
+       "zh": "堆堆袜",
+       "en": "loose socks",
+       "level": 0
+      },
+      {
+       "zh": "过膝袜",
+       "en": "thighhighs",
+       "level": 0
+      },
+      {
+       "zh": "吊带袜",
+       "en": "thighhighs, garter straps",
+       "level": 0
+      },
+      {
+       "zh": "蕾丝吊带袜",
+       "en": "lace-trimmed thighhighs, garter straps",
+       "level": 0
+      },
+      {
+       "zh": "网眼吊带袜",
+       "en": "fishnet thighhighs, garter straps",
+       "level": 0
+      },
+      {
+       "zh": "紫色吊带袜",
+       "en": "purple thighhighs, garter straps",
+       "level": 0
+      },
+      {
+       "zh": "红色吊带袜",
+       "en": "red thighhighs, garter straps",
+       "level": 0
+      },
+      {
+       "zh": "黑色吊带袜",
+       "en": "black thighhighs, garter straps",
+       "level": 0
+      },
+      {
+       "zh": "白色吊带袜",
+       "en": "white thighhighs, garter straps",
+       "level": 0
+      },
+      {
+       "zh": "蕾丝过膝袜",
+       "en": "lace-trimmed thighhighs",
+       "level": 0
+      },
+      {
+       "zh": "袜套",
+       "en": "leg warmers",
+       "level": 0
+      },
+      {
+       "zh": "足袋",
+       "en": "tabi",
+       "level": 0
+      },
+      {
+       "zh": "花边短袜",
+       "en": "frilled socks",
+       "level": 0
+      },
+      {
+       "zh": "白色短袜",
+       "en": "white socks",
+       "level": 0
+      },
+      {
+       "zh": "条纹及膝袜",
+       "en": "striped socks",
+       "level": 0
+      },
+      {
+       "zh": "露趾袜",
+       "en": "toeless legwear",
+       "level": 0
+      },
+      {
+       "zh": "蕾丝连裤袜",
+       "en": "lace pantyhose",
+       "level": 0
+      },
+      {
+       "zh": "开裆连裤袜",
+       "en": "crotchless pantyhose",
+       "level": 2
+      },
+      {
+       "zh": "破洞连裤袜",
+       "en": "torn pantyhose",
+       "level": 1
+      },
+      {
+       "zh": "破洞过膝袜",
+       "en": "torn thighhighs",
+       "level": 1
+      },
+      {
+       "zh": "连身网衣",
+       "en": "bodystocking",
+       "level": 2
+      },
+      {
+       "zh": "渔网连身衣",
+       "en": "fishnet bodystocking",
+       "level": 2
+      },
+      {
+       "zh": "黑色连身网衣",
+       "en": "black bodystocking",
+       "level": 2
+      },
+      {
+       "zh": "吊带连裤袜",
+       "en": "pantyhose, garter belt",
+       "level": 2
+      },
+      {
+       "zh": "吊袜带连裤袜",
+       "en": "pantyhose, garter straps",
+       "level": 0
+      },
+      {
+       "zh": "乳胶过膝袜",
+       "en": "latex thighhighs",
+       "level": 1
+      },
+      {
+       "zh": "渐变过膝袜",
+       "en": "gradient thighhighs",
+       "level": 0
+      },
+      {
+       "zh": "珠光连裤袜",
+       "en": "shiny pantyhose",
+       "level": 0
+      },
+      {
+       "zh": "罗纹袜",
+       "en": "ribbed socks",
+       "level": 0
+      },
+      {
+       "zh": "渔网短袜",
+       "en": "fishnet socks",
+       "level": 0
+      },
+      {
+       "zh": "不对称腿装",
+       "en": "asymmetrical legwear",
+       "level": 2
+      },
+      {
+       "zh": "不配对腿装",
+       "en": "mismatched legwear",
+       "level": 2
+      },
+      {
+       "zh": "蝴蝶结腿饰",
+       "en": "bow legwear",
+       "level": 0
+      },
+      {
+       "zh": "缎带腿饰",
+       "en": "ribbon legwear",
+       "level": 0
+      },
+      {
+       "zh": "袜上穿袜",
+       "en": "socks over pantyhose",
+       "level": 0
+      },
+      {
+       "zh": "船袜",
+       "en": "no-show socks",
+       "level": 0
+      },
+      {
+       "zh": "蕾丝短袜",
+       "en": "lace-trimmed socks",
+       "level": 0
+      },
+      {
+       "zh": "过膝袜外穿连裤袜",
+       "en": "thighhighs over pantyhose",
+       "level": 0
+      },
+      {
+       "zh": "多层腿装",
+       "en": "layered legwear",
+       "level": 0
+      },
+      {
+       "zh": "紫色过膝袜",
+       "en": "purple thighhighs",
+       "level": 0
+      },
+      {
+       "zh": "红色过膝袜",
+       "en": "red thighhighs",
+       "level": 0
+      },
+      {
+       "zh": "蓝色过膝袜",
+       "en": "blue thighhighs",
+       "level": 0
+      },
+      {
+       "zh": "粉色过膝袜",
+       "en": "pink thighhighs",
+       "level": 0
+      },
+      {
+       "zh": "紫色连裤袜",
+       "en": "purple pantyhose",
+       "level": 0
+      },
+      {
+       "zh": "红色连裤袜",
+       "en": "red pantyhose",
+       "level": 0
+      },
+      {
+       "zh": "蓝色连裤袜",
+       "en": "blue pantyhose",
+       "level": 0
+      },
+      {
+       "zh": "粉色连裤袜",
+       "en": "pink pantyhose",
+       "level": 0
+      },
+      {
+       "zh": "紫色短袜",
+       "en": "purple socks",
+       "level": 0
+      },
+      {
+       "zh": "红色短袜",
+       "en": "red socks",
+       "level": 0
+      },
+      {
+       "zh": "蓝色短袜",
+       "en": "blue socks",
+       "level": 0
+      },
+      {
+       "zh": "粉色短袜",
+       "en": "pink socks",
+       "level": 0
+      },
+      {
+       "zh": "黑色亮丝星点袜",
+       "en": "black glittery pantyhose",
+       "level": 0
+      },
+      {
+       "zh": "白色亮丝星点袜",
+       "en": "white glittery pantyhose",
+       "level": 0
+      },
+      {
+       "zh": "淡粉亮丝星点袜",
+       "en": "pale pink glittery pantyhose",
+       "level": 0
+      },
+      {
+       "zh": "淡紫亮丝星点袜",
+       "en": "lavender glittery pantyhose",
+       "level": 0
+      },
+      {
+       "zh": "淡酒红亮丝星点袜",
+       "en": "pale burgundy glittery pantyhose",
+       "level": 0
+      },
+      {
+       "zh": "黑色亮丝星点过膝袜",
+       "en": "black glittery thighhighs",
+       "level": 0
+      },
+      {
+       "zh": "白色亮丝星点过膝袜",
+       "en": "white glittery thighhighs",
+       "level": 0
+      },
+      {
+       "zh": "淡粉亮丝星点过膝袜",
+       "en": "pale pink glittery thighhighs",
+       "level": 0
+      },
+      {
+       "zh": "淡紫亮丝星点过膝袜",
+       "en": "lavender glittery thighhighs",
+       "level": 0
+      },
+      {
+       "zh": "淡酒红亮丝星点过膝袜",
+       "en": "pale burgundy glittery thighhighs",
+       "level": 0
+      },
+      {
+       "zh": "黑色亮丝星点吊带袜",
+       "en": "black glittery thighhighs, garter straps",
+       "level": 0
+      },
+      {
+       "zh": "白色亮丝星点吊带袜",
+       "en": "white glittery thighhighs, garter straps",
+       "level": 0
+      },
+      {
+       "zh": "淡粉亮丝星点吊带袜",
+       "en": "pale pink glittery thighhighs, garter straps",
+       "level": 0
+      },
+      {
+       "zh": "淡紫亮丝星点吊带袜",
+       "en": "lavender glittery thighhighs, garter straps",
+       "level": 0
+      },
+      {
+       "zh": "淡酒红亮丝星点吊带袜",
+       "en": "pale burgundy glittery thighhighs, garter straps",
+       "level": 0
+      }
+     ]
+    },
+    {
+     "key": "sock_color",
+     "lab": "袜子颜色",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "clothing",
+     "opts": [
+      {
+       "zh": "黑色",
+       "en": "black",
+       "level": 0
+      },
+      {
+       "zh": "白色",
+       "en": "white",
+       "level": 0
+      },
+      {
+       "zh": "灰色",
+       "en": "grey",
+       "level": 0
+      },
+      {
+       "zh": "红色",
+       "en": "red",
+       "level": 0
+      },
+      {
+       "zh": "橙色",
+       "en": "orange",
+       "level": 0
+      },
+      {
+       "zh": "黄色",
+       "en": "yellow",
+       "level": 0
+      },
+      {
+       "zh": "绿色",
+       "en": "green",
+       "level": 0
+      },
+      {
+       "zh": "青色",
+       "en": "aqua",
+       "level": 0
+      },
+      {
+       "zh": "蓝色",
+       "en": "blue",
+       "level": 0
+      },
+      {
+       "zh": "紫色",
+       "en": "purple",
+       "level": 0
+      },
+      {
+       "zh": "粉色",
+       "en": "pink",
+       "level": 0
+      },
+      {
+       "zh": "棕色",
+       "en": "brown",
+       "level": 0
+      }
+     ]
+    },
+    {
+     "key": "shoes",
+     "lab": "鞋子",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "clothing",
+     "opts": [
+      {
+       "zh": "高跟鞋",
+       "en": "high heels",
+       "level": 0
+      },
+      {
+       "zh": "玛丽珍鞋",
+       "en": "mary janes",
+       "level": 0
+      },
+      {
+       "zh": "运动鞋",
+       "en": "sneakers",
+       "level": 0
+      },
+      {
+       "zh": "靴子",
+       "en": "boots",
+       "level": 0
+      },
+      {
+       "zh": "过膝长靴",
+       "en": "thigh boots",
+       "level": 0
+      },
+      {
+       "zh": "赤足",
+       "en": "bare feet",
+       "level": 0
+      },
+      {
+       "zh": "乐福鞋",
+       "en": "loafers",
+       "level": 0
+      },
+      {
+       "zh": "凉鞋",
+       "en": "sandals",
+       "level": 0
+      },
+      {
+       "zh": "短靴",
+       "en": "ankle boots",
+       "level": 0
+      },
+      {
+       "zh": "及膝长靴",
+       "en": "knee boots",
+       "level": 0
+      },
+      {
+       "zh": "高跟长靴",
+       "en": "high heel boots",
+       "level": 0
+      },
+      {
+       "zh": "木屐",
+       "en": "geta",
+       "level": 0
+      },
+      {
+       "zh": "室内鞋",
+       "en": "uwabaki",
+       "level": 0
+      },
+      {
+       "zh": "拖鞋",
+       "en": "slippers",
+       "level": 0
+      }
+     ]
+    },
+    {
+     "key": "accessory",
+     "lab": "配饰",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "clothing",
+     "opts": [
+      {
+       "zh": "项链",
+       "en": "necklace",
+       "level": 0
+      },
+      {
+       "zh": "颈圈",
+       "en": "choker",
+       "level": 0
+      },
+      {
+       "zh": "耳环",
+       "en": "earrings",
+       "level": 0
+      },
+      {
+       "zh": "手镯",
+       "en": "bracelet",
+       "level": 0
+      },
+      {
+       "zh": "戒指",
+       "en": "ring",
+       "level": 0
+      },
+      {
+       "zh": "手表",
+       "en": "wristwatch",
+       "level": 0
+      },
+      {
+       "zh": "眼镜",
+       "en": "glasses",
+       "level": 0
+      },
+      {
+       "zh": "墨镜",
+       "en": "sunglasses",
+       "level": 0
+      },
+      {
+       "zh": "贝雷帽",
+       "en": "beret",
+       "level": 0
+      },
+      {
+       "zh": "草帽",
+       "en": "straw hat",
+       "level": 0
+      },
+      {
+       "zh": "丝巾",
+       "en": "scarf",
+       "level": 0
+      },
+      {
+       "zh": "手提包",
+       "en": "handbag",
+       "level": 0
+      },
+      {
+       "zh": "腿环",
+       "en": "thigh strap",
+       "level": 0
+      }
+     ]
+    },
+    {
+     "key": "top",
+     "lab": "上装与外套",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "clothing",
+     "opts": [
+      {
+       "zh": "T恤",
+       "en": "t-shirt",
+       "level": 0
+      },
+      {
+       "zh": "衬衫",
+       "en": "shirt",
+       "level": 0
+      },
+      {
+       "zh": "女式衬衫",
+       "en": "blouse",
+       "level": 0
+      },
+      {
+       "zh": "水手领衬衫",
+       "en": "sailor shirt",
+       "level": 0
+      },
+      {
+       "zh": "Polo衫",
+       "en": "polo shirt",
+       "level": 0
+      },
+      {
+       "zh": "毛衣",
+       "en": "sweater",
+       "level": 0
+      },
+      {
+       "zh": "高领毛衣",
+       "en": "turtleneck",
+       "level": 0
+      },
+      {
+       "zh": "露肩毛衣",
+       "en": "off-shoulder sweater",
+       "level": 0
+      },
+      {
+       "zh": "开衫",
+       "en": "cardigan",
+       "level": 0
+      },
+      {
+       "zh": "针织马甲",
+       "en": "sweater vest",
+       "level": 0
+      },
+      {
+       "zh": "马甲背心",
+       "en": "vest",
+       "level": 0
+      },
+      {
+       "zh": "连帽卫衣",
+       "en": "hoodie",
+       "level": 0
+      },
+      {
+       "zh": "露脐上衣",
+       "en": "crop top",
+       "level": 1
+      },
+      {
+       "zh": "背心",
+       "en": "tank top",
+       "level": 0
+      },
+      {
+       "zh": "细肩带背心",
+       "en": "camisole",
+       "level": 1
+      },
+      {
+       "zh": "抹胸",
+       "en": "tube top",
+       "level": 0
+      },
+      {
+       "zh": "无袖上衣",
+       "en": "sleeveless shirt",
+       "level": 1
+      },
+      {
+       "zh": "运动内衣",
+       "en": "sports bra",
+       "level": 0
+      },
+      {
+       "zh": "泡泡袖上衣",
+       "en": "puffy sleeves",
+       "level": 0
+      },
+      {
+       "zh": "皮夹克",
+       "en": "leather jacket",
+       "level": 0
+      },
+      {
+       "zh": "牛仔外套",
+       "en": "denim jacket",
+       "level": 0
+      },
+      {
+       "zh": "飞行员夹克",
+       "en": "bomber jacket",
+       "level": 0
+      },
+      {
+       "zh": "短夹克",
+       "en": "jacket",
+       "level": 0
+      },
+      {
+       "zh": "风衣",
+       "en": "trench coat",
+       "level": 0
+      },
+      {
+       "zh": "大衣",
+       "en": "coat",
+       "level": 0
+      },
+      {
+       "zh": "西装外套",
+       "en": "blazer",
+       "level": 0
+      },
+      {
+       "zh": "皮草大衣",
+       "en": "fur coat",
+       "level": 0
+      },
+      {
+       "zh": "皮草滚边大衣",
+       "en": "fur-trimmed coat",
+       "level": 0
+      },
+      {
+       "zh": "披风",
+       "en": "cape",
+       "level": 0
+      },
+      {
+       "zh": "斗篷",
+       "en": "poncho",
+       "level": 0
+      },
+      {
+       "zh": "荷叶边衬衫",
+       "en": "frilled shirt",
+       "level": 0
+      },
+      {
+       "zh": "露肩衬衫",
+       "en": "off-shoulder shirt",
+       "level": 0
+      },
+      {
+       "zh": "短款卫衣",
+       "en": "cropped hoodie",
+       "level": 0
+      },
+      {
+       "zh": "羽绒服",
+       "en": "down jacket",
+       "level": 0
+      },
+      {
+       "zh": "军装外套",
+       "en": "military jacket",
+       "level": 0
+      },
+      {
+       "zh": "挂脖上衣",
+       "en": "halterneck",
+       "level": 0
+      },
+      {
+       "zh": "浴袍",
+       "en": "bathrobe",
+       "level": 0
+      },
+      {
+       "zh": "机能风外套",
+       "en": "techwear",
+       "level": 0
+      },
+      {
+       "zh": "毛领外套",
+       "en": "fur collar",
+       "level": 0
+      },
+      {
+       "zh": "披肩",
+       "en": "capelet",
+       "level": 0
+      }
+     ]
+    },
+    {
+     "key": "bottom",
+     "lab": "下装",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "clothing",
+     "opts": [
+      {
+       "zh": "牛仔裤",
+       "en": "jeans",
+       "level": 0
+      },
+      {
+       "zh": "短裤",
+       "en": "shorts",
+       "level": 0
+      },
+      {
+       "zh": "热裤",
+       "en": "short shorts",
+       "level": 1
+      },
+      {
+       "zh": "牛仔短裤",
+       "en": "denim shorts",
+       "level": 0
+      },
+      {
+       "zh": "运动短裤",
+       "en": "gym shorts",
+       "level": 0
+      },
+      {
+       "zh": "高腰短裤",
+       "en": "high-waist shorts",
+       "level": 0
+      },
+      {
+       "zh": "骑行短裤",
+       "en": "bike shorts",
+       "level": 0
+      },
+      {
+       "zh": "百褶裙",
+       "en": "pleated skirt",
+       "level": 0
+      },
+      {
+       "zh": "迷你裙",
+       "en": "miniskirt",
+       "level": 0
+      },
+      {
+       "zh": "半身裙",
+       "en": "skirt",
+       "level": 0
+      },
+      {
+       "zh": "铅笔裙",
+       "en": "pencil skirt",
+       "level": 0
+      },
+      {
+       "zh": "长裙",
+       "en": "long skirt",
+       "level": 0
+      },
+      {
+       "zh": "牛仔裙",
+       "en": "denim skirt",
+       "level": 0
+      },
+      {
+       "zh": "工装裤",
+       "en": "cargo pants",
+       "level": 0
+      },
+      {
+       "zh": "运动长裤",
+       "en": "track pants",
+       "level": 0
+      },
+      {
+       "zh": "高腰长裤",
+       "en": "high-waist pants",
+       "level": 0
+      },
+      {
+       "zh": "瑜伽裤",
+       "en": "yoga pants",
+       "level": 0
+      },
+      {
+       "zh": "紧身打底裤",
+       "en": "leggings",
+       "level": 0
+      },
+      {
+       "zh": "背带裤",
+       "en": "overalls",
+       "level": 0
+      },
+      {
+       "zh": "灯笼裤",
+       "en": "bloomers",
+       "level": 0
+      },
+      {
+       "zh": "哈伦裤",
+       "en": "harem pants",
+       "level": 0
+      },
+      {
+       "zh": "七分裤",
+       "en": "capri pants",
+       "level": 0
+      },
+      {
+       "zh": "纱笼",
+       "en": "sarong",
+       "level": 0
+      },
+      {
+       "zh": "束腰",
+       "en": "corset",
+       "level": 1
+      },
+      {
+       "zh": "紧身胸衣",
+       "en": "bustier",
+       "level": 1
+      },
+      {
+       "zh": "丁字裤",
+       "en": "thong",
+       "level": 1
+      },
+      {
+       "zh": "细带内裤",
+       "en": "g-string",
+       "level": 1
+      },
+      {
+       "zh": "泳裤",
+       "en": "swim briefs",
+       "level": 0
+      },
+      {
+       "zh": "腰间系衣",
+       "en": "sweater around waist",
+       "level": 0
+      },
+      {
+       "zh": "A字裙",
+       "en": "a-line skirt",
+       "level": 0
+      },
+      {
+       "zh": "网球裙",
+       "en": "tennis skirt",
+       "level": 0
+      },
+      {
+       "zh": "工装裙",
+       "en": "cargo skirt",
+       "level": 0
+      },
+      {
+       "zh": "蛋糕裙",
+       "en": "frilled skirt",
+       "level": 0
+      },
+      {
+       "zh": "阔腿裤",
+       "en": "wide-leg pants",
+       "level": 0
+      },
+      {
+       "zh": "骑马裤",
+       "en": "jodhpurs",
+       "level": 0
+      },
+      {
+       "zh": "短裙裤",
+       "en": "skort",
+       "level": 0
+      },
+      {
+       "zh": "皮裤",
+       "en": "leather pants",
+       "level": 0
+      },
+      {
+       "zh": "西装裤",
+       "en": "suit pants",
+       "level": 0
+      },
+      {
+       "zh": "高腰裙",
+       "en": "high-waist skirt",
+       "level": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pose_sfw",
+   "title": "⑦ 姿势与动作（SFW）",
+   "cls": "",
+   "max_level": 2,
+   "fields": [
+    {
+     "key": "pose_base",
+     "lab": "基础姿势",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "pose",
+     "opts": [
+      {
+       "zh": "站立",
+       "en": "standing",
+       "level": 0
+      },
+      {
+       "zh": "端坐",
+       "en": "sitting",
+       "level": 0
+      },
+      {
+       "zh": "正座",
+       "en": "seiza",
+       "level": 0
+      },
+      {
+       "zh": "跪姿",
+       "en": "kneeling",
+       "level": 0
+      },
+      {
+       "zh": "趴卧",
+       "en": "lying",
+       "level": 0
+      },
+      {
+       "zh": "侧躺",
+       "en": "on side",
+       "level": 0
+      },
+      {
+       "zh": "仰躺",
+       "en": "on back",
+       "level": 0
+      },
+      {
+       "zh": "俯卧",
+       "en": "on stomach",
+       "level": 0
+      },
+      {
+       "zh": "四肢着地",
+       "en": "all fours",
+       "level": 0
+      },
+      {
+       "zh": "蹲姿",
+       "en": "squatting",
+       "level": 0
+      },
+      {
+       "zh": "双腿交叠",
+       "en": "crossed legs",
+       "level": 0
+      },
+      {
+       "zh": "盘腿坐",
+       "en": "indian style",
+       "level": 0
+      },
+      {
+       "zh": "W坐",
+       "en": "wariza",
+       "level": 0
+      },
+      {
+       "zh": "单膝跪地",
+       "en": "on one knee",
+       "level": 0
+      },
+      {
+       "zh": "屈膝",
+       "en": "knees up",
+       "level": 0
+      },
+      {
+       "zh": "蜷缩",
+       "en": "fetal position",
+       "level": 0
+      },
+      {
+       "zh": "靠墙而立",
+       "en": "against wall",
+       "level": 0
+      },
+      {
+       "zh": "对立式站姿",
+       "en": "contrapposto",
+       "level": 0
+      },
+      {
+       "zh": "双腿分开",
+       "en": "legs apart",
+       "level": 0
+      },
+      {
+       "zh": "双腿并拢",
+       "en": "legs together",
+       "level": 0
+      },
+      {
+       "zh": "脚踝交叉",
+       "en": "crossed ankles",
+       "level": 0
+      },
+      {
+       "zh": "单腿站立",
+       "en": "standing on one leg",
+       "level": 0
+      },
+      {
+       "zh": "双手扶膝",
+       "en": "hands on own knees",
+       "level": 0
+      },
+      {
+       "zh": "垂手而立",
+       "en": "arms at sides",
+       "level": 0
+      },
+      {
+       "zh": "托腮",
+       "en": "head rest",
+       "level": 0
+      },
+      {
+       "zh": "卧于床上",
+       "en": "on bed",
+       "level": 0
+      },
+      {
+       "zh": "席地而坐",
+       "en": "on floor",
+       "level": 0
+      },
+      {
+       "zh": "站立一字马",
+       "en": "standing split",
+       "level": 0
+      }
+     ]
+    },
+    {
+     "key": "arms_hands",
+     "lab": "手部动作",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "pose",
+     "opts": [
+      {
+       "zh": "叉腰",
+       "en": "hand on own hip",
+       "level": 0
+      },
+      {
+       "zh": "双臂交叉",
+       "en": "crossed arms",
+       "level": 0
+      },
+      {
+       "zh": "双手背后",
+       "en": "arms behind back",
+       "level": 0
+      },
+      {
+       "zh": "双手举高",
+       "en": "arms up",
+       "level": 0
+      },
+      {
+       "zh": "举手",
+       "en": "hand up",
+       "level": 0
+      },
+      {
+       "zh": "双手举起",
+       "en": "hands up",
+       "level": 0
+      },
+      {
+       "zh": "比耶",
+       "en": "v",
+       "level": 0
+      },
+      {
+       "zh": "摸脸颊",
+       "en": "hand on own cheek",
+       "level": 0
+      },
+      {
+       "zh": "捂嘴",
+       "en": "covering own mouth",
+       "level": 0
+      },
+      {
+       "zh": "十指相扣",
+       "en": "own hands clasped",
+       "level": 0
+      },
+      {
+       "zh": "指尖触唇",
+       "en": "finger to mouth",
+       "level": 0
+      },
+      {
+       "zh": "拨弄头发",
+       "en": "hand in own hair",
+       "level": 0
+      },
+      {
+       "zh": "撩发",
+       "en": "holding own hair",
+       "level": 0
+      },
+      {
+       "zh": "抓住裙摆",
+       "en": "holding own skirt",
+       "level": 0
+      },
+      {
+       "zh": "握拳",
+       "en": "clenched hands",
+       "level": 0
+      },
+      {
+       "zh": "挥手",
+       "en": "waving",
+       "level": 0
+      },
+      {
+       "zh": "手插口袋",
+       "en": "hands in pockets",
+       "level": 0
+      },
+      {
+       "zh": "敬礼",
+       "en": "salute",
+       "level": 0
+      },
+      {
+       "zh": "指",
+       "en": "pointing",
+       "level": 0
+      },
+      {
+       "zh": "十指交叉托腮",
+       "en": "steepled fingers",
+       "level": 0
+      }
+     ]
+    },
+    {
+     "key": "action",
+     "lab": "动态动作",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "pose",
+     "opts": [
+      {
+       "zh": "行走",
+       "en": "walking",
+       "level": 0
+      },
+      {
+       "zh": "奔跑",
+       "en": "running",
+       "level": 0
+      },
+      {
+       "zh": "跳跃",
+       "en": "jumping",
+       "level": 0
+      },
+      {
+       "zh": "转身回眸",
+       "en": "looking back",
+       "level": 0
+      },
+      {
+       "zh": "打哈欠",
+       "en": "yawning",
+       "level": 0
+      },
+      {
+       "zh": "旋转",
+       "en": "spinning",
+       "level": 0
+      },
+      {
+       "zh": "起舞",
+       "en": "dancing",
+       "level": 0
+      },
+      {
+       "zh": "进食",
+       "en": "eating",
+       "level": 0
+      },
+      {
+       "zh": "睡眠",
+       "en": "sleeping",
+       "level": 0
+      },
+      {
+       "zh": "飘浮",
+       "en": "floating",
+       "level": 0
+      },
+      {
+       "zh": "坠落",
+       "en": "falling",
+       "level": 0
+      },
+      {
+       "zh": "饮水",
+       "en": "drinking",
+       "level": 0
+      },
+      {
+       "zh": "阅读",
+       "en": "reading",
+       "level": 0
+      },
+      {
+       "zh": "游泳",
+       "en": "swimming",
+       "level": 0
+      },
+      {
+       "zh": "鞠躬",
+       "en": "bowing",
+       "level": 0
+      }
+     ]
+    },
+    {
+     "key": "pose_risque",
+     "lab": "暗示姿势",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "pose",
+     "opts": [
+      {
+       "zh": "弯腰撅臀",
+       "en": "bent over",
+       "level": 1
+      },
+      {
+       "zh": "前倾",
+       "en": "leaning forward",
+       "level": 1
+      },
+      {
+       "zh": "弓背",
+       "en": "arched back",
+       "level": 1
+      },
+      {
+       "zh": "后仰",
+       "en": "leaning back",
+       "level": 1
+      },
+      {
+       "zh": "抬腿",
+       "en": "leg up",
+       "level": 1
+      },
+      {
+       "zh": "手抚胸前",
+       "en": "hand on own chest",
+       "level": 1
+      },
+      {
+       "zh": "手臂夹胸",
+       "en": "arm between breasts",
+       "level": 1
+      },
+      {
+       "zh": "双手抚腿",
+       "en": "hands on own thighs",
+       "level": 1
+      },
+      {
+       "zh": "伸展",
+       "en": "stretching",
+       "level": 1
+      },
+      {
+       "zh": "踮脚",
+       "en": "tiptoes",
+       "level": 1
+      },
+      {
+       "zh": "上下同框",
+       "en": "top-down bottom-up",
+       "level": 1
+      },
+      {
+       "zh": "抱膝蜷坐",
+       "en": "hugging own legs",
+       "level": 1
+      },
+      {
+       "zh": "甩发",
+       "en": "hair flip",
+       "level": 1
+      },
+      {
+       "zh": "拉扯衣物",
+       "en": "clothes pull",
+       "level": 2
+      },
+      {
+       "zh": "撩起裙摆",
+       "en": "skirt lift",
+       "level": 2
+      },
+      {
+       "zh": "撩起上衣",
+       "en": "shirt lift",
+       "level": 2
+      },
+      {
+       "zh": "撩起连衣裙",
+       "en": "dress lift",
+       "level": 2
+      },
+      {
+       "zh": "拉拽裙摆",
+       "en": "skirt pull",
+       "level": 1
+      },
+      {
+       "zh": "拉扯内裤",
+       "en": "panty pull",
+       "level": 2
+      },
+      {
+       "zh": "拉扯比基尼",
+       "en": "bikini pull",
+       "level": 2
+      },
+      {
+       "zh": "宽衣",
+       "en": "undressing",
+       "level": 2
+      },
+      {
+       "zh": "事后余韵",
+       "en": "after sex",
+       "level": 2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "camera",
+   "title": "⑧ 镜头",
+   "cls": "",
+   "max_level": 3,
+   "fields": [
+    {
+     "key": "shot_size",
+     "lab": "景别",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "camera",
+     "opts": [
+      {
+       "zh": "大特写",
+       "en": "extreme close-up",
+       "level": 0
+      },
+      {
+       "zh": "面部特写",
+       "en": "close-up",
+       "level": 0
+      },
+      {
+       "zh": "上半身",
+       "en": "upper body",
+       "level": 0
+      },
+      {
+       "zh": "七分身",
+       "en": "cowboy shot",
+       "level": 0
+      },
+      {
+       "zh": "全身",
+       "en": "full body",
+       "level": 0
+      },
+      {
+       "zh": "远景",
+       "en": "wide shot",
+       "level": 0
+      }
+     ]
+    },
+    {
+     "key": "viewpoint",
+     "lab": "视角",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "camera",
+     "opts": [
+      {
+       "zh": "低角度仰拍",
+       "en": "from below",
+       "level": 0
+      },
+      {
+       "zh": "高角度俯拍",
+       "en": "from above",
+       "level": 0
+      },
+      {
+       "zh": "正侧面",
+       "en": "from side",
+       "level": 0
+      },
+      {
+       "zh": "背后",
+       "en": "from behind",
+       "level": 0
+      },
+      {
+       "zh": "斜侧45度",
+       "en": "from side, from behind",
+       "level": 0
+      },
+      {
+       "zh": "倾斜构图",
+       "en": "dutch angle",
+       "level": 0
+      },
+      {
+       "zh": "鸟瞰",
+       "en": "bird's eye view",
+       "level": 0
+      },
+      {
+       "zh": "虫视仰角",
+       "en": "worm's eye view",
+       "level": 0
+      },
+      {
+       "zh": "过肩窥视",
+       "en": "over-the-shoulder shot",
+       "level": 0
+      },
+      {
+       "zh": "主观视角",
+       "en": "first-person view, pov",
+       "level": 0
+      },
+      {
+       "zh": "镜面反射",
+       "en": "mirror, reflection",
+       "level": 0
+      },
+      {
+       "zh": "框中构图",
+       "en": "framed by foreground",
+       "level": 0
+      },
+      {
+       "zh": "鱼眼镜头",
+       "en": "fisheye",
+       "level": 0
+      },
+      {
+       "zh": "透视纵深",
+       "en": "perspective",
+       "level": 0
+      },
+      {
+       "zh": "全景广角",
+       "en": "panorama",
+       "level": 0
+      },
+      {
+       "zh": "第一人称手部",
+       "en": "pov hands",
+       "level": 0
+      },
+      {
+       "zh": "第一人称胸视角",
+       "en": "pov breasts",
+       "level": 1
+      },
+      {
+       "zh": "第一人称腿视角",
+       "en": "pov legs",
+       "level": 1
+      },
+      {
+       "zh": "第一人称下体视角",
+       "en": "pov crotch",
+       "level": 2
+      },
+      {
+       "zh": "第一人称口交",
+       "en": "pov, fellatio",
+       "level": 3
+      },
+      {
+       "zh": "第一人称性交",
+       "en": "pov, sexual intercourse",
+       "level": 3
+      },
+      {
+       "zh": "第一人称骑乘",
+       "en": "pov, cowgirl position",
+       "level": 3
+      }
+     ]
+    },
+    {
+     "key": "dof",
+     "lab": "景深",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "camera",
+     "opts": [
+      {
+       "zh": "浅景深虚化",
+       "en": "depth of field, blurry background",
+       "level": 0
+      },
+      {
+       "zh": "全清晰",
+       "en": "deep focus",
+       "level": 0
+      },
+      {
+       "zh": "焦点在脸",
+       "en": "focus on face",
+       "level": 0
+      }
+     ]
+    },
+    {
+     "key": "device",
+     "lab": "设备质感",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "camera",
+     "opts": [
+      {
+       "zh": "手机自拍",
+       "en": "selfie",
+       "level": 0
+      },
+      {
+       "zh": "胶片感",
+       "en": "film grain",
+       "level": 0
+      },
+      {
+       "zh": "拍立得",
+       "en": "polaroid frame",
+       "level": 0
+      },
+      {
+       "zh": "监控画面",
+       "en": "security camera footage",
+       "level": 0
+      },
+      {
+       "zh": "网络摄像头",
+       "en": "webcam footage",
+       "level": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "scene",
+   "title": "⑨ 场景与环境",
+   "cls": "",
+   "max_level": 0,
+   "fields": [
+    {
+     "key": "place",
+     "lab": "地点",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "scene",
+     "opts": [
+      {
+       "zh": "卧室",
+       "en": "bedroom",
+       "level": 0
+      },
+      {
+       "zh": "床上",
+       "en": "on bed",
+       "level": 0
+      },
+      {
+       "zh": "酒店房间",
+       "en": "hotel room",
+       "level": 0
+      },
+      {
+       "zh": "浴室",
+       "en": "bathroom",
+       "level": 0
+      },
+      {
+       "zh": "浴缸里",
+       "en": "in bathtub",
+       "level": 0
+      },
+      {
+       "zh": "淋浴下",
+       "en": "showering",
+       "level": 0
+      },
+      {
+       "zh": "教室",
+       "en": "classroom",
+       "level": 0
+      },
+      {
+       "zh": "图书馆",
+       "en": "library",
+       "level": 0
+      },
+      {
+       "zh": "学校走廊",
+       "en": "hallway",
+       "level": 0
+      },
+      {
+       "zh": "天台",
+       "en": "rooftop",
+       "level": 0
+      },
+      {
+       "zh": "办公室",
+       "en": "office",
+       "level": 0
+      },
+      {
+       "zh": "咖啡厅",
+       "en": "cafe",
+       "level": 0
+      },
+      {
+       "zh": "小巷",
+       "en": "alley",
+       "level": 0
+      },
+      {
+       "zh": "街头",
+       "en": "street",
+       "level": 0
+      },
+      {
+       "zh": "海滩",
+       "en": "beach",
+       "level": 0
+      },
+      {
+       "zh": "温泉",
+       "en": "onsen",
+       "level": 0
+      },
+      {
+       "zh": "泳池边",
+       "en": "poolside",
+       "level": 0
+      },
+      {
+       "zh": "神社",
+       "en": "shrine",
+       "level": 0
+      },
+      {
+       "zh": "电梯里",
+       "en": "elevator",
+       "level": 0
+      },
+      {
+       "zh": "电车内",
+       "en": "train interior",
+       "level": 0
+      },
+      {
+       "zh": "车后座",
+       "en": "car interior",
+       "level": 0
+      },
+      {
+       "zh": "森林",
+       "en": "forest",
+       "level": 0
+      },
+      {
+       "zh": "花田",
+       "en": "flower field",
+       "level": 0
+      },
+      {
+       "zh": "更衣室",
+       "en": "changing room",
+       "level": 0
+      },
+      {
+       "zh": "试衣间",
+       "en": "fitting room",
+       "level": 0
+      },
+      {
+       "zh": "便利店",
+       "en": "convenience store",
+       "level": 0
+      },
+      {
+       "zh": "公园",
+       "en": "park",
+       "level": 0
+      },
+      {
+       "zh": "游乐园",
+       "en": "amusement park",
+       "level": 0
+      },
+      {
+       "zh": "电影院",
+       "en": "movie theater",
+       "level": 0
+      },
+      {
+       "zh": "楼梯间",
+       "en": "stairwell",
+       "level": 0
+      },
+      {
+       "zh": "阳台",
+       "en": "balcony",
+       "level": 0
+      },
+      {
+       "zh": "厨房",
+       "en": "kitchen",
+       "level": 0
+      },
+      {
+       "zh": "酒吧",
+       "en": "bar (place)",
+       "level": 0
+      },
+      {
+       "zh": "废墟",
+       "en": "ruins",
+       "level": 0
+      },
+      {
+       "zh": "桥",
+       "en": "bridge",
+       "level": 0
+      },
+      {
+       "zh": "瀑布",
+       "en": "waterfall",
+       "level": 0
+      },
+      {
+       "zh": "沙漠",
+       "en": "desert",
+       "level": 0
+      },
+      {
+       "zh": "教堂",
+       "en": "church",
+       "level": 0
+      },
+      {
+       "zh": "洞穴",
+       "en": "cave",
+       "level": 0
+      },
+      {
+       "zh": "车站",
+       "en": "train station",
+       "level": 0
+      },
+      {
+       "zh": "花园",
+       "en": "garden",
+       "level": 0
+      },
+      {
+       "zh": "山间",
+       "en": "mountain",
+       "level": 0
+      },
+      {
+       "zh": "水下",
+       "en": "underwater",
+       "level": 0
+      },
+      {
+       "zh": "公路",
+       "en": "road",
+       "level": 0
+      },
+      {
+       "zh": "原野",
+       "en": "field",
+       "level": 0
+      },
+      {
+       "zh": "河边",
+       "en": "river",
+       "level": 0
+      },
+      {
+       "zh": "城堡",
+       "en": "castle",
+       "level": 0
+      },
+      {
+       "zh": "舞台",
+       "en": "stage",
+       "level": 0
+      },
+      {
+       "zh": "骑自行车",
+       "en": "bicycle",
+       "level": 0
+      },
+      {
+       "zh": "湖畔",
+       "en": "lake",
+       "level": 0
+      },
+      {
+       "zh": "山丘",
+       "en": "hill",
+       "level": 0
+      },
+      {
+       "zh": "斑马线",
+       "en": "crosswalk",
+       "level": 0
+      },
+      {
+       "zh": "演唱会",
+       "en": "concert",
+       "level": 0
+      },
+      {
+       "zh": "摩托车",
+       "en": "on motorcycle",
+       "level": 0
+      },
+      {
+       "zh": "摩天轮",
+       "en": "ferris wheel",
+       "level": 0
+      },
+      {
+       "zh": "体育馆",
+       "en": "stadium",
+       "level": 0
+      },
+      {
+       "zh": "墓地",
+       "en": "graveyard",
+       "level": 0
+      },
+      {
+       "zh": "水族馆",
+       "en": "aquarium",
+       "level": 0
+      },
+      {
+       "zh": "公寓",
+       "en": "apartment",
+       "level": 0
+      },
+      {
+       "zh": "灯塔",
+       "en": "lighthouse",
+       "level": 0
+      },
+      {
+       "zh": "公交车站",
+       "en": "bus stop",
+       "level": 0
+      }
+     ]
+    },
+    {
+     "key": "prop",
+     "lab": "环境元素",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "scene",
+     "opts": [
+      {
+       "zh": "床单",
+       "en": "bed sheet",
+       "level": 0
+      },
+      {
+       "zh": "枕头",
+       "en": "pillow",
+       "level": 0
+      },
+      {
+       "zh": "窗帘",
+       "en": "curtains",
+       "level": 0
+      },
+      {
+       "zh": "窗户",
+       "en": "window",
+       "level": 0
+      },
+      {
+       "zh": "落地窗",
+       "en": "large window",
+       "level": 0
+      },
+      {
+       "zh": "镜子",
+       "en": "mirror",
+       "level": 0
+      },
+      {
+       "zh": "书桌",
+       "en": "desk",
+       "level": 0
+      },
+      {
+       "zh": "沙发",
+       "en": "couch",
+       "level": 0
+      },
+      {
+       "zh": "书架",
+       "en": "bookshelf",
+       "level": 0
+      },
+      {
+       "zh": "台灯",
+       "en": "desk lamp",
+       "level": 0
+      },
+      {
+       "zh": "雨伞",
+       "en": "umbrella",
+       "level": 0
+      },
+      {
+       "zh": "椅子",
+       "en": "chair",
+       "level": 0
+      },
+      {
+       "zh": "秋千",
+       "en": "swing",
+       "level": 0
+      },
+      {
+       "zh": "自动贩卖机",
+       "en": "vending machine",
+       "level": 0
+      },
+      {
+       "zh": "栏杆",
+       "en": "railing",
+       "level": 0
+      },
+      {
+       "zh": "桌子",
+       "en": "table",
+       "level": 0
+      },
+      {
+       "zh": "书本",
+       "en": "book",
+       "level": 0
+      },
+      {
+       "zh": "手机",
+       "en": "phone",
+       "level": 0
+      },
+      {
+       "zh": "毛巾",
+       "en": "towel",
+       "level": 0
+      },
+      {
+       "zh": "蛋糕",
+       "en": "cake",
+       "level": 0
+      },
+      {
+       "zh": "相机",
+       "en": "camera",
+       "level": 0
+      },
+      {
+       "zh": "折扇",
+       "en": "folding fan",
+       "level": 0
+      },
+      {
+       "zh": "蜡烛",
+       "en": "candle",
+       "level": 0
+      },
+      {
+       "zh": "酒杯",
+       "en": "wine glass",
+       "level": 0
+      },
+      {
+       "zh": "遮阳伞",
+       "en": "parasol",
+       "level": 0
+      },
+      {
+       "zh": "柱子",
+       "en": "pillar",
+       "level": 0
+      },
+      {
+       "zh": "花瓶",
+       "en": "vase",
+       "level": 0
+      },
+      {
+       "zh": "甜品",
+       "en": "dessert",
+       "level": 0
+      },
+      {
+       "zh": "吧台",
+       "en": "counter",
+       "level": 0
+      },
+      {
+       "zh": "吊灯",
+       "en": "chandelier",
+       "level": 0
+      },
+      {
+       "zh": "杯子",
+       "en": "cup",
+       "level": 0
+      },
+      {
+       "zh": "树木",
+       "en": "tree",
+       "level": 0
+      },
+      {
+       "zh": "盆栽",
+       "en": "potted plant",
+       "level": 0
+      },
+      {
+       "zh": "楼梯",
+       "en": "stairs",
+       "level": 0
+      },
+      {
+       "zh": "门",
+       "en": "door",
+       "level": 0
+      },
+      {
+       "zh": "气球",
+       "en": "balloon",
+       "level": 0
+      },
+      {
+       "zh": "毛毯",
+       "en": "blanket",
+       "level": 0
+      },
+      {
+       "zh": "雕像",
+       "en": "statue",
+       "level": 0
+      },
+      {
+       "zh": "灯笼",
+       "en": "lantern",
+       "level": 0
+      },
+      {
+       "zh": "冰淇淋",
+       "en": "ice cream",
+       "level": 0
+      },
+      {
+       "zh": "靠垫",
+       "en": "cushion",
+       "level": 0
+      }
+     ]
+    },
+    {
+     "key": "weather",
+     "lab": "天气氛围",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "scene",
+     "opts": [
+      {
+       "zh": "晴空",
+       "en": "clear sky",
+       "level": 0
+      },
+      {
+       "zh": "雨天",
+       "en": "rain",
+       "level": 0
+      },
+      {
+       "zh": "雷雨",
+       "en": "thunderstorm",
+       "level": 0
+      },
+      {
+       "zh": "雪景",
+       "en": "snow",
+       "level": 0
+      },
+      {
+       "zh": "夜晚",
+       "en": "night",
+       "level": 0
+      },
+      {
+       "zh": "黄昏",
+       "en": "sunset",
+       "level": 0
+      },
+      {
+       "zh": "樱花飘落",
+       "en": "cherry blossoms",
+       "level": 0
+      },
+      {
+       "zh": "落叶",
+       "en": "falling leaves",
+       "level": 0
+      },
+      {
+       "zh": "蒸汽氤氲",
+       "en": "steam",
+       "level": 0
+      },
+      {
+       "zh": "水珠",
+       "en": "water drop",
+       "level": 0
+      },
+      {
+       "zh": "浓雾",
+       "en": "fog",
+       "level": 0
+      },
+      {
+       "zh": "星空",
+       "en": "starry sky",
+       "level": 0
+      },
+      {
+       "zh": "大风",
+       "en": "wind",
+       "level": 0
+      },
+      {
+       "zh": "烟雾",
+       "en": "smoke",
+       "level": 0
+      },
+      {
+       "zh": "日光",
+       "en": "sunbeam",
+       "level": 0
+      },
+      {
+       "zh": "彩虹",
+       "en": "rainbow",
+       "level": 0
+      },
+      {
+       "zh": "闪电",
+       "en": "lightning",
+       "level": 0
+      },
+      {
+       "zh": "暮色",
+       "en": "twilight",
+       "level": 0
+      },
+      {
+       "zh": "水洼",
+       "en": "puddle",
+       "level": 0
+      },
+      {
+       "zh": "阴天",
+       "en": "overcast",
+       "level": 0
+      },
+      {
+       "zh": "火星飞溅",
+       "en": "sparks",
+       "level": 0
+      }
+     ]
+    },
+    {
+     "key": "comp",
+     "lab": "构图",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "camera",
+     "opts": [
+      {
+       "zh": "居中对称",
+       "en": "symmetry",
+       "level": 0
+      },
+      {
+       "zh": "大面积留白",
+       "en": "negative space",
+       "level": 0
+      },
+      {
+       "zh": "竖构图",
+       "en": "portrait",
+       "level": 0
+      },
+      {
+       "zh": "横构图",
+       "en": "landscape",
+       "level": 0
+      },
+      {
+       "zh": "散景",
+       "en": "bokeh",
+       "level": 0
+      },
+      {
+       "zh": "暗角",
+       "en": "vignetting",
+       "level": 0
+      },
+      {
+       "zh": "侧脸轮廓",
+       "en": "profile",
+       "level": 0
+      }
+     ]
+    },
+    {
+     "key": "texture_fx",
+     "lab": "质感特效",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "detail",
+     "opts": [
+      {
+       "zh": "柔焦",
+       "en": "soft focus",
+       "level": 0
+      },
+      {
+       "zh": "动态模糊",
+       "en": "motion blur",
+       "level": 0
+      },
+      {
+       "zh": "单色",
+       "en": "monochrome",
+       "level": 0
+      },
+      {
+       "zh": "灰阶",
+       "en": "greyscale",
+       "level": 0
+      },
+      {
+       "zh": "模糊",
+       "en": "blurry",
+       "level": 0
+      },
+      {
+       "zh": "素描",
+       "en": "sketch",
+       "level": 0
+      },
+      {
+       "zh": "线稿",
+       "en": "lineart",
+       "level": 0
+      },
+      {
+       "zh": "像素风",
+       "en": "pixel art",
+       "level": 0
+      },
+      {
+       "zh": "复古棕褐",
+       "en": "sepia",
+       "level": 0
+      },
+      {
+       "zh": "色差",
+       "en": "chromatic aberration",
+       "level": 0
+      },
+      {
+       "zh": "剪影",
+       "en": "silhouette",
+       "level": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lighting",
+   "title": "⑩ 光影氛围",
+   "cls": "",
+   "max_level": 0,
+   "fields": [
+    {
+     "key": "light_fx",
+     "lab": "光效氛围",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "lighting",
+     "opts": [
+      {
+       "zh": "轮廓光",
+       "en": "rim lighting",
+       "level": 0
+      },
+      {
+       "zh": "逆光",
+       "en": "backlighting",
+       "level": 0
+      },
+      {
+       "zh": "柔光漫射",
+       "en": "soft lighting",
+       "level": 0
+      },
+      {
+       "zh": "影棚布光",
+       "en": "studio lighting",
+       "level": 0
+      },
+      {
+       "zh": "暖黄灯光",
+       "en": "warm lighting",
+       "level": 0
+      },
+      {
+       "zh": "冷色月光",
+       "en": "moonlight",
+       "level": 0
+      },
+      {
+       "zh": "清晨光",
+       "en": "morning light",
+       "level": 0
+      },
+      {
+       "zh": "烛光摇曳",
+       "en": "candlelight",
+       "level": 0
+      },
+      {
+       "zh": "霓虹夜色",
+       "en": "neon lights",
+       "level": 0
+      },
+      {
+       "zh": "体积光",
+       "en": "god rays",
+       "level": 0
+      },
+      {
+       "zh": "水面焦散",
+       "en": "caustics",
+       "level": 0
+      },
+      {
+       "zh": "昏暗背景",
+       "en": "dark background",
+       "level": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cloth_nsfw",
+   "title": "🔞 服装状态（NSFW）",
+   "cls": "nsfw-only",
+   "max_level": 3,
+   "fields": [
+    {
+     "key": "n_state",
+     "lab": "脱卸程度",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "clothing",
+     "opts": [
+      {
+       "zh": "全裸",
+       "en": "completely nude",
+       "level": 2
+      },
+      {
+       "zh": "仅上裸",
+       "en": "topless",
+       "level": 2
+      },
+      {
+       "zh": "仅下裸",
+       "en": "bottomless",
+       "level": 2
+      },
+      {
+       "zh": "透视装",
+       "en": "see-through",
+       "level": 2
+      },
+      {
+       "zh": "掀起上衣",
+       "en": "shirt lift",
+       "level": 2
+      },
+      {
+       "zh": "掀起裙子",
+       "en": "dress lift",
+       "level": 2
+      },
+      {
+       "zh": "拉开衣服",
+       "en": "clothes pull",
+       "level": 2
+      },
+      {
+       "zh": "衬衫全开",
+       "en": "open shirt",
+       "level": 2
+      },
+      {
+       "zh": "解扣敞开",
+       "en": "unbuttoned shirt",
+       "level": 2
+      },
+      {
+       "zh": "拉开胸罩",
+       "en": "bra pull",
+       "level": 2
+      },
+      {
+       "zh": "自行拉拽",
+       "en": "pulled by self",
+       "level": 2
+      },
+      {
+       "zh": "半褪衣物",
+       "en": "partially undressed",
+       "level": 2
+      },
+      {
+       "zh": "正在脱衣",
+       "en": "undressing",
+       "level": 2
+      },
+      {
+       "zh": "衣物破损",
+       "en": "torn clothes",
+       "level": 2
+      },
+      {
+       "zh": "湿透贴身",
+       "en": "wet clothes",
+       "level": 2
+      },
+      {
+       "zh": "仅剩配饰",
+       "en": "nude with accessories only",
+       "level": 2
+      },
+      {
+       "zh": "裙下真空",
+       "en": "no panties under skirt",
+       "level": 2
+      }
+     ]
+    },
+    {
+     "key": "n_exposure",
+     "lab": "暴露重点",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "clothing",
+     "opts": [
+      {
+       "zh": "露胸",
+       "en": "exposed breasts",
+       "level": 2
+      },
+      {
+       "zh": "乳头",
+       "en": "nipples",
+       "level": 2
+      },
+      {
+       "zh": "立乳",
+       "en": "erect nipples",
+       "level": 2
+      },
+      {
+       "zh": "乳晕",
+       "en": "areolae",
+       "level": 2
+      },
+      {
+       "zh": "私处",
+       "en": "pussy",
+       "level": 2
+      },
+      {
+       "zh": "内裤拨开",
+       "en": "panties aside",
+       "level": 2
+      },
+      {
+       "zh": "内裤下拉",
+       "en": "panties pulled down",
+       "level": 2
+      },
+      {
+       "zh": "肩带滑落",
+       "en": "bra strap slip",
+       "level": 2
+      },
+      {
+       "zh": "胸前微露",
+       "en": "nipple slip",
+       "level": 2
+      },
+      {
+       "zh": "翘臀展示",
+       "en": "presenting",
+       "level": 3
+      }
+     ]
+    },
+    {
+     "key": "n_body",
+     "lab": "私密细节",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "clothing",
+     "opts": [
+      {
+       "zh": "阴毛",
+       "en": "pubic hair",
+       "level": 2
+      },
+      {
+       "zh": "无阴毛",
+       "en": "hairless pussy",
+       "level": 2
+      },
+      {
+       "zh": "阴蒂",
+       "en": "clitoris",
+       "level": 2
+      },
+      {
+       "zh": "后穴",
+       "en": "anus",
+       "level": 2
+      },
+      {
+       "zh": "乳尖凹陷",
+       "en": "inverted nipples",
+       "level": 2
+      },
+      {
+       "zh": "湿润反光",
+       "en": "glistening skin",
+       "level": 2
+      }
+     ]
+    },
+    {
+     "key": "n_fabric",
+     "lab": "NSFW材质",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "clothing",
+     "opts": [
+      {
+       "zh": "漆皮乳胶",
+       "en": "latex",
+       "level": 2
+      },
+      {
+       "zh": "透明薄纱",
+       "en": "sheer fabric",
+       "level": 2
+      },
+      {
+       "zh": "红丝绒",
+       "en": "red velvet",
+       "level": 2
+      },
+      {
+       "zh": "黑丝绸",
+       "en": "black silk",
+       "level": 2
+      },
+      {
+       "zh": "湿棉布",
+       "en": "wet cotton",
+       "level": 2
+      },
+      {
+       "zh": "情趣内衣",
+       "en": "lingerie",
+       "level": 2
+      },
+      {
+       "zh": "吊袜腰带",
+       "en": "garter belt",
+       "level": 2
+      },
+      {
+       "zh": "婴儿睡裙",
+       "en": "babydoll",
+       "level": 2
+      },
+      {
+       "zh": "束腰",
+       "en": "corset",
+       "level": 2
+      }
+     ]
+    },
+    {
+     "key": "n_shoes_keep",
+     "lab": "保留单品",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "clothing",
+     "opts": [
+      {
+       "zh": "细高跟",
+       "en": "stiletto heels",
+       "level": 2
+      },
+      {
+       "zh": "过膝靴",
+       "en": "thigh boots",
+       "level": 2
+      },
+      {
+       "zh": "蕾丝吊带袜",
+       "en": "lace-top thighhighs",
+       "level": 2
+      },
+      {
+       "zh": "渔网袜",
+       "en": "fishnet stockings",
+       "level": 2
+      },
+      {
+       "zh": "只穿鞋袜",
+       "en": "otherwise nude",
+       "level": 2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pose_nsfw",
+   "title": "🔞 体位与性行为（NSFW）",
+   "cls": "nsfw-only",
+   "max_level": 4,
+   "fields": [
+    {
+     "key": "n_act",
+     "lab": "性行为",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "pose",
+     "opts": [
+      {
+       "zh": "正常位",
+       "en": "missionary",
+       "level": 3
+      },
+      {
+       "zh": "后入位",
+       "en": "sex from behind",
+       "level": 3
+      },
+      {
+       "zh": "后入跪位",
+       "en": "doggystyle",
+       "level": 3
+      },
+      {
+       "zh": "骑乘位",
+       "en": "cowgirl position",
+       "level": 3
+      },
+      {
+       "zh": "反向骑乘",
+       "en": "reverse cowgirl position",
+       "level": 3
+      },
+      {
+       "zh": "交尾压制",
+       "en": "mating press",
+       "level": 3
+      },
+      {
+       "zh": "全背位",
+       "en": "full nelson",
+       "level": 3
+      },
+      {
+       "zh": "俯卧位",
+       "en": "prone bone",
+       "level": 3
+      },
+      {
+       "zh": "站立抱起",
+       "en": "stand and carry",
+       "level": 3
+      },
+      {
+       "zh": "站立后入",
+       "en": "standing sex",
+       "level": 3
+      },
+      {
+       "zh": "锁腿",
+       "en": "leg lock",
+       "level": 3
+      },
+      {
+       "zh": "衣着性交",
+       "en": "clothed sex",
+       "level": 3
+      },
+      {
+       "zh": "阴道性交",
+       "en": "vaginal",
+       "level": 3
+      },
+      {
+       "zh": "手交",
+       "en": "handjob",
+       "level": 2
+      },
+      {
+       "zh": "口交",
+       "en": "blowjob",
+       "level": 2
+      },
+      {
+       "zh": "深喉",
+       "en": "deepthroat",
+       "level": 2
+      },
+      {
+       "zh": "深喉抽插",
+       "en": "irrumatio",
+       "level": 3
+      },
+      {
+       "zh": "舔肛",
+       "en": "anilingus",
+       "level": 2
+      },
+      {
+       "zh": "足交",
+       "en": "footjob",
+       "level": 2
+      },
+      {
+       "zh": "臀交",
+       "en": "ass job",
+       "level": 2
+      },
+      {
+       "zh": "素股",
+       "en": "sumata",
+       "level": 2
+      },
+      {
+       "zh": "乳交",
+       "en": "paizuri",
+       "level": 2
+      },
+      {
+       "zh": "指交",
+       "en": "fingering",
+       "level": 2
+      },
+      {
+       "zh": "自慰",
+       "en": "masturbation",
+       "level": 2
+      },
+      {
+       "zh": "相互自慰",
+       "en": "mutual masturbation",
+       "level": 2
+      },
+      {
+       "zh": "骑假阳具",
+       "en": "dildo riding",
+       "level": 2
+      },
+      {
+       "zh": "颜骑",
+       "en": "facesitting",
+       "level": 2
+      },
+      {
+       "zh": "腿交",
+       "en": "intercrural",
+       "level": 2
+      },
+      {
+       "zh": "肛交",
+       "en": "anal",
+       "level": 3
+      },
+      {
+       "zh": "双管齐下",
+       "en": "double penetration",
+       "level": 4
+      },
+      {
+       "zh": "进入瞬间",
+       "en": "penetration",
+       "level": 3
+      }
+     ]
+    },
+    {
+     "key": "n_pos",
+     "lab": "体态细节",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "pose",
+     "opts": [
+      {
+       "zh": "女方在上",
+       "en": "girl on top",
+       "level": 3
+      },
+      {
+       "zh": "男上位",
+       "en": "boy on top",
+       "level": 3
+      },
+      {
+       "zh": "弯腰撅臀",
+       "en": "bent over",
+       "level": 2
+      },
+      {
+       "zh": "四肢着地被进入",
+       "en": "all fours, sex",
+       "level": 3
+      },
+      {
+       "zh": "双腿高举",
+       "en": "legs up",
+       "level": 2
+      },
+      {
+       "zh": "双腿绕颈",
+       "en": "legs behind head",
+       "level": 3
+      },
+      {
+       "zh": "张开双腿",
+       "en": "spread legs",
+       "level": 2
+      },
+      {
+       "zh": "跨坐",
+       "en": "straddling",
+       "level": 3
+      },
+      {
+       "zh": "蹲踞骑乘",
+       "en": "squatting cowgirl position",
+       "level": 3
+      },
+      {
+       "zh": "直立跨坐",
+       "en": "upright straddle",
+       "level": 3
+      },
+      {
+       "zh": "背贴墙壁",
+       "en": "against wall, sex",
+       "level": 3
+      },
+      {
+       "zh": "手腕束缚",
+       "en": "bound wrists",
+       "level": 3
+      },
+      {
+       "zh": "手臂束缚",
+       "en": "bound arms",
+       "level": 3
+      },
+      {
+       "zh": "低头",
+       "en": "head down",
+       "level": 2
+      }
+     ]
+    },
+    {
+     "key": "n_orgasm",
+     "lab": "高潮表现",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "pose",
+     "opts": [
+      {
+       "zh": "高潮颤抖",
+       "en": "orgasm, trembling",
+       "level": 3
+      },
+      {
+       "zh": "身体抽搐",
+       "en": "body writhe",
+       "level": 3
+      },
+      {
+       "zh": "呻吟",
+       "en": "moaning",
+       "level": 2
+      },
+      {
+       "zh": "喘息",
+       "en": "panting",
+       "level": 2
+      },
+      {
+       "zh": "情动",
+       "en": "aroused",
+       "level": 2
+      },
+      {
+       "zh": "魅惑眼神",
+       "en": "bedroom eyes",
+       "level": 2
+      },
+      {
+       "zh": "心形瞳孔",
+       "en": "heart-shaped pupils",
+       "level": 3
+      },
+      {
+       "zh": "被操到失神",
+       "en": "fucked silly",
+       "level": 3
+      },
+      {
+       "zh": "心智崩溃",
+       "en": "mind break",
+       "level": 3
+      },
+      {
+       "zh": "翻白眼吐舌",
+       "en": "ahegao, rolled back eyes",
+       "level": 3
+      },
+      {
+       "zh": "潮吹",
+       "en": "squirting",
+       "level": 4
+      },
+      {
+       "zh": "事后余韵",
+       "en": "after sex",
+       "level": 2
+      }
+     ]
+    },
+    {
+     "key": "n_cum",
+     "lab": "精液表现",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "pose",
+     "opts": [
+      {
+       "zh": "内射",
+       "en": "creampie",
+       "level": 3
+      },
+      {
+       "zh": "射入体内",
+       "en": "cum in pussy",
+       "level": 3
+      },
+      {
+       "zh": "内射溢出",
+       "en": "cum overflow",
+       "level": 3
+      },
+      {
+       "zh": "颜面大量",
+       "en": "bukkake",
+       "level": 4
+      },
+      {
+       "zh": "过量精液",
+       "en": "excessive cum",
+       "level": 4
+      },
+      {
+       "zh": "颜射",
+       "en": "facial",
+       "level": 2
+      },
+      {
+       "zh": "射在胸口",
+       "en": "cum on breasts",
+       "level": 2
+      },
+      {
+       "zh": "射满全身",
+       "en": "cum on body",
+       "level": 3
+      },
+      {
+       "zh": "口中含精",
+       "en": "cum in mouth",
+       "level": 2
+      },
+      {
+       "zh": "精液拉丝",
+       "en": "cum string",
+       "level": 2
+      },
+      {
+       "zh": "多重内射",
+       "en": "multiple creampie",
+       "level": 3
+      },
+      {
+       "zh": "透视断面",
+       "en": "x-ray",
+       "level": 3
+      }
+     ]
+    },
+    {
+     "key": "n_fluid",
+     "lab": "其他体液",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "pose",
+     "opts": [
+      {
+       "zh": "爱液",
+       "en": "pussy juice",
+       "level": 2
+      },
+      {
+       "zh": "爱液滴落",
+       "en": "love juice trail",
+       "level": 2
+      },
+      {
+       "zh": "唾液拉丝",
+       "en": "saliva string",
+       "level": 2
+      },
+      {
+       "zh": "香汗淋漓",
+       "en": "sweat",
+       "level": 2
+      },
+      {
+       "zh": "泪痕",
+       "en": "tears",
+       "level": 2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "special_nsfw",
+   "title": "🔞 特殊主题（NSFW）",
+   "cls": "nsfw-only",
+   "max_level": 4,
+   "fields": [
+    {
+     "key": "n_theme",
+     "lab": "主题元素",
+     "req": false,
+     "type": "select",
+     "tail": false,
+     "slot": "detail",
+     "opts": [
+      {
+       "zh": "NTR寝取られ",
+       "en": "netorare",
+       "level": 3
+      },
+      {
+       "zh": "寝取らせ",
+       "en": "netorase",
+       "level": 3
+      },
+      {
+       "zh": "绳缚",
+       "en": "shibari",
+       "level": 3
+      },
+      {
+       "zh": "手腕被缚",
+       "en": "bound wrists",
+       "level": 3
+      },
+      {
+       "zh": "蒙眼",
+       "en": "blindfold",
+       "level": 3
+      },
+      {
+       "zh": "口塞",
+       "en": "gag ball",
+       "level": 3
+      },
+      {
+       "zh": "项圈牵绳",
+       "en": "collar and leash",
+       "level": 4
+      },
+      {
+       "zh": "3P",
+       "en": "threesome",
+       "level": 4
+      },
+      {
+       "zh": "4P",
+       "en": "foursome",
+       "level": 4
+      },
+      {
+       "zh": "群交",
+       "en": "gangbang",
+       "level": 4
+      },
+      {
+       "zh": "情趣玩具",
+       "en": "sex toys",
+       "level": 3
+      },
+      {
+       "zh": "跳蛋",
+       "en": "vibrator",
+       "level": 3
+      },
+      {
+       "zh": "假阳具",
+       "en": "dildo",
+       "level": 3
+      },
+      {
+       "zh": "穿戴式",
+       "en": "strap-on",
+       "level": 3
+      },
+      {
+       "zh": "催眠调教",
+       "en": "hypnosis",
+       "level": 3
+      },
+      {
+       "zh": "时间停止",
+       "en": "time stop",
+       "level": 3
+      },
+      {
+       "zh": "触手",
+       "en": "tentacles",
+       "level": 3
+      },
+      {
+       "zh": "扶她",
+       "en": "futanari",
+       "level": 3
+      },
+      {
+       "zh": "乳夹",
+       "en": "nipple clamps",
+       "level": 3
+      },
+      {
+       "zh": "肛塞",
+       "en": "butt plug",
+       "level": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "canon",
+   "title": "🔞 法典验证场景（NSFW）",
+   "cls": "nsfw-only",
+   "max_level": 4,
+   "fields": [
+    {
+     "key": "n_canon",
+     "lab": "一键场景预设",
+     "req": false,
+     "type": "preset",
+     "tail": false,
+     "slot": "free",
+     "opts": [
+      {
+       "zh": "口交邀请·二指开嘴",
+       "en": "c1",
+       "level": 2
+      },
+      {
+       "zh": "电车领口无意识露出",
+       "en": "c2",
+       "level": 2
+      },
+      {
+       "zh": "出浴薄纱透视",
+       "en": "c3",
+       "level": 2
+      },
+      {
+       "zh": "浴室裸体贴玻璃",
+       "en": "c4",
+       "level": 2
+      },
+      {
+       "zh": "接电话时自慰",
+       "en": "c5",
+       "level": 3
+      },
+      {
+       "zh": "桌角摩擦自慰",
+       "en": "c6",
+       "level": 3
+      },
+      {
+       "zh": "裸体围裙做饭",
+       "en": "c7",
+       "level": 2
+      },
+      {
+       "zh": "深喉侧视透视",
+       "en": "c8",
+       "level": 3
+      },
+      {
+       "zh": "压墙站立后入",
+       "en": "c9",
+       "level": 3
+      },
+      {
+       "zh": "全身压住侵犯",
+       "en": "c10",
+       "level": 3
+      },
+      {
+       "zh": "标准种付",
+       "en": "c11",
+       "level": 3
+      },
+      {
+       "zh": "被子下骑乘",
+       "en": "c12",
+       "level": 3
+      },
+      {
+       "zh": "前后夹击3P",
+       "en": "c13",
+       "level": 4
+      },
+      {
+       "zh": "百合骑乘摩擦",
+       "en": "c14",
+       "level": 3
+      },
+      {
+       "zh": "雨中街头 · 回眸",
+       "en": "sc_rain_street_lookback",
+       "level": 0
+      },
+      {
+       "zh": "教室午后 · 托腮",
+       "en": "sc_classroom_chin_rest",
+       "level": 0
+      },
+      {
+       "zh": "天台黄昏 · 伸懒腰",
+       "en": "sc_rooftop_stretch",
+       "level": 1
+      },
+      {
+       "zh": "图书馆 · 静读",
+       "en": "sc_library_quiet",
+       "level": 0
+      },
+      {
+       "zh": "咖啡馆 · 窗边落雨",
+       "en": "sc_cafe_window_rain",
+       "level": 0
+      },
+      {
+       "zh": "神社参道 · 和服漫步",
+       "en": "sc_shrine_walk",
+       "level": 0
+      },
+      {
+       "zh": "海边盛夏",
+       "en": "sc_beach_midsummer",
+       "level": 0
+      },
+      {
+       "zh": "楼梯间 · 仰视回望",
+       "en": "sc_stairwell_up",
+       "level": 0
+      },
+      {
+       "zh": "晨光 · 倚窗初醒",
+       "en": "sc_morning_window",
+       "level": 0
+      },
+      {
+       "zh": "温泉 · 月下蒸汽",
+       "en": "sc_onsen_steam",
+       "level": 0
+      },
+      {
+       "zh": "第一人称 · 手持自拍",
+       "en": "sc_pov_hands_selfie",
+       "level": 0
+      },
+      {
+       "zh": "电车归途",
+       "en": "sc_train_home",
+       "level": 0
+      },
+      {
+       "zh": "雪原 · 围巾",
+       "en": "sc_snow_field_scarf",
+       "level": 0
+      },
+      {
+       "zh": "鱼眼 · 室内广角",
+       "en": "sc_fisheye_room",
+       "level": 0
+      },
+      {
+       "zh": "斜角小巷 · 夜",
+       "en": "sc_dutch_alley_night",
+       "level": 0
+      },
+      {
+       "zh": "镜前 · 整装",
+       "en": "sc_mirror_dressing",
+       "level": 0
+      },
+      {
+       "zh": "公园 · 全景落叶",
+       "en": "sc_panorama_park",
+       "level": 0
+      },
+      {
+       "zh": "另类日常 · 商店",
+       "en": "sc_ccc_plain_daily",
+       "level": 2
+      },
+      {
+       "zh": "NTR · 通话中被侵",
+       "en": "sc_ccc_ntr_phone",
+       "level": 3
+      },
+      {
+       "zh": "NTR · 窗外直视",
+       "en": "sc_ccc_ntr_window",
+       "level": 3
+      },
+      {
+       "zh": "束缚 · 日式绳艺",
+       "en": "sc_ccc_bdsm_shibari",
+       "level": 3
+      },
+      {
+       "zh": "束缚 · 口球垂涎",
+       "en": "sc_ccc_bdsm_gag",
+       "level": 3
+      },
+      {
+       "zh": "RBQ · 壁尻共用",
+       "en": "sc_ccc_rbq_wall",
+       "level": 4
+      },
+      {
+       "zh": "异种 · 触手",
+       "en": "sc_ccc_tentacle",
+       "level": 3
+      },
+      {
+       "zh": "调教 · 宠物",
+       "en": "sc_ccc_pet_play",
+       "level": 4
+      },
+      {
+       "zh": "胁迫 · 压墙站立",
+       "en": "sc_ccc_coerce_wall",
+       "level": 3
+      },
+      {
+       "zh": "偷窥 · 监控视角",
+       "en": "sc_ccc_voyeur_cam",
+       "level": 2
+      },
+      {
+       "zh": "事后 · 余韵",
+       "en": "sc_ccc_afterglow",
+       "level": 3
+      },
+      {
+       "zh": "隐奸 · 被子下",
+       "en": "sc_ccc_hidden_sex",
+       "level": 3
+      },
+      {
+       "zh": "种付位 · 压制",
+       "en": "sc_ccc_mating_press",
+       "level": 3
+      },
+      {
+       "zh": "群体 · 双管齐下",
+       "en": "sc_ccc_dp_group",
+       "level": 4
+      },
+      {
+       "zh": "第三人称 · 俯视",
+       "en": "sc_ccc_pov_crotch_self",
+       "level": 2
+      },
+      {
+       "zh": "教室 · 放学后",
+       "en": "sc_classroom_afterschool",
+       "level": 0
+      },
+      {
+       "zh": "办公室 · 加班夜",
+       "en": "sc_office_overtime",
+       "level": 0
+      },
+      {
+       "zh": "便利店 · 夜班",
+       "en": "sc_convenience_night",
+       "level": 0
+      },
+      {
+       "zh": "阳台 · 星空",
+       "en": "sc_balcony_night",
+       "level": 0
+      },
+      {
+       "zh": "更衣室 · 换装",
+       "en": "sc_changing_room",
+       "level": 2
+      },
+      {
+       "zh": "试衣间 · 镜前",
+       "en": "sc_fitting_room",
+       "level": 0
+      },
+      {
+       "zh": "电梯里 · 静默",
+       "en": "sc_elevator_ride",
+       "level": 0
+      },
+      {
+       "zh": "车后座 · 黄昏",
+       "en": "sc_car_ride",
+       "level": 0
+      },
+      {
+       "zh": "花田 · 旋转",
+       "en": "sc_flower_field",
+       "level": 0
+      },
+      {
+       "zh": "电影院 · 暗场",
+       "en": "sc_movie_theater",
+       "level": 0
+      },
+      {
+       "zh": "游乐园 · 夜场",
+       "en": "sc_amusement_night",
+       "level": 0
+      },
+      {
+       "zh": "森林 · 晨雾",
+       "en": "sc_forest_fog",
+       "level": 0
+      },
+      {
+       "zh": "泳池边 · 盛夏",
+       "en": "sc_poolside_summer",
+       "level": 0
+      },
+      {
+       "zh": "浴室 · 蒸汽镜前",
+       "en": "sc_bathroom_mirror",
+       "level": 0
+      },
+      {
+       "zh": "淋浴下 · 闭眼",
+       "en": "sc_under_shower",
+       "level": 0
+      },
+      {
+       "zh": "传教士 · 标准位",
+       "en": "sc_ccc_missionary",
+       "level": 3
+      },
+      {
+       "zh": "后入跪位",
+       "en": "sc_ccc_doggystyle",
+       "level": 3
+      },
+      {
+       "zh": "骑乘位 · 女方在上",
+       "en": "sc_ccc_cowgirl",
+       "level": 3
+      },
+      {
+       "zh": "站立抱起",
+       "en": "sc_ccc_stand_carry",
+       "level": 3
+      },
+      {
+       "zh": "衣着性交",
+       "en": "sc_ccc_clothed_sex",
+       "level": 3
+      },
+      {
+       "zh": "足交",
+       "en": "sc_ccc_footjob",
+       "level": 2
+      },
+      {
+       "zh": "乳交",
+       "en": "sc_ccc_paizuri",
+       "level": 3
+      },
+      {
+       "zh": "颜骑",
+       "en": "sc_ccc_facesitting",
+       "level": 3
+      },
+      {
+       "zh": "后庭自慰 · 透明假阳具",
+       "en": "sc_ccc_anal",
+       "level": 4
+      },
+      {
+       "zh": "NTR · 分屏对照",
+       "en": "sc_ccc_ntr_split",
+       "level": 3
+      },
+      {
+       "zh": "束缚 · 示众柱",
+       "en": "sc_ccc_bdsm_pillory",
+       "level": 4
+      },
+      {
+       "zh": "物化 · 事后残骸",
+       "en": "sc_ccc_rbq_after",
+       "level": 4
+      },
+      {
+       "zh": "攻守反转 · 压制骑乘",
+       "en": "sc_ccc_femdom_reverse",
+       "level": 3
+      },
+      {
+       "zh": "第三人称 · 口交",
+       "en": "sc_ccc_pov_oral",
+       "level": 3
+      },
+      {
+       "zh": "第一人称 · 骑乘",
+       "en": "sc_ccc_pov_cowgirl",
+       "level": 3
+      },
+      {
+       "zh": "泳池 · 微距比基尼（擦边）",
+       "en": "sc_poolside_microbikini",
+       "level": 1
+      },
+      {
+       "zh": "露肩 · 夜窗（擦边）",
+       "en": "sc_offshoulder_night",
+       "level": 1
+      },
+      {
+       "zh": "自慰 · 拉开内裤展示",
+       "en": "sc_msb_panties_aside",
+       "level": 2
+      },
+      {
+       "zh": "自慰 · 裙下真空",
+       "en": "sc_msb_skirt_vacuum",
+       "level": 2
+      },
+      {
+       "zh": "自慰 · 侧面检视",
+       "en": "sc_msb_mirror_check",
+       "level": 2
+      },
+      {
+       "zh": "自慰 · 浴缸开腿",
+       "en": "sc_msb_bath_recline",
+       "level": 2
+      },
+      {
+       "zh": "自慰 · 沙发褪内裤",
+       "en": "sc_msb_sofa_pull",
+       "level": 2
+      },
+      {
+       "zh": "自慰 · 加班夜桌前",
+       "en": "sc_msb_office_night",
+       "level": 2
+      },
+      {
+       "zh": "自慰 · 床上手指",
+       "en": "sc_msb_fingers_bed",
+       "level": 3
+      },
+      {
+       "zh": "自慰 · 假阳具骑乘",
+       "en": "sc_msb_dildo_ride",
+       "level": 3
+      },
+      {
+       "zh": "自慰 · 被下震动棒",
+       "en": "sc_msb_vibrator_covers",
+       "level": 3
+      },
+      {
+       "zh": "自慰 · 镜前自慰",
+       "en": "sc_msb_mirror_watch",
+       "level": 2
+      },
+      {
+       "zh": "自慰 · 第一人称自身",
+       "en": "sc_msb_pov_self",
+       "level": 2
+      },
+      {
+       "zh": "自慰 · 衣着自慰",
+       "en": "sc_msb_clothed",
+       "level": 2
+      },
+      {
+       "zh": "自慰 · 浴缸水流",
+       "en": "sc_msb_bathtub_water",
+       "level": 3
+      },
+      {
+       "zh": "自慰 · 淋浴站立",
+       "en": "sc_msb_shower_stand",
+       "level": 3
+      },
+      {
+       "zh": "自慰 · 后穴玩具",
+       "en": "sc_msb_plug_rear",
+       "level": 3
+      },
+      {
+       "zh": "自慰 · 玩具展示",
+       "en": "sc_msb_toys_show",
+       "level": 3
+      },
+      {
+       "zh": "自慰 · 连续到失神",
+       "en": "sc_msb_continuous",
+       "level": 3
+      },
+      {
+       "zh": "自慰 · 蒙眼触感",
+       "en": "sc_msb_blindfold_toy",
+       "level": 3
+      },
+      {
+       "zh": "自慰 · 双人互慰",
+       "en": "sc_msb_mutual",
+       "level": 2
+      },
+      {
+       "zh": "自慰 · 手指潮吹",
+       "en": "sc_msb_squirt_fingers",
+       "level": 4
+      },
+      {
+       "zh": "自慰 · 假阳具潮吹",
+       "en": "sc_msb_squirt_dildo",
+       "level": 4
+      },
+      {
+       "zh": "自慰 · 潮吹失神",
+       "en": "sc_msb_squirt_after",
+       "level": 4
+      },
+      {
+       "zh": "更衣间 · 拉帘半掩（擦边）",
+       "en": "sc_changing_room_peek",
+       "level": 1
+      },
+      {
+       "zh": "卧室 · 宽松睡衫（擦边）",
+       "en": "sc_bedroom_sleepshirt",
+       "level": 1
+      },
+      {
+       "zh": "浴后 · 裹巾湿发（擦边）",
+       "en": "sc_bath_towel",
+       "level": 1
+      },
+      {
+       "zh": "阳台 · 晾衣弯腰（擦边）",
+       "en": "sc_balcony_laundry",
+       "level": 1
+      },
+      {
+       "zh": "雨中 · 透衫回眸（擦边）",
+       "en": "sc_rain_wetshirt",
+       "level": 1
+      },
+      {
+       "zh": "沙发 · 抱枕小憩（擦边）",
+       "en": "sc_sofa_catnap",
+       "level": 1
+      },
+      {
+       "zh": "便利店 · 深夜值班（擦边）",
+       "en": "sc_konbini_midnight",
+       "level": 1
+      },
+      {
+       "zh": "厨房 · 围裙裸臂（擦边）",
+       "en": "sc_kitchen_apron",
+       "level": 1
+      },
+      {
+       "zh": "路上 · 风掀裙摆（擦边）",
+       "en": "sc_skirt_wind",
+       "level": 0
+      },
+      {
+       "zh": "旅馆 · 镜前自照（擦边）",
+       "en": "sc_hotel_mirror",
+       "level": 1
+      },
+      {
+       "zh": "沙滩排球 · 跃起扣杀（擦边）",
+       "en": "sc_beach_volley",
+       "level": 1
+      },
+      {
+       "zh": "泳池阶梯 · 出水瞬间（擦边）",
+       "en": "sc_pool_ladder",
+       "level": 1
+      },
+      {
+       "zh": "冲浪 · 拖板归岸（擦边）",
+       "en": "sc_surf_board",
+       "level": 1
+      },
+      {
+       "zh": "浮床 · 仰面漂流水（擦边）",
+       "en": "sc_float_ring",
+       "level": 1
+      },
+      {
+       "zh": "淋浴间 · 玻璃水雾（擦边）",
+       "en": "sc_shower_peek",
+       "level": 1
+      },
+      {
+       "zh": "水枪 · 湿身对射（擦边）",
+       "en": "sc_watergun_fight",
+       "level": 1
+      },
+      {
+       "zh": "OL · 加班趴桌（擦边）",
+       "en": "sc_ol_overtime",
+       "level": 1
+      },
+      {
+       "zh": "女仆 · 弯腰奉茶（擦边）",
+       "en": "sc_maid_serving",
+       "level": 1
+      },
+      {
+       "zh": "护士 · 抬腿查房（擦边）",
+       "en": "sc_nurse_rounds",
+       "level": 1
+      },
+      {
+       "zh": "学园 · 开窗风起（擦边）",
+       "en": "sc_classroom_openwin",
+       "level": 0
+      },
+      {
+       "zh": "学园 · 单车后座（擦边）",
+       "en": "sc_jk_bike_ride",
+       "level": 0
+      },
+      {
+       "zh": "瑜伽 · 下犬式（擦边）",
+       "en": "sc_yoga_mat",
+       "level": 1
+      },
+      {
+       "zh": "健身房 · 镜前深蹲（擦边）",
+       "en": "sc_gym_mirror",
+       "level": 1
+      },
+      {
+       "zh": "体操 · 站立一字马（擦边）",
+       "en": "sc_gymnastics_split",
+       "level": 1
+      },
+      {
+       "zh": "慢跑 · 长椅休息（擦边）",
+       "en": "sc_jog_rest",
+       "level": 1
+      },
+      {
+       "zh": "广角仰视 · 侧身对峙步（擦边）",
+       "en": "sc_cam_wide_low_side",
+       "level": 1
+      },
+      {
+       "zh": "中景俯视 · 跪趴朝镜头（擦边）",
+       "en": "sc_cam_med_high_kneel",
+       "level": 1
+      },
+      {
+       "zh": "鱼眼仰视 · 蹲姿（擦边）",
+       "en": "sc_cam_fisheye_squat",
+       "level": 1
+      },
+      {
+       "zh": "鸟瞰全景 · 仰躺（擦边）",
+       "en": "sc_cam_bird_lying",
+       "level": 1
+      },
+      {
+       "zh": "第一人称 · 仰望站立（擦边）",
+       "en": "sc_cam_pov_stand",
+       "level": 1
+      },
+      {
+       "zh": "仰视 · 踮脚伸懒腰（擦边）",
+       "en": "sc_cam_low_stretch",
+       "level": 1
+      },
+      {
+       "zh": "侧身全景 · 甩发（擦边）",
+       "en": "sc_cam_side_hairflip",
+       "level": 1
+      },
+      {
+       "zh": "斜角镜头 · 靠墙抬腿（擦边）",
+       "en": "sc_cam_dutch_wall",
+       "level": 1
+      },
+      {
+       "zh": "过肩视角 · 回眸（擦边）",
+       "en": "sc_cam_ots_lookback",
+       "level": 1
+      },
+      {
+       "zh": "贴地超广角 · 坐姿长腿（擦边）",
+       "en": "sc_cam_worm_sit",
+       "level": 1
+      },
+      {
+       "zh": "教室午后 · 脸特写",
+       "en": "sc_near_face_classroom",
+       "level": 0
+      },
+      {
+       "zh": "逆光侧脸",
+       "en": "sc_near_face_backlight",
+       "level": 0
+      },
+      {
+       "zh": "雨中湿脸",
+       "en": "sc_near_face_rain",
+       "level": 0
+      },
+      {
+       "zh": "闭眼特写",
+       "en": "sc_near_face_mirror",
+       "level": 0
+      },
+      {
+       "zh": "低头抬眼",
+       "en": "sc_near_face_lowgaze",
+       "level": 0
+      },
+      {
+       "zh": "泪光特写",
+       "en": "sc_near_face_tears",
+       "level": 1
+      },
+      {
+       "zh": "笑眼特写",
+       "en": "sc_near_face_smile",
+       "level": 0
+      },
+      {
+       "zh": "床上侧卧 · 脸",
+       "en": "sc_near_face_bed",
+       "level": 0
+      },
+      {
+       "zh": "单眼极特写",
+       "en": "sc_near_eye_single",
+       "level": 0
+      },
+      {
+       "zh": "睫毛与虹膜",
+       "en": "sc_near_eye_lash",
+       "level": 0
+      },
+      {
+       "zh": "唇部微距",
+       "en": "sc_near_lip_micro",
+       "level": 0
+      },
+      {
+       "zh": "咬唇特写",
+       "en": "sc_near_lip_bite",
+       "level": 0
+      },
+      {
+       "zh": "领口俯视",
+       "en": "sc_near_collar_top",
+       "level": 0
+      },
+      {
+       "zh": "背影肩胛",
+       "en": "sc_near_back_shoulder",
+       "level": 0
+      },
+      {
+       "zh": "浴后浴巾",
+       "en": "sc_near_towel_after",
+       "level": 0
+      },
+      {
+       "zh": "手掩胸口",
+       "en": "sc_near_hand_cover",
+       "level": 0
+      },
+      {
+       "zh": "湿衣贴身",
+       "en": "sc_near_wet_cloth",
+       "level": 2
+      },
+      {
+       "zh": "肩颈线",
+       "en": "sc_near_shoulder_line",
+       "level": 0
+      },
+      {
+       "zh": "手放膝上",
+       "en": "sc_near_hand_lap",
+       "level": 0
+      },
+      {
+       "zh": "手指抚唇",
+       "en": "sc_near_hand_lip",
+       "level": 0
+      },
+      {
+       "zh": "膝上丝袜",
+       "en": "sc_near_leg_thighhigh",
+       "level": 0
+      },
+      {
+       "zh": "交叠双腿",
+       "en": "sc_near_leg_crossed",
+       "level": 0
+      },
+      {
+       "zh": "跪坐小腿",
+       "en": "sc_near_leg_kneel",
+       "level": 0
+      },
+      {
+       "zh": "大腿与裙摆",
+       "en": "sc_near_leg_hem",
+       "level": 0
+      },
+      {
+       "zh": "站立笔直双腿",
+       "en": "sc_near_leg_stand",
+       "level": 0
+      },
+      {
+       "zh": "侧卧并腿",
+       "en": "sc_near_leg_side",
+       "level": 0
+      },
+      {
+       "zh": "赤足踩地",
+       "en": "sc_near_foot_bare",
+       "level": 0
+      },
+      {
+       "zh": "短款袜脚背",
+       "en": "sc_near_foot_sock",
+       "level": 0
+      },
+      {
+       "zh": "鞋跟特写",
+       "en": "sc_near_foot_heel",
+       "level": 0
+      },
+      {
+       "zh": "脚趾蜷起",
+       "en": "sc_near_foot_curl",
+       "level": 0
+      },
+      {
+       "zh": "背影站姿",
+       "en": "sc_near_hip_back_stand",
+       "level": 0
+      },
+      {
+       "zh": "正坐侧后",
+       "en": "sc_near_hip_seiza_back",
+       "level": 0
+      },
+      {
+       "zh": "弯腰",
+       "en": "sc_near_hip_bent",
+       "level": 1
+      },
+      {
+       "zh": "跪姿弓背",
+       "en": "sc_near_hip_kneel_arch",
+       "level": 1
+      },
+      {
+       "zh": "内裤俯卧",
+       "en": "sc_near_hip_bare",
+       "level": 1
+      },
+      {
+       "zh": "内裤侧后",
+       "en": "sc_near_hip_sheer",
+       "level": 2
+      },
+      {
+       "zh": "椅上并腿",
+       "en": "sc_near_leg_sit_chair",
+       "level": 0
+      },
+      {
+       "zh": "屈膝坐地",
+       "en": "sc_near_leg_sit_floor",
+       "level": 0
+      },
+      {
+       "zh": "床沿垂腿",
+       "en": "sc_near_leg_bed_edge",
+       "level": 0
+      },
+      {
+       "zh": "高跟鞋沙发翘腿",
+       "en": "sc_near_leg_sofa_cross",
+       "level": 0
+      },
+      {
+       "zh": "侧躺抬腿",
+       "en": "sc_near_leg_side_raise",
+       "level": 1
+      },
+      {
+       "zh": "仰卧抬腿伸向镜头",
+       "en": "sc_near_leg_supine_reach",
+       "level": 1
+      },
+      {
+       "zh": "胸沟俯视",
+       "en": "sc_near_nsfw_cleavage",
+       "level": 1
+      },
+      {
+       "zh": "情趣丝袜大腿",
+       "en": "sc_near_nsfw_garter",
+       "level": 1
+      },
+      {
+       "zh": "舌与唾液",
+       "en": "sc_near_nsfw_tongue",
+       "level": 3
+      },
+      {
+       "zh": "足底特写",
+       "en": "sc_near_nsfw_soles",
+       "level": 1
+      },
+      {
+       "zh": "乳首特写",
+       "en": "sc_near_nsfw_nipple",
+       "level": 2
+      },
+      {
+       "zh": "内裤特写",
+       "en": "sc_near_nsfw_panties",
+       "level": 2
+      },
+      {
+       "zh": "薄纱透视",
+       "en": "sc_near_nsfw_sheer",
+       "level": 2
+      },
+      {
+       "zh": "大腿根特写",
+       "en": "sc_near_nsfw_thighs",
+       "level": 1
+      },
+      {
+       "zh": "四足跪姿后视",
+       "en": "sc_near_nsfw_allfours",
+       "level": 3
+      },
+      {
+       "zh": "口交特写",
+       "en": "sc_near_nsfw_fellatio",
+       "level": 3
+      },
+      {
+       "zh": "舔阴特写",
+       "en": "sc_near_nsfw_cunnilingus",
+       "level": 3
+      },
+      {
+       "zh": "局部射精特写",
+       "en": "sc_near_nsfw_cum",
+       "level": 3
+      },
+      {
+       "zh": "双女按摩胸部",
+       "en": "sc_near_nsfw_breast_massage",
+       "level": 2
+      },
+      {
+       "zh": "双女口含乳头",
+       "en": "sc_near_nsfw_nipple_suck",
+       "level": 2
+      },
+      {
+       "zh": "双女吸乳吐舌",
+       "en": "sc_near_nsfw_breast_suck",
+       "level": 3
+      },
+      {
+       "zh": "双女泌乳",
+       "en": "sc_near_nsfw_lactation",
+       "level": 4
+      },
+      {
+       "zh": "隔衣揉胸",
+       "en": "sc_near_soft_breast_massage",
+       "level": 2
+      },
+      {
+       "zh": "贴胸搂抱",
+       "en": "sc_near_soft_breast_hug",
+       "level": 2
+      },
+      {
+       "zh": "正座 · 正面",
+       "en": "sc_pose_seiza_front",
+       "level": 0
+      },
+      {
+       "zh": "正座 · 侧身",
+       "en": "sc_pose_seiza_side",
+       "level": 0
+      },
+      {
+       "zh": "正座 · 回望",
+       "en": "sc_pose_seiza_lookback",
+       "level": 0
+      },
+      {
+       "zh": "正座 · 行礼",
+       "en": "sc_pose_seiza_bow",
+       "level": 0
+      },
+      {
+       "zh": "W坐 · 俯拍",
+       "en": "sc_pose_wariza",
+       "level": 0
+      },
+      {
+       "zh": "盘腿坐 · 平视",
+       "en": "sc_pose_indian",
+       "level": 0
+      },
+      {
+       "zh": "席地而坐",
+       "en": "sc_pose_on_floor",
+       "level": 0
+      },
+      {
+       "zh": "单膝跪地",
+       "en": "sc_pose_one_knee",
+       "level": 0
+      },
+      {
+       "zh": "跪姿 · 背手",
+       "en": "sc_pose_kneeling_back",
+       "level": 0
+      },
+      {
+       "zh": "四肢着地",
+       "en": "sc_pose_all_fours",
+       "level": 0
+      },
+      {
+       "zh": "蹲姿 · 仰拍",
+       "en": "sc_pose_squat",
+       "level": 0
+      },
+      {
+       "zh": "脚踝交叉 · 坐",
+       "en": "sc_pose_crossed_ankles",
+       "level": 0
+      },
+      {
+       "zh": "蜷缩",
+       "en": "sc_pose_fetal",
+       "level": 0
+      },
+      {
+       "zh": "单腿站立",
+       "en": "sc_pose_one_leg_stand",
+       "level": 0
+      },
+      {
+       "zh": "公寓午后 · 正座",
+       "en": "sc_pose_apartment_seiza",
+       "level": 0
+      },
+      {
+       "zh": "神社 · 跪坐参拜",
+       "en": "sc_pose_shrine_kneel",
+       "level": 0
+      },
+      {
+       "zh": "卧室 · 床上跪坐",
+       "en": "sc_pose_bed_kneel",
+       "level": 0
+      },
+      {
+       "zh": "图书馆 · 席地阅读",
+       "en": "sc_pose_library_floor",
+       "level": 0
+      },
+      {
+       "zh": "花田 · 跪坐",
+       "en": "sc_pose_flowerfield_seiza",
+       "level": 1
+      },
+      {
+       "zh": "泳池边 · 跪坐",
+       "en": "sc_pose_poolside_kneel",
+       "level": 0
+      },
+      {
+       "zh": "舞台 · 单膝跪地",
+       "en": "sc_pose_stage_one_knee",
+       "level": 0
+      },
+      {
+       "zh": "天台 · 蹲坐远眺",
+       "en": "sc_pose_rooftop_squat",
+       "level": 0
+      },
+      {
+       "zh": "温泉 · 浴后正座",
+       "en": "sc_pose_onsen_seiza",
+       "level": 0
+      },
+      {
+       "zh": "教室 · 椅上正坐",
+       "en": "sc_pose_classroom_sit",
+       "level": 0
+      },
+      {
+       "zh": "一字马 · 侧向",
+       "en": "sc_pose_standing_split",
+       "level": 0
+      },
+      {
+       "zh": "一字马 · 正面仰拍",
+       "en": "sc_pose_standing_split_front",
+       "level": 0
+      },
+      {
+       "zh": "一字马 · 逆光背影",
+       "en": "sc_pose_standing_split_back",
+       "level": 0
+      },
+      {
+       "zh": "靠墙而立",
+       "en": "sc_pose_against_wall",
+       "level": 0
+      },
+      {
+       "zh": "对立式站姿",
+       "en": "sc_pose_contrapposto",
+       "level": 0
+      },
+      {
+       "zh": "双手扶膝",
+       "en": "sc_pose_hands_on_knees",
+       "level": 0
+      },
+      {
+       "zh": "托腮",
+       "en": "sc_pose_head_rest",
+       "level": 0
+      },
+      {
+       "zh": "双腿分开站",
+       "en": "sc_pose_legs_apart",
+       "level": 0
+      },
+      {
+       "zh": "趴卧",
+       "en": "sc_pose_lying_prone",
+       "level": 0
+      },
+      {
+       "zh": "卧室 · 仰躺",
+       "en": "sc_pose_bed_on_back",
+       "level": 0
+      },
+      {
+       "zh": "踮脚伸展",
+       "en": "sc_pose_tiptoes_stretch",
+       "level": 1
+      },
+      {
+       "zh": "抱膝蜷坐",
+       "en": "sc_pose_hug_knees",
+       "level": 1
+      },
+      {
+       "zh": "第一人称 · 俯视自身",
+       "en": "sc_ccc_pov_self_body",
+       "level": 2
+      },
+      {
+       "zh": "山丘 · 日落剪影",
+       "en": "sc_wide_hill_sunset",
+       "level": 0
+      },
+      {
+       "zh": "湖畔 · 晨雾",
+       "en": "sc_wide_lake_mist",
+       "level": 0
+      },
+      {
+       "zh": "城市桥 · 夜景",
+       "en": "sc_wide_bridge_night",
+       "level": 0
+      },
+      {
+       "zh": "海边 · 黄昏浪",
+       "en": "sc_wide_beach_dusk",
+       "level": 0
+      },
+      {
+       "zh": "森林 · 晨光小径",
+       "en": "sc_wide_forest_path",
+       "level": 0
+      },
+      {
+       "zh": "雨街 · 撑伞远行",
+       "en": "sc_wide_rain_street",
+       "level": 0
+      },
+      {
+       "zh": "灯塔 · 海崖",
+       "en": "sc_wide_lighthouse",
+       "level": 0
+      },
+      {
+       "zh": "废墟 · 光柱",
+       "en": "sc_wide_ruins_beam",
+       "level": 0
+      },
+      {
+       "zh": "雪原 · 一行足迹",
+       "en": "sc_wide_snow_field",
+       "level": 0
+      },
+      {
+       "zh": "花田 · 风起",
+       "en": "sc_wide_flower_wind",
+       "level": 0
+      },
+      {
+       "zh": "天台 · 暮色天际",
+       "en": "sc_wide_rooftop_twilight",
+       "level": 0
+      },
+      {
+       "zh": "神社 · 樱吹雪",
+       "en": "sc_wide_shrine_sakura",
+       "level": 0
+      },
+      {
+       "zh": "山道 · 回眸",
+       "en": "sc_wide_mountain_lookback",
+       "level": 0
+      },
+      {
+       "zh": "巷弄 · 回眸",
+       "en": "sc_wide_alley_lookback",
+       "level": 0
+      },
+      {
+       "zh": "十字路口 · 回眸",
+       "en": "sc_wide_crosswalk_lookback",
+       "level": 0
+      },
+      {
+       "zh": "河畔 · 回眸",
+       "en": "sc_wide_river_lookback",
+       "level": 0
+      },
+      {
+       "zh": "悬吊缚 · 双女对悬",
+       "en": "sc_les_sm_suspension_pair",
+       "level": 4
+      },
+      {
+       "zh": "悬吊缚 · 手套握鞭",
+       "en": "sc_les_sm_suspension_twine",
+       "level": 4
+      },
+      {
+       "zh": "椅缚 M 字 · 器械贯入",
+       "en": "sc_les_sm_chair_machine",
+       "level": 4
+      },
+      {
+       "zh": "床上滴蜡 · 手持蜡烛",
+       "en": "sc_les_sm_wax_bound",
+       "level": 4
+      },
+      {
+       "zh": "悬吊蒙眼 · 情趣道具",
+       "en": "sc_les_sm_mutual_rope",
+       "level": 4
+      },
+      {
+       "zh": "背缚趴姿 · 情趣道具",
+       "en": "sc_les_sm_backtoback",
+       "level": 4
+      },
+      {
+       "zh": "宠物调教 · 手持牵绳",
+       "en": "sc_les_sm_pet_leash",
+       "level": 4
+      },
+      {
+       "zh": "项圈 · 手持牵绳",
+       "en": "sc_les_sm_collar_hold",
+       "level": 4
+      },
+      {
+       "zh": "束缚灌肠 · 背后球囊",
+       "en": "sc_les_sm_enema_bound",
+       "level": 4
+      },
+      {
+       "zh": "乳夹拉拽 · 手持链条",
+       "en": "sc_les_sm_clamp_pull",
+       "level": 4
+      },
+      {
+       "zh": "束缚肛珠 · 背后珠串",
+       "en": "sc_les_sm_anal_beads",
+       "level": 4
+      },
+      {
+       "zh": "木马骑罚 · 高吊骑坐",
+       "en": "sc_les_sm_wooden_horse",
+       "level": 4
+      },
+      {
+       "zh": "贞操带 · 手持钥匙",
+       "en": "sc_les_sm_chastity_key",
+       "level": 4
+      },
+      {
+       "zh": "乳夹吊重 · 重物垂链",
+       "en": "sc_les_sm_clamp_weight",
+       "level": 4
+      },
+      {
+       "zh": "仰视 · 掀裙鄙视",
+       "en": "sc_pose_skirt_lift_disdain",
+       "level": 1
+      },
+      {
+       "zh": "虫视 · 脚踩镜头",
+       "en": "sc_pose_sole_stomp_disdain",
+       "level": 1
+      },
+      {
+       "zh": "电梯 · 通勤黑丝",
+       "en": "sc_sock_office_elevator",
+       "level": 0
+      },
+      {
+       "zh": "教室 · 课桌前的过膝袜",
+       "en": "sc_sock_class_desk",
+       "level": 0
+      },
+      {
+       "zh": "咖啡馆 · 交叠的连裤袜",
+       "en": "sc_sock_cafe_crossed",
+       "level": 0
+      },
+      {
+       "zh": "客厅沙发 · 珠光袜蜷坐",
+       "en": "sc_sock_home_sofa",
+       "level": 0
+      },
+      {
+       "zh": "更衣间 · 抬腿拉平袜口",
+       "en": "sc_sock_change_legup",
+       "level": 1
+      },
+      {
+       "zh": "图书馆 · 踮脚够书",
+       "en": "sc_sock_library_tiptoe",
+       "level": 1
+      },
+      {
+       "zh": "楼梯间 · 勾破的连裤袜",
+       "en": "sc_sock_stair_torn",
+       "level": 1
+      },
+      {
+       "zh": "雨街 · 湿透的丝袜",
+       "en": "sc_sock_rain_wet",
+       "level": 2
+      },
+      {
+       "zh": "玄关 · 丝袜下的真空",
+       "en": "sc_sock_hallway_nopanty",
+       "level": 2
+      },
+      {
+       "zh": "酒店地毯 · 绳缚下的丝袜",
+       "en": "sc_sock_shibari_room",
+       "level": 3
+      },
+      {
+       "zh": "花田 · 微风压裙",
+       "en": "sc_pose_wind_hold_skirt",
+       "level": 0
+      }
+     ]
+    },
+    {
+     "key": "n_extra",
+     "lab": "场景补充tag(自动填充,可改)",
+     "req": false,
+     "type": "text",
+     "tail": true,
+     "slot": "free",
+     "opts": []
+    }
+   ]
+  },
+  {
+   "id": "nl_block",
+   "title": "⑫ 自然语言补位",
+   "cls": "",
+   "max_level": 0,
+   "fields": [
+    {
+     "key": "nl",
+     "lab": "自然语言补充(英文短句,置于末尾)",
+     "req": false,
+     "type": "text",
+     "tail": true,
+     "slot": "free",
+     "opts": []
+    }
+   ]
+  }
+ ],
+ "canon": [
+  {
+   "id": "c1",
+   "level": 2,
+   "fields": [
+    "n_exposure",
+    "n_extra",
+    "n_orgasm",
+    "n_state",
+    "shot_size"
+   ]
+  },
+  {
+   "id": "c10",
+   "level": 3,
+   "fields": [
+    "n_act",
+    "n_extra",
+    "n_pos",
+    "place",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "c11",
+   "level": 3,
+   "fields": [
+    "n_act",
+    "n_cum",
+    "n_extra",
+    "n_pos",
+    "place",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "c12",
+   "level": 3,
+   "fields": [
+    "n_act",
+    "n_extra",
+    "n_pos",
+    "place",
+    "weather"
+   ]
+  },
+  {
+   "id": "c13",
+   "level": 4,
+   "fields": [
+    "n_act",
+    "n_extra",
+    "n_pos",
+    "n_theme",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "c14",
+   "level": 3,
+   "fields": [
+    "n_act",
+    "n_extra",
+    "place"
+   ]
+  },
+  {
+   "id": "c2",
+   "level": 2,
+   "fields": [
+    "n_exposure",
+    "n_extra",
+    "place",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "c3",
+   "level": 2,
+   "fields": [
+    "n_body",
+    "n_extra",
+    "n_state",
+    "shot_size",
+    "weather"
+   ]
+  },
+  {
+   "id": "c4",
+   "level": 2,
+   "fields": [
+    "n_extra",
+    "n_state",
+    "place",
+    "weather"
+   ]
+  },
+  {
+   "id": "c5",
+   "level": 3,
+   "fields": [
+    "n_act",
+    "n_exposure",
+    "n_extra",
+    "n_fluid",
+    "n_state",
+    "place"
+   ]
+  },
+  {
+   "id": "c6",
+   "level": 3,
+   "fields": [
+    "n_act",
+    "n_extra",
+    "n_orgasm",
+    "place"
+   ]
+  },
+  {
+   "id": "c7",
+   "level": 2,
+   "fields": [
+    "n_exposure",
+    "n_extra",
+    "n_state",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "c8",
+   "level": 3,
+   "fields": [
+    "n_act",
+    "n_cum",
+    "n_extra",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "c9",
+   "level": 3,
+   "fields": [
+    "n_act",
+    "n_extra",
+    "n_pos",
+    "n_theme"
+   ]
+  },
+  {
+   "id": "sc_amusement_night",
+   "level": 0,
+   "fields": [
+    "action",
+    "arms_hands",
+    "emotion",
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_base",
+    "shot_size",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_balcony_laundry",
+   "level": 1,
+   "fields": [
+    "bottom",
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_risque",
+    "top",
+    "viewpoint",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_balcony_night",
+   "level": 0,
+   "fields": [
+    "comp",
+    "emotion",
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_base",
+    "prop",
+    "shot_size",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_bath_towel",
+   "level": 1,
+   "fields": [
+    "arms_hands",
+    "cloth_state_sfw",
+    "emotion",
+    "n_extra",
+    "place",
+    "pose_base",
+    "texture_fx",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_bathroom_mirror",
+   "level": 0,
+   "fields": [
+    "accessory",
+    "dof",
+    "emotion",
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_base",
+    "prop",
+    "viewpoint",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_beach_midsummer",
+   "level": 0,
+   "fields": [
+    "arms_hands",
+    "emotion",
+    "light_fx",
+    "n_extra",
+    "outfit",
+    "place",
+    "pose_base",
+    "shot_size",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_beach_volley",
+   "level": 1,
+   "fields": [
+    "action",
+    "light_fx",
+    "n_extra",
+    "outfit",
+    "place",
+    "pose_risque",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_bedroom_sleepshirt",
+   "level": 1,
+   "fields": [
+    "bottom",
+    "eye_gaze",
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_base",
+    "pose_risque",
+    "top"
+   ]
+  },
+  {
+   "id": "sc_cafe_window_rain",
+   "level": 0,
+   "fields": [
+    "arms_hands",
+    "dof",
+    "emotion",
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_base",
+    "prop",
+    "shot_size",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_cam_bird_lying",
+   "level": 1,
+   "fields": [
+    "arms_hands",
+    "emotion",
+    "n_extra",
+    "pose_base",
+    "pose_risque",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_cam_dutch_wall",
+   "level": 1,
+   "fields": [
+    "emotion",
+    "n_extra",
+    "pose_base",
+    "pose_risque",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_cam_fisheye_squat",
+   "level": 1,
+   "fields": [
+    "emotion",
+    "n_extra",
+    "pose_base",
+    "pose_risque",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_cam_low_stretch",
+   "level": 1,
+   "fields": [
+    "light_fx",
+    "n_extra",
+    "pose_base",
+    "pose_risque",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_cam_med_high_kneel",
+   "level": 1,
+   "fields": [
+    "emotion",
+    "eye_gaze",
+    "n_extra",
+    "pose_base",
+    "pose_risque",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_cam_ots_lookback",
+   "level": 1,
+   "fields": [
+    "emotion",
+    "eye_gaze",
+    "n_extra",
+    "pose_base",
+    "pose_risque",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_cam_pov_stand",
+   "level": 1,
+   "fields": [
+    "eye_gaze",
+    "n_extra",
+    "pose_base",
+    "pose_risque",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_cam_side_hairflip",
+   "level": 1,
+   "fields": [
+    "emotion",
+    "n_extra",
+    "pose_base",
+    "pose_risque",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_cam_wide_low_side",
+   "level": 1,
+   "fields": [
+    "emotion",
+    "light_fx",
+    "n_extra",
+    "pose_base",
+    "pose_risque",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_cam_worm_sit",
+   "level": 1,
+   "fields": [
+    "emotion",
+    "n_extra",
+    "pose_base",
+    "pose_risque",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_car_ride",
+   "level": 0,
+   "fields": [
+    "emotion",
+    "eye_gaze",
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_base",
+    "prop",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_ccc_afterglow",
+   "level": 3,
+   "fields": [
+    "emotion",
+    "n_cum",
+    "n_extra",
+    "n_orgasm",
+    "n_state",
+    "place",
+    "prop"
+   ]
+  },
+  {
+   "id": "sc_ccc_anal",
+   "level": 4,
+   "fields": [
+    "n_act",
+    "n_body",
+    "n_extra",
+    "n_fluid",
+    "n_orgasm",
+    "n_state",
+    "n_theme",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_ccc_bdsm_gag",
+   "level": 3,
+   "fields": [
+    "accessory",
+    "arms_hands",
+    "emotion",
+    "mouth",
+    "n_extra",
+    "n_fluid",
+    "n_state",
+    "n_theme",
+    "pose_base",
+    "shot_size"
+   ]
+  },
+  {
+   "id": "sc_ccc_bdsm_pillory",
+   "level": 4,
+   "fields": [
+    "arms_hands",
+    "emotion",
+    "light_fx",
+    "n_extra",
+    "n_fluid",
+    "n_state",
+    "n_theme",
+    "place",
+    "pose_base",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_ccc_bdsm_shibari",
+   "level": 3,
+   "fields": [
+    "arms_hands",
+    "emotion",
+    "light_fx",
+    "n_extra",
+    "n_state",
+    "n_theme",
+    "pose_base",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_ccc_clothed_sex",
+   "level": 3,
+   "fields": [
+    "cloth_state_sfw",
+    "n_act",
+    "n_extra",
+    "n_orgasm",
+    "n_pos",
+    "n_state",
+    "outfit",
+    "place",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_ccc_coerce_wall",
+   "level": 3,
+   "fields": [
+    "emotion",
+    "light_fx",
+    "n_act",
+    "n_extra",
+    "n_orgasm",
+    "n_pos",
+    "n_state",
+    "place",
+    "pose_base",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_ccc_cowgirl",
+   "level": 3,
+   "fields": [
+    "mouth",
+    "n_act",
+    "n_body",
+    "n_exposure",
+    "n_extra",
+    "n_orgasm",
+    "n_state",
+    "place",
+    "pose_base",
+    "shoes",
+    "socks",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_ccc_doggystyle",
+   "level": 3,
+   "fields": [
+    "arms_hands",
+    "n_act",
+    "n_extra",
+    "n_fluid",
+    "n_orgasm",
+    "n_pos",
+    "place",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_ccc_dp_group",
+   "level": 4,
+   "fields": [
+    "n_act",
+    "n_cum",
+    "n_extra",
+    "n_orgasm",
+    "n_pos",
+    "n_state",
+    "place",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_ccc_facesitting",
+   "level": 3,
+   "fields": [
+    "n_act",
+    "n_extra",
+    "n_orgasm",
+    "n_pos",
+    "n_state",
+    "place",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_ccc_femdom_reverse",
+   "level": 3,
+   "fields": [
+    "arms_hands",
+    "emotion",
+    "n_act",
+    "n_extra",
+    "n_orgasm",
+    "place",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_ccc_footjob",
+   "level": 2,
+   "fields": [
+    "leg",
+    "n_act",
+    "n_extra",
+    "n_orgasm",
+    "n_shoes_keep",
+    "place",
+    "socks",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_ccc_hidden_sex",
+   "level": 3,
+   "fields": [
+    "emotion",
+    "light_fx",
+    "mouth",
+    "n_act",
+    "n_body",
+    "n_exposure",
+    "n_extra",
+    "n_state",
+    "n_theme",
+    "place",
+    "pose_base",
+    "prop",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_ccc_mating_press",
+   "level": 3,
+   "fields": [
+    "n_act",
+    "n_cum",
+    "n_extra",
+    "n_orgasm",
+    "n_pos",
+    "place",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_ccc_missionary",
+   "level": 3,
+   "fields": [
+    "emotion",
+    "n_act",
+    "n_extra",
+    "n_orgasm",
+    "n_pos",
+    "place",
+    "prop",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_ccc_ntr_phone",
+   "level": 3,
+   "fields": [
+    "arms_hands",
+    "emotion",
+    "mouth",
+    "n_act",
+    "n_extra",
+    "n_orgasm",
+    "n_pos",
+    "n_state",
+    "n_theme",
+    "place",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_ccc_ntr_split",
+   "level": 3,
+   "fields": [
+    "emotion",
+    "n_act",
+    "n_extra",
+    "n_orgasm",
+    "n_state",
+    "n_theme",
+    "place",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_ccc_ntr_window",
+   "level": 3,
+   "fields": [
+    "emotion",
+    "light_fx",
+    "n_act",
+    "n_extra",
+    "n_orgasm",
+    "n_state",
+    "n_theme",
+    "place",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_ccc_paizuri",
+   "level": 3,
+   "fields": [
+    "figure",
+    "n_act",
+    "n_extra",
+    "n_state",
+    "place",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_ccc_pet_play",
+   "level": 4,
+   "fields": [
+    "accessory",
+    "emotion",
+    "mouth",
+    "n_extra",
+    "n_state",
+    "n_theme",
+    "place",
+    "pose_base",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_ccc_plain_daily",
+   "level": 2,
+   "fields": [
+    "emotion",
+    "light_fx",
+    "n_exposure",
+    "n_extra",
+    "n_state",
+    "place",
+    "pose_base",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_ccc_pov_cowgirl",
+   "level": 3,
+   "fields": [
+    "arms_hands",
+    "n_extra",
+    "n_orgasm",
+    "n_pos",
+    "n_state",
+    "place",
+    "shoes",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_ccc_pov_crotch_self",
+   "level": 2,
+   "fields": [
+    "light_fx",
+    "n_extra",
+    "n_state",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_ccc_pov_oral",
+   "level": 3,
+   "fields": [
+    "emotion",
+    "eye_gaze",
+    "n_extra",
+    "n_orgasm",
+    "n_state",
+    "place",
+    "pose_base",
+    "pose_risque",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_ccc_pov_self_body",
+   "level": 2,
+   "fields": [
+    "light_fx",
+    "n_exposure",
+    "n_extra",
+    "n_fluid",
+    "n_state",
+    "place",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_ccc_rbq_after",
+   "level": 4,
+   "fields": [
+    "emotion",
+    "n_cum",
+    "n_extra",
+    "n_orgasm",
+    "place",
+    "pose_base",
+    "shoes",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_ccc_rbq_wall",
+   "level": 4,
+   "fields": [
+    "light_fx",
+    "n_cum",
+    "n_extra",
+    "n_orgasm",
+    "n_state",
+    "place",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_ccc_stand_carry",
+   "level": 3,
+   "fields": [
+    "arms_hands",
+    "n_act",
+    "n_extra",
+    "n_orgasm",
+    "n_state",
+    "place",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_ccc_tentacle",
+   "level": 3,
+   "fields": [
+    "light_fx",
+    "n_extra",
+    "n_fluid",
+    "n_state",
+    "n_theme",
+    "place",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_ccc_voyeur_cam",
+   "level": 2,
+   "fields": [
+    "n_act",
+    "n_exposure",
+    "n_extra",
+    "n_orgasm",
+    "n_state",
+    "place",
+    "pose_base"
+   ]
+  },
+  {
+   "id": "sc_changing_room",
+   "level": 2,
+   "fields": [
+    "accessory",
+    "emotion",
+    "light_fx",
+    "n_extra",
+    "outfit",
+    "place",
+    "pose_base",
+    "pose_risque",
+    "shot_size"
+   ]
+  },
+  {
+   "id": "sc_changing_room_peek",
+   "level": 1,
+   "fields": [
+    "emotion",
+    "n_extra",
+    "outfit",
+    "place",
+    "pose_risque",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_classroom_afterschool",
+   "level": 0,
+   "fields": [
+    "comp",
+    "emotion",
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_base",
+    "prop",
+    "viewpoint",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_classroom_chin_rest",
+   "level": 0,
+   "fields": [
+    "cloth_state_sfw",
+    "emotion",
+    "eye_gaze",
+    "light_fx",
+    "n_extra",
+    "outfit",
+    "place",
+    "pose_base",
+    "prop",
+    "shot_size",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_classroom_openwin",
+   "level": 0,
+   "fields": [
+    "emotion",
+    "light_fx",
+    "n_extra",
+    "outfit",
+    "place",
+    "pose_base",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_convenience_night",
+   "level": 0,
+   "fields": [
+    "arms_hands",
+    "emotion",
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_base",
+    "prop",
+    "shot_size",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_dutch_alley_night",
+   "level": 0,
+   "fields": [
+    "emotion",
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_elevator_ride",
+   "level": 0,
+   "fields": [
+    "comp",
+    "emotion",
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_fisheye_room",
+   "level": 0,
+   "fields": [
+    "emotion",
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_fitting_room",
+   "level": 0,
+   "fields": [
+    "arms_hands",
+    "dof",
+    "emotion",
+    "light_fx",
+    "n_extra",
+    "outfit",
+    "place",
+    "pose_base",
+    "prop"
+   ]
+  },
+  {
+   "id": "sc_float_ring",
+   "level": 1,
+   "fields": [
+    "arms_hands",
+    "emotion",
+    "n_extra",
+    "outfit",
+    "place",
+    "pose_base",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_flower_field",
+   "level": 0,
+   "fields": [
+    "action",
+    "emotion",
+    "light_fx",
+    "n_extra",
+    "outfit",
+    "place",
+    "pose_base",
+    "viewpoint",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_forest_fog",
+   "level": 0,
+   "fields": [
+    "action",
+    "emotion",
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_base",
+    "shot_size",
+    "texture_fx",
+    "viewpoint",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_gym_mirror",
+   "level": 1,
+   "fields": [
+    "bottom",
+    "emotion",
+    "n_extra",
+    "place",
+    "pose_base",
+    "pose_risque",
+    "top",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_gymnastics_split",
+   "level": 1,
+   "fields": [
+    "light_fx",
+    "n_extra",
+    "outfit",
+    "place",
+    "pose_base",
+    "pose_risque",
+    "viewpoint",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_hotel_mirror",
+   "level": 1,
+   "fields": [
+    "emotion",
+    "n_extra",
+    "outfit",
+    "place",
+    "pose_risque",
+    "prop",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_jk_bike_ride",
+   "level": 0,
+   "fields": [
+    "emotion",
+    "n_extra",
+    "outfit",
+    "place",
+    "pose_base",
+    "viewpoint",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_jog_rest",
+   "level": 1,
+   "fields": [
+    "bottom",
+    "emotion",
+    "n_extra",
+    "place",
+    "pose_base",
+    "pose_risque",
+    "top"
+   ]
+  },
+  {
+   "id": "sc_kitchen_apron",
+   "level": 1,
+   "fields": [
+    "emotion",
+    "light_fx",
+    "n_extra",
+    "outfit",
+    "place",
+    "pose_risque",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_konbini_midnight",
+   "level": 1,
+   "fields": [
+    "bottom",
+    "light_fx",
+    "n_extra",
+    "outfit",
+    "place",
+    "pose_risque",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_les_sm_anal_beads",
+   "level": 4,
+   "fields": [
+    "light_fx",
+    "n_body",
+    "n_extra",
+    "n_orgasm",
+    "n_state",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_les_sm_backtoback",
+   "level": 4,
+   "fields": [
+    "light_fx",
+    "n_extra",
+    "n_orgasm",
+    "n_state",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_les_sm_chair_machine",
+   "level": 4,
+   "fields": [
+    "light_fx",
+    "mouth",
+    "n_extra",
+    "n_fluid",
+    "n_orgasm",
+    "n_pos",
+    "n_state",
+    "place",
+    "pose_base",
+    "prop",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_les_sm_chastity_key",
+   "level": 4,
+   "fields": [
+    "light_fx",
+    "mouth",
+    "n_extra",
+    "n_orgasm",
+    "n_state",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_les_sm_clamp_pull",
+   "level": 4,
+   "fields": [
+    "light_fx",
+    "mouth",
+    "n_extra",
+    "n_orgasm",
+    "n_state",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_les_sm_clamp_weight",
+   "level": 4,
+   "fields": [
+    "light_fx",
+    "mouth",
+    "n_extra",
+    "n_orgasm",
+    "n_state",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_les_sm_collar_hold",
+   "level": 4,
+   "fields": [
+    "light_fx",
+    "mouth",
+    "n_extra",
+    "n_orgasm",
+    "n_state",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_les_sm_enema_bound",
+   "level": 4,
+   "fields": [
+    "light_fx",
+    "n_body",
+    "n_extra",
+    "n_orgasm",
+    "n_state",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_les_sm_mutual_rope",
+   "level": 4,
+   "fields": [
+    "light_fx",
+    "mouth",
+    "n_extra",
+    "n_orgasm",
+    "n_state",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_les_sm_pet_leash",
+   "level": 4,
+   "fields": [
+    "light_fx",
+    "mouth",
+    "n_extra",
+    "n_orgasm",
+    "n_state",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_les_sm_suspension_pair",
+   "level": 4,
+   "fields": [
+    "light_fx",
+    "mouth",
+    "n_extra",
+    "n_orgasm",
+    "n_state",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_les_sm_suspension_twine",
+   "level": 4,
+   "fields": [
+    "light_fx",
+    "mouth",
+    "n_extra",
+    "n_orgasm",
+    "n_state",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_les_sm_wax_bound",
+   "level": 4,
+   "fields": [
+    "light_fx",
+    "mouth",
+    "n_extra",
+    "n_orgasm",
+    "n_state",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_les_sm_wooden_horse",
+   "level": 4,
+   "fields": [
+    "light_fx",
+    "mouth",
+    "n_extra",
+    "n_orgasm",
+    "n_state",
+    "place",
+    "pose_base",
+    "shot_size"
+   ]
+  },
+  {
+   "id": "sc_library_quiet",
+   "level": 0,
+   "fields": [
+    "arms_hands",
+    "dof",
+    "emotion",
+    "light_fx",
+    "mouth",
+    "n_extra",
+    "place",
+    "pose_base",
+    "prop",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_maid_serving",
+   "level": 1,
+   "fields": [
+    "arms_hands",
+    "emotion",
+    "n_extra",
+    "outfit",
+    "place",
+    "pose_risque",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_mirror_dressing",
+   "level": 0,
+   "fields": [
+    "arms_hands",
+    "dof",
+    "emotion",
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_base",
+    "prop",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_morning_window",
+   "level": 0,
+   "fields": [
+    "accessory",
+    "cloth_mat",
+    "dof",
+    "emotion",
+    "light_fx",
+    "mouth",
+    "n_extra",
+    "place",
+    "pose_base",
+    "prop",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_movie_theater",
+   "level": 0,
+   "fields": [
+    "emotion",
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_msb_bath_recline",
+   "level": 2,
+   "fields": [
+    "emotion",
+    "light_fx",
+    "n_body",
+    "n_exposure",
+    "n_extra",
+    "n_state",
+    "place",
+    "pose_base",
+    "viewpoint",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_msb_bathtub_water",
+   "level": 3,
+   "fields": [
+    "emotion",
+    "mouth",
+    "n_act",
+    "n_extra",
+    "n_fluid",
+    "n_orgasm",
+    "n_state",
+    "place",
+    "viewpoint",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_msb_blindfold_toy",
+   "level": 3,
+   "fields": [
+    "emotion",
+    "mouth",
+    "n_act",
+    "n_extra",
+    "n_orgasm",
+    "n_state",
+    "n_theme",
+    "place",
+    "pose_base",
+    "prop",
+    "shoes"
+   ]
+  },
+  {
+   "id": "sc_msb_clothed",
+   "level": 2,
+   "fields": [
+    "emotion",
+    "leg",
+    "n_act",
+    "n_extra",
+    "n_orgasm",
+    "n_state",
+    "outfit",
+    "place",
+    "pose_base",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_msb_continuous",
+   "level": 3,
+   "fields": [
+    "emotion",
+    "eye_gaze",
+    "mouth",
+    "n_act",
+    "n_extra",
+    "n_fluid",
+    "n_orgasm",
+    "n_state",
+    "place",
+    "pose_base",
+    "shoes",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_msb_dildo_ride",
+   "level": 3,
+   "fields": [
+    "emotion",
+    "mouth",
+    "n_act",
+    "n_extra",
+    "n_orgasm",
+    "n_pos",
+    "n_state",
+    "n_theme",
+    "place",
+    "prop",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_msb_fingers_bed",
+   "level": 3,
+   "fields": [
+    "dof",
+    "emotion",
+    "eye_gaze",
+    "mouth",
+    "n_act",
+    "n_exposure",
+    "n_extra",
+    "n_orgasm",
+    "n_state",
+    "place",
+    "pose_base",
+    "prop",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_msb_mirror_check",
+   "level": 2,
+   "fields": [
+    "emotion",
+    "light_fx",
+    "n_body",
+    "n_exposure",
+    "n_extra",
+    "n_pos",
+    "n_state",
+    "place",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_msb_mirror_watch",
+   "level": 2,
+   "fields": [
+    "arms_hands",
+    "emotion",
+    "light_fx",
+    "n_act",
+    "n_extra",
+    "n_orgasm",
+    "n_state",
+    "place",
+    "prop",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_msb_mutual",
+   "level": 2,
+   "fields": [
+    "emotion",
+    "mouth",
+    "n_extra",
+    "n_state",
+    "place",
+    "prop",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_msb_office_night",
+   "level": 2,
+   "fields": [
+    "emotion",
+    "light_fx",
+    "mouth",
+    "n_exposure",
+    "n_extra",
+    "n_state",
+    "outfit",
+    "place",
+    "prop",
+    "viewpoint",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_msb_panties_aside",
+   "level": 2,
+   "fields": [
+    "dof",
+    "emotion",
+    "light_fx",
+    "mouth",
+    "n_body",
+    "n_exposure",
+    "n_extra",
+    "n_state",
+    "place",
+    "pose_base",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_msb_plug_rear",
+   "level": 3,
+   "fields": [
+    "n_act",
+    "n_body",
+    "n_extra",
+    "n_fluid",
+    "n_orgasm",
+    "n_state",
+    "n_theme",
+    "place",
+    "prop",
+    "shoes",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_msb_pov_self",
+   "level": 2,
+   "fields": [
+    "mouth",
+    "n_act",
+    "n_exposure",
+    "n_extra",
+    "n_orgasm",
+    "n_state",
+    "place",
+    "pose_base",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_msb_shower_stand",
+   "level": 3,
+   "fields": [
+    "emotion",
+    "mouth",
+    "n_act",
+    "n_extra",
+    "n_orgasm",
+    "n_state",
+    "place",
+    "pose_base",
+    "viewpoint",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_msb_skirt_vacuum",
+   "level": 2,
+   "fields": [
+    "emotion",
+    "light_fx",
+    "mouth",
+    "n_exposure",
+    "n_extra",
+    "n_state",
+    "place",
+    "pose_base",
+    "prop",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_msb_sofa_pull",
+   "level": 2,
+   "fields": [
+    "emotion",
+    "light_fx",
+    "mouth",
+    "n_body",
+    "n_exposure",
+    "n_extra",
+    "n_state",
+    "place",
+    "pose_base",
+    "prop",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_msb_squirt_after",
+   "level": 4,
+   "fields": [
+    "emotion",
+    "eye_gaze",
+    "mouth",
+    "n_act",
+    "n_extra",
+    "n_fluid",
+    "n_orgasm",
+    "n_state",
+    "place",
+    "pose_base",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_msb_squirt_dildo",
+   "level": 4,
+   "fields": [
+    "mouth",
+    "n_act",
+    "n_extra",
+    "n_fluid",
+    "n_orgasm",
+    "n_pos",
+    "n_theme",
+    "place",
+    "shoes",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_msb_squirt_fingers",
+   "level": 4,
+   "fields": [
+    "mouth",
+    "n_act",
+    "n_exposure",
+    "n_extra",
+    "n_fluid",
+    "n_orgasm",
+    "n_pos",
+    "n_state",
+    "place",
+    "prop",
+    "shoes",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_msb_toys_show",
+   "level": 3,
+   "fields": [
+    "emotion",
+    "mouth",
+    "n_exposure",
+    "n_extra",
+    "n_state",
+    "n_theme",
+    "place",
+    "pose_base",
+    "shoes",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_msb_vibrator_covers",
+   "level": 3,
+   "fields": [
+    "eye_gaze",
+    "light_fx",
+    "n_act",
+    "n_extra",
+    "n_orgasm",
+    "n_state",
+    "n_theme",
+    "place",
+    "pose_base",
+    "prop",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_near_back_shoulder",
+   "level": 0,
+   "fields": [
+    "light_fx",
+    "n_extra",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_near_collar_top",
+   "level": 0,
+   "fields": [
+    "light_fx",
+    "n_extra",
+    "shot_size",
+    "skin_detail",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_near_eye_lash",
+   "level": 0,
+   "fields": [
+    "dof",
+    "light_fx",
+    "n_extra",
+    "shot_size"
+   ]
+  },
+  {
+   "id": "sc_near_eye_single",
+   "level": 0,
+   "fields": [
+    "eye_gaze",
+    "light_fx",
+    "n_extra",
+    "shot_size"
+   ]
+  },
+  {
+   "id": "sc_near_face_backlight",
+   "level": 0,
+   "fields": [
+    "comp",
+    "dof",
+    "light_fx",
+    "n_extra",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_near_face_bed",
+   "level": 0,
+   "fields": [
+    "comp",
+    "light_fx",
+    "n_extra",
+    "place",
+    "prop",
+    "shot_size"
+   ]
+  },
+  {
+   "id": "sc_near_face_classroom",
+   "level": 0,
+   "fields": [
+    "comp",
+    "dof",
+    "light_fx",
+    "n_extra",
+    "place",
+    "shot_size"
+   ]
+  },
+  {
+   "id": "sc_near_face_lowgaze",
+   "level": 0,
+   "fields": [
+    "dof",
+    "emotion",
+    "eye_gaze",
+    "n_extra",
+    "shot_size"
+   ]
+  },
+  {
+   "id": "sc_near_face_mirror",
+   "level": 0,
+   "fields": [
+    "dof",
+    "emotion",
+    "eye_gaze",
+    "n_extra",
+    "shot_size"
+   ]
+  },
+  {
+   "id": "sc_near_face_rain",
+   "level": 0,
+   "fields": [
+    "dof",
+    "light_fx",
+    "n_extra",
+    "place",
+    "shot_size",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_near_face_smile",
+   "level": 0,
+   "fields": [
+    "emotion",
+    "eye_gaze",
+    "light_fx",
+    "mouth",
+    "n_extra",
+    "shot_size"
+   ]
+  },
+  {
+   "id": "sc_near_face_tears",
+   "level": 1,
+   "fields": [
+    "emotion",
+    "eye_gaze",
+    "light_fx",
+    "n_extra",
+    "shot_size",
+    "skin_detail"
+   ]
+  },
+  {
+   "id": "sc_near_foot_bare",
+   "level": 0,
+   "fields": [
+    "n_extra",
+    "place",
+    "pose_base",
+    "shoes",
+    "shot_size",
+    "socks",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_near_foot_curl",
+   "level": 0,
+   "fields": [
+    "light_fx",
+    "n_extra",
+    "pose_base",
+    "shot_size"
+   ]
+  },
+  {
+   "id": "sc_near_foot_heel",
+   "level": 0,
+   "fields": [
+    "light_fx",
+    "n_extra",
+    "pose_base",
+    "shoes",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_near_foot_sock",
+   "level": 0,
+   "fields": [
+    "n_extra",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_near_hand_cover",
+   "level": 0,
+   "fields": [
+    "light_fx",
+    "n_extra",
+    "shot_size"
+   ]
+  },
+  {
+   "id": "sc_near_hand_lap",
+   "level": 0,
+   "fields": [
+    "n_extra",
+    "pose_base",
+    "shot_size"
+   ]
+  },
+  {
+   "id": "sc_near_hand_lip",
+   "level": 0,
+   "fields": [
+    "arms_hands",
+    "mouth",
+    "n_extra",
+    "shot_size"
+   ]
+  },
+  {
+   "id": "sc_near_hip_back_stand",
+   "level": 0,
+   "fields": [
+    "light_fx",
+    "n_extra",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_near_hip_bare",
+   "level": 1,
+   "fields": [
+    "n_extra",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_near_hip_bent",
+   "level": 1,
+   "fields": [
+    "n_extra",
+    "pose_base",
+    "pose_risque",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_near_hip_kneel_arch",
+   "level": 1,
+   "fields": [
+    "n_extra",
+    "pose_base",
+    "pose_risque",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_near_hip_seiza_back",
+   "level": 0,
+   "fields": [
+    "n_extra",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_near_hip_sheer",
+   "level": 2,
+   "fields": [
+    "n_extra",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_near_leg_bed_edge",
+   "level": 0,
+   "fields": [
+    "n_extra",
+    "place",
+    "pose_base",
+    "prop",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_near_leg_crossed",
+   "level": 0,
+   "fields": [
+    "n_extra",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_near_leg_hem",
+   "level": 0,
+   "fields": [
+    "n_extra",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_near_leg_kneel",
+   "level": 0,
+   "fields": [
+    "light_fx",
+    "n_extra",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_near_leg_side",
+   "level": 0,
+   "fields": [
+    "n_extra",
+    "place",
+    "pose_base",
+    "prop",
+    "shot_size"
+   ]
+  },
+  {
+   "id": "sc_near_leg_side_raise",
+   "level": 1,
+   "fields": [
+    "n_extra",
+    "place",
+    "pose_base",
+    "pose_risque",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_near_leg_sit_chair",
+   "level": 0,
+   "fields": [
+    "light_fx",
+    "n_extra",
+    "pose_base",
+    "prop",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_near_leg_sit_floor",
+   "level": 0,
+   "fields": [
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_near_leg_sofa_cross",
+   "level": 0,
+   "fields": [
+    "light_fx",
+    "n_extra",
+    "pose_base",
+    "prop",
+    "shoes",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_near_leg_stand",
+   "level": 0,
+   "fields": [
+    "light_fx",
+    "n_extra",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_near_leg_supine_reach",
+   "level": 1,
+   "fields": [
+    "n_extra",
+    "place",
+    "pose_base",
+    "pose_risque",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_near_leg_thighhigh",
+   "level": 0,
+   "fields": [
+    "n_extra",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_near_lip_bite",
+   "level": 0,
+   "fields": [
+    "emotion",
+    "mouth",
+    "n_extra",
+    "shot_size"
+   ]
+  },
+  {
+   "id": "sc_near_lip_micro",
+   "level": 0,
+   "fields": [
+    "light_fx",
+    "mouth",
+    "n_extra",
+    "shot_size"
+   ]
+  },
+  {
+   "id": "sc_near_nsfw_allfours",
+   "level": 3,
+   "fields": [
+    "light_fx",
+    "n_extra",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_near_nsfw_breast_massage",
+   "level": 2,
+   "fields": [
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_near_nsfw_breast_suck",
+   "level": 3,
+   "fields": [
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_near_nsfw_cleavage",
+   "level": 1,
+   "fields": [
+    "light_fx",
+    "n_extra",
+    "shot_size",
+    "skin_detail",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_near_nsfw_cum",
+   "level": 3,
+   "fields": [
+    "light_fx",
+    "n_extra",
+    "shot_size"
+   ]
+  },
+  {
+   "id": "sc_near_nsfw_cunnilingus",
+   "level": 3,
+   "fields": [
+    "mouth",
+    "n_extra",
+    "n_state",
+    "place",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_near_nsfw_fellatio",
+   "level": 3,
+   "fields": [
+    "dof",
+    "eye_gaze",
+    "n_extra",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_near_nsfw_garter",
+   "level": 1,
+   "fields": [
+    "accessory",
+    "n_extra",
+    "pose_base",
+    "shot_size",
+    "socks",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_near_nsfw_lactation",
+   "level": 4,
+   "fields": [
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_near_nsfw_nipple",
+   "level": 2,
+   "fields": [
+    "light_fx",
+    "n_extra",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_near_nsfw_nipple_suck",
+   "level": 2,
+   "fields": [
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_near_nsfw_panties",
+   "level": 2,
+   "fields": [
+    "n_extra",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_near_nsfw_sheer",
+   "level": 2,
+   "fields": [
+    "light_fx",
+    "n_extra",
+    "n_fabric",
+    "n_state",
+    "shot_size"
+   ]
+  },
+  {
+   "id": "sc_near_nsfw_soles",
+   "level": 1,
+   "fields": [
+    "n_extra",
+    "pose_base",
+    "pose_risque",
+    "shoes",
+    "shot_size",
+    "socks",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_near_nsfw_thighs",
+   "level": 1,
+   "fields": [
+    "n_extra",
+    "pose_base",
+    "pose_risque",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_near_nsfw_tongue",
+   "level": 3,
+   "fields": [
+    "eye_gaze",
+    "light_fx",
+    "mouth",
+    "n_extra",
+    "n_orgasm",
+    "shot_size"
+   ]
+  },
+  {
+   "id": "sc_near_shoulder_line",
+   "level": 0,
+   "fields": [
+    "light_fx",
+    "n_extra",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_near_soft_breast_hug",
+   "level": 2,
+   "fields": [
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_near_soft_breast_massage",
+   "level": 2,
+   "fields": [
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_near_towel_after",
+   "level": 0,
+   "fields": [
+    "light_fx",
+    "n_extra",
+    "place",
+    "prop",
+    "shot_size",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_near_wet_cloth",
+   "level": 2,
+   "fields": [
+    "cloth_state_sfw",
+    "light_fx",
+    "n_extra",
+    "shot_size",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_nurse_rounds",
+   "level": 1,
+   "fields": [
+    "emotion",
+    "outfit",
+    "pose_risque",
+    "socks",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_office_overtime",
+   "level": 0,
+   "fields": [
+    "dof",
+    "emotion",
+    "light_fx",
+    "n_extra",
+    "outfit",
+    "place",
+    "pose_base",
+    "prop",
+    "shot_size",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_offshoulder_night",
+   "level": 1,
+   "fields": [
+    "cloth_mat",
+    "cloth_state_sfw",
+    "emotion",
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_ol_overtime",
+   "level": 1,
+   "fields": [
+    "emotion",
+    "light_fx",
+    "n_extra",
+    "outfit",
+    "place",
+    "pose_base",
+    "pose_risque",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_onsen_steam",
+   "level": 0,
+   "fields": [
+    "dof",
+    "emotion",
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_base",
+    "texture_fx",
+    "viewpoint",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_panorama_park",
+   "level": 0,
+   "fields": [
+    "comp",
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_pool_ladder",
+   "level": 1,
+   "fields": [
+    "light_fx",
+    "n_extra",
+    "outfit",
+    "place",
+    "pose_base",
+    "pose_risque",
+    "texture_fx",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_poolside_microbikini",
+   "level": 1,
+   "fields": [
+    "arms_hands",
+    "emotion",
+    "light_fx",
+    "n_extra",
+    "outfit",
+    "place",
+    "pose_base",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_poolside_summer",
+   "level": 0,
+   "fields": [
+    "arms_hands",
+    "emotion",
+    "light_fx",
+    "n_extra",
+    "outfit",
+    "place",
+    "pose_base",
+    "shot_size",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_pose_against_wall",
+   "level": 0,
+   "fields": [
+    "arms_hands",
+    "light_fx",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_pose_all_fours",
+   "level": 0,
+   "fields": [
+    "emotion",
+    "eye_gaze",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_pose_apartment_seiza",
+   "level": 0,
+   "fields": [
+    "cloth_state_sfw",
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_pose_bed_kneel",
+   "level": 0,
+   "fields": [
+    "light_fx",
+    "outfit",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_pose_bed_on_back",
+   "level": 0,
+   "fields": [
+    "light_fx",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_pose_classroom_sit",
+   "level": 0,
+   "fields": [
+    "emotion",
+    "light_fx",
+    "outfit",
+    "place",
+    "pose_base",
+    "prop",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_pose_contrapposto",
+   "level": 0,
+   "fields": [
+    "arms_hands",
+    "comp",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_pose_crossed_ankles",
+   "level": 0,
+   "fields": [
+    "dof",
+    "n_extra",
+    "pose_base",
+    "prop",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_pose_fetal",
+   "level": 0,
+   "fields": [
+    "emotion",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_pose_flowerfield_seiza",
+   "level": 1,
+   "fields": [
+    "light_fx",
+    "outfit",
+    "place",
+    "pose_base",
+    "shot_size",
+    "texture_fx",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_pose_hands_on_knees",
+   "level": 0,
+   "fields": [
+    "emotion",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_pose_head_rest",
+   "level": 0,
+   "fields": [
+    "emotion",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_pose_hug_knees",
+   "level": 1,
+   "fields": [
+    "emotion",
+    "pose_base",
+    "pose_risque",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_pose_indian",
+   "level": 0,
+   "fields": [
+    "emotion",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_pose_kneeling_back",
+   "level": 0,
+   "fields": [
+    "arms_hands",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_pose_legs_apart",
+   "level": 0,
+   "fields": [
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_pose_library_floor",
+   "level": 0,
+   "fields": [
+    "action",
+    "emotion",
+    "light_fx",
+    "place",
+    "pose_base",
+    "prop",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_pose_lying_prone",
+   "level": 0,
+   "fields": [
+    "dof",
+    "emotion",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_pose_on_floor",
+   "level": 0,
+   "fields": [
+    "n_extra",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_pose_one_knee",
+   "level": 0,
+   "fields": [
+    "comp",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_pose_one_leg_stand",
+   "level": 0,
+   "fields": [
+    "comp",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_pose_onsen_seiza",
+   "level": 0,
+   "fields": [
+    "light_fx",
+    "outfit",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_pose_poolside_kneel",
+   "level": 0,
+   "fields": [
+    "light_fx",
+    "outfit",
+    "place",
+    "pose_base",
+    "shoes",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_pose_rooftop_squat",
+   "level": 0,
+   "fields": [
+    "emotion",
+    "eye_gaze",
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_pose_seiza_bow",
+   "level": 0,
+   "fields": [
+    "action",
+    "n_extra",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_pose_seiza_front",
+   "level": 0,
+   "fields": [
+    "dof",
+    "emotion",
+    "n_extra",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_pose_seiza_lookback",
+   "level": 0,
+   "fields": [
+    "action",
+    "eye_gaze",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_pose_seiza_side",
+   "level": 0,
+   "fields": [
+    "eye_gaze",
+    "light_fx",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_pose_shrine_kneel",
+   "level": 0,
+   "fields": [
+    "action",
+    "light_fx",
+    "outfit",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_pose_skirt_lift_disdain",
+   "level": 1,
+   "fields": [
+    "bottom",
+    "dof",
+    "emotion",
+    "eye_gaze",
+    "light_fx",
+    "makeup",
+    "mouth",
+    "n_extra",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_pose_sole_stomp_disdain",
+   "level": 1,
+   "fields": [
+    "bottom",
+    "dof",
+    "emotion",
+    "eye_gaze",
+    "light_fx",
+    "makeup",
+    "mouth",
+    "n_extra",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_pose_squat",
+   "level": 0,
+   "fields": [
+    "emotion",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_pose_stage_one_knee",
+   "level": 0,
+   "fields": [
+    "comp",
+    "light_fx",
+    "outfit",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_pose_standing_split",
+   "level": 0,
+   "fields": [
+    "light_fx",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_pose_standing_split_back",
+   "level": 0,
+   "fields": [
+    "light_fx",
+    "pose_base",
+    "shot_size",
+    "texture_fx",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_pose_standing_split_front",
+   "level": 0,
+   "fields": [
+    "arms_hands",
+    "emotion",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_pose_tiptoes_stretch",
+   "level": 1,
+   "fields": [
+    "arms_hands",
+    "light_fx",
+    "pose_base",
+    "pose_risque",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_pose_wariza",
+   "level": 0,
+   "fields": [
+    "emotion",
+    "eye_gaze",
+    "pose_base",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_pose_wind_hold_skirt",
+   "level": 0,
+   "fields": [
+    "n_extra",
+    "place",
+    "pose_base",
+    "shot_size"
+   ]
+  },
+  {
+   "id": "sc_pov_hands_selfie",
+   "level": 0,
+   "fields": [
+    "arms_hands",
+    "emotion",
+    "n_extra",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_rain_street_lookback",
+   "level": 0,
+   "fields": [
+    "action",
+    "eye_gaze",
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_base",
+    "shot_size",
+    "texture_fx",
+    "viewpoint",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_rain_wetshirt",
+   "level": 1,
+   "fields": [
+    "bottom",
+    "cloth_state_sfw",
+    "eye_gaze",
+    "n_extra",
+    "place",
+    "pose_base",
+    "pose_risque",
+    "top",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_rooftop_stretch",
+   "level": 1,
+   "fields": [
+    "comp",
+    "emotion",
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_risque",
+    "shot_size",
+    "viewpoint",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_shower_peek",
+   "level": 1,
+   "fields": [
+    "arms_hands",
+    "emotion",
+    "n_extra",
+    "place",
+    "pose_base",
+    "pose_risque",
+    "texture_fx",
+    "viewpoint",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_shrine_walk",
+   "level": 0,
+   "fields": [
+    "action",
+    "light_fx",
+    "n_extra",
+    "outfit",
+    "place",
+    "pose_base",
+    "texture_fx",
+    "viewpoint",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_skirt_wind",
+   "level": 0,
+   "fields": [
+    "bottom",
+    "emotion",
+    "n_extra",
+    "place",
+    "top",
+    "viewpoint",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_snow_field_scarf",
+   "level": 0,
+   "fields": [
+    "accessory",
+    "arms_hands",
+    "comp",
+    "emotion",
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_sock_cafe_crossed",
+   "level": 0,
+   "fields": [
+    "dof",
+    "emotion",
+    "eye_gaze",
+    "light_fx",
+    "mouth",
+    "n_extra",
+    "outfit",
+    "place",
+    "pose_base",
+    "prop",
+    "shoes",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_sock_change_legup",
+   "level": 1,
+   "fields": [
+    "emotion",
+    "eye_gaze",
+    "light_fx",
+    "mouth",
+    "n_extra",
+    "outfit",
+    "place",
+    "pose_base",
+    "pose_risque",
+    "shoes",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_sock_class_desk",
+   "level": 0,
+   "fields": [
+    "emotion",
+    "eye_gaze",
+    "light_fx",
+    "mouth",
+    "n_extra",
+    "outfit",
+    "place",
+    "pose_base",
+    "prop",
+    "shoes",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_sock_hallway_nopanty",
+   "level": 2,
+   "fields": [
+    "emotion",
+    "eye_gaze",
+    "light_fx",
+    "mouth",
+    "n_extra",
+    "n_state",
+    "outfit",
+    "place",
+    "pose_base",
+    "prop",
+    "shoes",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_sock_home_sofa",
+   "level": 0,
+   "fields": [
+    "comp",
+    "emotion",
+    "eye_gaze",
+    "light_fx",
+    "mouth",
+    "n_extra",
+    "outfit",
+    "place",
+    "pose_base",
+    "prop",
+    "shoes",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_sock_library_tiptoe",
+   "level": 1,
+   "fields": [
+    "emotion",
+    "eye_gaze",
+    "light_fx",
+    "mouth",
+    "n_extra",
+    "outfit",
+    "place",
+    "pose_risque",
+    "prop",
+    "shoes",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_sock_office_elevator",
+   "level": 0,
+   "fields": [
+    "emotion",
+    "eye_gaze",
+    "light_fx",
+    "mouth",
+    "n_extra",
+    "outfit",
+    "place",
+    "pose_base",
+    "shoes",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_sock_rain_wet",
+   "level": 2,
+   "fields": [
+    "action",
+    "cloth_state_sfw",
+    "emotion",
+    "eye_gaze",
+    "light_fx",
+    "mouth",
+    "n_extra",
+    "outfit",
+    "place",
+    "shoes",
+    "shot_size",
+    "viewpoint",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_sock_shibari_room",
+   "level": 3,
+   "fields": [
+    "emotion",
+    "eye_gaze",
+    "light_fx",
+    "mouth",
+    "n_extra",
+    "n_shoes_keep",
+    "n_theme",
+    "place",
+    "pose_base",
+    "shoes",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_sock_stair_torn",
+   "level": 1,
+   "fields": [
+    "emotion",
+    "eye_gaze",
+    "light_fx",
+    "mouth",
+    "n_extra",
+    "outfit",
+    "place",
+    "pose_base",
+    "pose_risque",
+    "shoes",
+    "shot_size",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_sofa_catnap",
+   "level": 1,
+   "fields": [
+    "action",
+    "light_fx",
+    "n_extra",
+    "outfit",
+    "place",
+    "pose_base",
+    "pose_risque"
+   ]
+  },
+  {
+   "id": "sc_stairwell_up",
+   "level": 0,
+   "fields": [
+    "action",
+    "eye_gaze",
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_base",
+    "prop",
+    "viewpoint"
+   ]
+  },
+  {
+   "id": "sc_surf_board",
+   "level": 1,
+   "fields": [
+    "action",
+    "cloth_state_sfw",
+    "n_extra",
+    "outfit",
+    "place",
+    "pose_risque",
+    "viewpoint",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_train_home",
+   "level": 0,
+   "fields": [
+    "arms_hands",
+    "emotion",
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_base",
+    "prop",
+    "viewpoint",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_under_shower",
+   "level": 0,
+   "fields": [
+    "arms_hands",
+    "emotion",
+    "eye_gaze",
+    "light_fx",
+    "n_extra",
+    "outfit",
+    "place",
+    "pose_base",
+    "shot_size",
+    "texture_fx",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_watergun_fight",
+   "level": 1,
+   "fields": [
+    "action",
+    "bottom",
+    "cloth_state_sfw",
+    "emotion",
+    "n_extra",
+    "place",
+    "top",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_wide_alley_lookback",
+   "level": 0,
+   "fields": [
+    "action",
+    "comp",
+    "eye_gaze",
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_wide_beach_dusk",
+   "level": 0,
+   "fields": [
+    "comp",
+    "n_extra",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_wide_bridge_night",
+   "level": 0,
+   "fields": [
+    "comp",
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_wide_crosswalk_lookback",
+   "level": 0,
+   "fields": [
+    "action",
+    "comp",
+    "eye_gaze",
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_wide_flower_wind",
+   "level": 0,
+   "fields": [
+    "comp",
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_wide_forest_path",
+   "level": 0,
+   "fields": [
+    "comp",
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_wide_hill_sunset",
+   "level": 0,
+   "fields": [
+    "comp",
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_wide_lake_mist",
+   "level": 0,
+   "fields": [
+    "comp",
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_wide_lighthouse",
+   "level": 0,
+   "fields": [
+    "comp",
+    "n_extra",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_wide_mountain_lookback",
+   "level": 0,
+   "fields": [
+    "action",
+    "comp",
+    "eye_gaze",
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_wide_rain_street",
+   "level": 0,
+   "fields": [
+    "comp",
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_wide_river_lookback",
+   "level": 0,
+   "fields": [
+    "action",
+    "comp",
+    "eye_gaze",
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_wide_rooftop_twilight",
+   "level": 0,
+   "fields": [
+    "comp",
+    "n_extra",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_wide_ruins_beam",
+   "level": 0,
+   "fields": [
+    "comp",
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_wide_shrine_sakura",
+   "level": 0,
+   "fields": [
+    "comp",
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_base",
+    "shot_size",
+    "viewpoint",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_wide_snow_field",
+   "level": 0,
+   "fields": [
+    "accessory",
+    "bottom",
+    "cloth_mat",
+    "comp",
+    "n_extra",
+    "place",
+    "pose_base",
+    "shoes",
+    "shot_size",
+    "socks",
+    "viewpoint",
+    "weather"
+   ]
+  },
+  {
+   "id": "sc_yoga_mat",
+   "level": 1,
+   "fields": [
+    "bottom",
+    "light_fx",
+    "n_extra",
+    "place",
+    "pose_risque",
+    "top",
+    "viewpoint"
+   ]
+  }
+ ],
+ "counters": {
+  "sections": 15,
+  "fields": 57,
+  "options": 1128,
+  "roles": 222,
+  "appear": 221,
+  "scenes": 261
+ }
+}

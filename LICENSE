@@ -1,0 +1,36 @@
+MIT License
+
+Copyright (c) 2026 灵冻不冻 (lingdongbudong)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+-------------------------------------------------------------------------------
+附加说明（非许可条款，仅作来源与归属声明）
+-------------------------------------------------------------------------------
+
+1. 上游来源：本插件的底层框架源自浏览器单文件脚本
+   「ANIMA提示词生成器.html」（作者：飞蓬）。该上游作品已授权本项目开源使用；
+   其授权状态以作者本人声明为准。
+
+2. 第三方知识产权：
+   - presets/ 内角色数据所引用的角色名称、作品（IP）名称，
+     以及 presets/thumbs/ 内的角色缩略图（抓取自萌娘百科 / 相关 wiki），
+     版权均归各自的原权利人（游戏/动漫出品方与图片原作者）所有。
+   - 缩略图仅作角色识别辅助用途。如权利人提出异议，将移除对应内容。
+   - 本仓库不含任何模型权重（checkpoint / LoRA）。

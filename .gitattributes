@@ -1,0 +1,9 @@
+# 入库统一 LF：本地源码是混合换行（部分 CRLF），统一后 diff 干净、跨平台一致
+* text=auto eol=lf
+
+# 二进制资源不做换行转换
+*.png binary
+*.webp binary
+*.jpg binary
+*.zip binary
+*.safetensors binary
